@@ -1,0 +1,148 @@
+{
+  "zh": {
+    "name": "JUU2JUIxJUFBJUU4JUJEJUI2JUU5JUEyJTk2",
+    "gender": {"fa": "fas fa-mars", "value": "男"},
+    "dob": {"fa": "fas fa-birthday-cake", "value": "MTk4My0wNC0xNA=="},
+    "home": {"fa": "fas fa-home", "value": "中国上海"},
+    "motto": "彪悍的人生不需要解释",
+    "contact": [
+      {"name": "电话", "fa": "fas fa-phone-alt", "value": "MTM4MTY1MTY1MTA=", "link": "dGVsJTNBMTM4MTY1MTY1MTA="},
+      {"name": "邮箱", "fa": "fas fa-envelope", "value": "bWFkbG9nb3MlNDAxNjMuY29t", "link": "bWFpbHRvJTNBbWFkbG9nb3MlNDAxNjMuY29t"},
+      {"name": "站点", "fa": "fas fa-globe", "value": "bWFkbG9nb3MuZ2l0aHViLmlv", "link": "aHR0cHMlM0ElMkYlMkZtYWRsb2dvcy5naXRodWIuaW8="},
+      {"name": "领英", "fa": "fab fa-linkedin", "value": "eWl5aW5nLXdhbmc=", "link": "aHR0cHMlM0ElMkYlMkZ3d3cubGlua2VkaW4uY29tJTJGaW4lMkZ5aXlpbmctd2FuZyUyRg=="}
+    ],
+    "socio": [
+      {"name": "GitHub", "fa": "fab fa-github", "value": "madlogos", "link": "https://github.com/madlogos"},
+      {"name": "Stack Overflow", "fa": "fab fa-stack-overflow", "value": "madlogos", "link": "https://stackoverflow.com/users/5455754/madlogos"},
+      {"name": "博客", "fa": "fas fa-blog", "value": "新浪博客", "link": "http://blog.sina.com.cn/madlogos"},
+      {"name": "豆瓣", "fa": "fas fa-photo-video", "value": "Jandeaux", "link": "https://www.douban.com/people/Jandeaux"},
+      {"name": "微信", "fa": "fab fa-weixin", "value": "madlogos", "link": null},
+      {"name": "QQ", "fa": "fab fa-qq", "value": "25875989", "link": null},
+      {"name": "Facebook", "fa": "fab fa-facebook", "value": "madlogos", "link": "https://www.facebook.com/madlogos"},
+      {"name": "微博", "fa": "fab fa-weibo", "value": "madlogos", "link": "https://weibo.com/madlogos"},
+      {"name": "Twitter", "fa": "fab fa-twitter", "value": "@madlogos", "link": "https://twitter.com/madlogos"}
+    ],
+    "talent": [
+      {"name": "数据分析和挖掘", "value": 100, "tip": "lala 1"},
+      {"name": "企业健康管理", "value": 90, "tip": "lala 2"},
+      {"name": "流行病学", "value": 80, "tip": "lala 3"},
+      {"name": "软件研发和管理", "value": 80, "tip": "lala 4"},
+      {"name": "战略规划", "value": 60, "tip": "lala 5"}
+    ],
+    "skill": [
+      {"name": "R", "size": null, "alpha": 0.3, "year": 7, "fa": "fas fa-code", "prof": 5, "description": ["1", "2"]},
+      {"name": "Python", "size": "medium", "alpha": 0.3, "year": 5, "fa": "fas fa-code", "prof": 4, "description": ["1", "2"]},
+      {"name": "SQL", "size": "small", "alpha": 0.1, "year": 7, "fa": "fas fa-code", "prof": 3.5, "description": ["1", "2"]}
+    ],
+    "job": [
+      {"from": "2009/07", "till": "2011/04", "emp": "徐汇区疾病预防控制中心", "link": null,
+        "wiki": {
+          "fa": "fab fa-wikipedia-w", "title": "关于该雇主", "value": "百度百科",
+          "link": "https://baike.baidu.com/item/徐汇区疾病预防控制中心"
+        },
+        "title": "科员", "icon": "check", "color": null, 
+        "keyword": ["急性传染病防控", "计划免疫管理", "流行病学研究"],
+        "description": ["哈哈<br>哈哈"]},
+      {"from": "2011/04", "till": "2016/04", "emp": "安泰保险", "link": "https://www.aetna.com",
+        "wiki": {
+          "fa": "fab fa-wikipedia-w", "title": "关于该雇主", "value": "维基百科",
+          "link": "https://en.wikipedia.org/wiki/Aetna"
+        }, 
+        "title": "项目经理", "icon": "check", "color": null, 
+        "keyword": ["项目管理", "产品开发", "分析报告"], 
+        "description": ["哈哈"]},
+      {"from": "2016/04", "till": "2020/04", "emp": "安泰保险", "link": "https://www.aetna.com",
+        "wiki": {
+          "fa": "fab fa-wikipedia-w", "title": "关于该雇主", "value": "维基百科",
+          "link": "https://en.wikipedia.org/wiki/Aetna"
+        }, 
+        "title": "分析经理/数据科学家", "icon": "loading", "color": "#00A78E", 
+        "keyword": ["分析挖掘", "商业智能", "系统研发", "专业产品", "商务战略", "运营优化", "内部培训"], 
+        "description": ["呵呵"]}
+    ],
+    "edu": [
+      {"from": "2001/09", "till": "2006/07", "icon": "check", "color": null,
+        "school": "复旦大学公共卫生学院", "major": "预防医学", "cred": "医学士"},
+      {"from": "2006/09", "till": "2009/07", "icon": "check", "color": null,
+        "school": "复旦大学公共卫生学院", "major": "职业与环境卫生", "cred": "医学硕士"}
+    ],
+    "self": {
+      "statement": "呵呵<br>呵呵",
+      "interest": ["文史哲杂学", "电影", "MOOC", "编程", "数码"]
+    }
+  },
+  "en": {
+    "name": "V2FuZyUyMFlpeWluZw==",
+    "gender": {"fa": "fas fa-mars", "value": "Male"},
+    "dob": {"fa": "fas fa-birthday-cake", "value": "MTk4My0wNC0xNA=="},
+    "home": {"fa": "fas fa-home", "value": "Shanghai, CN"},
+    "motto": "C'est la vie",
+    "contact": [
+      {"name": "Phone", "fa": "fas fa-phone-alt", "value": "MTM4MTY1MTY1MTA=", "link": "dGVsJTNBMTM4MTY1MTY1MTA="},
+      {"name": "Email", "fa": "fas fa-envelope", "value": "bWFkbG9nb3MlNDAxNjMuY29t", "link": "bWFpbHRvJTNBbWFkbG9nb3MlNDAxNjMuY29t"},
+      {"name": "Site", "fa": "fas fa-globe", "value": "bWFkbG9nb3MuZ2l0aHViLmlv", "link": "aHR0cHMlM0ElMkYlMkZtYWRsb2dvcy5naXRodWIuaW8="},
+      {"name": "LinkedIn", "fa": "fab fa-linkedin", "value": "eWl5aW5nLXdhbmc=", "link": "aHR0cHMlM0ElMkYlMkZ3d3cubGlua2VkaW4uY29tJTJGaW4lMkZ5aXlpbmctd2FuZyUyRg=="}
+    ],
+    "socio": [
+      {"name": "GitHub", "fa": "fab fa-github", "value": "madlogos", "link": "https://github.com/madlogos"},
+      {"name": "Stack Overflow", "fa": "fab fa-stack-overflow", "value": "madlogos", "link": "https://stackoverflow.com/users/5455754/madlogos"},
+      {"name": "Blog", "fa": "fas fa-blog", "value": "Sina blog", "link": "http://blog.sina.com.cn/madlogos"},
+      {"name": "Douban", "fa": "fas fa-photo-video", "value": "Jandeaux", "link": "https://www.douban.com/people/Jandeaux"},
+      {"name": "WeChat", "fa": "fab fa-weixin", "value": "madlogos", "link": null},
+      {"name": "QQ", "fa": "fab fa-qq", "value": "25875989", "link": null},
+      {"name": "Facebook", "fa": "fab fa-facebook", "value": "madlogos", "link": "https://www.facebook.com/madlogos"},
+      {"name": "Sina Weibo", "fa": "fab fa-weibo", "value": "madlogos", "link": "https://weibo.com/madlogos"},
+      {"name": "Twitter", "fa": "fab fa-twitter", "value": "@madlogos", "link": "https://twitter.com/madlogos"}
+    ],
+    "talent": [
+      {"name": "Data analytics & mining", "value": 100, "tip": "lala 1"}, 
+      {"name": "Corporate health management", "value": 90, "tip": "lala 2"},
+      {"name": "Epidemiology", "value": 80, "tip": "lala 3"},
+      {"name": "Software R&D", "value": 80, "tip": "lala 4"},
+      {"name": "Strategic planning", "value": 60, "tip": "lala 5"}
+    ],
+    "skill": [
+      {"name": "R", "size": null, "alpha": 0.3, "year": 7, "fa": "fas fa-code", "prof": 5, "description": ["1", "2"]},
+      {"name": "Python", "size": "medium", "alpha": 0.3, "year": 5, "fa": "fas fa-code", "prof": 4, "description": ["1", "2"]},
+      {"name": "SQL", "size": "small", "alpha": 0.1, "year": 7, "fa": "fas fa-code", "prof": 3.5, "description": ["1", "2"]}
+    ],
+    "job": [
+      {"from": "2009/07", "till": "2011/04", "emp": "Xuhui CDC",
+        "wiki": {
+          "fa": "fab fa-wikipedia-w", "title": "About this employer", "value": "Baidu Baike",
+          "link": "https://baike.baidu.com/item/徐汇区疾病预防控制中心"
+        }, 
+        "link": null, "title": "Staff member", "icon": "check", "color": null,
+        "keyword": ["Acute infectious disease control", "Planned immunization management", "Epidemiological study"],
+        "description": ["bla bla"]},
+      {"from": "2011/04", "till": "2016/04", "emp": "Aetna International", "link": "https://www.aetna.com",
+        "wiki": {
+          "fa": "fab fa-wikipedia-w", "title": "About this employer", "value": "Wikipedia",
+          "link": "https://en.wikipedia.org/wiki/Aetna"
+        }, 
+        "title": "Project manager", "icon": "check", "color": null, 
+        "keyword": ["Project management", "Product R&D", "Reporting"],
+        "description": ["bla bla"]},
+      {"from": "2016/04", "till": "2020/04", "emp": "Aetna International", "link": "https://www.aetna.com",
+        "wiki": {
+          "fa": "fab fa-wikipedia-w", "title": "About this employer", "value": "Wikipedia",
+          "link": "https://en.wikipedia.org/wiki/Aetna"
+        }, 
+        "title": "Informatics manager / Data scientist", "icon": "loading", "color": "#00A78E",
+        "keyword": ["Analytics & minning", "Business intelligence", "System R&D", "Professional product", "Business strategy", "Operation optimization", "Training"],
+        "description": ["bla bla"]}
+    ],
+    "edu": [
+      {"from": "2001/09", "till": "2006/07", "icon": "check", "color": null,
+        "school": "Fudan University School of Public Health", "major": "Preventive medicine",
+        "cred": "Bachelor of Medicine"},
+      {"from": "2006/09", "till": "2009/07", "icon": "check", "color": null,
+        "school": "Fudan University School of Public Health", "major": "Occupational and environmental health", 
+        "cred": "Master of Medicine"}
+    ],
+    "self": {
+      "statement": "haha<br>haha",
+      "interest": ["Literature-history-philosophy-misc", "Movie", "MOOC", "Programming", "Digital instrucment"]
+    }
+  }
+}
