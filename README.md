@@ -1,6 +1,8 @@
-# vuecv
+# vue-resume
 
 > A Vue.js project
+
+This is a resume project built with `vue-cli`, powered by `vue-echarts` and `i18n`.
 
 ## Build Setup
 
