@@ -67,8 +67,10 @@ export default {
       lang: this.$i18n.locale
     }
   },
-  mounted: function () {
+  created: function () {
     localStorage.setItem('myCv', JSON.stringify(json))
+  },
+  mounted: function () {
     document.title = this.$i18n.locale === 'zh' ? '汪轶颖的简历' : 'Wang Yiying\'s CV'
   },
   methods: {
