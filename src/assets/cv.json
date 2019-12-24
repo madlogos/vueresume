@@ -30,41 +30,56 @@
       {"name": "战略规划", "value": 60, "tip": "lala 5"}
     ],
     "skill": [
-      {"name": "R", "size": null, "alpha": 0.3, "year": 7, "fa": "fas fa-code", "prof": 5, "description": ["1", "2"]},
-      {"name": "Python", "size": "medium", "alpha": 0.3, "year": 5, "fa": "fas fa-code", "prof": 4, "description": ["1", "2"]},
-      {"name": "SQL", "size": "small", "alpha": 0.1, "year": 7, "fa": "fas fa-code", "prof": 3.5, "description": ["1", "2"]}
+      [
+        {"name": "R", "size": null, "alpha": 0.3, "year": 7, "fa": "fas fa-code", "prof": 5, "description": ["1", "2"]},
+        {"name": "Python", "size": "medium", "alpha": 0.3, "year": 5, "fa": "fas fa-code", "prof": 4, "description": ["1", "2"]},
+        {"name": "SQL", "size": "small", "alpha": 0.1, "year": 7, "fa": "fas fa-code", "prof": 3.5, "description": ["1", "2"]}
+      ]
     ],
     "job": [
-      {"from": "2009/07", "till": "2011/04", "emp": "徐汇区疾病预防控制中心", "link": null,
+      {
+        "from": "2009/07", "till": "2011/04", "emp": "徐汇区疾病预防控制中心", "link": null,
         "wiki": {
           "fa": "fab fa-wikipedia-w", "title": "关于该雇主", "value": "百度百科",
+          "tag": ["公共卫生", "事业单位"],
           "link": "https://baike.baidu.com/item/徐汇区疾病预防控制中心"
         },
         "title": "科员", "icon": "check", "color": null, 
         "keyword": ["急性传染病防控", "计划免疫管理", "流行病学研究"],
-        "description": ["哈哈<br>哈哈"]},
-      {"from": "2011/04", "till": "2016/04", "emp": "安泰保险", "link": "https://www.aetna.com",
+        "description": ["哈哈<br>哈哈"]
+      },
+      {
+        "from": "2011/04", "till": "2016/04", "emp": "安泰保险", "link": "https://www.aetna.com",
         "wiki": {
           "fa": "fab fa-wikipedia-w", "title": "关于该雇主", "value": "维基百科",
+          "tag": ["财富200", "美国第三", "健康险", "CVS收购"],
           "link": "https://en.wikipedia.org/wiki/Aetna"
         }, 
         "title": "项目经理", "icon": "check", "color": null, 
         "keyword": ["项目管理", "产品开发", "分析报告"], 
-        "description": ["哈哈"]},
-      {"from": "2016/04", "till": "2020/04", "emp": "安泰保险", "link": "https://www.aetna.com",
+        "description": ["哈哈"]
+      },
+      {
+        "from": "2016/04", "till": "2020/04", "emp": "安泰保险", "link": "https://www.aetna.com",
         "wiki": {
           "fa": "fab fa-wikipedia-w", "title": "关于该雇主", "value": "维基百科",
+          "tag": ["财富200", "美国第三", "健康险", "CVS收购"],
           "link": "https://en.wikipedia.org/wiki/Aetna"
         }, 
         "title": "分析经理/数据科学家", "icon": "loading", "color": "#00A78E", 
         "keyword": ["分析挖掘", "商业智能", "系统研发", "专业产品", "商务战略", "运营优化", "内部培训"], 
-        "description": ["呵呵"]}
+        "description": ["呵呵"]
+      }
     ],
     "edu": [
-      {"from": "2001/09", "till": "2006/07", "icon": "check", "color": null,
-        "school": "复旦大学公共卫生学院", "major": "预防医学", "cred": "医学士"},
-      {"from": "2006/09", "till": "2009/07", "icon": "check", "color": null,
-        "school": "复旦大学公共卫生学院", "major": "职业与环境卫生", "cred": "医学硕士"}
+      {
+        "from": "2001/09", "till": "2006/07", "icon": "check", "color": null, "school": "复旦大学公共卫生学院", 
+        "major": "预防医学", "cred": "医学士", "rank": "GPA 3.6/4.0 (排名前5)", "lesson": ""
+      },
+      {
+        "from": "2006/09", "till": "2009/07", "icon": "check", "color": null, "school": "复旦大学公共卫生学院", 
+        "major": "职业与环境卫生", "cred": "医学硕士", "rank": "GPA 3.4/4.0 (排名前10)", "lesson": ""
+      }
     ],
     "self": {
       "statement": "呵呵<br>呵呵",
@@ -102,43 +117,58 @@
       {"name": "Strategic planning", "value": 60, "tip": "lala 5"}
     ],
     "skill": [
-      {"name": "R", "size": null, "alpha": 0.3, "year": 7, "fa": "fas fa-code", "prof": 5, "description": ["1", "2"]},
-      {"name": "Python", "size": "medium", "alpha": 0.3, "year": 5, "fa": "fas fa-code", "prof": 4, "description": ["1", "2"]},
-      {"name": "SQL", "size": "small", "alpha": 0.1, "year": 7, "fa": "fas fa-code", "prof": 3.5, "description": ["1", "2"]}
+      [
+        {"name": "R", "size": null, "alpha": 0.3, "year": 7, "fa": "fas fa-code", "prof": 5, "description": ["1", "2"]},
+        {"name": "Python", "size": "medium", "alpha": 0.3, "year": 5, "fa": "fas fa-code", "prof": 4, "description": ["1", "2"]},
+        {"name": "SQL", "size": "small", "alpha": 0.1, "year": 7, "fa": "fas fa-code", "prof": 3.5, "description": ["1", "2"]}
+      ]
     ],
     "job": [
-      {"from": "2009/07", "till": "2011/04", "emp": "Xuhui CDC",
+      {
+        "from": "2009/07", "till": "2011/04", "emp": "Xuhui CDC",
         "wiki": {
           "fa": "fab fa-wikipedia-w", "title": "About this employer", "value": "Baidu Baike",
+          "tag": ["Public health", "Non-profit"],
           "link": "https://baike.baidu.com/item/徐汇区疾病预防控制中心"
         }, 
         "link": null, "title": "Staff member", "icon": "check", "color": null,
         "keyword": ["Acute infectious disease control", "Planned immunization management", "Epidemiological study"],
-        "description": ["bla bla"]},
-      {"from": "2011/04", "till": "2016/04", "emp": "Aetna International", "link": "https://www.aetna.com",
+        "description": ["bla bla"]
+      },
+      {
+        "from": "2011/04", "till": "2016/04", "emp": "Aetna International", "link": "https://www.aetna.com",
         "wiki": {
           "fa": "fab fa-wikipedia-w", "title": "About this employer", "value": "Wikipedia",
+          "tag": ["Fortune 200", "US 3rd biggest", "Health insurance", "CVS merger"],
           "link": "https://en.wikipedia.org/wiki/Aetna"
         }, 
         "title": "Project manager", "icon": "check", "color": null, 
         "keyword": ["Project management", "Product R&D", "Reporting"],
-        "description": ["bla bla"]},
-      {"from": "2016/04", "till": "2020/04", "emp": "Aetna International", "link": "https://www.aetna.com",
+        "description": ["bla bla"]
+      },
+      {
+        "from": "2016/04", "till": "2020/04", "emp": "Aetna International", "link": "https://www.aetna.com",
         "wiki": {
           "fa": "fab fa-wikipedia-w", "title": "About this employer", "value": "Wikipedia",
+          "tag": ["Fortune 200", "US 3rd biggest", "Health insurance", "CVS merger"],
           "link": "https://en.wikipedia.org/wiki/Aetna"
         }, 
         "title": "Informatics manager / Data scientist", "icon": "loading", "color": "#00A78E",
         "keyword": ["Analytics & minning", "Business intelligence", "System R&D", "Professional product", "Business strategy", "Operation optimization", "Training"],
-        "description": ["bla bla"]}
+        "description": ["bla bla"]
+      }
     ],
     "edu": [
-      {"from": "2001/09", "till": "2006/07", "icon": "check", "color": null,
+      {
+        "from": "2001/09", "till": "2006/07", "icon": "check", "color": null,
         "school": "Fudan University School of Public Health", "major": "Preventive medicine",
-        "cred": "Bachelor of Medicine"},
-      {"from": "2006/09", "till": "2009/07", "icon": "check", "color": null,
+        "cred": "Bachelor of Medicine", "rank": "GPA 3.6/4.0 (Top 5)", "lesson": ""
+      },
+      {
+        "from": "2006/09", "till": "2009/07", "icon": "check", "color": null,
         "school": "Fudan University School of Public Health", "major": "Occupational and environmental health", 
-        "cred": "Master of Medicine"}
+        "cred": "Master of Medicine", "rank": "GPA 3.6/4.0 (Top 10)", "lesson": ""
+      }
     ],
     "self": {
       "statement": "haha<br>haha",

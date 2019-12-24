@@ -14,8 +14,15 @@
        placement='top'
       >
         <div>
-          <p class="cred"><i class='fas fa-graduation-cap' />&nbsp;<strong>{{ i.cred }}</strong> ({{ i.major}})&emsp;&emsp;</p>
-          <p class="univ"><i class='fas fa-university' />&nbsp;{{ i.school }}</p>
+          <p class="title">
+            <span class='cred'><i class='fas fa-graduation-cap' />&nbsp;<strong>{{ i.cred }}</strong>&emsp;</span>
+            <span class='univ'><i class='fas fa-university' />&nbsp;{{ i.school }}&emsp;</span>
+            <span class='major'><i class='fas fa-school' />&nbsp;{{ i.major }}</span>
+          </p>
+          <div class="body">
+            <p class='rank'><i class='fas fa-trophy' />&nbsp;{{ i.rank }}</p>
+            <p class='lesson'><i class='fas fa-book-open' />&nbsp;{{ i.lesson }}</p>
+          </div>
         </div>
       </el-timeline-item>
     </el-timeline>
@@ -63,7 +70,7 @@ h2 {
   margin: 0;
   padding: 10px
 }
-.univ {
+.major, .univ, .rank {
   color: #888
 }
 .el-timeline {

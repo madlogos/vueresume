@@ -7,31 +7,33 @@
       <chart id='chart1' ref='chart1' :options='chartOptsBar' :auto-resize='true' />
     </div>
     <div id='skills'>
-      <el-popover v-for='(i, index) in data.skill' :key='index' trigger='hover' placement='top-start'>
-        <el-card class='box-card' shadow='hover'>
-          <div slot='header'><h3><i :class='i.fa'/> {{ i.name }}</h3></div>
-          <div>
-            <h4>{{ $t('skill.proficiency') }}</h4><span class='appyear'>{{ $tc('timespan.nyear', i.year) }}</span>
-            <el-rate
-              v-model="i.prof"
-              disabled
-              show-score
-              text-color="#ff9900"
-              score-template="{value}">
-            </el-rate>
-            <h4>{{ $t('skill.description') }}</h4>
-            <div v-for='(j, idx) in i.description' :key='idx' v-html='j'></div>
-          </div>
-        </el-card>
-        <el-tag
-          effect='dark'
-          type='info'
-          :hit=false
-          :size='i.size'
-          :color='"rgba(0, 0, 0, " + i.alpha + ")"'
-          slot='reference'
-        >{{ i.name }}</el-tag>
-      </el-popover>
+      <div v-for='(i, idxi) in data.skill' :key='idxi'>
+        <el-popover v-for='(j, idxj) in i' :key='idxj' trigger='hover' placement='top-start'>
+          <el-card class='box-card' shadow='hover'>
+            <div slot='header'><h3><i :class='j.fa'/> {{ j.name }}</h3></div>
+            <div>
+              <h4>{{ $t('skill.proficiency') }}</h4><span class='appyear'>{{ $tc('timespan.nyear', j.year) }}</span>
+              <el-rate
+                v-model="j.prof"
+                disabled
+                show-score
+                text-color="#ff9900"
+                score-template="{value}">
+              </el-rate>
+              <h4>{{ $t('skill.description') }}</h4>
+              <div v-for='(k, idxk) in j.description' :key='idxk' v-html='k'></div>
+            </div>
+          </el-card>
+          <el-tag
+            effect='dark'
+            type='info'
+            :hit=false
+            :size='j.size'
+            :color='"rgba(0, 0, 0, " + j.alpha + ")"'
+            slot='reference'
+          >{{ j.name }}</el-tag>
+        </el-popover>
+      </div>
     </div>
   </div>
 </template>
@@ -149,40 +151,6 @@ export default {
             barWidth: '75%',
             barCategoryWidth: '20%'
           }
-          // {
-          //   type: 'bar',
-          //   data: y,
-          //   label: {
-          //     show: true,
-          //     position: 'insideLeft',
-          //     color: '#00A78E',
-          //     formatter: '{b}',
-          //     fontSize: 14,
-          //     fontWeight: 'normal'
-          //   },
-          //   itemStyle: {
-          //     color: this.barColor,
-          //     barBorderRadius: [0, 25, 25, 0]
-          //   },
-          //   emphasis: {
-          //     label: {
-          //       show: true,
-          //       position: 'insideLeft',
-          //       formatter: '{b}: {c}',
-          //       color: '#fff',
-          //       fontSize: 14,
-          //       fontWeight: 'bold'
-          //     },
-          //     itemStyle: {color: '#67C23A'}
-          //   },
-          //   tooltip: {
-          //     formatter: '{c}'
-          //   },
-          //   barWidth: '75%',
-          //   barGap: '-100%',
-          //   barCategoryWidth: '20%',
-          //   anamation: true
-          // }
         ]
       }
       for (i = 0; i < dat.length; i++) {
@@ -226,7 +194,7 @@ h2 {
 }
 .box-card {
   margin: -9px;
-  width: 360px
+  width: 320px
 }
 .el-popover {
   padding: 0

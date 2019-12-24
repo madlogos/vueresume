@@ -28,10 +28,19 @@
                   <i class='fas fa-id-badge' />&nbsp;{{ i.title }}&emsp;
                 </span>
                 <span class="jobemp" v-if='i.wiki.link'>
-                  <el-popover placement='top-start' :title='i.wiki.title' trigger='hover'>
+                  <el-popover placement='top-start' :title='i.wiki.title' trigger='hover' width=200>
                     <div>
                       <i :class='i.wiki.fa' />&nbsp;
                       <a :href='i.wiki.link' target='_blank'>{{ i.wiki.value }}</a>
+                    </div>
+                    <br />
+                    <div>
+                      <el-tag
+                        v-for='(tag, itag) in i.wiki.tag'
+                        :key='itag'
+                        type='info'
+                        size='mini'
+                      >{{ tag }}</el-tag>
                     </div>
                     <span slot='reference'>
                       <i class='fas fa-building' />
@@ -174,7 +183,7 @@ a:visited {
 a:hover {
   color: #67C23A
 }
-#tl .el-tag {
+.el-tag {
   margin: 2px
 }
 .jobtitle {

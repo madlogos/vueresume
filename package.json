@@ -14,7 +14,9 @@
     "@fortawesome/fontawesome-svg-core": "^1.2.26",
     "@fortawesome/free-solid-svg-icons": "^5.12.0",
     "@fortawesome/vue-fontawesome": "^0.1.8",
+    "babel-polyfill": "^6.26.0",
     "echarts": "^4.5.0",
+    "es6-promise": "^4.2.8",
     "vue": "^2.5.2",
     "vue-echarts": "^4.1.0",
     "vue-router": "^3.0.1"
@@ -65,7 +67,7 @@
     "vue-template-compiler": "^2.5.2",
     "webpack": "^3.6.0",
     "webpack-bundle-analyzer": "^2.9.0",
-    "webpack-dev-server": "^2.9.1",
+    "webpack-dev-server": "^2.9.7",
     "webpack-merge": "^4.1.0"
   },
   "engines": {

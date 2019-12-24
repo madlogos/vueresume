@@ -1,5 +1,5 @@
 <template>
-<div>
+<div v-loading='loading'>
   <el-row :gutter="10" id='el-row-lang'>
     <el-col :span="8" id=“el-col-sidebar” class="hidden-xs-only" style="padding: 0px">
       <div id='sidebar-top'></div>

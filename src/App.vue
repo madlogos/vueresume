@@ -18,10 +18,8 @@ export default {
   color: #2c3e50;
 }
 code {
-  border: 1px solid #ddd;
-  border-radius: 2px;
   color: #8932AF;
-  background-color: #eeeeee88;
+  background-color: #eeeeee99;
   margin: 0 4px;
   padding: 1px 5px
 }
@@ -32,6 +30,9 @@ code {
   font-size: 14px
 }
 .el-popover {
+  font-family: "Helvetica Neue", Helvetica, "PingFang SC", "Hiragino Sans GB", "Microsoft YaHei", "微软雅黑", Arial, sans-serif
+}
+.el-tooltip__popper {
   font-family: "Helvetica Neue", Helvetica, "PingFang SC", "Hiragino Sans GB", "Microsoft YaHei", "微软雅黑", Arial, sans-serif
 }
 .el-popover p {
