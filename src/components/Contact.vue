@@ -5,7 +5,7 @@
     </h2>
     <ul id='items'>
       <li v-for="i in data.contact" :key="i.name">
-        <el-tooltip placement="top-start" :content="i.name">
+        <el-tooltip effect='light' placement="top-start" :content="i.name">
           <span class='socio-icon'>
             <i :class='i.fa' />&nbsp;
             <a v-if='i.link' :href='dec(i.link)' target='_blank'>{{ dec(i.value) }}</a>
@@ -50,7 +50,7 @@ export default {
 
 <style scoped>
 #contact {
-  margin: 20px 20px 40px 20px
+  margin: 40px 20px
 }
 h2 {
   color: #eee
@@ -83,7 +83,7 @@ a:hover {
   line-height: 150%
 }
 #socio {
-  padding: 5px;
+  padding: 10px 5px 10px 5px;
   color: #eee;
   font-size: 20px
 }

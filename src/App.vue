@@ -16,11 +16,16 @@ export default {
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
   color: #2c3e50;
+  margin: 0px;
+  padding: 0px
+}
+body {
+  margin: 0;
+  padding: 0
 }
 code {
   color: #8932AF;
   background-color: #eeeeee99;
-  margin: 0 4px;
   padding: 1px 5px
 }
 .el-popover__title {

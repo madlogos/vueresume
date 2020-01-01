@@ -25,10 +25,10 @@
             <template slot='title'>
               <div class='collhead'>
                 <span class="jobtitle">
-                  <i class='fas fa-id-badge' />&nbsp;{{ i.title }}&emsp;
+                  <i class='fas fa-id-badge' />&nbsp;{{ i.title }}
                 </span>
                 <span class="jobemp" v-if='i.wiki.link'>
-                  <el-popover placement='top-start' :title='i.wiki.title' trigger='hover' width=200>
+                  <el-popover placement='top-start' :title='i.wiki.title' trigger='hover' width=240>
                     <div>
                       <i :class='i.wiki.fa' />&nbsp;
                       <a :href='i.wiki.link' target='_blank'>{{ i.wiki.value }}</a>
@@ -95,10 +95,13 @@ export default {
   },
   mounted: function () {
     // return array of array
-    for (var i = 0; i < this.data.job.length - 1; i++) {
+    const jobCnt = this.data.job.length
+    for (var i = 0; i < jobCnt; i++) {
       this.foldValue.push([])
     }
-    this.foldValue.push([(this.data.job.length - 1).toString()])
+    if (this.data.job[jobCnt - 1].icon === 'loading') {
+      this.foldValue[jobCnt - 1] = [(jobCnt - 1).toString()]
+    }
   },
   methods: {
     calcTimeDif (t0, t1) {
@@ -171,6 +174,11 @@ h2 {
   margin-right: 0;
   padding: 5px
 }
+#foldToggle:hover {
+  color: #00A78E;
+  border-color: #00A78E88;
+  background-color: #00A78E11;
+}
 .el-timeline {
   padding-left: 5px
 }
@@ -186,9 +194,15 @@ a:hover {
 .el-tag {
   margin: 2px
 }
+.el-tag:hover {
+  color: #67C23A;
+  border-color: #67C23A;
+  background-color: #fff
+}
 .jobtitle {
   font-size: 14px;
-  font-weight: bold
+  font-weight: bold;
+  margin-right: 20px
 }
 .jobemp {
   font-size: 14px;

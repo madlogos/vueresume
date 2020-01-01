@@ -12,7 +12,8 @@
           <el-card class='box-card' shadow='hover'>
             <div slot='header'><h3><i :class='j.fa'/> {{ j.name }}</h3></div>
             <div>
-              <h4>{{ $t('skill.proficiency') }}</h4><span class='appyear'>{{ $tc('timespan.nyear', j.year) }}</span>
+              <h4>{{ $t('skill.proficiency') }}</h4>
+              <span class='appyear'>{{ $tc('timespan.nyear', j.year) }}</span>
               <el-rate
                 v-model="j.prof"
                 disabled
@@ -21,7 +22,12 @@
                 score-template="{value}">
               </el-rate>
               <h4>{{ $t('skill.description') }}</h4>
-              <div v-for='(k, idxk) in j.description' :key='idxk' v-html='k'></div>
+              <div v-if='j.p'>
+                <p v-for='(k, idxk) in j.p' :key='idxk' v-html='k'></p>
+              </div>
+              <ul v-if='j.ul'>
+                <li v-for='(m, idxm) in j.ul' :key='idxm' v-html='m'></li>
+              </ul>
             </div>
           </el-card>
           <el-tag
@@ -168,7 +174,7 @@ export default {
 
 <style scoped>
 #skill {
-  margin: 20px 20px 40px 20px
+  margin: 40px 20px
 }
 h2 {
   color: #eee
@@ -183,6 +189,9 @@ h2 {
   width: 100%;
   height: 150px;
 }
+#skills {
+  padding: 10px 0
+}
 #skills .el-tag {
   margin: 2.5px 5px;
   font-size: 14px;
@@ -193,7 +202,7 @@ h2 {
   font-weight: bold
 }
 .box-card {
-  margin: -9px;
+  margin: -6px;
   width: 320px
 }
 .el-popover {

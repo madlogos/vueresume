@@ -5,7 +5,7 @@
     </h2>
     <div id='statement' v-html='data.self.statement'></div>
     <div id='hobby'>
-      <span><span id='hobbyicon'><i class="fas fa-heart"/></span> {{ $t('title.hobby') }}: </span>
+      <span><span id='hobbyicon'><i class="fas fa-skiing"/></span> {{ $t('title.hobby') }}: </span>
       <el-tag
        v-for='(i, index) in data.self.interest'
        :key='index'
@@ -45,6 +45,11 @@ export default {
 }
 #hobbyicon {
   color: #999
+}
+.el-tag:hover {
+  font-size: 14px;
+  color: #67C23A;
+  border-color: #67C23A
 }
 h2 {
   color: #00A78E

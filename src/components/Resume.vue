@@ -1,8 +1,8 @@
 <template>
-<div v-loading='loading'>
-  <el-row :gutter="10" id='el-row-lang'>
-    <el-col :span="8" id=“el-col-sidebar” class="hidden-xs-only" style="padding: 0px">
-      <div id='sidebar-top'></div>
+<div v-loading='loading' class='wrapper'>
+  <el-backtop slot='reference' target=".wrapper" id='backtop' :right='20' />
+  <el-row :gutter="16" id='el-row-lang'>
+    <el-col :span="8" id="el-col-sidebar" class="hidden-xs-only">
     </el-col>
     <el-col :xs="24" :sm="16" :md="16" :lg="16" :xl="16" id="el-col-main">
       <div id='lang-cont'>
@@ -23,16 +23,26 @@
       </div>
     </el-col>
   </el-row>
-  <el-row :gutter="10" id='el-row-main' type='flex'>
+  <el-row :gutter="16" id='el-row-main' type='flex'>
     <el-col :xs="24" :sm="8" :md="8" :lg="8" :xl="8" id="side-bar">
       <portrait/>
       <contact/>
       <skill/>
+      <cert/>
+      <template>
+        <h3><i class='fas fa-download'/>&nbsp;{{ $t('title.download') }}</h3>
+      </template>
     </el-col>
     <el-col :xs="24" :sm="16" :md="16" :lg="16" :xl="16" id="main">
       <job/>
       <edu/>
       <self-state/>
+    </el-col>
+  </el-row>
+  <el-row :gutter="16" id='el-row-foot'>
+    <el-col :span="8" id="el-foot-sidebar" class="hidden-xs-only">
+    </el-col>
+    <el-col :xs="24" :sm="16" :md="16" :lg="16" :xl="16" id="el-foot-main">
       <template>
         <div class="footer">
           <span v-html='this.$t("footer.copyright")'></span>
@@ -48,6 +58,7 @@
 import Portrait from '@/components/Portrait'
 import Contact from '@/components/Contact'
 import Skill from '@/components/Skill'
+import Cert from '@/components/Cert'
 import Job from '@/components/Job'
 import Edu from '@/components/Edu'
 import SelfState from '@/components/SelfState'
@@ -58,20 +69,24 @@ export default {
     Portrait,
     Contact,
     Skill,
+    Cert,
     Job,
     Edu,
     SelfState
   },
   data: function () {
     return {
-      lang: this.$i18n.locale
+      lang: this.$i18n.locale,
+      loading: true
     }
   },
   created: function () {
+    this.loading = true
     localStorage.setItem('myCv', JSON.stringify(json))
   },
   mounted: function () {
     document.title = this.$i18n.locale === 'zh' ? '汪轶颖的简历' : 'Wang Yiying\'s CV'
+    this.loading = !localStorage.getItem('myCv')
   },
   methods: {
     changeLang (val) {
@@ -84,7 +99,7 @@ export default {
         title: this.$t('tip.init.title'),
         message: this.$t('tip.init.msg'),
         dangerouslyUseHTMLString: true,
-        duration: 0
+        duration: 4500
       })
     }
   }
@@ -92,28 +107,45 @@ export default {
 </script>
 
 <style scoped>
+.wrapper {
+  height: 100vh;
+  overflow-y: scroll
+}
+#backtop {
+  color: #00A78E
+}
 #side-bar {
   background-color: #00A78E
 }
 #el-col-sidebar {
+  min-height: 34px;
   background-color: #00A78E
 }
-#sidebar-top {
-  min-height: 32px;
-  margin: 0;
-  padding: 0;
+#el-foot-sidebar {
   background-color: #00A78E
+}
+#side-bar h3, #side-bar h4 {
+  margin: 20px 20px;
+  color: #eee
+}
+#el-foot-main {
+  margin-bottom: 5px
 }
 #el-row-lang {
-  background: #f3f3f3
+  background: #efefef
+}
+#el-row-foot {
+  display: flex
 }
 #lang-cont{
   float: right;
-  margin-right: 0;
-  margin-bottom: 2px
+  margin: 2px 0px 2px 0px
 }
 .el-row {
   flex-wrap: wrap
+}
+.el-col {
+  padding: 0px
 }
 #tip {
   margin-left: 20px
@@ -122,7 +154,7 @@ export default {
   color: #67C23A;
 }
 .tipbtn {
-  margin-left: 20px;
+  margin: 2px 20px 2px 10px;
   padding: 5px 10px;
   font-family: "Helvetica Neue", Helvetica, "PingFang SC", "Hiragino Sans GB", "Microsoft YaHei", "微软雅黑", Arial, sans-serif;
   font-size: small
@@ -131,10 +163,16 @@ export default {
   font-family: "Helvetica Neue", Helvetica, "PingFang SC", "Hiragino Sans GB", "Microsoft YaHei", "微软雅黑", Arial, sans-serif
 }
 .footer {
-  margin: 20px 0px 0px 0px;
+  margin: 0;
   padding: 10px 20px;
   color: #999;
   font-size: small;
   line-height: 1.75em
+}
+</style>
+
+<style>
+.el-switch__label.is-active {
+  color: #00A78E
 }
 </style>

@@ -2,17 +2,20 @@ export default {
   tip: {
     init: {
       title: 'About this CV',
-      msg: '<div><ol style="padding-left:20px"><li>Feel free to view it with different equipments (PC, tablet, mobile phone, ...), it\'s responsive</li><li>Feel free to tap around for more details interactively</li><li>Wrapped a method to calculate and present time difference</li><li>Extended and integreated <code>el-collapse</code> and <code>el-timeline</code> components</li><li>You can download the PDF version at <i class="fas fa-download"></i></li></ol></div>'
+      msg: '<div><ol style="padding-left:20px"><li>It\'s responsive to various equipments (PC, tablet, mobile phone, ...) with different resolution</li><li>Wrapped a method to calculate and present time difference</li><li>Extended and integreated <code>el-collapse</code> and <code>el-timeline</code> components</li><li>You can download the PDF version at <i class="fas fa-download"></i></li></ol><p>Feel free to tap around for more details interactively.</p></div>'
     }
   },
   title: {
     tip: 'Tips',
     contact: 'Contact',
     talent: 'Expertise',
+    cert: 'Certificate',
     job: 'Work Experience',
     edu: 'Education',
     self: 'Self Statement',
-    hobby: 'Hobbies'
+    hobby: 'Hobbies',
+    backtop: 'Back to top',
+    download: 'Download CV'
   },
   timespan: {
     sep: ' ',
@@ -26,6 +29,10 @@ export default {
   },
   skill: {
     proficiency: 'Proficiency',
+    description: 'Description'
+  },
+  cert: {
+    institute: 'Insistute',
     description: 'Description'
   },
   footer: {
