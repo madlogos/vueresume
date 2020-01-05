@@ -5,7 +5,7 @@
     </h2>
     <div id='certs'>
       <ul class='cert-ul'>
-        <li class='cert-li' v-for='(i, idxi) in data.cert' :key='idxi'>
+        <li class='cert-li' v-for='(i, _i) in data.cert' :key='_i'>
           <span class='cert-quote'>{{ i.time }}</span>
           <span class='cert-quote-icon'><i :class='i.fa' /></span>
           <el-popover trigger='hover' placement='top-start'>
@@ -29,10 +29,10 @@
                   <span class='pop-quote'><i class='fas fa-calendar-alt' />&emsp;{{ i.time }}</span>
                 </p>
                 <div v-if='i.p'>
-                  <p class='pop-p' v-for='(j, idxj) in i.p' :key='idxj' v-html='j'></p>
+                  <p class='pop-p' v-for='(j, _j) in i.p' :key='_j' v-html='j'></p>
                 </div>
                 <ol v-if='i.ol'>
-                  <li class='pop-li' v-for='(k, idxk) in i.ol' :key='idxk' v-html='k'></li>
+                  <li class='pop-li' v-for='(k, _k) in i.ol' :key='_k' v-html='k'></li>
                 </ol>
               </div>
             </el-card>
@@ -63,7 +63,7 @@ h2, p, li {
   color: #eee
 }
 .el-card__header h2 {
-  color: #000
+  color: #303133
 }
 .el-card__body p, .el-card__body li {
   color: #606266
@@ -86,7 +86,7 @@ h2, p, li {
 .cert-li {
   font-size: 14px;
   list-style-type: none;
-  line-height: 175%;
+  line-height: 1.75em;
   padding-left: 75px;
   text-indent: -75px
 }
@@ -107,20 +107,14 @@ h2, p, li {
 .pop-quote {
   color: #888
 }
-.pop-quote a:link {
-  color: #888
-}
-.pop-quote a:visited {
-  color: #666
-}
-.pop-quote a:hover {
-  color: #67C23A
-}
 .pop-p, .pop-li {
-  font-size: 14px;
   text-align: left;
+  line-height: 1.5em;
   word-break: keep-all;
   overflow-wrap: break-word
+}
+.pop-li {
+  font-size: 12px
 }
 .box-card {
   margin: -6px;

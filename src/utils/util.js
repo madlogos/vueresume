@@ -1,6 +1,6 @@
 export function parseTimeDif (t0, t1 = 'now') {
-  const tFrom = new Date(t0.replace(/-/g, '/'))
-  var tTo = new Date(t1.replace(/-/g, '/'))
+  const tFrom = new Date(t0.replace(/[/.]/g, '-'))
+  var tTo = new Date(t1.replace(/[/.]/g, '-'))
   tTo = isNaN(tTo) ? new Date() : tTo
   var millisecond = Math.floor((tTo - tFrom) / 1000)
 
@@ -32,11 +32,12 @@ export function parseTimeDif (t0, t1 = 'now') {
   }
   // how many days
   var day = endDay - startDay
+  const bigMonths = [1, 3, 5, 7, 8, 10, 12]
   if (day < 0) {
     month--
     if (startMonth === 2) {
       day = (isLeapYear(tFrom) ? 29 : 28) - startDay + endDay
-    } else if ([1, 3, 5, 7, 8, 10, 12].includes(startMonth)) {
+    } else if (bigMonths.indexOf(startMonth) !== 1) {
       day = 31 - startDay + endDay
     } else {
       day = 30 - startDay + endDay

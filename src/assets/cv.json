@@ -31,9 +31,54 @@
     ],
     "skill": [
       [
-        {"name": "R", "size": null, "alpha": 0.3, "year": 7, "fa": "fas fa-code", "prof": 5, "p": ["1", "2"]},
-        {"name": "Python", "size": "medium", "alpha": 0.3, "year": 5, "fa": "fas fa-code", "prof": 4, "p": ["1", "2"]},
-        {"name": "SQL", "size": "small", "alpha": 0.1, "year": 7, "fa": "fas fa-code", "prof": 3.5, "p": ["1", "2"]}
+        {
+          "name": "分析建模", "size": null, "alpha": 0.3, "from": "2009", "thru": "now", "fa": "fas fa-chart-bar", "prof": 4.5, 
+          "p": null,
+          "ul": ["有大型统计分析项目经验。对数据治理、探索分析、建模挖掘、验证检验及结合业务 提出洞见的完整分析框架有深刻理解",
+            "独立搭建过业务数据管理系统和分析工具链", "精通常用分析工具如 R, Python, SQL 等"]
+        },
+        {
+          "name": "数据可视化", "size": null, "alpha": 0.3, "from": "2011", "thru": "now", "fa": "fas fa-chart-area", "prof": 4.5, 
+          "p": ["熟悉 Grammar of Graphics，擅于用数据讲故事。"],
+          "ul": ["熟悉 R 体系内的 <code>ggplot2</code>, <code>plotly</code> 等工具",
+            "熟悉 Python 体系内的 <code>matplotlib</code>, <code>seaborn</code> 等工具",
+            "熟悉 ECharts, 封装过它的 R 语言接口"]
+        },
+        {
+          "name": "R", "size": null, "alpha": 0.15, "from": "2015", "thru": "now", "fa": "fab fa-r-project", "prof": 5, 
+          "p": ["精通并擅长 R 的统计分析、可视化、工程开发，熟悉语言原理和生态。有完整开发 R 工具包集群，和大型统计、机器学习分析项目的丰富经验。"],
+          "ul": ["领导开发健康管理业务所需的 R 集群包工具链", "实现基于 R 的自动分析报告引擎", "实施并维护团队内部 CRAN", 
+            "公司内部 <a href='https://madlogos.github.io/R_Tutorial'>R 技术培训讲师</a>", 
+            "开发出 <code>recharts</code> 等有一定社区影响力的开源包", "熟悉面对对象编程、函数式编程、高性能编程、工程开发及测试等 R 高阶技术"]
+        },
+        {
+          "name": "Python", "size": "medium", "alpha": 0.15, "from": "2016", "thru": "now", "fa": "fab fa-python", "prof": 4, 
+          "p": ["擅长用 Python 统计分析、可视化、机器学习、深度学习及Web编程。有完整开发 Python 工具库和小型分析项目的经验。"], 
+          "ul": ["独立开发健康管理业务所需的文本数据结构化等 Python 工具库", "基于 <code>Django</code> 框架和 RESTful-API 开发健康数据后台管理系统",
+            "熟悉 <code>Django</code> 、 <code>Flask</code> Web框架，及 <code>pandas</code>、 <code>scikit-learn</code>、 <code>matplotlib</code>、 <code>tensorflow</code> 等数据科学相关库"]
+        },
+        {
+          "name": "Anaconda", "size": "medium", "alpha": 0.08, "from": "2016", "thru": "now", "fa": "fab fa-python", "prof": 4, 
+          "p": ["作为数据科学的主要工作环境使用。"], 
+          "ul": ["熟悉 <code>conda</code> 命令包", "熟悉 Jupyter Notebook和 Jupyter Lab 的配置、使用，及在 Jupyter 环境下探索、挖掘、展示"]
+        },
+        {
+          "name": "SQL", "size": "medium", "alpha": 0.15, "from": "2013", "thru": "now", "fa": "fas fa-database", "prof": 4, 
+          "p": null,
+          "ul": ["熟悉关系型数据库的表设计范式与实践", "数据库 CRUD 操作娴熟", 
+            "熟悉常用的中小型SQL数据库 (Access, SQLite, PostgreSQL, ...)", "了解最主流的noSQL数据库 (MongoDB ...) 和代表性数据科学SQL方言 (SparkQL ...)。"]
+        },
+        {
+          "name": "SAS", "size": "small", "alpha": 0.15, "from": "2006", "thru": "2011", "fa": "fas fa-chart-bar", "prof": 3, 
+          "p": ["毕业论文的主要分析工具。熟悉 Base、 Graph、 Stat、 ODS 等模块，熟悉宏。"],
+          "ul": null
+        },
+        {
+          "name": "Excel", "size": null, "alpha": 0.15, "from": "2006", "thru": "now", "fa": "fas fa-file-excel", "prof": 3, 
+          "p": null,
+          "ul": ["精通 Excel 的主要功能，善于使用公式、 VBA 搭建一站式的袖珍业务解决方案", 
+            "甲流防治战中，以一人之力完成全体系的区疫情/接种报表报送", "公司内部 Excel 培训讲师"]
+        }
       ]
     ],
     "cert": [
@@ -49,7 +94,7 @@
           "name": "Johns Hopkins University", "link": "https://www.jhu.edu"},
         "fa": "fas fa-user-ninja", "time": "2015/11", "institute": {
           "name": "Couresra", "link": "https://www.coursera.org"}, "sn": null,
-        "p": ["Johns Hopkins 大学在 Coursera 开设的数据科学在线课程，技术栈为 <code>R</code>, <code>git</code>。课程："],
+        "p": ["Johns Hopkins 大学在 Coursera 开设的数据科学在线课程。技术栈： <code>R</code>, <code>git</code>。课程："],
         "ol": [
           "数据科学家的工具箱", "R 语言程序设计", "获取和整理数据", "探索性数据分析", "可重复性研究", "统计推断",
           "回归模型", "实用机器学习", "数据产品开发", "毕业项目"
@@ -60,7 +105,7 @@
           "name": "Dataquest", "link": "https://www.dataquest.io"},
         "fa": "fas fa-user-ninja", "time": "2016/07", "institute": {
           "name": "Dataquest", "link": "https://www.dataquest.io"}, "sn": null,
-        "p": ["Dataquest 开设的数据科学课程，技术栈为 <code>Python</code>。课程："], 
+        "p": ["Dataquest 开设的数据科学课程。技术栈： <code>Python</code>。课程："], 
         "ol": [
           "Python编程", "用Pandas进行数据分析", "数据可视化", "命令行工具", "Git和版本管理", "数据清理项目贯通", 
           "数据分析", "API和网络爬虫", "SQL和数据库", "Python中的概率和统计学", "假设检验", "大数据工具", 
@@ -80,7 +125,7 @@
           "name": "Standford University", "link": "https://www.stanford.edu"}, 
         "fa": "fas fa-user-ninja", "time": "2018/08", "institute": {
           "name": "Couresra", "link": "https://www.coursera.org"}, "sn": null,
-        "p": ["Stanford 大学 Andrew Ng 在 Coursera 开设的著名机器学习在线课程。技术栈为 <code>MatLab</code>。课程："], 
+        "p": ["Stanford 大学 Andrew Ng 在 Coursera 开设的著名机器学习在线课程。技术栈： <code>MatLab</code>。课程："], 
         "ol": [
           "单变量线性回归", "回顾线性代数", "多变量线性回归", "Octave/MatLab教程", "Logistic回归",
           "正则化", "神经网络: 表征", "神经网络: 学习", "运用机器学习的建议", "机器学习系统设计",
@@ -92,7 +137,7 @@
           "name": "deeplearning.ai", "link": "https://www.deeplearning.ai"},
         "fa": "fas fa-user-ninja", "time": "2018/10", "institute": {
           "name": "Couresra", "link": "https://www.coursera.org"}, "sn": "XGCR4CTFRHME",
-        "p": ["deeplearning.ai 在 Coursera 开设的深度学习在线课程。技术栈为 <code>Python</code>。课程："], 
+        "p": ["deeplearning.ai 在 Coursera 开设的深度学习在线课程。技术栈： <code>Python</code>。课程："], 
         "ol": [
           "神经网络和深度学习", "改善深层神经网络：超参数调试、 正则化以及优化", "结构化机器学习项目",
           "卷积神经网络", "序列模型"
@@ -103,7 +148,7 @@
         "provider": {"name": "Harvard University", "link": "https://www.harvard.edu"}, 
         "fa": "fas fa-user-ninja", "time": "2019/11", "institute": {
           "name": "edX", "link": "https://www.edx.org"}, "sn": null,
-        "p": ["Harvard 大学在 edX 开设的在线 Web 编程课程。技术栈为 <code>Python</code>, <code>JavaScript</code>。课程："],
+        "p": ["Harvard 大学在 edX 开设的在线 Web 编程课程。技术栈： <code>Python</code>, <code>JavaScript</code>。课程："],
         "ol": [
           "Git", "HTML, CSS", "Flask", "SQL", "ORMs, APIs", "JavaScript", "前端", "Django", "测试, CI/CD",
           "GitHub, Travis CI", "可扩展性", "安全性"
@@ -126,7 +171,7 @@
         "from": "2011/04", "till": "2016/04", "emp": "安泰保险", "link": "https://www.aetna.com",
         "wiki": {
           "fa": "fab fa-wikipedia-w", "title": "关于该雇主", "value": "维基百科",
-          "tag": ["财富200", "美国第三", "健康险", "CVS并购"],
+          "tag": ["财富200", "美国第3", "健康险", "CVS并购"],
           "link": "https://en.wikipedia.org/wiki/Aetna"
         }, 
         "title": "项目经理", "icon": "check", "color": null, 
@@ -137,7 +182,7 @@
         "from": "2016/04", "till": "2020/04", "emp": "安泰保险", "link": "https://www.aetna.com",
         "wiki": {
           "fa": "fab fa-wikipedia-w", "title": "关于该雇主", "value": "维基百科",
-          "tag": ["财富200", "美国第三", "健康险", "CVS并购"],
+          "tag": ["财富200", "美国第3", "健康险", "CVS并购"],
           "link": "https://en.wikipedia.org/wiki/Aetna"
         }, 
         "title": "分析经理/数据科学家", "icon": "loading", "color": "#00A78E", 
@@ -202,9 +247,53 @@
     ],
     "skill": [
       [
-        {"name": "R", "size": null, "alpha": 0.3, "year": 7, "fa": "fas fa-code", "prof": 5, "p": ["1", "2"]},
-        {"name": "Python", "size": "medium", "alpha": 0.3, "year": 5, "fa": "fas fa-code", "prof": 4, "p": ["1", "2"]},
-        {"name": "SQL", "size": "small", "alpha": 0.1, "year": 7, "fa": "fas fa-code", "prof": 3.5, "p": ["1", "2"]}
+        {
+          "name": "Analytics & modelling", "size": null, "alpha": 0.3, "from": "2009", "thru": "now", "fa": "fas fa-chart-bar", "prof": 4.5, 
+          "p": null,
+          "ul": ["With rich experience of big analytic projects, I have profound understanding of a holistic analytic framework including data governance, exploratory analysis, modelling and data mining, test validation and business-useful insights",
+            "Build business data management system and analytic toolchain independently", "Proficient with common analytic tools, such as R, Python, SQL, etc"]
+        },
+        {
+          "name": "Data visualization", "size": null, "alpha": 0.3, "from": "2011", "thru": "now", "fa": "fas fa-chart-area", "prof": 4.5, 
+          "p": ["Familiar with Grammar of Graphics, I am good at story-telling with data."],
+          "ul": ["Familiar with <code>ggplot2</code>, <code>plotly</code> etc in R ecosystem",
+            "Familiar with <code>matplotlib</code>, <code>seaborn</code> etc in Python ecosystem",
+            "Familiar with ECharts, and even composed a wrapper of R interface for it"]
+        },
+        {
+          "name": "R", "size": null, "alpha": 0.15, "from": "2015", "thru": "now", "fa": "fab fa-r-project", "prof": 5, 
+          "p": ["精通并擅长 R 的统计分析、可视化、工程开发，熟悉语言原理和生态。有完整开发 R 工具包集群，和大型统计、机器学习分析项目的丰富经验。"],
+          "ul": ["领导开发健康管理业务所需的 R 集群包工具链", "实现基于 R 的自动分析报告引擎", "实施并维护团队内部 CRAN", 
+            "公司内部 <a href='https://madlogos.github.io/R_Tutorial'>R 技术培训讲师</a>", 
+            "开发出 <code>recharts</code> 等有一定社区影响力的开源包", "熟悉面对对象编程、函数式编程、高性能编程、工程开发及测试等 R 高阶技术"]
+        },
+        {
+          "name": "Python", "size": "medium", "alpha": 0.15, "from": "2016", "thru": "now", "fa": "fab fa-python", "prof": 4, 
+          "p": ["擅长用 Python 统计分析、可视化、机器学习、深度学习及Web编程。有完整开发 Python 工具库和小型分析项目的经验。"], 
+          "ul": ["独立开发健康管理业务所需的文本数据结构化等 Python 工具库", "基于 <code>Django</code> 框架和 RESTful-API 开发健康数据后台管理系统",
+            "熟悉 <code>Django</code> 、 <code>Flask</code> Web框架，及 <code>pandas</code>、 <code>scikit-learn</code>、 <code>matplotlib</code>、 <code>tensorflow</code> 等数据科学相关库"]
+        },
+        {
+          "name": "Anaconda", "size": "medium", "alpha": 0.08, "from": "2016", "thru": "now", "fa": "fab fa-python", "prof": 4, 
+          "p": ["作为数据科学的主要工作环境使用。"], 
+          "ul": ["熟悉 <code>conda</code> 命令包", "熟悉 Jupyter Notebook和 Jupyter Lab 的配置、使用，及在 Jupyter 环境下探索、挖掘、展示"]
+        },
+        {
+          "name": "SQL", "size": "medium", "alpha": 0.15, "from": "2013", "thru": "now", "fa": "fas fa-database", "prof": 4, 
+          "p": null,
+          "ul": ["熟悉关系型数据库的表设计范式与实践", "数据库 CRUD 操作娴熟", 
+            "熟悉常用的中小型SQL数据库 (Access, SQLite, PostgreSQL, ...)", "了解最主流的noSQL数据库 (MongoDB ...) 和代表性数据科学SQL方言 (SparkQL ...)。"]
+        },
+        {
+          "name": "SAS", "size": "small", "alpha": 0.15, "from": "2006", "thru": "2011", "fa": "fas fa-chart-bar", "prof": 3, 
+          "p": ["毕业论文的主要分析工具。熟悉 Base、 Graph、 Stat、 ODS 等模块，熟悉宏。"],
+          "ul": null
+        },
+        {
+          "name": "Excel", "size": null, "alpha": 0.15, "from": "2006", "thru": "now", "fa": "fas fa-file-excel", "prof": 3, 
+          "p": ["精通 Excel 的主要功能，善于使用公式、 VBA 搭建一站式的袖珍业务解决方案。"],
+          "ul": ["甲流防治战中，以一人之力完成全体系的区疫情/接种报表报送", "公司内部 Excel 培训讲师"]
+        }
       ]
     ],
     "cert": [
@@ -220,7 +309,7 @@
           "name": "Johns Hopkins University", "link": "https://www.jhu.edu"},
         "fa": "fas fa-user-ninja", "time": "2015/11", "institute": {
           "name": "Couresra", "link": "https://www.coursera.org"}, "sn": null,
-          "p": ["Online data science courses delivered by Johns Hopkins University on Coursera. The technical stack is <code>R</code> and <code>git</code>. Courses:"],
+          "p": ["Online data science courses delivered by Johns Hopkins University on Coursera. The technical stack: <code>R</code> and <code>git</code>. Courses:"],
           "ol": [
             "Data Scientist's Toolbox", "R Programming", "Getting and Cleaning Data", "Exploratory Data Analysis",
             "Reproducible Research", "Statistical Inference", "Regression Models", "Practical Machine Learning",
@@ -232,7 +321,7 @@
           "name": "Dataquest", "link": "https://www.dataquest.io"},
         "fa": "fas fa-user-ninja", "time": "2016/07", "institute": {
           "name": "Dataquest", "link": "https://www.dataquest.io"}, "sn": null,
-          "p": ["Data sciense courses delivered by Dataquest. The technical stack is <code>Python</code>. Courses:"], 
+          "p": ["Data sciense courses delivered by Dataquest. The technical stack: <code>Python</code>. Courses:"], 
           "ol": [
             "Python Programming", "Data Analysis With Pandas", "Data Visualization Course", 
             "Command Line", "Git And Version Control Course", "Data Cleaning Project Walkthrough", 
@@ -255,7 +344,7 @@
           "name": "Standford University", "link": "https://www.stanford.edu"},
         "fa": "fas fa-user-ninja", "time": "2018/08", "institute": {
           "name": "Couresra", "link": "https://www.coursera.org"}, "sn": null,
-        "p": ["A series of famous online machine learning course delivered by Andrew Ng, Stanford University on Coursera. The technical stack is <code>MatLab</code>. Courses:"], 
+        "p": ["A series of famous online machine learning course delivered by Andrew Ng, Stanford University on Coursera. The technical stack: <code>MatLab</code>. Courses:"], 
         "ol": [
           "Linear Regression with One Variable", "Linear Algebra Review", 
           "Linear Regression with Multiple Variables", "Octave/MatLab Tutorial", "Logistic Regression",
@@ -271,7 +360,7 @@
           "name": "deeplearning.ai", "link": "https://www.deeplearning.ai"},
         "fa": "fas fa-user-ninja", "time": "2018/10", "institute": {
           "name": "Couresra", "link": "https://www.coursera.org"}, "sn": "XGCR4CTFRHME",
-          "p": ["A series of online deep learning courses delivered by deeplearning.ai on Coursera. The technical stack is <code>Python</code>. Courses:"], 
+          "p": ["A series of online deep learning courses delivered by deeplearning.ai on Coursera. The technical stack: <code>Python</code>. Courses:"], 
           "ol": [
             "Neural Networks and Deep Learning", "Improving Neural Networks：Hyperparameter Tuning, Regularization and Optimization", 
             "Structuring Machine Learning Projects", "Convolutional Neural Networks", "Sequence Models"
@@ -283,7 +372,7 @@
           "name": "Harvard University", "link": "https://www.harvard.edu"},
         "fa": "fas fa-user-ninja", "time": "2019/11", "institute": {
           "name": "edX", "link": "https://www.edx.org"}, "sn": null,
-        "p": ["A series of online Web programming courses delivered by Harvard on edX. Ths technical stack is <code>Python</code>, <code>JavaScript</code>. Courses:"],
+        "p": ["A series of online Web programming courses delivered by Harvard on edX. The technical stack: <code>Python</code>, <code>JavaScript</code>. Courses:"],
         "ol": [
           "Git", "HTML, CSS", "Flask", "SQL", "ORMs, APIs", "JavaScript", "Front Ends", "Django", "Testing, CI/CD",
           "GitHub, Travis CI", "Scalability", "Security"

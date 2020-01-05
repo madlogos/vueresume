@@ -25,10 +25,13 @@ module.exports = {
   //   app: ['./node_modules/babel-polyfill/dist/polyfill.js', './src/main.js']
   // },
   entry: {
-    app: './src/main.js',
-    polyfill: './node_modules/babel-polyfill/dist/polyfill.js'
+    polyfill: './node_modules/babel-polyfill/dist/polyfill.min.js',
+    app: './src/main.js'
   },
-  // entry: ['babel-polyfill', './src/main.js'],
+  // entry: ['./node_modules/babel-polyfill/dist/polyfill.min.js', './src/main.js'],
+  // entry: {
+  //   app: './src/main.js'
+  // },
   output: {
     path: config.build.assetsRoot,
     filename: '[name].js',

@@ -62,7 +62,7 @@ import Cert from '@/components/Cert'
 import Job from '@/components/Job'
 import Edu from '@/components/Edu'
 import SelfState from '@/components/SelfState'
-var json = require('../assets/cv.json')
+var json = require('@/assets/cv.json')
 
 export default {
   components: {
@@ -109,7 +109,8 @@ export default {
 <style scoped>
 .wrapper {
   height: 100vh;
-  overflow-y: scroll
+  overflow-x: hidden;
+  overflow-y: auto
 }
 #backtop {
   color: #00A78E
@@ -142,10 +143,11 @@ export default {
   margin: 2px 0px 2px 0px
 }
 .el-row {
-  flex-wrap: wrap
+  flex-wrap: wrap;
+  margin: 0
 }
 .el-col {
-  padding: 0px
+  padding: 0px 12px
 }
 #tip {
   margin-left: 20px

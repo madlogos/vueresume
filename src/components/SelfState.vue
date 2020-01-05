@@ -7,8 +7,8 @@
     <div id='hobby'>
       <span><span id='hobbyicon'><i class="fas fa-skiing"/></span> {{ $t('title.hobby') }}: </span>
       <el-tag
-       v-for='(i, index) in data.self.interest'
-       :key='index'
+       v-for='(i, _i) in data.self.interest'
+       :key='_i'
        effect='plain'
        type='info'
        size='small'
@@ -47,7 +47,8 @@ export default {
   color: #999
 }
 .el-tag:hover {
-  font-size: 14px;
+  font-size: 12px;
+  font-weight: bold;
   color: #67C23A;
   border-color: #67C23A
 }

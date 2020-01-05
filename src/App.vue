@@ -26,7 +26,7 @@ body {
 code {
   color: #8932AF;
   background-color: #eeeeee99;
-  padding: 1px 5px
+  padding: 1px 4px
 }
 .el-popover__title {
   font-family: "Helvetica Neue", Helvetica, "PingFang SC", "Hiragino Sans GB", "Microsoft YaHei", "微软雅黑", Arial, sans-serif
@@ -43,13 +43,22 @@ code {
 .el-popover p {
   font-size: 12px
 }
+.el-popover a:link {
+  color: #888
+}
+.el-popover a:visited {
+  color: #ccc
+}
+.el-popover a:hover {
+  color: #67C23A
+}
 .el-popover .el-card__header {
   margin: 0;
   padding: 8px 20px 0px 20px
 }
 .el-popover .el-card__body {
   margin: 0;
-  padding: 0px 20px 20px 20px
+  padding: 0px 20px 8px 20px
 }
 .el-notification {
   font-family: "Helvetica Neue", Helvetica, "PingFang SC", "Hiragino Sans GB", "Microsoft YaHei", "微软雅黑", Arial, sans-serif

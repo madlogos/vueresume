@@ -12,22 +12,22 @@
     </h2>
     <el-timeline id='tl' ref='tl' :reverse=true>
       <el-timeline-item
-       v-for='(i, index) in data.edu'
-       :key='index'
+       v-for='(i, _i) in data.edu'
+       :key='_i'
        :timestamp='i.from + " - " + i.till + " (" + calcTimeDif(i.from, i.till) + ")"'
        :icon='"el-icon-" + i.icon'
        :color='i.color'
        size='large'
        placement='top'
       >
-        <el-collapse ref='coll' v-model='foldValue[index]' @change='handleChange'>
-          <el-collapse-item :name='index.toString()'>
+        <el-collapse ref='coll' v-model='foldValue[_i]' @change='handleChange'>
+          <el-collapse-item :name='_i.toString()'>
             <template slot='title'>
               <div class='collhead'>
-                <span class="cred">
+                <span class='cred'>
                   <i class='fas fa-graduation-cap' />&nbsp;{{ i.cred }}
                 </span>
-                <span class="univ" v-if='i.wiki.link'>
+                <span class='univ' v-if='i.wiki.link'>
                   <el-popover placement='top-start' :title='i.wiki.title' trigger='hover' width=240>
                     <div>
                       <i :class='i.wiki.fa' />&nbsp;
@@ -36,8 +36,8 @@
                     <br />
                     <div>
                       <el-tag
-                        v-for='(tag, itag) in i.wiki.tag'
-                        :key='itag'
+                        v-for='(tag, _tag) in i.wiki.tag'
+                        :key='_tag'
                         type='info'
                         size='mini'
                       >{{ tag }}</el-tag>
@@ -60,8 +60,8 @@
               </div>
             </template>
             <div class='rank'><i class='fas fa-trophy' />&nbsp;{{ i.rank }}</div>
-            <div v-for='(k, idxk) in i.lesson' :key='idxk'>
-              <div v-html='k'></div>
+            <div v-for='(j, _j) in i.lesson' :key='_j'>
+              <div v-html='j'></div>
             </div>
           </el-collapse-item>
         </el-collapse>
@@ -175,15 +175,7 @@ h2 {
 .el-timeline {
   padding-left: 5px
 }
-.el-tag {
-  margin: 2px
-}
-.el-tag:hover {
-  color: #67C23A;
-  border-color: #67C23A;
-  background-color: #fff
-}
-.univ a:link {
+a:link {
   color: #888
 }
 a:visited {
@@ -191,6 +183,15 @@ a:visited {
 }
 a:hover {
   color: #67C23A
+}
+.el-tag {
+  margin: 2px
+}
+.el-tag:hover {
+  color: #67C23A;
+  font-weight: bold;
+  border-color: #67C23A;
+  background-color: #fff
 }
 .cred {
   font-size: 14px;

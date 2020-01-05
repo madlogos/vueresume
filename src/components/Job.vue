@@ -12,16 +12,16 @@
     </h2>
     <el-timeline id='tl' ref='tl' :reverse=true>
       <el-timeline-item
-       v-for='(i, index) in data.job'
-       :key='index'
+       v-for='(i, _i) in data.job'
+       :key='_i'
        :timestamp='i.from + " - " + i.till + " (" + calcTimeDif(i.from, i.till) + ")"'
        :icon='"el-icon-" + i.icon'
        :color='i.color'
        size='large'
        placement='top'
       >
-        <el-collapse ref='coll' v-model='foldValue[index]' @change='handleChange'>
-          <el-collapse-item :name='index.toString()'>
+        <el-collapse ref='coll' v-model='foldValue[_i]' @change='handleChange'>
+          <el-collapse-item :name='_i.toString()'>
             <template slot='title'>
               <div class='collhead'>
                 <span class="jobtitle">
@@ -36,8 +36,8 @@
                     <br />
                     <div>
                       <el-tag
-                        v-for='(tag, itag) in i.wiki.tag'
-                        :key='itag'
+                        v-for='(tag, _tag) in i.wiki.tag'
+                        :key='_tag'
                         type='info'
                         size='mini'
                       >{{ tag }}</el-tag>
@@ -60,14 +60,14 @@
             </template>
             <div class='jobtag'>
               <el-tag
-              v-for='(j, idxj) in i.keyword'
-              :key='idxj'
+              v-for='(j, _j) in i.keyword'
+              :key='_j'
               effect='plain'
               type='info'
               size='mini'
               >{{ j }}</el-tag>
             </div>
-            <div v-for='(k, idxk) in i.description' :key='idxk'>
+            <div v-for='(k, _k) in i.description' :key='_k'>
               <div v-html='k'></div>
             </div>
           </el-collapse-item>
@@ -182,7 +182,7 @@ h2 {
 .el-timeline {
   padding-left: 5px
 }
-.jobemp a:link {
+a:link {
   color: #888
 }
 a:visited {
@@ -196,6 +196,7 @@ a:hover {
 }
 .el-tag:hover {
   color: #67C23A;
+  font-weight: bold;
   border-color: #67C23A;
   background-color: #fff
 }

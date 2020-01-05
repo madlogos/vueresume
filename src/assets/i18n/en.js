@@ -36,7 +36,7 @@ export default {
     description: 'Description'
   },
   footer: {
-    footnote: '<span style="float:right"><i class="fas fa-file-code"></i> Powered by <code>Vue.js</code>, <code>ElementUI</code>, <code>Echarts</code> & <code>i18n</code>, <i class="fas fa-terminal"></i> built with <code>Webpack</code>.</span>',
+    footnote: '<span style="float:right"><i class="fas fa-file-code"></i> Powered by <code>Vue.js</code>, <code>ElementUI</code>, <code>ECharts</code> & <code>i18n</code>, <i class="fas fa-terminal"></i> built with <code>Webpack</code>.</span>',
     copyright: '<span><i class="fas fa-copyright"></i> 2019 madlogos</span>'
   }
 }
