@@ -85,14 +85,14 @@ export default {
     localStorage.setItem('myCv', JSON.stringify(json))
   },
   mounted: function () {
-    document.title = this.$i18n.locale === 'zh' ? '汪轶颖的简历' : 'Wang Yiying\'s CV'
+    document.title = this.$i18n.locale === 'zh' ? '汪轶颖的简历' : 'Wang Yiying\'s Résumé'
     this.loading = !localStorage.getItem('myCv')
   },
   methods: {
     changeLang (val) {
       localStorage.setItem('lang', val)
       this.$i18n.locale = val
-      document.title = val === 'zh' ? '汪轶颖的简历' : 'Wang Yiying\'s CV'
+      document.title = val === 'zh' ? '汪轶颖的简历' : 'Wang Yiying\'s Résumé'
     },
     openTip () {
       this.$notify({

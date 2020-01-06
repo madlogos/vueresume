@@ -21,14 +21,14 @@ const createLintingRule = () => ({
 
 module.exports = {
   context: path.resolve(__dirname, '../'),
-  // entry: {
-  //   app: ['./node_modules/babel-polyfill/dist/polyfill.js', './src/main.js']
-  // },
   entry: {
-    polyfill: './node_modules/babel-polyfill/dist/polyfill.min.js',
-    app: './src/main.js'
+    app: ['./src/main.js']
   },
-  // entry: ['./node_modules/babel-polyfill/dist/polyfill.min.js', './src/main.js'],
+  // entry: {
+  //   polyfill: './node_modules/babel-polyfill/dist/polyfill.min.js',
+  //   app: './src/main.js'
+  // },
+  entry: ['babel-polyfill', './src/main.js'],
   // entry: {
   //   app: './src/main.js'
   // },

@@ -67,6 +67,10 @@ export default {
       })()
     }
   },
+  updated () {
+    const chartObj = echarts.init(document.getElementById('chart1'))
+    chartObj.setOption(this.chartOptsBar, this.resizeCanvas())
+  },
   computed: {
     data: function () {
       let ret = JSON.parse(localStorage.getItem('myCv'))
@@ -182,6 +186,8 @@ export default {
       return {'width': wdt, 'height': hgt}
     },
     calcTimeDif (t0, t1) {
+      /* calc time difference of t0 and t1
+        return two parts with i18n */
       const d = parseTimeDif(t0, t1)
       const f = {
         'y': this.$tc('timespan.nyear', d['y']),
@@ -234,8 +240,8 @@ h2 {
   border-style: none
 }
 #skills .el-tag:hover {
-  font-size: 16px;
-  font-weight: bold
+  color: #67C23A;
+  background-color: #fff
 }
 .box-card {
   margin: -6px;

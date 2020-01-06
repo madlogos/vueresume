@@ -189,7 +189,6 @@ a:hover {
 }
 .el-tag:hover {
   color: #67C23A;
-  font-weight: bold;
   border-color: #67C23A;
   background-color: #fff
 }

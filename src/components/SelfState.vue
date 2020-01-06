@@ -48,7 +48,6 @@ export default {
 }
 .el-tag:hover {
   font-size: 12px;
-  font-weight: bold;
   color: #67C23A;
   border-color: #67C23A
 }
