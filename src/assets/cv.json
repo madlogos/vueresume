@@ -76,7 +76,7 @@
         {
           "name": "Excel", "size": null, "alpha": 0.15, "from": "2006", "thru": "now", "fa": "fas fa-file-excel", "prof": 3, 
           "p": null,
-          "ul": ["精通 Excel 的基本和进阶功能，善于用公式、 VBA 、条件样式等搭建敏捷的一站式业务数据解决方案", 
+          "ul": ["精通 Excel 的基本和进阶功能，善于用公式、 VBA 、条件样式等搭建敏捷的一站式业务数据 解决方案", 
             "甲流防治战中，以一人之力完成全区疫情/ 接种报表报送体系搭建和运转", "公司内部 Excel 培训讲师"]
         },
         {
@@ -89,20 +89,23 @@
         {
           "name": "健康促进", "size": null, "alpha": 0.3, "from": "2006", "thru": "now", "fa": "fas fa-briefcase-medical", "prof": 4, 
           "p": null,
-          "ul": ["健康教育与健康促进专业科班出身，熟悉学科理论 和研究工具", "熟悉社区及企业健康促进经典理论和最佳实践"]
+          "ul": ["健康教育与健康促进专业科班出身，熟悉学科 理论和研究工具", "熟悉社区及企业健康促进经典理论和最佳实践"]
         },
         {
           "name": "健康管理", "size": null, "alpha": 0.15, "from": "2011", "thru": "now", "fa": "fas fa-briefcase-medical", "prof": 4.5, 
           "p": null,
           "ul": ["长期深耕健康管理行业，熟悉业界动态 和行业实践", "亲身参与大量企业健康管理项目的设计、实施 和评估，有丰富的实操经验",
             "亲身参与部门业务能力从无到有的构建，有完整的实施经验", "充分利用自身数据、医学、软件开发的 跨界能力，持续为业务赋能"]
-        }
-      ],
-      [
+        },
+        {
+          "name": "疾病管理", "size": "small", "alpha": 0.08, "from": "2016", "thru": "now", "fa": "fas fa-briefcase-medical", "prof": 3, 
+          "p": null,
+          "ul": ["了解疾病管理的理论、方法体系和业界实践", "参与糖尿病等企业慢性病管理方案的设计"]
+        },
         {
           "name": "公共卫生", "size": "medium", "alpha": 0.3, "from": "2001", "thru": "now", "fa": "fas fa-clinic-medical", "prof": 4, 
           "p": null,
-          "ul": ["科班出身，流行病学、职业卫生、环境卫生、社会医学等学科基础扎实", "善于以“大卫生”视角思考健康议题和策略，关注支持性环境建设等宏观策略的作用"]
+          "ul": ["基础医学、临床医学等医科基础知识扎实", "科班出身，流行病学、职业卫生、环境卫生、社会医学等学科基础扎实", "善于以“大卫生”视角思考健康议题和策略，关注支持性环境建设等宏观策略的作用"]
         },
         {
           "name": "流行病学", "size": "medium", "alpha": 0.15, "from": "2001", "thru": "now", "fa": "fas fa-clinic-medical", "prof": 4, 
@@ -125,19 +128,17 @@
         {
           "name": "需求分析", "size": "medium", "alpha": 0.15, "from": "2017", "thru": "now", "fa": "fas fa-laptop-code", "prof": 3.5, 
           "p": null,
-          "ul": ["善于提炼业务逻辑，定义产品需求", "利用各种开源工具 (<code>Draw.io</code> 等) 实现产品快速原型"]
+          "ul": ["善于提炼业务逻辑，定义产品需求", "利用各种开源工具 (<code>Draw.io</code> 等) 实现产品快速原型", "使用原型、文档、UML 图构建产品需求"]
         },
         {
-          "name": "全栈开发", "size": "medium", "alpha": 0.3, "from": "2015", "thru": "now", "fa": "fas fa-laptop-code", "prof": 4, 
+          "name": "全栈开发", "size": "small", "alpha": 0.3, "from": "2015", "thru": "now", "fa": "fas fa-laptop-code", "prof": 4, 
           "p": ["善于在快速理解业务需求后，独立快速 搭建功能原型。"],
-          "ul": ["精通以 Access 为前端、 SharePoint 为后端构建 CS 架构小应用", "熟悉用 <code>Flask</code>, <code>Django</code> 和 <code>Vue.js</code> 构建线上原型"]
-        }
-      ],
-      [
+          "ul": ["精通以 Access 为前端、 SharePoint 为后端构建 CS 架构小应用", "熟悉用 <code>Flask</code> 或 <code>Django</code> 和 <code>Vue.js</code> 构建线上原型"]
+        },
         {
           "name": "战略分析", "size": "medium", "alpha": 0.3, "from": "2017", "thru": "now", "fa": "fas fa-chess-board", "prof": 3.5, 
           "p": null,
-          "ul": ["善于信息检索和梳理，进行市场 格局描述和分析", "了解常用的战略分析工具"]
+          "ul": ["善于信息检索和梳理，进行市场格局描述 和分析", "了解常用的战略分析工具"]
         },
         {
           "name": "Power Point", "size": null, "alpha": 0.15, "from": "2011", "thru": "now", "fa": "fas fa-file-powerpoint", "prof": 4.5, 
@@ -148,7 +149,7 @@
     ],
     "cert": [
       {
-        "caption": "项目管理专业人士资格认证®", "name": "项目管理专业人士资格认证®", "provider": null,
+        "caption": "项目管理专业人士资格认证(PMP)®", "name": "项目管理专业人士资格认证(PMP)®", "provider": null,
         "fa": "fas fa-award", "time": "2012/09", "institute": {
           "name": "Project Management Institute", "link": "https://www.pmi.org"}, "sn": "1546494",
         "p": ["美国项目管理协会主持的项目管理知识技能体系认证，基于 PMBOK 5。该认证体系还包括 PfMP, PgMP, CAPM等。"],
@@ -159,7 +160,7 @@
           "name": "Johns Hopkins University", "link": "https://www.jhu.edu"},
         "fa": "fas fa-user-ninja", "time": "2015/11", "institute": {
           "name": "Couresra", "link": "https://www.coursera.org"}, "sn": null,
-        "p": ["Johns Hopkins 大学在 Coursera 开设的数据科学在线课程。技术栈： <code>R</code>, <code>git</code>。课程："],
+        "p": ["Johns Hopkins 大学在 Coursera 开设的数据科学在线课程。", "技术栈： <code>R</code> (<code>tidyverse, ggplot2, caret, knitr</code>), <code>git</code>。", "课程："],
         "ol": [
           "数据科学家的工具箱", "R 语言程序设计", "获取和整理数据", "探索性数据分析", "可重复性研究", "统计推断",
           "回归模型", "实用机器学习", "数据产品开发", "毕业项目"
@@ -170,13 +171,21 @@
           "name": "Dataquest", "link": "https://www.dataquest.io"},
         "fa": "fas fa-user-ninja", "time": "2016/07", "institute": {
           "name": "Dataquest", "link": "https://www.dataquest.io"}, "sn": null,
-        "p": ["Dataquest 开设的数据科学课程。技术栈： <code>Python</code>。课程："], 
+        "p": ["Dataquest 开设的数据科学课程。", "技术栈： <code>Python</code> (<code>pandas, matplotlib, scikit-learn, statsmodels, NLTK</code>), <code>git</code>。", "课程："], 
         "ol": [
           "Python编程", "用Pandas进行数据分析", "数据可视化", "命令行工具", "Git和版本管理", "数据清理项目贯通", 
           "数据分析", "API和网络爬虫", "SQL和数据库", "Python中的概率和统计学", "假设检验", "大数据工具", 
           "Python中的线性代数", "Python中的机器学习", "R语言编程", "数据结构和算法", "数据清理",
           "Spark和Map-Reduce", "决策树", "自然语言处理"
         ]
+      },
+      {
+        "caption": "数据可视化", "name": "数据可视化", "provider": {
+          "name": "Illinois 大学香槟分校", "link": "https://illinois.edu/"}, 
+        "fa": "fas fa-user-ninja", "time": "2017/05", "institute": {
+          "name": "Couresra", "link": "https://www.coursera.org"}, "sn": null,
+        "p": ["Illinois 大学香槟分校在 Coursera 开设的数据可视化在线课程。", "技术栈: <code>Tableau</code>", "课程："], 
+        "ol": ["计算机与人", "定量数据的可视化", "定性数据的可视化", "可视化仪表盘"]
       },
       {
         "caption": "认证Scrum产品负责人®", "name": "认证Scrum产品负责人®", "provider": null,
@@ -186,15 +195,25 @@
         "ol": null
       },
       {
+        "caption": "软件工程", "name": "软件工程", "provider": {
+          "name": "北京大学", "link": "https://www.pku.edu.cn"}, 
+        "fa": "fas fa-user-ninja", "time": "2018/07", "institute": {
+          "name": "Couresra", "link": "https://www.coursera.org"}, "sn": null,
+        "p": ["北京大学在 Coursera 开设的软件工程在线课程。", "课程："], 
+        "ol": [
+          "软件工程和软件过程", "软件需求", "结构化方法", "面向对象方法", "敏捷开发方法", "软件测试", "软件项目管理", "软件开发工具与环境"
+        ]
+      },
+      {
         "caption": "机器学习", "name": "机器学习", "provider": {
           "name": "Standford University", "link": "https://www.stanford.edu"}, 
         "fa": "fas fa-user-ninja", "time": "2018/08", "institute": {
           "name": "Couresra", "link": "https://www.coursera.org"}, "sn": null,
-        "p": ["Stanford 大学 Andrew Ng 在 Coursera 开设的著名机器学习在线课程。技术栈： <code>MatLab</code>。课程："], 
+        "p": ["Stanford 大学 Andrew Ng 在 Coursera 开设的著名机器学习在线课程。", "技术栈： <code>MatLab / Octave</code>。", "课程："], 
         "ol": [
           "单变量线性回归", "回顾线性代数", "多变量线性回归", "Octave/MatLab教程", "Logistic回归",
           "正则化", "神经网络: 表征", "神经网络: 学习", "运用机器学习的建议", "机器学习系统设计",
-          "支持向量机", "无监督学习", "降维", "异常检测", "推荐系统", "大规模机器学习", "应用实例: 照片OCR"
+          "支持向量机", "无监督学习", "降维", "异常检测", "推荐系统", "大规模机器学习", "应用实例: 图片OCR"
         ]
       },
       {
@@ -202,7 +221,7 @@
           "name": "deeplearning.ai", "link": "https://www.deeplearning.ai"},
         "fa": "fas fa-user-ninja", "time": "2018/10", "institute": {
           "name": "Couresra", "link": "https://www.coursera.org"}, "sn": "XGCR4CTFRHME",
-        "p": ["deeplearning.ai 在 Coursera 开设的深度学习在线课程。技术栈： <code>Python</code>。课程："], 
+        "p": ["deeplearning.ai 在 Coursera 开设的深度学习在线课程。", "技术栈： <code>Python</code> (<code>numpy, tensorflow, Keras</code>)。", "课程："], 
         "ol": [
           "神经网络和深度学习", "改善深层神经网络：超参数调试、 正则化以及优化", "结构化机器学习项目",
           "卷积神经网络", "序列模型"
@@ -213,7 +232,7 @@
         "provider": {"name": "Harvard University", "link": "https://www.harvard.edu"}, 
         "fa": "fas fa-user-ninja", "time": "2019/11", "institute": {
           "name": "edX", "link": "https://www.edx.org"}, "sn": null,
-        "p": ["Harvard 大学在 edX 开设的在线 Web 编程课程。技术栈： <code>Python</code>, <code>JavaScript</code>。课程："],
+        "p": ["Harvard 大学在 edX 开设的在线 Web 编程课程。", "技术栈： <code>Python</code> (<code>Flask, Django</code>), <code>git</code>, <code>HTML / Bootstrap</code>, <code>CSS / Sass</code>, <code>JavaScript</code>。", "课程："],
         "ol": [
           "Git", "HTML, CSS", "Flask", "SQL", "ORMs, APIs", "JavaScript", "前端", "Django", "测试, CI/CD",
           "GitHub, Travis CI", "可扩展性", "安全性"
@@ -377,17 +396,20 @@
         {
           "name": "Health management", "size": null, "alpha": 0.15, "from": "2011", "thru": "now", "fa": "fas fa-briefcase-medical", "prof": 4.5, 
           "p": null,
-          "ul": ["Long service in health management, hence familiar with dynamics and practices of the industry",
+          "ul": ["Long service in health management, hence familiar with dynamics and practices in the industry",
             "Involved in desgin, implementation and evaluation of numerous corporate health management projects; rich in practical experience",
-            "Complete implementation experience of building business capabilities from scratch",
+            "Complete implementation experience of building business capabilities of health services from scratch",
             "Enpower the business with cross-border knowledge in data analytics, medicine and software development"]
-        }
-      ],
-      [
+        },
+        {
+          "name": "Disease management", "size": "small", "alpha": 0.08, "from": "2016", "thru": "now", "fa": "fas fa-briefcase-medical", "prof": 3, 
+          "p": null,
+          "ul": ["Understand theory, methodology and industrial practice of disease management", "Involved in design of corporate chronic disease management plan such as diabetes"]
+        },
         {
           "name": "Public health", "size": "medium", "alpha": 0.3, "from": "2001", "thru": "now", "fa": "fas fa-clinic-medical", "prof": 4, 
           "p": null,
-          "ul": ["Professionally trained in epidemiology, occupational health, environmental health and social medicine",
+          "ul": ["Solid knowlodge on medical fundermentals: Basic Medicine, Clinical Medicine", "Professionally trained in epidemiology, occupational health, environmental health and social medicine",
             "Good at thinking health topics and strategies from 'holistic health' perspective, and focus on macro health strategies with supportive environment etc."]
         },
         {
@@ -415,18 +437,17 @@
           "name": "Requirement analysis", "size": "medium", "alpha": 0.15, "from": "2017", "thru": "now", "fa": "fas fa-laptop-code", "prof": 3.5, 
           "p": null,
           "ul": ["Good at distilling business logic and defining product requiremnts",
-            "Good at rapidly implmenting product prototypes using various open source tools (<code>Draw.io</code> etc.)"]
+            "Good at rapidly implmenting product prototypes using various open source tools (<code>Draw.io</code> etc.)",
+            "Build product requirements using prototypes, documentation and UML graphs"]
         },
         {
-          "name": "Full-stack", "size": "medium", "alpha": 0.3, "from": "2015", "thru": "now", "fa": "fas fa-laptop-code", "prof": 4, 
+          "name": "Full-stack", "size": "small", "alpha": 0.3, "from": "2015", "thru": "now", "fa": "fas fa-laptop-code", "prof": 4, 
           "p": ["Good at building functionality prototypes independently once business requirements are identified quickly"],
           "ul": ["Proficient at buidling C/S small applications with Access as frontend, SharePoint as backend",
             "Familiar with building online prototypes using <code>Flask</code>, <code>Django</code> and <code>Vue.js</code>"]
-        }
-      ],
-      [
+        },
         {
-          "name": "Strategic analysis", "size": "medium", "alpha": 0.3, "from": "2017", "thru": "now", "fa": "fas fa-chess-board", "prof": 3.5, 
+          "name": "Strategy", "size": "medium", "alpha": 0.3, "from": "2017", "thru": "now", "fa": "fas fa-chess-board", "prof": 3.5, 
           "p": null,
           "ul": ["Good at information searching and organization to describe and analyze the market", "Undertand common tools for strategic analysis"]
         },
@@ -450,7 +471,7 @@
           "name": "Johns Hopkins University", "link": "https://www.jhu.edu"},
         "fa": "fas fa-user-ninja", "time": "2015/11", "institute": {
           "name": "Couresra", "link": "https://www.coursera.org"}, "sn": null,
-          "p": ["Online data science courses delivered by Johns Hopkins University on Coursera. The technical stack: <code>R</code> and <code>git</code>. Courses:"],
+          "p": ["Online data science courses delivered by Johns Hopkins University on Coursera. ", "Technology stack: <code>R</code> (<code>tidyverse, ggplot2, caret, knitr</code>) and <code>git</code>. ", "Courses:"],
           "ol": [
             "Data Scientist's Toolbox", "R Programming", "Getting and Cleaning Data", "Exploratory Data Analysis",
             "Reproducible Research", "Statistical Inference", "Regression Models", "Practical Machine Learning",
@@ -462,7 +483,7 @@
           "name": "Dataquest", "link": "https://www.dataquest.io"},
         "fa": "fas fa-user-ninja", "time": "2016/07", "institute": {
           "name": "Dataquest", "link": "https://www.dataquest.io"}, "sn": null,
-          "p": ["Data sciense courses delivered by Dataquest. The technical stack: <code>Python</code>. Courses:"], 
+          "p": ["Data sciense courses delivered by Dataquest.", "Technology stack: <code>Python</code> (<code>pandas, matplotlib, scikit-learn, statsmodels, NLTK</code>), <code>git</code>.", "Courses:"], 
           "ol": [
             "Python Programming", "Data Analysis With Pandas", "Data Visualization Course", 
             "Command Line", "Git And Version Control Course", "Data Cleaning Project Walkthrough", 
@@ -474,6 +495,14 @@
           ]
       },
       {
+        "caption": "Data Visualization", "name": "Data Visualization", "provider": {
+          "name": "University of Illinois at Urbana-Champaign", "link": "https://illinois.edu/"}, 
+        "fa": "fas fa-user-ninja", "time": "2017/05", "institute": {
+          "name": "Couresra", "link": "https://www.coursera.org"}, "sn": null,
+        "p": ["A series of online data visualization courses delivered by University of Illinois at Urbana-Champaign on Coursera.", "Technology stack: <code>Tableau</code>", "Courses:"], 
+        "ol": ["Computer and Human", "Visualization of Numeric Data", "Visualization of Non-numeric Data", "Visualization Dashboard"]
+      },
+      {
         "caption": "CSPO®", "name": "Certified Scrum Product Owner ®", "provider": null,
         "fa": "fas fa-award", "time": "2018/06", "institute": {
           "name": "Scrum Alliance", "link": "https://www.scrumalliance.org"}, "sn": "000795041",
@@ -481,11 +510,22 @@
         "ol": null
       },
       {
+        "caption": "Software Engineering", "name": "Software Engineering", "provider": {
+          "name": "Peking University", "link": "https://www.pku.edu.cn"}, 
+        "fa": "fas fa-user-ninja", "time": "2018/07", "institute": {
+          "name": "Couresra", "link": "https://www.coursera.org"}, "sn": null,
+        "p": ["A series of online software engineering courses delivered by Peking University on Coursera", "Courses:"], 
+        "ol": [
+          "Software engineering and software process", "Software requirements", "Structurized methods", "Object-oriented methods", "Agile development",
+          "Software testing", "Software project management", "Software development tool and environment"
+        ]
+      },
+      {
         "caption": "Machine Learning", "name": "Machine Learning", "provider": {
           "name": "Standford University", "link": "https://www.stanford.edu"},
         "fa": "fas fa-user-ninja", "time": "2018/08", "institute": {
           "name": "Couresra", "link": "https://www.coursera.org"}, "sn": null,
-        "p": ["A series of famous online machine learning course delivered by Andrew Ng, Stanford University on Coursera. The technical stack: <code>MatLab</code>. Courses:"], 
+        "p": ["A series of famous online machine learning courses delivered by Andrew Ng, Stanford University on Coursera.", "Technology stack: <code>MatLab / Octave</code>.", "Courses:"], 
         "ol": [
           "Linear Regression with One Variable", "Linear Algebra Review", 
           "Linear Regression with Multiple Variables", "Octave/MatLab Tutorial", "Logistic Regression",
@@ -501,7 +541,7 @@
           "name": "deeplearning.ai", "link": "https://www.deeplearning.ai"},
         "fa": "fas fa-user-ninja", "time": "2018/10", "institute": {
           "name": "Couresra", "link": "https://www.coursera.org"}, "sn": "XGCR4CTFRHME",
-          "p": ["A series of online deep learning courses delivered by deeplearning.ai on Coursera. The technical stack: <code>Python</code>. Courses:"], 
+          "p": ["A series of online deep learning courses delivered by deeplearning.ai on Coursera.", "Technology stack: <code>Python</code> (<code>numpy, tensorflow, Keras</code>)。.", "Courses:"], 
           "ol": [
             "Neural Networks and Deep Learning", "Improving Neural Networks：Hyperparameter Tuning, Regularization and Optimization", 
             "Structuring Machine Learning Projects", "Convolutional Neural Networks", "Sequence Models"
@@ -513,7 +553,7 @@
           "name": "Harvard University", "link": "https://www.harvard.edu"},
         "fa": "fas fa-user-ninja", "time": "2019/11", "institute": {
           "name": "edX", "link": "https://www.edx.org"}, "sn": null,
-        "p": ["A series of online Web programming courses delivered by Harvard on edX. The technical stack: <code>Python</code>, <code>JavaScript</code>. Courses:"],
+        "p": ["A series of online Web programming courses delivered by Harvard on edX.", "Technology stack: <code>Python</code> (<code>Flask, Django</code>), <code>git</code>, <code>HTML / Bootstrap</code>, <code>CSS / Sass</code>, <code>JavaScript</code>.", "Courses:"],
         "ol": [
           "Git", "HTML, CSS", "Flask", "SQL", "ORMs, APIs", "JavaScript", "Front Ends", "Django", "Testing, CI/CD",
           "GitHub, Travis CI", "Scalability", "Security"

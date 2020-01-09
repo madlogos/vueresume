@@ -1,7 +1,7 @@
 <template>
   <div class='block' id='self' ref='self'>
     <h2 id='title'>
-      <i class='fas fa-user-tag' />&nbsp;{{ $t('title.self') }}
+      <i class='fas fa-user-tag' /><span class='title-h2'>{{ $t('title.self') }}</span>
     </h2>
     <div id='statement' v-html='data.self.statement'></div>
     <div id='hobby'>

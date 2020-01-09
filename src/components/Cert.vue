@@ -1,7 +1,7 @@
 <template>
   <div class='block' id='cert' ref='cert'>
     <h2 id='title'>
-      <i class='fas fa-certificate' />&nbsp;{{ $t('title.cert') }}
+      <i class='fas fa-certificate' /><span class='title-h2'>{{ $t('title.cert') }}</span>
     </h2>
     <div id='certs'>
       <ul class='cert-ul'>
@@ -13,20 +13,20 @@
               <div slot='header'>
                 <h3>{{ i.name }}</h3>
                 <p v-if='i.provider' class='pop-quote'>
-                  <i class='fas fa-chalkboard-teacher' />&emsp;
-                  <a :href='i.provider.link' target='_blank'>{{ i.provider.name }}</a>
+                  <i class='fas fa-chalkboard-teacher' />
+                  <a :href='i.provider.link' target='_blank'><span class='icon-txt'>{{ i.provider.name }}</span></a>
                 </p>
                 <p v-if='i.institute'>
                   <span class='pop-quote'>
-                    <i class='fas fa-university' />&emsp;
-                    <a :href='i.institute.link' target='_blank'>{{ i.institute.name }}</a>
+                    <i class='fas fa-university' />
+                    <a :href='i.institute.link' target='_blank'><span class='icon-txt'>{{ i.institute.name }}</span></a>
                   </span>
                 </p>
-                <p v-if='i.sn' class='pop-quote'><i class='fas fa-hashtag' />&emsp;{{ i.sn }}</p>
+                <p v-if='i.sn' class='pop-quote'><i class='fas fa-hashtag' /><span class='icon-txt'>{{ i.sn }}</span></p>
               </div>
               <div>
                 <p v-if='i.time'>
-                  <span class='pop-quote'><i class='fas fa-calendar-alt' />&emsp;{{ i.time }}</span>
+                  <span class='pop-quote'><i class='fas fa-calendar-alt' /><span class='icon-txt'>{{ i.time }}</span></span>
                 </p>
                 <div v-if='i.p'>
                   <p class='pop-p' v-for='(j, _j) in i.p' :key='_j' v-html='j'></p>

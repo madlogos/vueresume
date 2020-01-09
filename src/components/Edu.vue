@@ -1,7 +1,7 @@
 <template>
   <div class='block' id='edu' ref='edu'>
     <h2 id='title'>
-      <i class='fas fa-user-graduate' />&nbsp;{{ this.$t('title.edu') }}
+      <i class='fas fa-user-graduate' /><span class='title-h2'>{{ this.$t('title.edu') }}</span>
       <el-button
        circle
        id='foldToggle'
@@ -14,7 +14,7 @@
       <el-timeline-item
        v-for='(i, _i) in data.edu'
        :key='_i'
-       :timestamp='i.from + " - " + i.till + " (" + calcTimeDif(i.from, i.till) + ")"'
+       :timestamp='i.from + " - " + i.till + "  (" + calcTimeDif(i.from, i.till) + ")"'
        :icon='"el-icon-" + i.icon'
        :color='i.color'
        size='large'
@@ -25,13 +25,13 @@
             <template slot='title'>
               <div class='collhead'>
                 <span class='cred'>
-                  <i class='fas fa-graduation-cap' />&nbsp;{{ i.cred }}
+                  <i class='fas fa-graduation-cap' /><span class='icon-txt'>{{ i.cred }}</span>
                 </span>
                 <span class='univ' v-if='i.wiki.link'>
                   <el-popover placement='top-start' :title='i.wiki.title' trigger='hover' width=240>
                     <div>
-                      <i :class='i.wiki.fa' />&nbsp;
-                      <a :href='i.wiki.link' target='_blank'>{{ i.wiki.value }}</a>
+                      <i :class='i.wiki.fa' />
+                      <a :href='i.wiki.link' target='_blank'><span class='icon-txt'>{{ i.wiki.value }}</span></a>
                     </div>
                     <br />
                     <div>
@@ -56,10 +56,12 @@
                     <span v-else>{{ i.univ }}</span>
                   </span>
                 </span>
-                <span class='major'><i class='fas fa-school' />&nbsp;{{ i.major }}</span>
               </div>
             </template>
-            <div class='rank'><i class='fas fa-trophy' />&nbsp;{{ i.rank }}</div>
+            <div class='major'>
+              <span class='major-head'><i class='fas fa-school' /><span class='icon-txt'>{{ i.major }}</span></span>
+              <span class='major-head'><i class='fas fa-trophy' /><span class='icon-txt'>{{ i.rank }}</span></span>
+            </div>
             <div v-for='(j, _j) in i.lesson' :key='_j'>
               <div v-html='j'></div>
             </div>
@@ -204,13 +206,12 @@ a:hover {
   margin-right: 20px
 }
 .major {
-  font-size: 14px;
   color: #888;
-  font-weight: normal
-}
-.rank {
-  color: #888;
+  font-weight: normal;
   margin-bottom: 10px
+}
+.major-head {
+  margin-right: 20px
 }
 .el-collapse {
   border-top: none

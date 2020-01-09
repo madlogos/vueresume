@@ -1,19 +1,17 @@
 <template>
   <div class='block' id='contact'>
     <h2 id='title'>
-      <i class='fas fa-address-card' />&nbsp;{{ this.$t('title.contact') }}
+      <i class='fas fa-address-card' /><span class='title-h2'>{{ this.$t('title.contact') }}</span>
     </h2>
-    <ul id='items'>
-      <li v-for="i in data.contact" :key="i.name">
+    <table id='items'>
+      <tr v-for="i in data.contact" :key="i.name">
         <el-tooltip effect='light' placement="top-start" :content="i.name">
-          <span class='socio-icon'>
-            <i :class='i.fa' />&nbsp;
-            <a v-if='i.link' :href='dec(i.link)' target='_blank'>{{ dec(i.value) }}</a>
-            <span v-else>{{ dec(i.value) }}</span>
-          </span>
+          <td class="socio-icon"><i :class='i.fa' /><span class='icon-txt'>{{ i.name }}</span></td>
         </el-tooltip>
-      </li>
-    </ul>
+        <td><a v-if='i.link' :href='dec(i.link)' target='_blank'>{{ dec(i.value) }}</a>
+          <span v-else>{{ dec(i.value) }}</span></td>
+      </tr>
+    </table>
     <div id="socio">
       <span v-for="i in data.socio" :key="i.name">
         <el-popover placement="top-start" :title="i.name" trigger="hover" width="100">
@@ -22,10 +20,10 @@
               <i class='fas fa-arrow-circle-right' />
               <a :href='i.link' target='_blank'>{{ i.value }}</a>
             </span>
-            <span v-else><i class='fas fa-plus-circle' />&nbsp;{{ i.value }}</span>
+            <span v-else><i class='fas fa-plus-circle' /><span class='icon-txt'>{{ i.value }}</span></span>
           </div>
           <span class='socio-icon' slot='reference'><i :class='i.fa'/></span>
-        </el-popover>&nbsp;
+        </el-popover>
       </span>
     </div>
   </div>
@@ -50,7 +48,7 @@ export default {
 
 <style scoped>
 #contact {
-  margin: 40px 20px
+  margin: 40px 10px 40px 20px
 }
 h2 {
   color: #eee
@@ -73,14 +71,17 @@ a:hover {
 .el-popover a:hover {
   color: #67C23A
 }
+.el-popover__body i {
+  margin-right: 15px
+}
 #contact ul {
   margin-left: 0;
   padding-left: 10px
 }
-#items li {
-  list-style-type: none;
+#items {
   color: #eee;
-  line-height: 150%
+  border-spacing: 10px 4px;
+  margin-left: -2px
 }
 #socio {
   padding: 10px 5px 10px 5px;
@@ -88,7 +89,7 @@ a:hover {
   font-size: 20px
 }
 .socio-icon {
-  margin-right: 5px
+  margin-right: 15px
 }
 .socio-icon:hover {
   color: #67C23A

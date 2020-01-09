@@ -1,7 +1,7 @@
 <template>
   <div class='block' id='job' ref='job'>
     <h2 id='title'>
-      <i class='fas fa-user-tie' />&nbsp;{{ this.$t('title.job') }}
+      <i class='fas fa-user-tie' /><span class='title-h2'>{{ this.$t('title.job') }}</span>
       <el-button
        circle
        id='foldToggle'
@@ -14,7 +14,7 @@
       <el-timeline-item
        v-for='(i, _i) in data.job'
        :key='_i'
-       :timestamp='i.from + " - " + i.till + " (" + calcTimeDif(i.from, i.till) + ")"'
+       :timestamp='i.from + " - " + i.till + "  (" + calcTimeDif(i.from, i.till) + ")"'
        :icon='"el-icon-" + i.icon'
        :color='i.color'
        size='large'
@@ -25,13 +25,13 @@
             <template slot='title'>
               <div class='collhead'>
                 <span class="jobtitle">
-                  <i class='fas fa-id-badge' />&nbsp;{{ i.title }}
+                  <i class='fas fa-id-badge' /><span class='icon-txt'>{{ i.title }}</span>
                 </span>
                 <span class="jobemp" v-if='i.wiki.link'>
                   <el-popover placement='top-start' :title='i.wiki.title' trigger='hover' width=240>
                     <div>
-                      <i :class='i.wiki.fa' />&nbsp;
-                      <a :href='i.wiki.link' target='_blank'>{{ i.wiki.value }}</a>
+                      <i :class='i.wiki.fa' />
+                      <a :href='i.wiki.link' target='_blank'><span class='icon-txt'>{{ i.wiki.value }}</span></a>
                     </div>
                     <br />
                     <div>

@@ -1,17 +1,18 @@
 <template>
   <div class='block' id='skill' ref='skill'>
     <h2 id='title'>
-      <i class='fas fa-briefcase' />&nbsp;{{ $t('title.talent') }}
+      <i class='fas fa-briefcase' /><span class='title-h2'>{{ $t('title.talent') }}</span>
     </h2>
     <div id='canvas1' ref='canvas1'>
       <!-- <chart id='chart1' ref='chart1' :options='chartOptsBar' :auto-resize='true' /> // vue-echarts -->
-      <div id='chart1' ref='chart1' style='width:100%;height:100%'></div>
+      <!-- <div id='chart1' ref='chart1' style='width:100%;height:100%'></div> -->
+      <BarChart/>
     </div>
     <div id='skills'>
-      <div v-for='(i, _i) in data.skill' :key='_i'>
+      <span class='skill-tag-block' v-for='(i, _i) in data.skill' :key='_i'>
         <el-popover v-for='(j, _j) in i' :key='_j' trigger='hover' placement='top-start'>
           <el-card class='box-card' shadow='hover'>
-            <div slot='header'><h3><i :class='j.fa'/> {{ j.name }}</h3></div>
+            <div slot='header'><h3><i :class='j.fa'/><span class='title-h3'>{{ j.name }}</span></h3></div>
             <div>
               <h4>{{ $t('skill.proficiency') }}</h4>
               <span class='appyear'>{{ calcTimeDif(j.from, j.thru) }}</span>
@@ -40,151 +41,41 @@
             slot='reference'
           >{{ j.name }}</el-tag>
         </el-popover>
-      </div>
+      </span>
     </div>
   </div>
 </template>
 
 <script>
+import BarChart from '@/components/_BarChart'
 import { parseTimeDif, formatTimeDif2 } from '@/utils/util'
-import * as echarts from 'echarts/lib/echarts' // basic template
-import 'echarts/lib/chart/bar' // chart components
-import 'echarts/lib/component/tooltip' // other components
 export default {
-  data () {
-    return {
-      barColor: '#eee'
-    }
+  components: {
+    BarChart
   },
   mounted () {
-    const chartObj = echarts.init(document.getElementById('chart1'))
-    chartObj.setOption(this.chartOptsBar, this.resizeCanvas())
-    window.onresize = () => {
-      return (() => {
-        const newSize = this.resizeCanvas()
-        chartObj.resize(newSize)
-        this.$refs.canvas1.height = newSize.height
-      })()
-    }
-  },
-  updated () {
-    const chartObj = echarts.init(document.getElementById('chart1'))
-    chartObj.setOption(this.chartOptsBar, this.resizeCanvas())
+    // window.onresize = () => {
+    //   return (() => {
+    //     const newSize = this.resizeCanvas()
+    //     this.$refs.canvas1.height = newSize.height
+    //     this.$refs.canvas1.width = this.$refs.skill.clientWidth
+    //   })()
+    // }
   },
   computed: {
     data: function () {
       let ret = JSON.parse(localStorage.getItem('myCv'))
       return ret[this.$i18n.locale]
-    },
-    chartOptsBar: function () {
-      const dat = this.data.talent
-      var y = []
-      var ys = []
-      var x = []
-      var yc = []
-      for (var i = 0; i < dat.length; i++) {
-        x.push(dat[i].name)
-        y.push(dat[i].value)
-        ys.push(Array(dat.length))
-        ys[i][i] = dat[i].value
-        yc.push(100)
-      }
-      const serTmpl = {
-        type: 'bar',
-        label: {
-          show: true,
-          position: 'insideLeft',
-          color: '#00A78E',
-          formatter: '{b}',
-          fontSize: 14,
-          fontWeight: 'normal'
-        },
-        itemStyle: {
-          color: this.barColor,
-          barBorderRadius: [0, 25, 25, 0]
-        },
-        emphasis: {
-          label: {
-            show: true,
-            position: 'insideLeft',
-            formatter: '{b}: {c}',
-            color: '#fff',
-            fontSize: 14,
-            fontWeight: 'bold'
-          },
-          itemStyle: {color: '#67C23A'}
-        },
-        tooltip: {
-          formatter: '{a}'
-        },
-        barWidth: '75%',
-        barGap: '-100%',
-        barCategoryWidth: '20%',
-        anamation: true
-      }
-      var opt = {
-        grid: {
-          top: 0,
-          bottom: '10%',
-          left: 0,
-          right: 0
-        },
-        xAxis: {
-          type: 'value',
-          axisLine: {show: false},
-          axisTick: {show: false},
-          axisLabel: {show: false},
-          splitLine: {show: false}
-        },
-        yAxis: {
-          type: 'category',
-          inverse: true,
-          data: x,
-          axisLine: {show: false},
-          axisTick: {show: false},
-          axisLabel: {show: false}
-        },
-        tooltip: {
-          show: true,
-          trigger: 'item'
-        },
-        series: [
-          {
-            type: 'bar',
-            data: yc,
-            itemStyle: {
-              normal: {
-                color: 'rgba(0,0,0,0.1)',
-                barBorderRadius: [0, 25, 25, 0]
-              }
-            },
-            tooltip: {
-              show: false
-            },
-            barGap: '-100%',
-            barWidth: '75%',
-            barCategoryWidth: '20%'
-          }
-        ]
-      }
-      for (i = 0; i < dat.length; i++) {
-        let tmp = serTmpl
-        tmp.name = dat[i].tip
-        tmp.data = ys[i]
-        // not familiar with closure, so use this
-        opt.series.push(JSON.parse(JSON.stringify(tmp)))
-      }
-      return opt
     }
   },
   methods: {
-    resizeCanvas () {
-      // resize Echarts canvas
-      const maxHgt = 150
-      let wdt = this.$refs.skill.clientWidth - 20 || 200
-      let hgt = wdt / 2 > maxHgt ? maxHgt : wdt / 2
-      return {'width': wdt, 'height': hgt}
-    },
+    // resizeCanvas () {
+    //   // resize Echarts canvas
+    //   const maxHgt = 150
+    //   let wdt = this.$refs.skill.clientWidth - 20 || 200
+    //   let hgt = wdt / 2 > maxHgt ? maxHgt : wdt / 2
+    //   return {'width': wdt, 'height': hgt}
+    // },
     calcTimeDif (t0, t1) {
       /* calc time difference of t0 and t1
         return two parts with i18n */
@@ -206,10 +97,16 @@ export default {
 
 <style scoped>
 #skill {
-  margin: 40px 20px
+  margin: 40px 10px 40px 20px
 }
 h2 {
   color: #eee
+}
+.skill-tag-block {
+  margin-right: 20px
+}
+#canvas1 {
+  height: 140px
 }
 .el-card {
   text-align: left;
@@ -225,18 +122,13 @@ h2 {
   line-height: 1.5em;
   padding: 0 18px
 }
-#chart1 {
-  margin-left: 10px
-}
-#canvas1 {
-  height: 150px;
-}
 #skills {
   padding: 10px 0
 }
 #skills .el-tag {
-  margin: 2.5px 5px;
-  font-size: 14px;
+  margin: 2px 2px;
+  padding: 0 6px;
+  font-size: 13px;
   border-style: none
 }
 #skills .el-tag:hover {

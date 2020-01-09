@@ -5,13 +5,13 @@
     </el-avatar>
     <h1>{{ dec(data.name) }}</h1>
     <p id='baseInfo'>
-      <span class="genderInfo"><i :class='data.gender.fa' />&nbsp;{{ data.gender.value }}</span>&emsp;
-      <span class="dobInfo"><i :class='data.dob.fa' />&nbsp;{{ calcAge(dec(data.dob.value)) }}</span>&emsp;
-      <span class="homeInfo"><i :class='data.home.fa' />&nbsp;{{ data.home.value }}</span>
+      <span class="gender-info"><i :class='data.gender.fa' /><span class='info-left'>{{ data.gender.value }}</span></span>
+      <span class="dob-info"><i :class='data.dob.fa' /><span class='info-left'>{{ calcAge(dec(data.dob.value)) }}</span></span>
+      <span class="home-info"><i :class='data.home.fa' /><span class='info-right'>{{ data.home.value }}</span></span>
     </p>
-    <pre id='motto'>
-      <i class='fas fa-quote-left'/> {{ data.motto }} <i class='fas fa-quote-right'/>
-    </pre>
+    <p>
+      <pre id='motto'><i class='fas fa-quote-left'/>{{ data.motto }}<i class='fas fa-quote-right'/></pre>
+    </p>
   </div>
 </template>
 
@@ -58,17 +58,27 @@ pre {
   color: #eee;
   font-size: small
 }
-.genderInfo:hover, .dobInfo:hover, .homeInfo:hover {
+.info-left {
+  margin-left: 4px;
+  margin-right: 20px
+}
+.info-right {
+  margin-left: 4px
+}
+.gender-info:hover, .dob-info:hover, .home-info:hover {
   color: #67C23A
 }
-#motto i.fas {
-  color: #ccc;
-  font-size: x-small
+#motto {
+  color: #ccc
 }
 #motto .fa-quote-left {
+  margin-top: -3px;
+  margin-right: 8px;
   vertical-align: text-top
 }
 #motto .fa-quote-right {
+  margin-bottom: -1px;
+  margin-left: 8px;
   vertical-align: text-bottom
 }
 </style>

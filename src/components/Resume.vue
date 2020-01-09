@@ -30,7 +30,7 @@
       <skill/>
       <cert/>
       <template>
-        <h3><i class='fas fa-download'/>&nbsp;{{ $t('title.download') }}</h3>
+        <h3><i class='fas fa-download'/><span class='title-h3'>{{ $t('title.download') }}</span></h3>
       </template>
     </el-col>
     <el-col :xs="24" :sm="16" :md="16" :lg="16" :xl="16" id="main">
@@ -62,7 +62,6 @@ import Cert from '@/components/Cert'
 import Job from '@/components/Job'
 import Edu from '@/components/Edu'
 import SelfState from '@/components/SelfState'
-var json = require('@/assets/cv.json')
 
 export default {
   components: {
@@ -82,7 +81,24 @@ export default {
   },
   created: function () {
     this.loading = true
-    localStorage.setItem('myCv', JSON.stringify(json))
+    const now = new Date()
+    var myCvExpired = false
+    const validMinutes = process.env.NODE_ENV === 'development' ? 0 : 3600
+    // fetch data from localStorage
+    if (validMinutes > 0 && localStorage.getItem('myCvTime')) {
+      const myCvTime = new Date(localStorage.getItem('myCvTime'))
+      if (parseInt(now - myCvTime) > validMinutes * 1000) {
+        // myCvTime expired
+        myCvExpired = true
+      }
+    } else {
+      myCvExpired = true
+    }
+    if (myCvExpired) {
+      let json = require('@/assets/cv.json')
+      localStorage.setItem('myCvTime', now)
+      localStorage.setItem('myCv', JSON.stringify(json))
+    }
   },
   mounted: function () {
     document.title = this.$i18n.locale === 'zh' ? '汪轶颖的简历' : 'Wang Yiying\'s Résumé'
@@ -90,7 +106,7 @@ export default {
   },
   methods: {
     changeLang (val) {
-      localStorage.setItem('lang', val)
+      // localStorage.setItem('lang', val)
       this.$i18n.locale = val
       document.title = val === 'zh' ? '汪轶颖的简历' : 'Wang Yiying\'s Résumé'
     },
@@ -174,7 +190,19 @@ export default {
 </style>
 
 <style>
+.title-h2 {
+  margin-left: 8px
+}
+.title-h3 {
+  margin-left: 8px
+}
+.icon-txt {
+  margin-left: 4px
+}
 .el-switch__label.is-active {
   color: #00A78E
+}
+.el-notification__content {
+  text-align: left
 }
 </style>
