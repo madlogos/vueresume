@@ -6,10 +6,10 @@
     <div id='canvas1' ref='canvas1'>
       <!-- <chart id='chart1' ref='chart1' :options='chartOptsBar' :auto-resize='true' /> // vue-echarts -->
       <!-- <div id='chart1' ref='chart1' style='width:100%;height:100%'></div> -->
-      <BarChart/>
+      <BarChart></BarChart>
     </div>
     <div id='skills'>
-      <span class='skill-tag-block' v-for='(i, _i) in data.skill' :key='_i'>
+      <span class='skill-tag-block' v-for='(i, _i) in this.$store.getters.skill' :key='_i'>
         <el-popover v-for='(j, _j) in i' :key='_j' trigger='hover' placement='top-start'>
           <el-card class='box-card' shadow='hover'>
             <div slot='header'><h3><i :class='j.fa'/><span class='title-h3'>{{ j.name }}</span></h3></div>
@@ -63,10 +63,6 @@ export default {
     // }
   },
   computed: {
-    data: function () {
-      let ret = JSON.parse(localStorage.getItem('myCv'))
-      return ret[this.$i18n.locale]
-    }
   },
   methods: {
     // resizeCanvas () {

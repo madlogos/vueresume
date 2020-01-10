@@ -5,7 +5,7 @@
     </h2>
     <div id='certs'>
       <ul class='cert-ul'>
-        <li class='cert-li' v-for='(i, _i) in data.cert' :key='_i'>
+        <li class='cert-li' v-for='(i, _i) in this.$store.getters.cert' :key='_i'>
           <span class='cert-quote'>{{ i.time }}</span>
           <span class='cert-quote-icon'><i :class='i.fa' /></span>
           <el-popover trigger='hover' placement='top-start'>
@@ -46,12 +46,7 @@
 
 <script>
 export default {
-  computed: {
-    data: function () {
-      let ret = JSON.parse(localStorage.getItem('myCv'))
-      return ret[this.$i18n.locale]
-    }
-  }
+
 }
 </script>
 
@@ -105,7 +100,7 @@ h2, p, li {
   margin-right: 2px
 }
 .pop-quote {
-  color: #888
+  color: #909399
 }
 .pop-p, .pop-li {
   text-align: left;

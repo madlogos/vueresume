@@ -12,7 +12,7 @@
     </h2>
     <el-timeline id='tl' ref='tl' :reverse=true>
       <el-timeline-item
-       v-for='(i, _i) in data.job'
+       v-for='(i, _i) in this.$store.getters.job'
        :key='_i'
        :timestamp='i.from + " - " + i.till + "  (" + calcTimeDif(i.from, i.till) + ")"'
        :icon='"el-icon-" + i.icon'
@@ -60,15 +60,25 @@
             </template>
             <div class='jobtag'>
               <el-tag
-              v-for='(j, _j) in i.keyword'
-              :key='_j'
-              effect='plain'
-              type='info'
-              size='mini'
+                v-for='(j, _j) in i.keyword'
+                :key='_j'
+                effect='plain'
+                type='info'
+                size='mini'
               >{{ j }}</el-tag>
             </div>
-            <div v-for='(k, _k) in i.description' :key='_k'>
-              <div v-html='k'></div>
+            <div v-if='i.description'>
+              <p class='jobdes' v-for='(k, _k) in i.description' :key='_k' v-html='k'></p>
+            </div>
+            <div v-if='i.project'>
+              <el-card v-for='(m, _m) in i.project' :key='_m' shadow='hover' :body-style='{padding:"10px"}'>
+                <p class='jobproj'>
+                  <i class='fas fa-project-diagram'/>
+                  <span class='icon-txt'><strong>{{ m.title}}</strong></span>
+                  <span class='icon-note'>({{ m.from }} - {{ m.thru }})</span>
+                </p>
+                <p class='projnote'>{{ m.work }}</p>
+              </el-card>
             </div>
           </el-collapse-item>
         </el-collapse>
@@ -88,18 +98,15 @@ export default {
     }
   },
   computed: {
-    data: function () {
-      let ret = JSON.parse(localStorage.getItem('myCv'))
-      return ret[this.$i18n.locale]
-    }
+
   },
   mounted: function () {
     // return array of array
-    const jobCnt = this.data.job.length
+    const jobCnt = this.$store.getters.job.length
     for (var i = 0; i < jobCnt; i++) {
       this.foldValue.push([])
     }
-    if (this.data.job[jobCnt - 1].icon === 'loading') {
+    if (this.$store.getters.job[jobCnt - 1].icon === 'loading') {
       this.foldValue[jobCnt - 1] = [(jobCnt - 1).toString()]
     }
   },
@@ -183,7 +190,7 @@ h2 {
   padding-left: 5px
 }
 a:link {
-  color: #888
+  color: #909399
 }
 a:visited {
   color: #ccc
@@ -206,11 +213,31 @@ a:hover {
 }
 .jobemp {
   font-size: 14px;
-  color: #888;
+  color: #909399;
   font-weight: normal
 }
 .jobtag {
   margin-bottom: 10px
+}
+.jobdes {
+  line-height: 1em;
+  margin: 10px 0
+}
+.jobproj {
+  color: #606266
+}
+.projnote {
+  padding-left: 18px;
+  color: #606266
+}
+.jobdes ul {
+  line-height: 1.5em
+}
+.el-card {
+  margin-right: 20px
+}
+.el-card__body p {
+  margin: 6px 0
 }
 .el-collapse {
   border-top: none

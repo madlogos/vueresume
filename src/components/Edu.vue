@@ -12,7 +12,7 @@
     </h2>
     <el-timeline id='tl' ref='tl' :reverse=true>
       <el-timeline-item
-       v-for='(i, _i) in data.edu'
+       v-for='(i, _i) in this.$store.getters.edu'
        :key='_i'
        :timestamp='i.from + " - " + i.till + "  (" + calcTimeDif(i.from, i.till) + ")"'
        :icon='"el-icon-" + i.icon'
@@ -83,18 +83,15 @@ export default {
     }
   },
   computed: {
-    data: function () {
-      let ret = JSON.parse(localStorage.getItem('myCv'))
-      return ret[this.$i18n.locale]
-    }
+
   },
   mounted: function () {
     // return array of array
-    const eduCnt = this.data.edu.length
+    const eduCnt = this.$store.getters.edu.length
     for (var i = 0; i < eduCnt; i++) {
       this.foldValue.push([])
     }
-    if (this.data.edu[eduCnt - 1].icon === 'loading') {
+    if (this.$store.getters.edu[eduCnt - 1].icon === 'loading') {
       this.foldValue[eduCnt - 1] = [(eduCnt - 1).toString()]
     }
   },
@@ -178,7 +175,7 @@ h2 {
   padding-left: 5px
 }
 a:link {
-  color: #888
+  color: #909399
 }
 a:visited {
   color: #ccc
@@ -201,12 +198,12 @@ a:hover {
 }
 .univ {
   font-size: 14px;
-  color: #888;
+  color: #909399;
   font-weight: normal;
   margin-right: 20px
 }
 .major {
-  color: #888;
+  color: #909399;
   font-weight: normal;
   margin-bottom: 10px
 }

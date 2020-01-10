@@ -3,11 +3,11 @@
     <h2 id='title'>
       <i class='fas fa-user-tag' /><span class='title-h2'>{{ $t('title.self') }}</span>
     </h2>
-    <div id='statement' v-html='data.self.statement'></div>
+    <div id='statement' v-html='this.$store.getters.self.statement'></div>
     <div id='hobby'>
       <span><span id='hobbyicon'><i class="fas fa-skiing"/></span> {{ $t('title.hobby') }}: </span>
       <el-tag
-       v-for='(i, _i) in data.self.interest'
+       v-for='(i, _i) in this.$store.getters.self.interest'
        :key='_i'
        effect='plain'
        type='info'
@@ -22,10 +22,7 @@
 <script>
 export default {
   computed: {
-    data: function () {
-      let ret = JSON.parse(localStorage.getItem('myCv'))
-      return ret[this.$i18n.locale]
-    }
+
   }
 }
 </script>

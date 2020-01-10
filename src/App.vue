@@ -44,7 +44,7 @@ code {
   font-size: 12px
 }
 .el-popover a:link {
-  color: #888
+  color: #909399
 }
 .el-popover a:visited {
   color: #ccc

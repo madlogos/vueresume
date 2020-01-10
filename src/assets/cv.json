@@ -249,7 +249,10 @@
         },
         "title": "科员", "icon": "check", "color": null, 
         "keyword": ["急性传染病防控", "计划免疫管理", "流行病学研究"],
-        "description": ["哈哈<br>哈哈"]
+        "description": ["哈哈<br>哈哈"],
+        "project": [
+          {"title": "一个项目", "from": "2019/01", "thru": "2019/12", "work": "做了又做，缝缝补补，又是一年。"}
+        ]
       },
       {
         "from": "2011/04", "till": "2016/04", "emp": "安泰保险", "link": "https://www.aetna.com",
@@ -260,7 +263,10 @@
         }, 
         "title": "项目经理", "icon": "check", "color": null, 
         "keyword": ["项目管理", "产品开发", "分析报告"], 
-        "description": ["哈哈"]
+        "description": ["哈哈"],
+        "project": [
+          {"title": "一个项目", "from": "2019/01", "thru": "2019/12", "work": "做了又做"}
+        ]
       },
       {
         "from": "2016/04", "till": "2020/04", "emp": "安泰保险", "link": "https://www.aetna.com",
@@ -271,7 +277,10 @@
         }, 
         "title": "分析经理/数据科学家", "icon": "loading", "color": "#00A78E", 
         "keyword": ["分析挖掘", "商业智能", "系统研发", "专业产品", "商务战略", "运营优化", "内部培训"], 
-        "description": ["呵呵"]
+        "description": ["呵呵", "哈哈哈哈哈哈哈哈哈", "<ul><li>嗯哼</li><li>呕吼</li></ul>"],
+        "project": [
+          {"title": "一个项目", "from": "2019/01", "thru": "2019/12", "work": "做了又做"}
+        ]
       }
     ],
     "edu": [
@@ -570,7 +579,10 @@
         }, 
         "link": null, "title": "Staff member", "icon": "check", "color": null,
         "keyword": ["Acute infectious disease control", "Planned immunization management", "Epidemiological study"],
-        "description": ["bla bla"]
+        "description": ["bla bla"],
+        "project": [
+          {"title": "A project", "from": "2019/01", "thru": "2019/12", "work": "Do, do"}
+        ]
       },
       {
         "from": "2011/04", "till": "2016/04", "emp": "Aetna International", "link": "https://www.aetna.com",
@@ -581,7 +593,10 @@
         }, 
         "title": "Project manager", "icon": "check", "color": null, 
         "keyword": ["Project management", "Product R&D", "Reporting"],
-        "description": ["bla bla"]
+        "description": ["bla bla"],
+        "project": [
+          {"title": "A project", "from": "2019/01", "thru": "2019/12", "work": "Do, do"}
+        ]
       },
       {
         "from": "2016/04", "till": "2020/04", "emp": "Aetna International", "link": "https://www.aetna.com",
@@ -592,7 +607,10 @@
         }, 
         "title": "Informatics manager / Data scientist", "icon": "loading", "color": "#00A78E",
         "keyword": ["Analytics & minning", "Business intelligence", "System R&D", "Professional product", "Business strategy", "Operation optimization", "Training"],
-        "description": ["bla bla"]
+        "description": ["bla bla"],
+        "project": [
+          {"title": "A project", "from": "2019/01", "thru": "2019/12", "work": "Do, do"}
+        ]
       }
     ],
     "edu": [

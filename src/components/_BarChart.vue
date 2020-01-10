@@ -27,22 +27,17 @@ export default {
       })()
     }
   },
-  updated () {
-    // const chartObj = echarts.init(document.getElementById(this.chartId))
-    this.chartObj.setOption(this.chartOptsBar)
-    this.chartObj.resize()
+  watch: {
+    data: function (newVal, oldVal) {
+      this.chartObj.setOption(this.chartOptsBar)
+    }
   },
   computed: {
-    lang: function () {
-      return this.$i18n.locale
-    },
     data: function () {
-      let ret = JSON.parse(localStorage.getItem('myCv'))
-      // return ret[this.$i18n.locale]
-      return ret[this.lang]
+      return this.$store.getters.talent
     },
     chartOptsBar: function () {
-      const dat = this.data.talent
+      const dat = this.data
       var y = []
       var ys = []
       var x = []

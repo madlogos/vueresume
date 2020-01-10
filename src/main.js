@@ -6,6 +6,7 @@ import 'element-ui/lib/theme-chalk/index.css'
 import 'element-ui/lib/theme-chalk/display.css'
 import App from './App'
 import router from './router'
+import store from './store'
 import i18n from './assets/i18n/index'
 import promise from 'es6-promise'
 promise.polyfill()
@@ -18,6 +19,7 @@ Vue.config.productionTip = false
 new Vue({
   el: '#app',
   router,
+  store,
   i18n,
   render: h => h(App)
 }).$mount('#app')

@@ -81,24 +81,7 @@ export default {
   },
   created: function () {
     this.loading = true
-    const now = new Date()
-    var myCvExpired = false
-    const validMinutes = process.env.NODE_ENV === 'development' ? 0 : 3600
-    // fetch data from localStorage
-    if (validMinutes > 0 && localStorage.getItem('myCvTime')) {
-      const myCvTime = new Date(localStorage.getItem('myCvTime'))
-      if (parseInt(now - myCvTime) > validMinutes * 1000) {
-        // myCvTime expired
-        myCvExpired = true
-      }
-    } else {
-      myCvExpired = true
-    }
-    if (myCvExpired) {
-      let json = require('@/assets/cv.json')
-      localStorage.setItem('myCvTime', now)
-      localStorage.setItem('myCv', JSON.stringify(json))
-    }
+    this.$store.commit('fetchData')
   },
   mounted: function () {
     document.title = this.$i18n.locale === 'zh' ? '汪轶颖的简历' : 'Wang Yiying\'s Résumé'
@@ -108,6 +91,7 @@ export default {
     changeLang (val) {
       // localStorage.setItem('lang', val)
       this.$i18n.locale = val
+      this.$store.commit('changeLang', val)
       document.title = val === 'zh' ? '汪轶颖的简历' : 'Wang Yiying\'s Résumé'
     },
     openTip () {
@@ -198,6 +182,18 @@ export default {
 }
 .icon-txt {
   margin-left: 4px
+}
+.icon-header {
+  margin-left: 4px;
+  color: #303133
+}
+.icon-word {
+  margin-left: 4px;
+  color: #606266
+}
+.icon-note {
+  margin-left: 4px;
+  color: #909399
 }
 .el-switch__label.is-active {
   color: #00A78E

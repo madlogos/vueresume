@@ -3,14 +3,14 @@
     <el-avatar :size='100' @error='errorHandler'>
       <img src='@/assets/logo.png' />
     </el-avatar>
-    <h1>{{ dec(data.name) }}</h1>
+    <h1>{{ dec(this.$store.getters.name) }}</h1>
     <p id='baseInfo'>
-      <span class="gender-info"><i :class='data.gender.fa' /><span class='info-left'>{{ data.gender.value }}</span></span>
-      <span class="dob-info"><i :class='data.dob.fa' /><span class='info-left'>{{ calcAge(dec(data.dob.value)) }}</span></span>
-      <span class="home-info"><i :class='data.home.fa' /><span class='info-right'>{{ data.home.value }}</span></span>
+      <span class="gender-info"><i :class='this.$store.getters.gender.fa' /><span class='info-left'>{{ this.$store.getters.gender.value }}</span></span>
+      <span class="dob-info"><i :class='this.$store.getters.dob.fa' /><span class='info-left'>{{ calcAge(dec(this.$store.getters.dob.value)) }}</span></span>
+      <span class="home-info"><i :class='this.$store.getters.home.fa' /><span class='info-right'>{{ this.$store.getters.home.value }}</span></span>
     </p>
     <p>
-      <pre id='motto'><i class='fas fa-quote-left'/>{{ data.motto }}<i class='fas fa-quote-right'/></pre>
+      <pre id='motto'><i class='fas fa-quote-left'/>{{ this.$store.getters.motto }}<i class='fas fa-quote-right'/></pre>
     </p>
   </div>
 </template>
@@ -19,10 +19,7 @@
 import { parseTimeDif, dec } from '@/utils/util'
 export default {
   computed: {
-    data: function () {
-      let ret = JSON.parse(localStorage.getItem('myCv'))
-      return ret[this.$i18n.locale]
-    }
+
   },
   methods: {
     errorHandler () {
