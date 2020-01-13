@@ -13,8 +13,8 @@
       </tr>
     </table>
     <div id="socio">
-      <span v-for="i in data.socio" :key="i.name">
-        <el-popover placement="top-start" :title="i.name" trigger="hover" width="100">
+      <template v-for="i in data.socio">
+        <el-popover :key="i.name" placement="top-start" :title="i.name" trigger="hover" width="100">
           <div class="el-popover__body">
             <span v-if='i.link'>
               <i class='fas fa-arrow-circle-right' />
@@ -24,7 +24,7 @@
           </div>
           <span class='socio-icon' slot='reference'><i :class='i.fa'/></span>
         </el-popover>
-      </span>
+      </template>
     </div>
   </div>
 </template>

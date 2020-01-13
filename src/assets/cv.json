@@ -77,10 +77,10 @@
           "name": "Excel", "size": null, "alpha": 0.15, "from": "2006", "thru": "now", "fa": "fas fa-file-excel", "prof": 3, 
           "p": null,
           "ul": ["精通 Excel 的基本和进阶功能，善于用公式、 VBA 、条件样式等搭建敏捷的一站式业务数据 解决方案", 
-            "甲流防治战中，以一人之力完成全区疫情/ 接种报表报送体系搭建和运转", "公司内部 Excel 培训讲师"]
+            "甲流防治战中，独立完成全区疫情/ 接种报表报送体系搭建和运作", "公司内部 Excel 培训讲师"]
         },
         {
-          "name": "Power BI", "size": "small", "alpha": 0.15, "from": "2018", "thru": "now", "fa": "fas fa-chart-area", "prof": 4.5, 
+          "name": "PowerBI", "size": "small", "alpha": 0.15, "from": "2018", "thru": "now", "fa": "fas fa-chart-area", "prof": 4.5, 
           "p": ["熟练使用 Power Query 和内置控件搭建内部报表 和业务仪表盘。"],
           "ul": null
         }
@@ -141,7 +141,7 @@
           "ul": ["善于信息检索和梳理，进行市场格局描述 和分析", "了解常用的战略分析工具"]
         },
         {
-          "name": "Power Point", "size": null, "alpha": 0.15, "from": "2011", "thru": "now", "fa": "fas fa-file-powerpoint", "prof": 4.5, 
+          "name": "PowerPoint", "size": null, "alpha": 0.15, "from": "2011", "thru": "now", "fa": "fas fa-file-powerpoint", "prof": 4.5, 
           "p": null,
           "ul": ["善于提取关键信息并有效强化", "善于信息可视化", "善于PPT排版、配色"]
         }
@@ -151,13 +151,13 @@
       {
         "caption": "项目管理专业人士资格认证(PMP)®", "name": "项目管理专业人士资格认证(PMP)®", "provider": null,
         "fa": "fas fa-award", "time": "2012/09", "institute": {
-          "name": "Project Management Institute", "link": "https://www.pmi.org"}, "sn": "1546494",
+          "name": "美国项目管理协会(PMI)", "link": "https://www.pmi.org"}, "sn": "1546494",
         "p": ["美国项目管理协会主持的项目管理知识技能体系认证，基于 PMBOK 5。该认证体系还包括 PfMP, PgMP, CAPM等。"],
         "ol": null
       },
       {
         "caption": "数据科学(R专项课程)", "name": "数据科学(R专项课程)", "provider": {
-          "name": "Johns Hopkins University", "link": "https://www.jhu.edu"},
+          "name": "约翰霍普金斯大学", "link": "https://www.jhu.edu"},
         "fa": "fas fa-user-ninja", "time": "2015/11", "institute": {
           "name": "Couresra", "link": "https://www.coursera.org"}, "sn": null,
         "p": ["Johns Hopkins 大学在 Coursera 开设的数据科学在线课程。", "技术栈： <code>R</code> (<code>tidyverse, ggplot2, caret, knitr</code>), <code>git</code>。", "课程："],
@@ -181,17 +181,17 @@
       },
       {
         "caption": "数据可视化", "name": "数据可视化", "provider": {
-          "name": "Illinois 大学香槟分校", "link": "https://illinois.edu/"}, 
+          "name": "伊利诺伊大学厄巴纳-香槟分校", "link": "https://illinois.edu/"}, 
         "fa": "fas fa-user-ninja", "time": "2017/05", "institute": {
           "name": "Couresra", "link": "https://www.coursera.org"}, "sn": null,
-        "p": ["Illinois 大学香槟分校在 Coursera 开设的数据可视化在线课程。", "技术栈: <code>Tableau</code>", "课程："], 
+        "p": ["Illinois 大学 Urbana-Champaign 分校在 Coursera 开设的数据可视化在线课程。", "技术栈: <code>Tableau</code>", "课程："], 
         "ol": ["计算机与人", "定量数据的可视化", "定性数据的可视化", "可视化仪表盘"]
       },
       {
         "caption": "认证Scrum产品负责人®", "name": "认证Scrum产品负责人®", "provider": null,
         "fa": "fas fa-award", "time": "2018/06", "institute": {
-          "name": "Scrum Alliance", "link": "https://www.scrumalliance.org"}, "sn": "000795041",
-        "p": ["Scrum 联盟主持的敏捷项目管理产品负责人认证。该认证体系还包括认证 Scrum 开发者、认证 Scrum Master 、高级认证 Scrum 产品负责人和高级认证 Scrum Master。"], 
+          "name": "Scrum 联盟", "link": "https://www.scrumalliance.org"}, "sn": "000795041",
+        "p": ["Scrum Alliance 主持的敏捷项目管理产品负责人认证。该认证体系还包括认证 Scrum 开发者、认证 Scrum Master 、高级认证 Scrum 产品负责人和高级认证 Scrum Master。"], 
         "ol": null
       },
       {
@@ -206,7 +206,7 @@
       },
       {
         "caption": "机器学习", "name": "机器学习", "provider": {
-          "name": "Standford University", "link": "https://www.stanford.edu"}, 
+          "name": "斯坦福大学", "link": "https://www.stanford.edu"}, 
         "fa": "fas fa-user-ninja", "time": "2018/08", "institute": {
           "name": "Couresra", "link": "https://www.coursera.org"}, "sn": null,
         "p": ["Stanford 大学 Andrew Ng 在 Coursera 开设的著名机器学习在线课程。", "技术栈： <code>MatLab / Octave</code>。", "课程："], 
@@ -229,7 +229,7 @@
       },
       {
         "caption": "用Python和JavaScript进行Web编程", "name": "用Python和JavaScript进行Web编程", 
-        "provider": {"name": "Harvard University", "link": "https://www.harvard.edu"}, 
+        "provider": {"name": "哈佛大学", "link": "https://www.harvard.edu"}, 
         "fa": "fas fa-user-ninja", "time": "2019/11", "institute": {
           "name": "edX", "link": "https://www.edx.org"}, "sn": null,
         "p": ["Harvard 大学在 edX 开设的在线 Web 编程课程。", "技术栈： <code>Python</code> (<code>Flask, Django</code>), <code>git</code>, <code>HTML / Bootstrap</code>, <code>CSS / Sass</code>, <code>JavaScript</code>。", "课程："],
@@ -249,13 +249,31 @@
         },
         "title": "科员", "icon": "check", "color": null, 
         "keyword": ["急性传染病防控", "计划免疫管理", "流行病学研究"],
-        "description": ["哈哈<br>哈哈"],
+        "description": [
+          {"p": ["免疫规划条线工作，包括规范化门诊和强化免疫督导、数据报表质控与更新等。"],
+           "ul": [
+            "徐汇卫生局“2009年度徐汇区计划免疫工作先进个人”称号", "独立实施全区疫情/ 接种报表报送体系的搭建和运作，以2人团队及时完成近千份报表和10万行个案表的制作、传输，吻合率基本达到100%"
+          ]},
+          {
+            "p": ["传染病防制条线工作，包括爆发性/ 聚集性/ 新发传染病疫情现场调查及处置、传染病前哨防控单位工作督导、疫情监测报表、疫情数据挖掘分析、健康教育及随访干预等。"],
+            "ul": [
+              "《徐汇区卫生报告》编委会成员，参编2010及2011两期报告中的传染病防制部分", "对辖区人群聚集性单位进行传染病暴发风险的分层识别和前置布控"
+            ]
+          }
+        ],
         "project": [
-          {"title": "一个项目", "from": "2019/01", "thru": "2019/12", "work": "做了又做，缝缝补补，又是一年。"}
+          {
+            "title": "甲型流感H1N1感染状况血清学调查", "from": "2010/03", "thru": "2010/10",
+            "work": ["中国CDC全国项目的区级子项目。经多阶段随机抽样选取受试者，开展多轮问卷调查、质控，以及血清标本采集转运。"]
+          },
+          {
+            "title": "世博期间传染病的公共卫生风险评估", "from": "2010/07", "thru": "2010/11",
+            "work": ["结合既往传染病疫情数据挖掘分析，利用Delphi专家咨询法开展传染病公共卫生风险评估。通过开放式和封闭式咨询，获得科学性佳、涵盖面广、前瞻性强的评估结果。"]
+          }
         ]
       },
       {
-        "from": "2011/04", "till": "2016/04", "emp": "安泰保险", "link": "https://www.aetna.com",
+        "from": "2011/04", "till": "2014/09", "emp": "安泰保险", "link": "https://www.aetna.com",
         "wiki": {
           "fa": "fab fa-wikipedia-w", "title": "关于该雇主", "value": "维基百科",
           "tag": ["财富200", "美国第3", "健康险", "CVS并购"],
@@ -263,23 +281,33 @@
         }, 
         "title": "项目经理", "icon": "check", "color": null, 
         "keyword": ["项目管理", "产品开发", "分析报告"], 
-        "description": ["哈哈"],
+        "description": [
+          {"p": ["哈哈"], "ul": null}
+        ],
         "project": [
-          {"title": "一个项目", "from": "2019/01", "thru": "2019/12", "work": "做了又做"}
+          {
+            "title": "一个项目", "from": "2019/01", "thru": "2019/12",
+            "work": ["做了又做"]
+          }
         ]
       },
       {
-        "from": "2016/04", "till": "2020/04", "emp": "安泰保险", "link": "https://www.aetna.com",
+        "from": "2014/09", "till": "2020/04", "emp": "安泰保险", "link": "https://www.aetna.com",
         "wiki": {
           "fa": "fab fa-wikipedia-w", "title": "关于该雇主", "value": "维基百科",
           "tag": ["财富200", "美国第3", "健康险", "CVS并购"],
           "link": "https://en.wikipedia.org/wiki/Aetna"
         }, 
-        "title": "分析经理/数据科学家", "icon": "loading", "color": "#00A78E", 
-        "keyword": ["分析挖掘", "商业智能", "系统研发", "专业产品", "商务战略", "运营优化", "内部培训"], 
-        "description": ["呵呵", "哈哈哈哈哈哈哈哈哈", "<ul><li>嗯哼</li><li>呕吼</li></ul>"],
+        "title": "数据分析经理", "icon": "loading", "color": "#00A78E", 
+        "keyword": ["数据科学", "分析挖掘", "商业智能", "系统研发", "专业产品", "商务战略", "运营优化", "内部培训"], 
+        "description": [
+          {"p": ["呵呵", "哈哈哈哈哈哈哈哈哈"], "ul":["嗯哼", "呕吼"]}
+        ],
         "project": [
-          {"title": "一个项目", "from": "2019/01", "thru": "2019/12", "work": "做了又做"}
+          {
+            "title": "一个项目", "from": "2019/01", "thru": "2019/12",
+            "work": ["做了又做"]
+          }
         ]
       }
     ],
@@ -291,7 +319,11 @@
           "tag": ["985/211", "C9"],
           "link": "https://zh.wikipedia.org/wiki/复旦大学公共卫生学院"
         },
-        "major": "预防医学", "cred": "医学士", "rank": "GPA 3.6/4.0 (前5)", "lesson": ""
+        "major": "预防医学", "cred": "医学士", "rank": "GPA 3.6/4.0 (前5)",
+        "lesson": [
+          "<b>公共课程</b>（高等数学、大学物理、无机/有机化学、生物学导论等）", "<b>医学基础</b>（解剖学、组织胚胎学、生物化学、细胞生物学、生理学、病理学、病理生理学、药理学等）",
+          "<b>临床基础</b>（内科学、外科学、妇产科学、儿科学、神经病学、精神医学、皮肤病学等）", "<b>专科基础</b>（生物统计学、流行病学、社会医学、卫生管理学、劳动卫生学、毒理学、环境卫生学、儿少卫生学、营养学、卫生微生物学、卫生化学等）"
+        ]
       },
       {
         "from": "2006/09", "till": "2009/07", "icon": "check", "color": null, "school": "复旦大学公共卫生学院", 
@@ -300,7 +332,11 @@
           "tag": ["985/211", "C9"],
           "link": "https://zh.wikipedia.org/wiki/复旦大学公共卫生学院"
         },
-        "major": "职业与环境卫生", "cred": "医学硕士", "rank": "GPA 3.4/4.0 (前10)", "lesson": ""
+        "major": "职业与环境卫生", "cred": "医学硕士", "rank": "GPA 3.4/4.0 (前10)", 
+        "lesson": [
+          "课程：高级流行病学、生物统计学、SAS编程、SPSS、环境健康危害评估、行为科学与健康促进等", "毕业课题：生活方式危险因素暴露与急性髓性白血病风险的关系",
+          "研究生会：<ul><li>为第七届上海研究生学术论坛环境卫生分论坛提供完整的宣传解决方案</li><li>主编首期《医学院新生生活指南》</li></ul>"
+        ]
       }
     ],
     "self": {
@@ -390,7 +426,7 @@
             "During the battle against Flu A, built the hoslistic district level report delivery system for epidemic / vaccination on my own", "Internal Excel trainer"]
         },
         {
-          "name": "Power BI", "size": "small", "alpha": 0.15, "from": "2018", "thru": "now", "fa": "fas fa-chart-area", "prof": 4.5, 
+          "name": "PowerBI", "size": "small", "alpha": 0.15, "from": "2018", "thru": "now", "fa": "fas fa-chart-area", "prof": 4.5, 
           "p": ["Familiar with building dynamic reports and busines dashboards using Power Query and builtin widgets."],
           "ul": null
         }
@@ -461,7 +497,7 @@
           "ul": ["Good at information searching and organization to describe and analyze the market", "Undertand common tools for strategic analysis"]
         },
         {
-          "name": "Power Point", "size": null, "alpha": 0.15, "from": "2011", "thru": "now", "fa": "fas fa-file-powerpoint", "prof": 4.5, 
+          "name": "PowerPoint", "size": null, "alpha": 0.15, "from": "2011", "thru": "now", "fa": "fas fa-file-powerpoint", "prof": 4.5, 
           "p": null,
           "ul": ["Good at distilling and highlighting key information", "Good at information visualization", "Good at PPT layouting and palette"]
         }
@@ -579,13 +615,31 @@
         }, 
         "link": null, "title": "Staff member", "icon": "check", "color": null,
         "keyword": ["Acute infectious disease control", "Planned immunization management", "Epidemiological study"],
-        "description": ["bla bla"],
+        "description": [
+          {"p": ["Planned immunization: monitering standardized immunization clinics and enhance immunization, quality control and update of data reports, etc."],
+           "ul": [
+            "<i>2009 Outstanding Award in Planned Immunization</i> of Xuhui District", "Independently implemented build-up and operations of the epidemic / immunization report delivery system. Created and transmitted up to 1,000 reports and 100 thousand records at nearly 100% correctness with limited human resources"
+          ]},
+          {
+            "p": ["Infectious disease control: field investigation and handling of outbreak, clustering and emerging contageous diseases, prevention guidance in susceptible institutions, epidemic surveillance reports, epidemic analysis and health education / inervention, etc."],
+            "ul": [
+              "Editorial board member of <i>Xuhui Health Report</i> 2010 and 2011 (infectious disease chapter)", "Stratified identification and in-advance control of outbreak risk of infectious diseases within the district"
+            ]
+          }
+        ],
         "project": [
-          {"title": "A project", "from": "2019/01", "thru": "2019/12", "work": "Do, do"}
+          {
+            "title": "Serological investigation of Influenza A H1N1 epidemics", "from": "2010/03", "thru": "2010/10",
+            "work": ["A district-level sub project of China CDC. Multiple rounds of investigation using questionnaires and collection, transportation of serum samples on objects recruited by multi-stage random sampling."]
+          },
+          {
+            "title": "Risk assessment of infectious diseases during Expo", "from": "2010/07", "thru": "2010/11",
+            "work": ["Conducted public health risk assessment using Delphi method combining with previous epidemic data of infectious diseases. Instrctive insights were drawn after a closed and an open consultations."]
+          }
         ]
       },
       {
-        "from": "2011/04", "till": "2016/04", "emp": "Aetna International", "link": "https://www.aetna.com",
+        "from": "2011/04", "till": "2014/09", "emp": "Aetna International", "link": "https://www.aetna.com",
         "wiki": {
           "fa": "fab fa-wikipedia-w", "title": "About this employer", "value": "Wikipedia",
           "tag": ["Fortune 200", "US 3rd biggest", "Health insurance", "CVS merger"],
@@ -593,23 +647,27 @@
         }, 
         "title": "Project manager", "icon": "check", "color": null, 
         "keyword": ["Project management", "Product R&D", "Reporting"],
-        "description": ["bla bla"],
+        "description": [
+          {"p": ["bla bla"], "ul": null}
+        ],
         "project": [
-          {"title": "A project", "from": "2019/01", "thru": "2019/12", "work": "Do, do"}
+          {"title": "A project", "from": "2019/01", "thru": "2019/12", "work": ["Do, do"]}
         ]
       },
       {
-        "from": "2016/04", "till": "2020/04", "emp": "Aetna International", "link": "https://www.aetna.com",
+        "from": "2014/09", "till": "2020/04", "emp": "Aetna International", "link": "https://www.aetna.com",
         "wiki": {
           "fa": "fab fa-wikipedia-w", "title": "About this employer", "value": "Wikipedia",
           "tag": ["Fortune 200", "US 3rd biggest", "Health insurance", "CVS merger"],
           "link": "https://en.wikipedia.org/wiki/Aetna"
         }, 
-        "title": "Informatics manager / Data scientist", "icon": "loading", "color": "#00A78E",
-        "keyword": ["Analytics & minning", "Business intelligence", "System R&D", "Professional product", "Business strategy", "Operation optimization", "Training"],
-        "description": ["bla bla"],
+        "title": "Informatics manager", "icon": "loading", "color": "#00A78E",
+        "keyword": ["Data science", "Analytics & minning", "Business intelligence", "System R&D", "Professional product", "Business strategy", "Operation optimization", "Training"],
+        "description": [
+          {"p": ["bla bla"], "ul": null}
+        ],
         "project": [
-          {"title": "A project", "from": "2019/01", "thru": "2019/12", "work": "Do, do"}
+          {"title": "A project", "from": "2019/01", "thru": "2019/12", "work": ["Do, do"]}
         ]
       }
     ],
@@ -623,7 +681,11 @@
           "link": "https://zh.wikipedia.org/wiki/复旦大学公共卫生学院"
         },
         "major": "Preventive medicine",
-        "cred": "Bachelor of Medicine", "rank": "GPA 3.6/4.0 (Top 5)", "lesson": ""
+        "cred": "Bachelor of Medicine", "rank": "GPA 3.6/4.0 (Top 5)",
+        "lesson": [
+          "<b>Public courses </b>(mathematics, physics, organic chemistry, introduction of biology, etc.)", "<b>Medical fundermentals </b>(anatomy, biochemistry, histology, cell biology, pathology, physiology and pharmacology etc.)",
+          "<b>Clinical fundermentals </b>(internal medicine, surgery, gynecology, pediatrics, neurology, psychiatry and dermatology, etc.)", "<b>Speciality fundermentals </b>(bio-statistics, epidemiology, social medicine, public health administration, occupational health, toxicology, environmental health, nutrition, microbiology, sanitary chemistry, etc.)"
+        ]
       },
       {
         "from": "2006/09", "till": "2009/07", "icon": "check", "color": null,
@@ -634,7 +696,12 @@
           "link": "https://zh.wikipedia.org/wiki/复旦大学公共卫生学院"
         },
         "major": "Occupational and environmental health", 
-        "cred": "Master of Medicine", "rank": "GPA 3.6/4.0 (Top 10)", "lesson": ""
+        "cred": "Master of Medicine", "rank": "GPA 3.6/4.0 (Top 10)", 
+        "lesson": [
+          "Courses: senior epidemiology, bio-statistics, SAS programming, SPSS, assessment of environmental health hazards, behavioral science and health promotion, etc.",
+          "Study for graduation: lifestyle exposure and risk of acute myeloid leukemia (AML)",
+          "Postgraduates' union<ul><li>Packed promotion solutions provider for The 7th Shanghai Postgraduates Academic Forum on Environmental Health Risks</li><li>Chief editor of 1st Edition of <i>A Guide for Freshmen in Medical Campus</i></li></ul>"
+        ]
       }
     ],
     "self": {

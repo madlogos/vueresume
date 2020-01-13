@@ -36,7 +36,7 @@ export default {
     description: '内容'
   },
   footer: {
-    footnote: '<span style="float:right"><i class="fas fa-file-code"></i> 基于<code>Vue.js</code>, <code>Vuex</code>, <code>ElementUI</code>, <code>ECharts</code> & <code>i18n</code>, <i class="fas fa-terminal"></i> 采用<code>Webpack</code>构建。</span>',
-    copyright: '<span><i class="fas fa-copyright"></i> 2019 madlogos</span>'
+    footnote: '<span style="float:right"><i class="fas fa-file-code"></i> 基于<code>Vue.js</code>, <code>ElementUI</code>, <code>ECharts</code> & <code>i18n</code>, <i class="fas fa-terminal"></i> 采用<code>Webpack</code>构建。</span>',
+    copyright: '<span><i class="fas fa-copyright"></i> 2019-2020 madlogos</span>'
   }
 }

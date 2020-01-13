@@ -9,7 +9,7 @@
       <BarChart></BarChart>
     </div>
     <div id='skills'>
-      <span class='skill-tag-block' v-for='(i, _i) in this.$store.getters.skill' :key='_i'>
+      <div class='skill-tag-block' v-for='(i, _i) in this.$store.getters.skill' :key='_i'>
         <el-popover v-for='(j, _j) in i' :key='_j' trigger='hover' placement='top-start'>
           <el-card class='box-card' shadow='hover'>
             <div slot='header'><h3><i :class='j.fa'/><span class='title-h3'>{{ j.name }}</span></h3></div>
@@ -24,12 +24,12 @@
                 score-template="{value}">
               </el-rate>
               <h4>{{ $t('skill.description') }}</h4>
-              <div v-if='j.p'>
+              <template v-if='j.p'>
                 <p v-for='(k, _k) in j.p' :key='_k' v-html='k'></p>
-              </div>
-              <div v-if='j.ul'>
+              </template>
+              <template v-if='j.ul'>
                 <ul><li v-for='(m, _m) in j.ul' :key='_m' v-html='m'></li></ul>
-              </div>
+              </template>
             </div>
           </el-card>
           <el-tag
@@ -41,7 +41,7 @@
             slot='reference'
           >{{ j.name }}</el-tag>
         </el-popover>
-      </span>
+      </div>
     </div>
   </div>
 </template>
@@ -116,7 +116,16 @@ h2 {
 .el-card ul {
   font-size: 12px;
   line-height: 1.5em;
-  padding: 0 18px
+  padding: 0 18px;
+  list-style: none
+}
+.el-card li::before {
+  content: "\2713";
+  color: gray;
+  display: inline-block;
+  width: 1em;
+  margin-left: -1.25em;
+  margin-right: 0.25em
 }
 #skills {
   padding: 10px 0

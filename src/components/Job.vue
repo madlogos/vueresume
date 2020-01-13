@@ -14,7 +14,7 @@
       <el-timeline-item
        v-for='(i, _i) in this.$store.getters.job'
        :key='_i'
-       :timestamp='i.from + " - " + i.till + "  (" + calcTimeDif(i.from, i.till) + ")"'
+       :timestamp='i.from + " - " + i.till + " · " + calcTimeDif(i.from, i.till)'
        :icon='"el-icon-" + i.icon'
        :color='i.color'
        size='large'
@@ -27,7 +27,7 @@
                 <span class="jobtitle">
                   <i class='fas fa-id-badge' /><span class='icon-txt'>{{ i.title }}</span>
                 </span>
-                <span class="jobemp" v-if='i.wiki.link'>
+                <template v-if='i.wiki.link'>
                   <el-popover placement='top-start' :title='i.wiki.title' trigger='hover' width=240>
                     <div>
                       <i :class='i.wiki.fa' />
@@ -42,20 +42,20 @@
                         size='mini'
                       >{{ tag }}</el-tag>
                     </div>
-                    <span slot='reference'>
+                    <span class="jobemp" slot='reference'>
                       <i class='fas fa-building' />
                       <a v-if='i.link' :href='i.link' target='_blank'>{{ i.emp }}</a>
                       <span v-else>{{ i.emp }}</span>
                     </span>
                   </el-popover>
-                </span>
-                <span class="jobemp" v-else>
-                  <span>
+                </template>
+                <template v-else>
+                  <span class="jobemp">
                     <i class='fas fa-building' />
                     <a v-if='i.link' :href='i.link' target='_blank'>{{ i.emp }}</a>
                     <span v-else>{{ i.emp }}</span>
                   </span>
-                </span>
+                </template>
               </div>
             </template>
             <div class='jobtag'>
@@ -67,19 +67,28 @@
                 size='mini'
               >{{ j }}</el-tag>
             </div>
-            <div v-if='i.description'>
-              <p class='jobdes' v-for='(k, _k) in i.description' :key='_k' v-html='k'></p>
-            </div>
-            <div v-if='i.project'>
-              <el-card v-for='(m, _m) in i.project' :key='_m' shadow='hover' :body-style='{padding:"10px"}'>
+            <template v-if='i.description'>
+              <div class='jobdes' v-for='(k, _k) in i.description' :key='_k'>
+                <div v-if='k.p'>
+                  <p v-for='(k1, _k1) in k.p' :key='_k1' v-html='k1'></p>
+                </div>
+                <ul v-if='k.ul'>
+                  <li v-for='(k2, _k2) in k.ul' :key='_k2' v-html='k2'></li>
+                </ul>
+              </div>
+            </template>
+            <template v-if='i.project'>
+              <el-card v-for='(m, _m) in i.project' :key='_m' shadow='hover' :body-style='{padding:"8px 10px"}'>
                 <p class='jobproj'>
                   <i class='fas fa-project-diagram'/>
-                  <span class='icon-txt'><strong>{{ m.title}}</strong></span>
-                  <span class='icon-note'>({{ m.from }} - {{ m.thru }})</span>
+                  <span class='icon-header'><strong>{{ m.title}}</strong></span>
+                  <span class='icon-note'> · {{ m.from }} - {{ m.thru }}</span>
                 </p>
-                <p class='projnote'>{{ m.work }}</p>
+                <div v-if='m.work'>
+                  <p class='projnote' v-for='(m1, _m1) in m.work' :key="_m1">{{ m1 }}</p>
+                </div>
               </el-card>
-            </div>
+            </template>
           </el-collapse-item>
         </el-collapse>
       </el-timeline-item>
@@ -109,6 +118,7 @@ export default {
     if (this.$store.getters.job[jobCnt - 1].icon === 'loading') {
       this.foldValue[jobCnt - 1] = [(jobCnt - 1).toString()]
     }
+    this.initFolding()
   },
   methods: {
     calcTimeDif (t0, t1) {
@@ -143,8 +153,17 @@ export default {
         }
       }
     },
+    initFolding () {
+      if (this.countEmptyArrInArr(this.foldValue) === 0) {
+        this.foldAll = true
+        this.foldIcon = 'el-icon-arrow-down'
+      } else {
+        this.foldAll = false
+        this.foldIcon = 'el-icon-arrow-right'
+      }
+    },
     handleChange (val) {
-      // val is an array
+      // val is an array binding to this el-collapse-item
       if (this.countEmptyArrInArr(this.foldValue) === this.foldValue.length) {
         // all null
         this.foldAll = false
@@ -220,24 +239,41 @@ a:hover {
   margin-bottom: 10px
 }
 .jobdes {
-  line-height: 1em;
-  margin: 10px 0
+  line-height: 1.25em;
+  margin: 10px 20px 10px 15px
+}
+.jobdes p {
+  margin: 16px 0 8px 0
+}
+.jobdes ul {
+  padding-left: 20px;
+  list-style: none
+}
+.jobdes li::before {
+  content: "\2212";
+  color: gray;
+  display: inline-block;
+  width: 1em;
+  margin-left: -1.25em;
+  margin-right: 0.25em
 }
 .jobproj {
   color: #606266
 }
 .projnote {
-  padding-left: 18px;
+  padding-left: 24px;
   color: #606266
 }
 .jobdes ul {
   line-height: 1.5em
 }
 .el-card {
-  margin-right: 20px
+  margin: 10px 20px 10px 16px;
+  background-color: #fafafa;
+  line-height: 1.25em
 }
 .el-card__body p {
-  margin: 6px 0
+  margin: 12px 0 8px 0
 }
 .el-collapse {
   border-top: none

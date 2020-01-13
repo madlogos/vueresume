@@ -16,21 +16,21 @@
                   <i class='fas fa-chalkboard-teacher' />
                   <a :href='i.provider.link' target='_blank'><span class='icon-txt'>{{ i.provider.name }}</span></a>
                 </p>
-                <p v-if='i.institute'>
-                  <span class='pop-quote'>
+                <template v-if='i.institute'>
+                  <p class='pop-quote'>
                     <i class='fas fa-university' />
                     <a :href='i.institute.link' target='_blank'><span class='icon-txt'>{{ i.institute.name }}</span></a>
-                  </span>
-                </p>
-                <p v-if='i.sn' class='pop-quote'><i class='fas fa-hashtag' /><span class='icon-txt'>{{ i.sn }}</span></p>
+                  </p>
+                </template>
+                <p v-if='i.sn' class='pop-quote'><i class='fas fa-hashtag'/><span class='icon-txt'>{{ i.sn }}</span></p>
               </div>
               <div>
                 <p v-if='i.time'>
-                  <span class='pop-quote'><i class='fas fa-calendar-alt' /><span class='icon-txt'>{{ i.time }}</span></span>
+                  <span class='pop-quote'><i class='fas fa-calendar-alt'/><span class='icon-txt'>{{ i.time }}</span></span>
                 </p>
-                <div v-if='i.p'>
+                <template v-if='i.p'>
                   <p class='pop-p' v-for='(j, _j) in i.p' :key='_j' v-html='j'></p>
-                </div>
+                </template>
                 <ol v-if='i.ol'>
                   <li class='pop-li' v-for='(k, _k) in i.ol' :key='_k' v-html='k'></li>
                 </ol>
