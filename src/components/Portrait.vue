@@ -1,6 +1,6 @@
 <template>
   <div class='block' id='portrait'>
-    <el-avatar :size='100' @error='errorHandler'>
+    <el-avatar :size='120' @error='errorHandler'>
       <img src='@/assets/logo.png' />
     </el-avatar>
     <h1>{{ dec(this.$store.getters.name) }}</h1>
@@ -36,37 +36,37 @@ export default {
 }
 </script>
 
-<style scoped>
+<style lang='scss' scoped>
 #portrait {
   text-align: center;
-  margin: 20px
+  margin: $mar-md
 }
 h1, h2, h3, h4, h5, h6, p {
-  color: #fff
+  color: $col-bg
 }
 h1 {
   font-size: x-large;
   font-weight: thin
 }
 pre {
-  color: #ccc
+  color: $col-text-alt
 }
 #baseInfo i.fas {
-  color: #eee;
+  color: $col-main-alt;
   font-size: small
 }
 .info-left {
   margin-left: 4px;
-  margin-right: 20px
+  margin-right: $mar-md
 }
 .info-right {
   margin-left: 4px
 }
 .gender-info:hover, .dob-info:hover, .home-info:hover {
-  color: #67C23A
+  color: $col-ok
 }
 #motto {
-  color: #ccc
+  color: $col-text-alt
 }
 #motto .fa-quote-left {
   margin-top: -3px;

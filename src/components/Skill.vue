@@ -9,7 +9,7 @@
       <BarChart></BarChart>
     </div>
     <div id='skills'>
-      <div class='skill-tag-block' v-for='(i, _i) in this.$store.getters.skill' :key='_i'>
+      <span class='skill-tag-block' v-for='(i, _i) in this.$store.getters.skill' :key='_i'>
         <el-popover v-for='(j, _j) in i' :key='_j' trigger='hover' placement='top-start'>
           <el-card class='box-card' shadow='hover'>
             <div slot='header'><h3><i :class='j.fa'/><span class='title-h3'>{{ j.name }}</span></h3></div>
@@ -41,7 +41,7 @@
             slot='reference'
           >{{ j.name }}</el-tag>
         </el-popover>
-      </div>
+      </span>
     </div>
   </div>
 </template>
@@ -91,37 +91,37 @@ export default {
 }
 </script>
 
-<style scoped>
+<style lang='scss' scoped>
 #skill {
-  margin: 40px 10px 40px 20px
+  margin: $mar-lg $mar-sm $mar-lg $mar-md
 }
 h2 {
-  color: #eee
+  color: $col-main-alt
 }
 .skill-tag-block {
-  margin-right: 20px
+  margin-right: $mar-md
 }
 #canvas1 {
   height: 140px
 }
 .el-card {
   text-align: left;
-  word-break: keep-all;
+  word-break: normal;
   overflow-wrap: break-word;
   white-space: normal
 }
 .el-card__header h2 {
-  color: #303133
+  color: $col-main
 }
 .el-card ul {
-  font-size: 12px;
-  line-height: 1.5em;
-  padding: 0 18px;
+  font-size: $sm;
+  line-height: $lh-md;
+  padding: 0px 18px;
   list-style: none
 }
 .el-card li::before {
   content: "\2713";
-  color: gray;
+  color: $col-info;
   display: inline-block;
   width: 1em;
   margin-left: -1.25em;
@@ -131,26 +131,26 @@ h2 {
   padding: 10px 0
 }
 #skills .el-tag {
-  margin: 2px 2px;
-  padding: 0 6px;
-  font-size: 13px;
+  margin: 2px 3px;
+  padding: 0 9px;
+  font-size: $bs;
   border-style: none
 }
 #skills .el-tag:hover {
-  color: #67C23A;
-  background-color: #fff
+  color: $col-ok;
+  background-color: $col-bg
 }
 .box-card {
   margin: -6px;
-  width: 320px
+  width: $wdt-card
 }
 .el-popover {
   padding: 0
 }
 .appyear {
-  font-size: 14px;
+  font-size: $bs;
   font-weight: normal;
   float: right;
-  color: #666
+  color: $col-text
 }
 </style>

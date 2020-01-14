@@ -13,7 +13,7 @@
          active-value='en'
          inactive-text='中'
          inactive-value='zh'
-         active-color='#00A78E'
+         :active-color='this.themeColor'
          @change='changeLang($event)'
         >
         </el-switch>
@@ -57,11 +57,12 @@
 <script>
 import Portrait from '@/components/Portrait'
 import Contact from '@/components/Contact'
-import Skill from '@/components/Skill'
-import Cert from '@/components/Cert'
 import Job from '@/components/Job'
-import Edu from '@/components/Edu'
-import SelfState from '@/components/SelfState'
+// async load rest components
+const Skill = () => import('@/components/Skill')
+const Cert = () => import('@/components/Cert')
+const Edu = () => import('@/components/Edu')
+const SelfState = () => import('@/components/SelfState')
 
 export default {
   components: {
@@ -76,7 +77,8 @@ export default {
   data: function () {
     return {
       lang: this.$i18n.locale,
-      loading: true
+      loading: true,
+      themeColor: '#00A78E'
     }
   },
   created: function () {
@@ -106,34 +108,34 @@ export default {
 }
 </script>
 
-<style scoped>
+<style lang='scss' scoped>
 .wrapper {
   height: 100vh;
   overflow-x: hidden;
   overflow-y: auto
 }
 #backtop {
-  color: #00A78E
+  color: $col-thm
 }
 #side-bar {
-  background-color: #00A78E
+  background-color: $col-thm
 }
 #el-col-sidebar {
   min-height: 34px;
-  background-color: #00A78E
+  background-color: $col-thm
 }
 #el-foot-sidebar {
-  background-color: #00A78E
+  background-color: $col-thm
 }
 #side-bar h3, #side-bar h4 {
-  margin: 20px 20px;
-  color: #eee
+  margin: $mar-md;
+  color: $col-main-alt
 }
 #el-foot-main {
   margin-bottom: 5px
 }
 #el-row-lang {
-  background: #efefef
+  background: $col-container
 }
 #el-row-foot {
   display: flex
@@ -150,10 +152,10 @@ export default {
   padding: 0px 12px
 }
 #tip {
-  margin-left: 20px
+  margin-left: $mar-md
 }
 .tipbtn:hover {
-  color: #67C23A;
+  color: $col-ok;
 }
 .tipbtn {
   margin: 2px 20px 2px 10px;
@@ -166,14 +168,14 @@ export default {
 }
 .footer {
   margin: 0;
-  padding: 10px 20px;
-  color: #999;
+  padding: $mar-sm $mar-md;
+  color: $col-info;
   font-size: small;
-  line-height: 1.75em
+  line-height: $lh-lg
 }
 </style>
 
-<style>
+<style lang='scss'>
 .title-h2 {
   margin-left: 8px
 }
@@ -185,18 +187,18 @@ export default {
 }
 .icon-header {
   margin-left: 4px;
-  color: #303133
+  color: $col-main
 }
 .icon-word {
   margin-left: 4px;
-  color: #606266
+  color: $col-text
 }
 .icon-note {
   margin-left: 4px;
-  color: #909399
+  color: $col-info
 }
 .el-switch__label.is-active {
-  color: #00A78E
+  color: $col-thm
 }
 .el-notification__content {
   text-align: left

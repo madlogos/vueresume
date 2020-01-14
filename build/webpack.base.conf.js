@@ -29,9 +29,6 @@ module.exports = {
   //   app: './src/main.js'
   // },
   entry: ['babel-polyfill', './src/main.js'],
-  // entry: {
-  //   app: './src/main.js'
-  // },
   output: {
     path: config.build.assetsRoot,
     filename: '[name].js',
@@ -82,6 +79,10 @@ module.exports = {
           limit: 10000,
           name: utils.assetsPath('fonts/[name].[hash:7].[ext]')
         }
+      },
+      {
+        test: /\.scss$/,
+        loaders: ['style', 'css', 'sass']
       }
     ]
   },

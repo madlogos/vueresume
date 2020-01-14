@@ -46,30 +46,30 @@ export default {
 }
 </script>
 
-<style scoped>
+<style lang='scss' scoped>
 #contact {
-  margin: 40px 10px 40px 20px
+  margin: $mar-lg $mar-sm $mar-lg $mar-md
 }
 h2 {
-  color: #eee
+  color: $col-main-alt
 }
 a:link {
-  color: #fff
+  color: $col-bg
 }
 .el-popover a:link {
-  color: #00A78E
+  color: $col-thm
 }
 a:visited {
-  color: #666
+  color: $col-text
 }
 .el-popover a:visited {
-  color: #666
+  color: $col-text
 }
 a:hover {
-  color: #67C23A
+  color: $col-ok
 }
 .el-popover a:hover {
-  color: #67C23A
+  color: $col-ok
 }
 .el-popover__body i {
   margin-right: 15px
@@ -79,19 +79,23 @@ a:hover {
   padding-left: 10px
 }
 #items {
-  color: #eee;
+  font-size: $bs;
+  color: $col-main-alt;
   border-spacing: 10px 4px;
   margin-left: -2px
 }
+#items tr {
+  vertical-align: middle
+}
 #socio {
   padding: 10px 5px 10px 5px;
-  color: #eee;
-  font-size: 20px
+  color: $col-main-alt;
+  font-size: $xlg
 }
 .socio-icon {
   margin-right: 15px
 }
 .socio-icon:hover {
-  color: #67C23A
+  color: $col-ok
 }
 </style>

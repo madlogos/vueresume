@@ -167,12 +167,12 @@ export default {
 }
 </script>
 
-<style scoped>
+<style lang='scss' scoped>
 #edu {
-  margin: 20px 20px 40px 20px
+  margin: $mar-md $mar-md $mar-lg $mar-md
 }
 h2 {
-  color: #00A78E
+  color: $col-thm
 }
 #foldToggle {
   float: right;
@@ -180,52 +180,52 @@ h2 {
   padding: 5px
 }
 #foldToggle:hover {
-  color: #00A78E;
-  border-color: #00A78E88;
-  background-color: #00A78E11;
+  color: $col-thm;
+  border-color: $col-thm-opaque;
+  background-color: $col-thm-opaquer
 }
 .el-timeline {
   padding-left: 5px
 }
 a:link {
-  color: #909399
+  color: $col-info
 }
 a:visited {
-  color: #ccc
+  color: $col-text-alt
 }
 a:hover {
-  color: #67C23A
+  color: $col-ok
 }
 .el-tag {
   margin: 2px
 }
 .el-tag:hover {
-  color: #67C23A;
-  border-color: #67C23A;
-  background-color: #fff
+  color: $col-ok;
+  border-color: $col-ok;
+  background-color: $col-bg
 }
 .cred {
-  font-size: 14px;
+  font-size: $rg;
   font-weight: bold;
-  margin-right: 20px
+  margin-right: $mar-md
 }
 .univ {
-  font-size: 14px;
-  color: #909399;
+  font-size: $sm;
+  color: $col-info;
   font-weight: normal;
-  margin-right: 20px
+  margin-right: $mar-md
 }
 .major {
-  color: #909399;
+  color: $col-info;
   font-weight: normal;
-  margin-bottom: 10px
+  margin-bottom: $mar-sm
 }
 .major-head {
-  margin-right: 20px
+  margin-right: $mar-md
 }
 .edudes {
-  line-height: 1.25em;
-  margin: 10px 20px 10px 20px
+  line-height: $lh-md;
+  margin: $mar-sm $mar-md $mar-sm $mar-md
 }
 .edudes ul {
   padding-left: 20px;
@@ -233,7 +233,7 @@ a:hover {
 }
 .edudes li::before {
   content: "\2212";
-  color: gray;
+  color: $col-info;
   display: inline-block;
   width: 1em;
   margin-left: -1.25em;
@@ -246,10 +246,10 @@ a:hover {
   border-bottom: none
 }
 .el-collapse-item__header {
-  line-height: 1.5em;
+  line-height: $lh-md;
   border-bottom: none
 }
 .collhead {
-  line-height: 1.5em
+  line-height: $lh-md
 }
 </style>

@@ -37,7 +37,7 @@
                     <div>
                       <el-tag
                         v-for='(tag, _tag) in i.wiki.tag'
-                        :key='_tag'
+                        :key='"tag" + _tag'
                         type='info'
                         size='mini'
                       >{{ tag }}</el-tag>
@@ -61,31 +61,31 @@
             <div class='jobtag'>
               <el-tag
                 v-for='(j, _j) in i.keyword'
-                :key='_j'
+                :key='"kw" + _j'
                 effect='plain'
                 type='info'
                 size='mini'
               >{{ j }}</el-tag>
             </div>
             <template v-if='i.description'>
-              <div class='jobdes' v-for='(k, _k) in i.description' :key='_k'>
+              <div class='jobdes' v-for='(k, _k) in i.description' :key='"des" + _k'>
                 <div v-if='k.p'>
-                  <p v-for='(k1, _k1) in k.p' :key='_k1' v-html='k1'></p>
+                  <p v-for='(k1, _k1) in k.p' :key='"p" + _k1' v-html='k1'></p>
                 </div>
                 <ul v-if='k.ul'>
-                  <li v-for='(k2, _k2) in k.ul' :key='_k2' v-html='k2'></li>
+                  <li v-for='(k2, _k2) in k.ul' :key='"li" + _k2' v-html='k2'></li>
                 </ul>
               </div>
             </template>
             <template v-if='i.project'>
-              <el-card v-for='(m, _m) in i.project' :key='_m' shadow='hover' :body-style='{padding:"8px 10px"}'>
+              <el-card v-for='(m, _m) in i.project' :key='"proj" + _m' shadow='hover' :body-style='{padding:"8px 10px"}'>
                 <p class='jobproj'>
                   <i class='fas fa-project-diagram'/>
-                  <span class='icon-header'><strong>{{ m.title}}</strong></span>
+                  <span class='icon-header'><strong>{{ m.title }}</strong></span>
                   <span class='icon-note'> · {{ m.from }} - {{ m.thru }}</span>
                 </p>
                 <div v-if='m.work'>
-                  <p class='projnote' v-for='(m1, _m1) in m.work' :key="_m1">{{ m1 }}</p>
+                  <p class='projnote' v-for='(m1, _m1) in m.work' :key='"work" + _m1'>{{ m1 }}</p>
                 </div>
               </el-card>
             </template>
@@ -103,7 +103,8 @@ export default {
     return {
       foldAll: null,
       foldIcon: 'el-icon-arrow-down',
-      foldValue: []
+      foldValue: [],
+      themeColor: '#00A78E'
     }
   },
   computed: {
@@ -188,12 +189,12 @@ export default {
 }
 </script>
 
-<style scoped>
+<style lang='scss' scoped>
 #job {
-  margin: 20px 20px 40px 20px
+  margin: $mar-md $mar-md $mar-lg $mar-md
 }
 h2 {
-  color: #00A78E
+  color: $col-thm
 }
 #foldToggle {
   float: right;
@@ -201,48 +202,49 @@ h2 {
   padding: 5px
 }
 #foldToggle:hover {
-  color: #00A78E;
-  border-color: #00A78E88;
-  background-color: #00A78E11;
+  color: $col-thm;
+  border-color: $col-thm-opaque;
+  background-color: $col-thm-opaquer
 }
 .el-timeline {
   padding-left: 5px
 }
 a:link {
-  color: #909399
+  color: $col-info
 }
 a:visited {
-  color: #ccc
+  color: $col-text-alt
 }
 a:hover {
-  color: #67C23A
+  color: $col-ok
 }
 .el-tag {
   margin: 2px
 }
 .el-tag:hover {
-  color: #67C23A;
-  border-color: #67C23A;
-  background-color: #fff
+  color: $col-ok;
+  border-color: $col-ok;
+  background-color: $col-bg
 }
 .jobtitle {
-  font-size: 14px;
+  font-size: $rg;
   font-weight: bold;
   margin-right: 20px
 }
 .jobemp {
-  font-size: 14px;
-  color: #909399;
+  font-size: $sm;
+  color: $col-info;
   font-weight: normal
 }
 .jobtag {
-  margin-bottom: 10px
+  margin-bottom: $mar-sm
 }
 .jobdes {
-  line-height: 1.25em;
-  margin: 10px 20px 10px 15px
+  line-height: $lh-md;
+  margin: $mar-sm $mar-md $mar-sm 15px
 }
 .jobdes p {
+  font-size: $sm;
   margin: 16px 0 8px 0
 }
 .jobdes ul {
@@ -251,29 +253,33 @@ a:hover {
 }
 .jobdes li::before {
   content: "\2212";
-  color: gray;
+  color: $col-info;
   display: inline-block;
   width: 1em;
   margin-left: -1.25em;
   margin-right: 0.25em
 }
 .jobproj {
-  color: #606266
+  color: $col-text
 }
 .projnote {
   padding-left: 24px;
-  color: #606266
+  color: $col-text
+}
+.icon-note {
+  padding-left: 12px;
+  text-indent: -12px
 }
 .jobdes ul {
-  line-height: 1.5em
+  line-height: $lh-md
 }
 .el-card {
-  margin: 10px 20px 10px 16px;
-  background-color: #fafafa;
-  line-height: 1.25em
+  margin: $mar-md $mar-md $mar-md 15px;
+  background-color: $col-block;
+  line-height: $lh-md
 }
 .el-card__body p {
-  margin: 12px 0 8px 0
+  margin: 8px 0 6px 0
 }
 .el-collapse {
   border-top: none
@@ -282,10 +288,10 @@ a:hover {
   border-bottom: none
 }
 .el-collapse-item__header {
-  line-height: 1.5em;
+  line-height: $lh-md;
   border-bottom: none
 }
 .collhead {
-  line-height: 1.5em
+  line-height: $lh-md
 }
 </style>

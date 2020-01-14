@@ -27,28 +27,28 @@ export default {
 }
 </script>
 
-<style scoped>
+<style lang='scss' scoped>
 #self {
-  margin: 20px 20px 40px 20px
+  margin: $mar-md $mar-md $mar-lg $mar-md
 }
 #statement {
+  font-size: $bs;
   margin-left: 33px
 }
 #hobby {
-  margin: 20px 20px 20px 33px
+  margin: $mar-md $mar-md $mar-md 33px
 }
 #hobby .el-tag {
   margin: 2px
 }
 #hobbyicon {
-  color: #999
+  color: $col-info
 }
 .el-tag:hover {
-  font-size: 12px;
-  color: #67C23A;
-  border-color: #67C23A
+  color: $col-ok;
+  border-color: $col-ok
 }
 h2 {
-  color: #00A78E
+  color: $col-thm
 }
 </style>

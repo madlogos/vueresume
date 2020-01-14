@@ -10,7 +10,7 @@ export default {
 }
 </script>
 
-<style>
+<style lang='scss'>
 #app {
   font-family: "Helvetica Neue", Helvetica, "PingFang SC", "Hiragino Sans GB", "Microsoft YaHei", "微软雅黑", Arial, sans-serif;
   -webkit-font-smoothing: antialiased;
@@ -24,15 +24,15 @@ body {
   padding: 0
 }
 code {
-  color: #8932AF;
-  background-color: #eeeeee99;
+  color: $col-code;
+  background-color: $col-code-bg;
   padding: 1px 4px
 }
 .el-popover__title {
   font-family: "Helvetica Neue", Helvetica, "PingFang SC", "Hiragino Sans GB", "Microsoft YaHei", "微软雅黑", Arial, sans-serif
 }
 .el-popover__title p {
-  font-size: 14px
+  font-size: $bs
 }
 .el-popover {
   font-family: "Helvetica Neue", Helvetica, "PingFang SC", "Hiragino Sans GB", "Microsoft YaHei", "微软雅黑", Arial, sans-serif
@@ -41,16 +41,16 @@ code {
   font-family: "Helvetica Neue", Helvetica, "PingFang SC", "Hiragino Sans GB", "Microsoft YaHei", "微软雅黑", Arial, sans-serif
 }
 .el-popover p {
-  font-size: 12px
+  font-size: $sm
 }
 .el-popover a:link {
-  color: #909399
+  color: $col-ph
 }
 .el-popover a:visited {
-  color: #ccc
+  color: $col-text-alt
 }
 .el-popover a:hover {
-  color: #67C23A
+  color: $col-ok
 }
 .el-popover .el-card__header {
   margin: 0;

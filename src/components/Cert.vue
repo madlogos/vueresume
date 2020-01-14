@@ -50,70 +50,70 @@ export default {
 }
 </script>
 
-<style scoped>
+<style lang='scss' scoped>
 #cert {
-  margin: 40px 20px
+  margin: $mar-lg $mar-md
 }
 h2, p, li {
-  color: #eee
+  color: $col-main-alt
 }
 .el-card__header h2 {
-  color: #303133
+  color: $col-main
 }
 .el-card__body p, .el-card__body li {
-  color: #606266
+  color: $col-text
 }
 .el-card__body ol {
   padding-left: 24px
 }
 #certs .el-tag {
   margin: 2.5px 5px;
-  font-size: 14px;
+  font-size: $bs;
   border-style: none
 }
 #certs .el-tag:hover {
-  font-size: 16px;
+  font-size: $bs;
   font-weight: bold
 }
 .cert-ul {
-  padding: 0
+  padding-left: 16px
 }
 .cert-li {
-  font-size: 14px;
+  font-size: $bs;
   list-style-type: none;
-  line-height: 1.75em;
-  padding-left: 75px;
-  text-indent: -75px
+  line-height: $lh-lg;
+  padding-left: 74px;
+  text-indent: -66px
 }
 .cert-main:hover {
-  color: #67C23A
+  color: $col-ok
 }
 .cert-quote {
-  font-size: 12px;
-  color: #ccc;
-  margin-right: 10px
+  font-size: small;
+  color: $col-text-alt;
+  margin: 0
 }
 .cert-quote-icon {
-  font-size: 12px;
-  color: #ccc;
+  font-size: $sm;
+  color: $col-text-alt;
   font-family: monospace;
-  margin-right: 2px
+  margin-right: 10px
 }
 .pop-quote {
-  color: #909399
+  color: $col-info
 }
 .pop-p, .pop-li {
   text-align: left;
-  line-height: 1.5em;
-  word-break: keep-all;
+  line-height: $lh-md;
+  word-break: normal;
   overflow-wrap: break-word
 }
 .pop-li {
-  font-size: 12px
+  font-size: $sm
 }
 .box-card {
   margin: -6px;
-  width: 320px
+  width: $wdt-card
 }
 .el-popover {
   padding: 0

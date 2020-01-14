@@ -34,7 +34,7 @@
         {
           "name": "分析建模", "size": null, "alpha": 0.3, "from": "2009", "thru": "now", "fa": "fas fa-chart-bar", "prof": 4.5, 
           "p": null,
-          "ul": ["有大型健康数据分析项目经验。对数据治理、探索分析、建模挖掘、验证检验及结合业务 提出洞见的完整应用分析框架有较深刻理解",
+          "ul": ["有大型健康数据分析项目经验。对数据治理、探索分析、建模挖掘、验证检验及结合业务 提出洞见的完整应用分析框架有深刻理解",
             "熟悉生物统计、机器学习的理论和应用，了解深度学习", "独立搭建过业务数据管理系统和分析工具链", "精通常用分析工具如 R, Python, SQL 等"]
         },
         {
@@ -43,6 +43,18 @@
           "ul": ["熟悉 R 体系的 <code>ggplot2</code>, <code>plotly</code> 等工具",
             "熟悉 Python 体系的 <code>matplotlib</code>, <code>seaborn</code>, <code>pyecharts</code> 等工具",
             "熟悉 ECharts, 封装过它的 R 语言接口包"]
+        },
+        {
+          "name": "机器学习", "size": "medium", "alpha": 0.3, "from": "2017", "thru": "now", "fa": "fas fa-atom", "prof": 4, 
+          "p": ["了解回归、分类、判别、聚类、SVM、随机森林、AdaBoost、Apriori、ANN 等经典机器学习原理，熟悉算法在 R 和 Python 中的具体实现和模型评估。"],
+          "ul": ["熟悉 R 体系的 <code>caret</code>, <code>e1071</code> 等工具",
+            "熟悉 Python 体系的 <code>numpy</code>, <code>scikit-learn</code> 等工具"]
+        },
+        {
+          "name": "深度学习", "size": "small", "alpha": 0.15, "from": "2018", "thru": "now", "fa": "fas fa-layer-group", "prof": 3.5, 
+          "p": ["了解 CNN, RNN, LSTM, 词嵌入模型等深度学习的 基础原理及其 Python 实现"],
+          "ul": ["了解 Python 体系的 <code>tensorflow</code>, <code>keras</code> 等工具"
+            ]
         },
         {
           "name": "R", "size": null, "alpha": 0.15, "from": "2015", "thru": "now", "fa": "fab fa-r-project", "prof": 5, 
@@ -252,7 +264,7 @@
         "description": [
           {"p": ["免疫规划条线工作，包括规范化门诊和强化免疫督导、数据报表质控与更新等。"],
            "ul": [
-            "徐汇卫生局“2009年度徐汇区计划免疫工作先进个人”称号", "独立实施全区疫情/ 接种报表报送体系的搭建和运作，以2人团队及时完成近千份报表和10万行个案表的制作、传输，吻合率基本达到100%"
+            "徐汇卫生局“2009年度徐汇区计划免疫工作先进个人”称号", "独立实施全区疫情/ 接种报表报送体系的搭建和运作，以2人团队及时、准确完成近千份报表和10万行个案表的制作与传输"
           ]},
           {
             "p": ["传染病防制条线工作，包括爆发性/ 聚集性/ 新发传染病疫情现场调查及处置、传染病前哨防控单位工作督导、疫情监测报表、疫情数据挖掘分析、健康教育及随访干预等。"],
@@ -263,8 +275,8 @@
         ],
         "project": [
           {
-            "title": "甲型流感H1N1感染状况血清学调查", "from": "2010/03", "thru": "2010/10",
-            "work": ["中国CDC全国项目的区级子项目。经多阶段随机抽样选取受试者，开展多轮问卷调查、质控，以及血清标本采集转运。"]
+            "title": "甲型H1N1流感感染状况血清学调查", "from": "2010/03", "thru": "2010/10",
+            "work": ["中国CDC全国项目的区级子项目。经多阶段随机抽样选取受试者，开展多轮问卷调查，采集及转运血清标本。"]
           },
           {
             "title": "世博期间传染病的公共卫生风险评估", "from": "2010/07", "thru": "2010/11",
@@ -319,10 +331,10 @@
           "tag": ["985/211", "C9"],
           "link": "https://zh.wikipedia.org/wiki/复旦大学公共卫生学院"
         },
-        "major": "预防医学", "cred": "医学士", "rank": "GPA 3.6/4.0 (前5)",
+        "major": "预防医学", "cred": "医学士", "rank": "GPA 3.4/4.0 (前5)",
         "lesson": [
-          "<b>公共课程</b>（高等数学、大学物理、无机/有机化学、生物学导论等）", "<b>医学基础</b>（解剖学、组织胚胎学、生物化学、细胞生物学、生理学、病理学、病理生理学、药理学等）",
-          "<b>临床基础</b>（内科学、外科学、妇产科学、儿科学、神经病学、精神医学、皮肤病学等）", "<b>专科基础</b>（生物统计学、流行病学、社会医学、卫生管理学、劳动卫生学、毒理学、环境卫生学、儿少卫生学、营养学、卫生微生物学、卫生化学等）"
+          "<b>公共课程</b>: 高等数学、大学物理、无机/有机化学、生物学导论等", "<b>医学基础</b>: 解剖学、组织胚胎学、生物化学、细胞生物学、生理学、病理学、病理生理学、药理学等",
+          "<b>临床基础</b>: 内科学、外科学、妇产科学、儿科学、神经病学、精神医学、皮肤病学等", "<b>专科基础</b>: 生物统计学、流行病学、社会医学、卫生管理学、劳动卫生学、毒理学、环境卫生学、儿少卫生学、营养学、卫生微生物学、卫生化学等"
         ]
       },
       {
@@ -332,10 +344,10 @@
           "tag": ["985/211", "C9"],
           "link": "https://zh.wikipedia.org/wiki/复旦大学公共卫生学院"
         },
-        "major": "职业与环境卫生", "cred": "医学硕士", "rank": "GPA 3.4/4.0 (前10)", 
+        "major": "职业与环境卫生", "cred": "医学硕士", "rank": "GPA 3.6/4.0 (前10)", 
         "lesson": [
-          "课程：高级流行病学、生物统计学、SAS编程、SPSS、环境健康危害评估、行为科学与健康促进等", "毕业课题：生活方式危险因素暴露与急性髓性白血病风险的关系",
-          "研究生会：<ul><li>为第七届上海研究生学术论坛环境卫生分论坛提供完整的宣传解决方案</li><li>主编首期《医学院新生生活指南》</li></ul>"
+          "<b>课程</b>：高级流行病学、生物统计学、SAS编程、SPSS、环境健康危害评估、行为科学与健康促进等", "<b>毕业课题</b>：生活方式危险因素暴露与急性髓性白血病风险的流行病学关联",
+          "<b>研究生会</b>：<ul style='padding-left:30px'><li>为第七届上海研究生学术论坛环境卫生分论坛提供完整的宣传解决方案</li><li>主编首期《医学院新生生活指南》</li></ul>"
         ]
       }
     ],
@@ -388,6 +400,18 @@
           "ul": ["Familiar with <code>ggplot2</code>, <code>plotly</code> etc. in R ecosystem",
             "Familiar with <code>matplotlib</code>, <code>seaborn</code>, <code>pyecharts</code> etc. in Python ecosystem",
             "Familiar with ECharts, and composed a wrapper package of R interface for it"]
+        },
+        {
+          "name": "Machine learning", "size": "medium", "alpha": 0.3, "from": "2017", "thru": "now", "fa": "fas fa-atom", "prof": 4, 
+          "p": ["Understand principles of classic machine learning algorithms, such as regression, classification, discrimination, clustering, SVM, random forest, AdaBoost, Apriori, ANN, etc. Famliar with algorithm implmentation in R and Python."],
+          "ul": ["Familiar with <code>caret</code>, <code>e1071</code>, etc. in R",
+            "Familiar with <code>numpy</code>, <code>scikit-learn</code>, etc. in Python"]
+        },
+        {
+          "name": "Deep learning", "size": "small", "alpha": 0.15, "from": "2018", "thru": "now", "fa": "fas fa-layer-group", "prof": 3.5, 
+          "p": ["Understand principle fundermentals implementation in Python of common deep learning algorithms, such as CNN, RNN, LSTM, work embeddings, etc."],
+          "ul": ["Understand <code>tensorflow</code>, <code>keras</code>, etc. in Python"
+            ]
         },
         {
           "name": "R", "size": null, "alpha": 0.15, "from": "2015", "thru": "now", "fa": "fab fa-r-project", "prof": 5, 
@@ -616,25 +640,25 @@
         "link": null, "title": "Staff member", "icon": "check", "color": null,
         "keyword": ["Acute infectious disease control", "Planned immunization management", "Epidemiological study"],
         "description": [
-          {"p": ["Planned immunization: monitering standardized immunization clinics and enhance immunization, quality control and update of data reports, etc."],
+          {"p": ["Planned immunization: monitering standardized immunization clinics and enhanced immunization, quality control and update of data reports, etc."],
            "ul": [
-            "<i>2009 Outstanding Award in Planned Immunization</i> of Xuhui District", "Independently implemented build-up and operations of the epidemic / immunization report delivery system. Created and transmitted up to 1,000 reports and 100 thousand records at nearly 100% correctness with limited human resources"
+            "<i>2009 Outstanding Award in Planned Immunization</i> of Xuhui District", "Independently implemented build-up and operations of the epidemic / immunization report delivery system. Created and transmitted up to 1,000 reports and 100 thousand records at nearly 100% correctness given limited human resources"
           ]},
           {
-            "p": ["Infectious disease control: field investigation and handling of outbreak, clustering and emerging contageous diseases, prevention guidance in susceptible institutions, epidemic surveillance reports, epidemic analysis and health education / inervention, etc."],
+            "p": ["Infectious disease control: field investigation and handling of outbreak, clustering and emerging contageous diseases, prevention guidance in susceptible institutions, epidemic surveillance reports, epidemic analysis and health education / intervention, etc."],
             "ul": [
-              "Editorial board member of <i>Xuhui Health Report</i> 2010 and 2011 (infectious disease chapter)", "Stratified identification and in-advance control of outbreak risk of infectious diseases within the district"
+              "Editorial board member of <i>Xuhui Health Report</i> 2010 and 2011 on infectious diseases", "Stratified identification and in-advance control of outbreak risk of infectious diseases within the district"
             ]
           }
         ],
         "project": [
           {
-            "title": "Serological investigation of Influenza A H1N1 epidemics", "from": "2010/03", "thru": "2010/10",
-            "work": ["A district-level sub project of China CDC. Multiple rounds of investigation using questionnaires and collection, transportation of serum samples on objects recruited by multi-stage random sampling."]
+            "title": "Serological investigation on epidemic of Influenza A H1N1", "from": "2010/03", "thru": "2010/10",
+            "work": ["A district-level sub-project of China CDC's nationwide initiative, which comprised of multiple rounds of investigation using questionnaires, and collection + transportation of serum samples on objects recruited by multi-stage random sampling."]
           },
           {
-            "title": "Risk assessment of infectious diseases during Expo", "from": "2010/07", "thru": "2010/11",
-            "work": ["Conducted public health risk assessment using Delphi method combining with previous epidemic data of infectious diseases. Instrctive insights were drawn after a closed and an open consultations."]
+            "title": "Risk assessment of infectious diseases during 2010 Expo", "from": "2010/07", "thru": "2010/11",
+            "work": ["Conducted public health risk assessment using Delphi method combining with previous epidemic data of infectious diseases. Instructive insights were drawn after a closed and an open consultations."]
           }
         ]
       },
@@ -681,10 +705,10 @@
           "link": "https://zh.wikipedia.org/wiki/复旦大学公共卫生学院"
         },
         "major": "Preventive medicine",
-        "cred": "Bachelor of Medicine", "rank": "GPA 3.6/4.0 (Top 5)",
+        "cred": "Bachelor of Medicine", "rank": "GPA 3.4/4.0 (Top 5)",
         "lesson": [
-          "<b>Public courses </b>(mathematics, physics, organic chemistry, introduction of biology, etc.)", "<b>Medical fundermentals </b>(anatomy, biochemistry, histology, cell biology, pathology, physiology and pharmacology etc.)",
-          "<b>Clinical fundermentals </b>(internal medicine, surgery, gynecology, pediatrics, neurology, psychiatry and dermatology, etc.)", "<b>Speciality fundermentals </b>(bio-statistics, epidemiology, social medicine, public health administration, occupational health, toxicology, environmental health, nutrition, microbiology, sanitary chemistry, etc.)"
+          "<b>Public courses</b>: mathematics, physics, organic chemistry, introduction of biology, etc.", "<b>Medical fundermentals</b>: anatomy, biochemistry, histology, cell biology, pathology, physiology and pharmacology etc.",
+          "<b>Clinical fundermentals</b>: internal medicine, surgery, gynecology, pediatrics, neurology, psychiatry and dermatology, etc.", "<b>Speciality fundermentals</b>: bio-statistics, epidemiology, social medicine, public health administration, occupational health, toxicology, environmental health, nutrition, microbiology, sanitary chemistry, etc.)"
         ]
       },
       {
@@ -698,9 +722,9 @@
         "major": "Occupational and environmental health", 
         "cred": "Master of Medicine", "rank": "GPA 3.6/4.0 (Top 10)", 
         "lesson": [
-          "Courses: senior epidemiology, bio-statistics, SAS programming, SPSS, assessment of environmental health hazards, behavioral science and health promotion, etc.",
-          "Study for graduation: lifestyle exposure and risk of acute myeloid leukemia (AML)",
-          "Postgraduates' union<ul><li>Packed promotion solutions provider for The 7th Shanghai Postgraduates Academic Forum on Environmental Health Risks</li><li>Chief editor of 1st Edition of <i>A Guide for Freshmen in Medical Campus</i></li></ul>"
+          "<b>Courses</b>: senior epidemiology, bio-statistics, SAS programming, SPSS, assessment of environmental health hazards, behavioral science and health promotion, etc.",
+          "<b>Study for graduation</b>: Lifestyle exposure and risk of acute myeloid leukemia (AML)",
+          "<b>Postgraduates' union</b>: <ul style='padding-left:30px'><li>Packed promotion solutions provider for The 7th Shanghai Postgraduates Academic Forum on Environmental Health Risks</li><li>Chief editor of 1st Edition of <i>A Guide for Freshmen in Medical Campus</i></li></ul>"
         ]
       }
     ],
