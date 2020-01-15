@@ -30,7 +30,11 @@
       <skill/>
       <cert/>
       <template>
-        <h3><i class='fas fa-download'/><span class='title-h3'>{{ $t('title.download') }}</span></h3>
+        <h3>
+          <a :href='this.attachment'>
+            <i class='fas fa-download'/><span class='title-h3'>{{ $t('title.download') }}</span>
+          </a>
+        </h3>
       </template>
     </el-col>
     <el-col :xs="24" :sm="16" :md="16" :lg="16" :xl="16" id="main">
@@ -55,10 +59,12 @@
 </template>
 
 <script>
-import Portrait from '@/components/Portrait'
-import Contact from '@/components/Contact'
-import Job from '@/components/Job'
-// async load rest components
+import sty from '@/styles/_color.scss'
+
+// async load components
+const Portrait = () => import('@/components/Portrait')
+const Contact = () => import('@/components/Contact')
+const Job = () => import('@/components/Job')
 const Skill = () => import('@/components/Skill')
 const Cert = () => import('@/components/Cert')
 const Edu = () => import('@/components/Edu')
@@ -78,7 +84,14 @@ export default {
     return {
       lang: this.$i18n.locale,
       loading: true,
-      themeColor: '#00A78E'
+      themeColor: sty.themeColor
+    }
+  },
+  computed: {
+    attachment: function () {
+      let attachDir = 'https://gitee.com/madlogos/vueresume/blob/master/src/assets/'
+      let attachFile = this.$i18n.locale === 'zh' ? 'wang-yiying-resume-cn.pdf' : 'wang-yiying-resume-en.pdf'
+      return attachDir + attachFile
     }
   },
   created: function () {
@@ -119,6 +132,15 @@ export default {
 }
 #side-bar {
   background-color: $col-thm
+}
+#side-bar a:link {
+  color: $col-bg
+}
+#side-bar a:visited {
+  color: $col-text
+}
+#side-bar a:hover {
+  color: $col-ok
 }
 #el-col-sidebar {
   min-height: 34px;
@@ -172,35 +194,5 @@ export default {
   color: $col-info;
   font-size: small;
   line-height: $lh-lg
-}
-</style>
-
-<style lang='scss'>
-.title-h2 {
-  margin-left: 8px
-}
-.title-h3 {
-  margin-left: 8px
-}
-.icon-txt {
-  margin-left: 4px
-}
-.icon-header {
-  margin-left: 4px;
-  color: $col-main
-}
-.icon-word {
-  margin-left: 4px;
-  color: $col-text
-}
-.icon-note {
-  margin-left: 4px;
-  color: $col-info
-}
-.el-switch__label.is-active {
-  color: $col-thm
-}
-.el-notification__content {
-  text-align: left
 }
 </style>

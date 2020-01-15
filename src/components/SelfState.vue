@@ -33,6 +33,7 @@ export default {
 }
 #statement {
   font-size: $bs;
+  line-height: $lh-lg;
   margin-left: 33px
 }
 #hobby {

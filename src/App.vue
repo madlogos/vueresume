@@ -40,6 +40,9 @@ code {
 .el-tooltip__popper {
   font-family: "Helvetica Neue", Helvetica, "PingFang SC", "Hiragino Sans GB", "Microsoft YaHei", "微软雅黑", Arial, sans-serif
 }
+.el-tooltip__popper.is-light {
+  border: 1px solid $col-info
+}
 .el-popover p {
   font-size: $sm
 }
@@ -62,5 +65,32 @@ code {
 }
 .el-notification {
   font-family: "Helvetica Neue", Helvetica, "PingFang SC", "Hiragino Sans GB", "Microsoft YaHei", "微软雅黑", Arial, sans-serif
+}
+.el-notification__content {
+  text-align: left
+}
+.el-switch__label.is-active {
+  color: $col-thm
+}
+.title-h2 {
+  margin-left: 8px
+}
+.title-h3 {
+  margin-left: 8px
+}
+.icon-txt {
+  margin-left: 4px
+}
+.icon-header {
+  margin-left: 4px;
+  color: $col-main
+}
+.icon-word {
+  margin-left: 4px;
+  color: $col-text
+}
+.icon-note {
+  margin-left: 4px;
+  color: $col-info
 }
 </style>

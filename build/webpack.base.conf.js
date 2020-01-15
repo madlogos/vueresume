@@ -36,6 +36,14 @@ module.exports = {
       ? config.build.assetsPublicPath
       : config.dev.assetsPublicPath
   },
+  externals: {
+    'vue': 'Vue',
+    'vue-router': 'VueRouter',
+    'axios': 'axios',
+    'echarts': 'echarts',
+    'element-ui': 'ELEMENT',
+    'i18n': 'i18n'
+  },
   resolve: {
     extensions: ['.js', '.vue', '.json'],
     alias: {
@@ -79,10 +87,6 @@ module.exports = {
           limit: 10000,
           name: utils.assetsPath('fonts/[name].[hash:7].[ext]')
         }
-      },
-      {
-        test: /\.scss$/,
-        loaders: ['style', 'css', 'sass']
       }
     ]
   },

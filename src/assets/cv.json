@@ -127,7 +127,7 @@
         {
           "name": "生物统计", "size": null, "alpha": 0.15, "from": "2001", "thru": "now", "fa": "fas fa-chart-bar", "prof": 4.5, 
           "p": null,
-          "ul": ["熟悉常用统计方法原理及实现", "了解医学试验、药物临床试验设计"]
+          "ul": ["熟悉常用统计方法原理及其 R, Python, SAS, stata 实现", "了解医学试验、药物临床试验设计"]
         }
       ],
       [
@@ -259,15 +259,15 @@
           "tag": ["公共卫生", "事业单位"],
           "link": "https://baike.baidu.com/item/徐汇区疾病预防控制中心"
         },
-        "title": "科员", "icon": "check", "color": null, 
-        "keyword": ["急性传染病防控", "计划免疫管理", "流行病学研究"],
+        "title": "科员", "icon": "check", "active": false, 
+        "keyword": ["传染病防控", "计划免疫管理", "流行病学研究"],
         "description": [
-          {"p": ["免疫规划条线工作，包括规范化门诊和强化免疫督导、数据报表质控与更新等。"],
+          {"p": ["<b>免疫规划条线</b>: 规范化门诊和强化免疫督导、数据报表质控与更新等。"],
            "ul": [
             "徐汇卫生局“2009年度徐汇区计划免疫工作先进个人”称号", "独立实施全区疫情/ 接种报表报送体系的搭建和运作，以2人团队及时、准确完成近千份报表和10万行个案表的制作与传输"
           ]},
           {
-            "p": ["传染病防制条线工作，包括爆发性/ 聚集性/ 新发传染病疫情现场调查及处置、传染病前哨防控单位工作督导、疫情监测报表、疫情数据挖掘分析、健康教育及随访干预等。"],
+            "p": ["<b>传染病防制条线</b>: 包括爆发性/ 聚集性/ 新发传染病疫情现场调查及处置、传染病前哨防控单位工作督导、疫情监测报表、疫情数据挖掘分析、健康教育及随访干预等。"],
             "ul": [
               "《徐汇区卫生报告》编委会成员，参编2010及2011两期报告中的传染病防制部分", "对辖区人群聚集性单位进行传染病暴发风险的分层识别和前置布控"
             ]
@@ -276,7 +276,7 @@
         "project": [
           {
             "title": "甲型H1N1流感感染状况血清学调查", "from": "2010/03", "thru": "2010/10",
-            "work": ["中国CDC全国项目的区级子项目。经多阶段随机抽样选取受试者，开展多轮问卷调查，采集及转运血清标本。"]
+            "work": ["中国CDC全国项目的区级子项目。经多阶段随机抽样选取受试者，开展多轮问卷调查，采集、分离及转运血清标本。"]
           },
           {
             "title": "世博期间传染病的公共卫生风险评估", "from": "2010/07", "thru": "2010/11",
@@ -291,15 +291,39 @@
           "tag": ["财富200", "美国第3", "健康险", "CVS并购"],
           "link": "https://en.wikipedia.org/wiki/Aetna"
         }, 
-        "title": "项目经理", "icon": "check", "color": null, 
+        "title": "项目管理经理", "icon": "check", "active": false,
         "keyword": ["项目管理", "产品开发", "分析报告"], 
         "description": [
-          {"p": ["哈哈"], "ul": null}
+          {
+            "p": ["<b>项目管理</b>: 创建项目管理体系规范，提供方法和资源支持，推动项目驱动型业务团队的建设。"],
+            "ul": ["开发项目管理文件模板，及基于SharePoint的项目管理协作系统", "实地运作多个大型企业健康管理项目，为团队积累知识资产", "分析业务项目的运行情况，提供流程改进建议"]
+          },
+          {
+            "p": ["<b>产品及服务的医学支持</b>: 负责内部循证顾问委员会的运作，确保专业健康服务循证可靠。"],
+            "ul": ["为产品开发、服务过程提供医学意见，维护专业产品知识库", "直接参与设计企业客户的健康干预计划，及医学内容的实地开发", "对含医学内容的外发文件进行循证核查"]
+          },
+          {
+            "p": ["<b>数据分析与决策支持</b>: 分析企业客户多源健康数据，提供干预建议；分析内部运营数据，为团队提供决策支持。"],
+            "ul": ["分析企业体检、健康风险评估、理赔等数据，识别主要健康风险和高风险人群，对可预防控制的风险做出具体建议",
+              "分析企业健康管理项目的过程数据，评估效果，挖掘模式，为下一步行动提供洞见", "为60多家企业客户提供详尽、多维、准确、循证、品质卓越的健康分析报告",
+              "分析内部运营绩效数据，为健康服务及保险业务流程改进和战略规划提供决策支持"]
+          },
+          {
+            "p": ["<b>技术赋能与业务支持</b>: 推进IT信息系统开发上线；独立开发小型内部应用，敏捷实现业务需求。"],
+            "ul": ["作为需求方对接IT团队，推进实施核心业务系统开发项目", "为团队开发内部应用，涵盖团队出勤、客服记录、企业医务室诊疗、在线咨询答复评估、就医协助、循证审查等业务的管理",
+              "设计开发项目成本估算模型并工具化，提高了预估精度和估算效率，支撑主营业务的报价、核价流程"]
+          }
         ],
         "project": [
           {
-            "title": "一个项目", "from": "2019/01", "thru": "2019/12",
-            "work": ["做了又做"]
+            "title": "基于网络应用的某企业健康促进项目", "from": "2011/04", "thru": "2013/05",
+            "work": ["该项目是国内较早开展的企业在线轻问诊服务实例。客群超过2万人，时效性、循证性、满意度等 KPI 均超过目标值。",
+              "作为项目负责人，协调IT团队完成双语在线健康信息及交互咨询系统，参与在线咨询流程设计及实地运营，亲身答复超过50万字；协调医学顾问委完成70余篇中英双语健康短文；在有限资源和预算约束下及时高质完成项目。"]
+          },
+          {
+            "title": "某企业年度综合性健康筛查项目", "from": "2013/10", "thru": "2014/03",
+            "work": ["与同类企业健康筛查项目相比，该项目规模大、形式新、准备期短、循证要求高。通过严谨协作，项目成功落地实施，参与率、满意度、成本效益均达到目标。团队获得了运作万人级别服务项目的宝贵经验。",
+              "作为项目经理，全程跟进竞标、实施和评估。跟进过程中，额外产出 (1)改进的成本预估模型和 (2)服务供应商网络拓展及评估的流程框架。前者帮助团队更精确地定价，最终赢得竞标。后者成为此后拓展服务网络的标准实践。"]
           }
         ]
       },
@@ -310,12 +334,19 @@
           "tag": ["财富200", "美国第3", "健康险", "CVS并购"],
           "link": "https://en.wikipedia.org/wiki/Aetna"
         }, 
-        "title": "数据分析经理", "icon": "loading", "color": "#00A78E", 
+        "title": "数据分析经理", "icon": "loading", "active": true,
         "keyword": ["数据科学", "分析挖掘", "商业智能", "系统研发", "专业产品", "商务战略", "运营优化", "内部培训"], 
         "description": [
+          {"p": ["<b>数字化升级战略</b>: 参与"], "ul":["嗯哼", "呕吼"]},
+          {"p": ["呵呵", "哈哈哈哈哈哈哈哈哈"], "ul":["嗯哼", "呕吼"]},
+          {"p": ["呵呵", "哈哈哈哈哈哈哈哈哈"], "ul":["嗯哼", "呕吼"]},
           {"p": ["呵呵", "哈哈哈哈哈哈哈哈哈"], "ul":["嗯哼", "呕吼"]}
         ],
         "project": [
+          {
+            "title": "一个项目", "from": "2019/01", "thru": "2019/12",
+            "work": ["做了又做"]
+          },
           {
             "title": "一个项目", "from": "2019/01", "thru": "2019/12",
             "work": ["做了又做"]
@@ -325,7 +356,7 @@
     ],
     "edu": [
       {
-        "from": "2001/09", "till": "2006/07", "icon": "check", "color": null, "school": "复旦大学公共卫生学院", 
+        "from": "2001/09", "till": "2006/07", "icon": "check", "active": false, "school": "复旦大学公共卫生学院", 
         "link": "http://sph.fudan.edu.cn", "wiki": {
           "fa": "fab fa-wikipedia-w", "title": "关于该学校", "value": "维基百科",
           "tag": ["985/211", "C9"],
@@ -338,7 +369,7 @@
         ]
       },
       {
-        "from": "2006/09", "till": "2009/07", "icon": "check", "color": null, "school": "复旦大学公共卫生学院", 
+        "from": "2006/09", "till": "2009/07", "icon": "check", "active": false, "school": "复旦大学公共卫生学院", 
         "link": "http://sph.fudan.edu.cn/", "wiki": {
           "fa": "fab fa-wikipedia-w", "title": "关于该学校", "value": "维基百科",
           "tag": ["985/211", "C9"],
@@ -490,7 +521,7 @@
         {
           "name": "Bio-statistics", "size": null, "alpha": 0.15, "from": "2001", "thru": "now", "fa": "fas fa-chart-bar", "prof": 4.5, 
           "p": null,
-          "ul": ["Familiar with principles and implmentation of classic statistics",
+          "ul": ["Familiar with principles and implmentation of classic statistics using R, Python, SAS, stata",
             "Understand design of medical experiment and clinical trial"]
         }
       ],
@@ -637,15 +668,15 @@
           "tag": ["Public health", "Non-profit"],
           "link": "https://baike.baidu.com/item/徐汇区疾病预防控制中心"
         }, 
-        "link": null, "title": "Staff member", "icon": "check", "color": null,
-        "keyword": ["Acute infectious disease control", "Planned immunization management", "Epidemiological study"],
+        "link": null, "title": "Staff member", "icon": "check", "active": false,
+        "keyword": ["Infectious disease control", "Planned immunization", "Epidemiological study"],
         "description": [
-          {"p": ["Planned immunization: monitering standardized immunization clinics and enhanced immunization, quality control and update of data reports, etc."],
+          {"p": ["<b>Planned immunization</b>: monitering standardized immunization clinics and enhanced immunization, quality control and update of data reports, etc."],
            "ul": [
             "<i>2009 Outstanding Award in Planned Immunization</i> of Xuhui District", "Independently implemented build-up and operations of the epidemic / immunization report delivery system. Created and transmitted up to 1,000 reports and 100 thousand records at nearly 100% correctness given limited human resources"
           ]},
           {
-            "p": ["Infectious disease control: field investigation and handling of outbreak, clustering and emerging contageous diseases, prevention guidance in susceptible institutions, epidemic surveillance reports, epidemic analysis and health education / intervention, etc."],
+            "p": ["<b>Infectious disease control</b>: field investigation and handling of outbreak, clustering and emerging contageous diseases, prevention guidance in susceptible institutions, epidemic surveillance reports, epidemic analysis and health education / intervention, etc."],
             "ul": [
               "Editorial board member of <i>Xuhui Health Report</i> 2010 and 2011 on infectious diseases", "Stratified identification and in-advance control of outbreak risk of infectious diseases within the district"
             ]
@@ -669,7 +700,7 @@
           "tag": ["Fortune 200", "US 3rd biggest", "Health insurance", "CVS merger"],
           "link": "https://en.wikipedia.org/wiki/Aetna"
         }, 
-        "title": "Project manager", "icon": "check", "color": null, 
+        "title": "Project Management Manager", "icon": "check", "active": false,
         "keyword": ["Project management", "Product R&D", "Reporting"],
         "description": [
           {"p": ["bla bla"], "ul": null}
@@ -685,7 +716,7 @@
           "tag": ["Fortune 200", "US 3rd biggest", "Health insurance", "CVS merger"],
           "link": "https://en.wikipedia.org/wiki/Aetna"
         }, 
-        "title": "Informatics manager", "icon": "loading", "color": "#00A78E",
+        "title": "Informatics Manager", "icon": "loading", "active": true,
         "keyword": ["Data science", "Analytics & minning", "Business intelligence", "System R&D", "Professional product", "Business strategy", "Operation optimization", "Training"],
         "description": [
           {"p": ["bla bla"], "ul": null}
@@ -697,7 +728,7 @@
     ],
     "edu": [
       {
-        "from": "2001/09", "till": "2006/07", "icon": "check", "color": null,
+        "from": "2001/09", "till": "2006/07", "icon": "check", "active": false,
         "school": "Fudan University School of Public Health", 
         "link": "http://sph.fudan.edu.cn", "wiki": {
           "fa": "fab fa-wikipedia-w", "title": "About this school", "value": "Wikipedia",
@@ -712,7 +743,7 @@
         ]
       },
       {
-        "from": "2006/09", "till": "2009/07", "icon": "check", "color": null,
+        "from": "2006/09", "till": "2009/07", "icon": "check", "active": false,
         "school": "Fudan University School of Public Health", 
         "link": "http://sph.fudan.edu.cn", "wiki": {
           "fa": "fab fa-wikipedia-w", "title": "About this school", "value": "Wikipedia",

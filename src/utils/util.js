@@ -85,6 +85,16 @@ export function formatTimeDif2 (d, f, sep) {
   }
   return ret
 }
+export function countEmptyArrInArr (arr) {
+  // used in array within array
+  var n = 0
+  for (var i = 0; i < arr.length; i++) {
+    if (Array.isArray(arr[i]) && arr[i].length === 0) {
+      n++
+    }
+  }
+  return n
+}
 export function enc (s) {
   var ret = window.encodeURIComponent(s)
   return window.btoa(ret)

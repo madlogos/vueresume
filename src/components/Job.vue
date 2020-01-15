@@ -16,7 +16,7 @@
        :key='_i'
        :timestamp='i.from + " - " + i.till + " · " + calcTimeDif(i.from, i.till)'
        :icon='"el-icon-" + i.icon'
-       :color='i.color'
+       :color='colorTimelineNode(i.active)'
        size='large'
        placement='top'
       >
@@ -97,14 +97,15 @@
 </template>
 
 <script>
-import { parseTimeDif, formatTimeDif2 } from '@/utils/util'
+import sty from '@/styles/_color.scss'
+import { parseTimeDif, formatTimeDif2, countEmptyArrInArr } from '@/utils/util'
 export default {
   data () {
     return {
       foldAll: null,
       foldIcon: 'el-icon-arrow-down',
       foldValue: [],
-      themeColor: '#00A78E'
+      themeColor: sty.themeColor
     }
   },
   computed: {
@@ -116,8 +117,11 @@ export default {
     for (var i = 0; i < jobCnt; i++) {
       this.foldValue.push([])
     }
-    if (this.$store.getters.job[jobCnt - 1].icon === 'loading') {
+    if (this.$store.getters.job[jobCnt - 1].active) {
       this.foldValue[jobCnt - 1] = [(jobCnt - 1).toString()]
+    }
+    if (countEmptyArrInArr(this.foldValue) === this.foldValue.length) {
+      this.foldAll = false
     }
     this.initFolding()
   },
@@ -155,7 +159,7 @@ export default {
       }
     },
     initFolding () {
-      if (this.countEmptyArrInArr(this.foldValue) === 0) {
+      if (countEmptyArrInArr(this.foldValue) === 0) {
         this.foldAll = true
         this.foldIcon = 'el-icon-arrow-down'
       } else {
@@ -165,25 +169,18 @@ export default {
     },
     handleChange (val) {
       // val is an array binding to this el-collapse-item
-      if (this.countEmptyArrInArr(this.foldValue) === this.foldValue.length) {
+      if (countEmptyArrInArr(this.foldValue) === this.foldValue.length) {
         // all null
         this.foldAll = false
         this.foldIcon = 'el-icon-arrow-right'
-      } else if (this.countEmptyArrInArr(this.foldValue) === 0) {
+      } else if (countEmptyArrInArr(this.foldValue) === 0) {
         // all not null
         this.foldAll = true
         this.foldIcon = 'el-icon-arrow-down'
       }
     },
-    countEmptyArrInArr (arr) {
-      // used in array within array
-      var n = 0
-      for (var i = 0; i < arr.length; i++) {
-        if (Array.isArray(arr[i]) && arr[i].length === 0) {
-          n++
-        }
-      }
-      return n
+    colorTimelineNode (active) {
+      return active ? this.themeColor : null
     }
   }
 }
@@ -240,6 +237,7 @@ a:hover {
   margin-bottom: $mar-sm
 }
 .jobdes {
+  color: $col-text;
   line-height: $lh-md;
   margin: $mar-sm $mar-md $mar-sm 15px
 }
@@ -248,16 +246,16 @@ a:hover {
   margin: 16px 0 8px 0
 }
 .jobdes ul {
-  padding-left: 20px;
+  padding-left: 24px;
   list-style: none
 }
 .jobdes li::before {
-  content: "\2212";
+  content: "\25B8";
   color: $col-info;
   display: inline-block;
   width: 1em;
-  margin-left: -1.25em;
-  margin-right: 0.25em
+  margin-left: -1.2em;
+  margin-right: 0.2em
 }
 .jobproj {
   color: $col-text

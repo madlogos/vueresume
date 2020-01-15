@@ -3,14 +3,21 @@
 </template>
 
 <script>
-import * as echarts from 'echarts/lib/echarts' // basic template
-import 'echarts/lib/chart/bar' // chart components
-import 'echarts/lib/component/tooltip' // other components
+import styCol from '@/styles/_color.scss'
+import stySiz from '@/styles/_size.scss'
+import echarts from 'echarts'
+// import * as echarts from 'echarts/lib/echarts' // basic template
+// import 'echarts/lib/chart/bar' // chart components
+// import 'echarts/lib/component/tooltip' // other components
 export default {
   name: 'BarChart',
   data () {
     return {
-      barColor: '#eee',
+      barColor: styCol.mainColorAlt,
+      themeColor: styCol.themeColor,
+      hoverColor: styCol.hoverColor,
+      baseSize: stySiz.baseSize,
+      regularSize: stySiz.regularSize,
       chartId: 'bar-chart',
       chartObj: {}
     }
@@ -54,9 +61,9 @@ export default {
         label: {
           show: true,
           position: 'insideLeft',
-          color: '#00A78E',
+          color: this.themeColor,
           formatter: '{b}',
-          fontSize: 14,
+          fontSize: parseInt(this.baseSize),
           fontWeight: 'normal'
         },
         itemStyle: {
@@ -69,13 +76,14 @@ export default {
             position: 'insideLeft',
             formatter: '{b}: {c}',
             color: '#fff',
-            fontSize: 14,
+            fontSize: parseInt(this.regularSize),
             fontWeight: 'bold'
           },
-          itemStyle: {color: '#67C23A'}
+          itemStyle: {color: this.hoverColor}
         },
         tooltip: {
-          formatter: '{a}'
+          formatter: '{a}',
+          textStyle: {fontSize: parseInt(this.baseSize)}
         },
         barWidth: '80%',
         barGap: '-100%',
@@ -141,8 +149,8 @@ export default {
 </script>
 
 <!-- Add "scoped" attribute to limit CSS to this component only -->
-<style scoped>
+<style lang='scss' scoped>
 .echart {
-  margin-left: 10px
+  margin-left: $mar-sm
 }
 </style>

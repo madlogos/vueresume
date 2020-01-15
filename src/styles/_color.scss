@@ -24,7 +24,8 @@ $col-block: #FAFAFA;
 $col-container: #EFEFEF;
 
 :export {
-  name: "colorStyles";
   themeColor: $col-thm;
+  hoverColor: $col-ok;
   codeColor: $col-code;
+  mainColorAlt: $col-main-alt;
 }
