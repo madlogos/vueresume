@@ -82,7 +82,7 @@
                 <p class='jobproj'>
                   <i class='fas fa-project-diagram'/>
                   <span class='icon-header'><strong>{{ m.title }}</strong></span>
-                  <span class='icon-note'> · {{ m.from }} - {{ m.thru }}</span>
+                  <span class='icon-note'>{{ m.from }} - {{ m.thru }}</span>
                 </p>
                 <div v-if='m.work'>
                   <p class='projnote' v-for='(m1, _m1) in m.work' :key='"work" + _m1'>{{ m1 }}</p>
@@ -226,7 +226,7 @@ a:hover {
 .jobtitle {
   font-size: $rg;
   font-weight: bold;
-  margin-right: 20px
+  margin-right: $mar-md
 }
 .jobemp {
   font-size: $sm;
@@ -239,15 +239,16 @@ a:hover {
 .jobdes {
   color: $col-text;
   line-height: $lh-md;
-  margin: $mar-sm $mar-md $mar-sm 15px
+  margin: $mar-sm $mar-md $mar-sm $mar-sm
 }
 .jobdes p {
   font-size: $sm;
-  margin: 16px 0 8px 0
+  margin: $mar-md 0 $mar-xs 0
 }
 .jobdes ul {
-  padding-left: 24px;
-  list-style: none
+  padding-left: 20px;
+  list-style: none;
+  line-height: $lh-md
 }
 .jobdes li::before {
   content: "\25B8";
@@ -265,14 +266,11 @@ a:hover {
   color: $col-text
 }
 .icon-note {
-  padding-left: 12px;
-  text-indent: -12px
-}
-.jobdes ul {
-  line-height: $lh-md
+  padding-left: 20px;
+  text-indent: -20px
 }
 .el-card {
-  margin: $mar-md $mar-md $mar-md 15px;
+  margin: $mar-md $mar-md $mar-md $mar-sm;
   background-color: $col-block;
   line-height: $lh-md
 }

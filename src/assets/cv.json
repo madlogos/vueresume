@@ -1,10 +1,11 @@
 {
   "zh": {
-    "name": "JUU2JUIxJUFBJUU4JUJEJUI2JUU5JUEyJTk2",
-    "gender": {"fa": "fas fa-mars", "value": "男"},
-    "dob": {"fa": "fas fa-birthday-cake", "value": "MTk4My0wNC0xNA=="},
-    "home": {"fa": "fas fa-home", "value": "中国上海"},
-    "motto": "彪悍的人生不需要解释",
+    "basic": {"name": "JUU2JUIxJUFBJUU4JUJEJUI2JUU5JUEyJTk2",
+      "gender": {"fa": "fas fa-mars", "value": "男"},
+      "dob": {"fa": "fas fa-birthday-cake", "value": "MTk4My0wNC0xNA=="},
+      "home": {"fa": "fas fa-home", "value": "中国上海"},
+      "motto": "跨界于医学、数据科学、软件科学、商业"
+    },
     "contact": [
       {"name": "电话", "fa": "fas fa-phone-alt", "value": "MTM4MTY1MTY1MTA=", "link": "dGVsJTNBMTM4MTY1MTY1MTA="},
       {"name": "邮箱", "fa": "fas fa-envelope", "value": "bWFkbG9nb3MlNDAxNjMuY29t", "link": "bWFpbHRvJTNBbWFkbG9nb3MlNDAxNjMuY29t"},
@@ -23,11 +24,11 @@
       {"name": "Twitter", "fa": "fab fa-twitter", "value": "@madlogos", "link": "https://twitter.com/madlogos"}
     ],
     "talent": [
-      {"name": "数据分析和挖掘", "value": 100, "tip": "拉拉 1"},
-      {"name": "企业健康管理", "value": 90, "tip": "拉拉 2"},
-      {"name": "流行病学", "value": 80, "tip": "拉拉 3"},
-      {"name": "软件研发和管理", "value": 80, "tip": "拉拉 4"},
-      {"name": "战略规划", "value": 60, "tip": "拉拉 5"}
+      {"name": "数据分析和挖掘", "value": 100, "tip": "熟悉统计学原理及分析方法的实现，对大数据、机器学习等数据科学应用领域有深入理解，有丰富的全栈实践经验"},
+      {"name": "企业健康管理", "value": 90, "tip": "熟悉企业健康促进在学术界和产业界的实践和动向，有丰富的设计实施经验"},
+      {"name": "公共卫生学", "value": 80, "tip": "接受完整的医学教育和专门的公共卫生学术训练，有宽广的人群健康视野和数据驱动的流行病学思维框架"},
+      {"name": "软件研发和管理", "value": 80, "tip": "持续自学编程，有实地全栈开发和项目管理经验，也频繁参与产品设计和选型"},
+      {"name": "战略规划", "value": 60, "tip": "参与数字化建设等业务战略规划，培养了从商业和市场高度评估业务和技术发展的思维"}
     ],
     "skill": [
       [
@@ -299,13 +300,13 @@
             "ul": ["开发项目管理文件模板，及基于SharePoint的项目管理协作系统", "实地运作多个大型企业健康管理项目，为团队积累知识资产", "分析业务项目的运行情况，提供流程改进建议"]
           },
           {
-            "p": ["<b>产品及服务的医学支持</b>: 负责内部循证顾问委员会的运作，确保专业健康服务循证可靠。"],
+            "p": ["<b>产品及服务的医学保障</b>: 负责内部循证顾问委员会的运作，确保专业健康服务循证可靠。"],
             "ul": ["为产品开发、服务过程提供医学意见，维护专业产品知识库", "直接参与设计企业客户的健康干预计划，及医学内容的实地开发", "对含医学内容的外发文件进行循证核查"]
           },
           {
             "p": ["<b>数据分析与决策支持</b>: 分析企业客户多源健康数据，提供干预建议；分析内部运营数据，为团队提供决策支持。"],
             "ul": ["分析企业体检、健康风险评估、理赔等数据，识别主要健康风险和高风险人群，对可预防控制的风险做出具体建议",
-              "分析企业健康管理项目的过程数据，评估效果，挖掘模式，为下一步行动提供洞见", "为60多家企业客户提供详尽、多维、准确、循证、品质卓越的健康分析报告",
+              "分析企业健康管理项目的过程数据，评估效果，挖掘模式，为下一步行动提供洞见", "为50多家企业客户提供详尽、多维、准确、循证、业内领先的健康分析报告",
               "分析内部运营绩效数据，为健康服务及保险业务流程改进和战略规划提供决策支持"]
           },
           {
@@ -323,7 +324,7 @@
           {
             "title": "某企业年度综合性健康筛查项目", "from": "2013/10", "thru": "2014/03",
             "work": ["与同类企业健康筛查项目相比，该项目规模大、形式新、准备期短、循证要求高。通过严谨协作，项目成功落地实施，参与率、满意度、成本效益均达到目标。团队获得了运作万人级别服务项目的宝贵经验。",
-              "作为项目经理，全程跟进竞标、实施和评估。跟进过程中，额外产出 (1)改进的成本预估模型和 (2)服务供应商网络拓展及评估的流程框架。前者帮助团队更精确地定价，最终赢得竞标。后者成为此后拓展服务网络的标准实践。"]
+              "作为项目经理，全程跟进竞标、实施和评估。跟进过程中，额外产出 (1) 改进的成本预估模型和 (2) 服务供应商网络拓展及评估的流程框架。前者帮助团队精准定价，最终赢得标的。后者成为此后拓展、维护服务网络的标准实践。"]
           }
         ]
       },
@@ -337,19 +338,25 @@
         "title": "数据分析经理", "icon": "loading", "active": true,
         "keyword": ["数据科学", "分析挖掘", "商业智能", "系统研发", "专业产品", "商务战略", "运营优化", "内部培训"], 
         "description": [
-          {"p": ["<b>数字化升级战略</b>: 参与"], "ul":["嗯哼", "呕吼"]},
-          {"p": ["呵呵", "哈哈哈哈哈哈哈哈哈"], "ul":["嗯哼", "呕吼"]},
-          {"p": ["呵呵", "哈哈哈哈哈哈哈哈哈"], "ul":["嗯哼", "呕吼"]},
-          {"p": ["呵呵", "哈哈哈哈哈哈哈哈哈"], "ul":["嗯哼", "呕吼"]}
+          {
+            "p": ["<b>业务战略</b>: 参与公司战略规划，推进跨部门业务融合、数字化建设和数据驱动的业务转型。"],
+            "ul": ["参与本土化战略的规划和实施。参与本地合作伙伴的商务谈判，跟进项目落地；参与本地卓越运营中心建设，推动运营部门跨职能融合", 
+              "参与数字化升级战略的制定。引入外包商升级技术平台，以适应移动互联时代的需要；设计产品概念原型和需求路线图，推进系统架构升级"]
+          },
+          {
+            "p": ["<b>数据分析与赋能</b>: 独立开发ETL和分析报告系统，跨业务提供顾问支持，担任内部培训讲师。"],
+            "ul": ["独立搭建健康数据ETL系统；结合脚本构建自动分析报告系统，将分析报告周期缩短到2天以内", "领导分析团队，每年为80家企业客户提供高品质的健康风险分析报告",
+            "协助人群健康科学部门与政府合作控费分析及管理，参与数据挖掘分析，开发疾病管理软件", "为保险网络、医疗管理等部门提供数据分析建议", "担任公司Excel和R培训讲师，提供系列培训"]
+          },
+          {
+            "p": ["<b>产品及服务的医学保障</b>: 负责内部循证顾问委员会的运作，确保专业健康服务循证可靠。"],
+            "ul": ["为产品开发、服务过程提供医学意见，维护专业产品知识库", "直接参与设计企业客户的健康干预计划，及医学内容的实地开发", "对含医学内容的外发文件进行循证核查"]
+          }
         ],
         "project": [
           {
-            "title": "一个项目", "from": "2019/01", "thru": "2019/12",
-            "work": ["做了又做"]
-          },
-          {
-            "title": "一个项目", "from": "2019/01", "thru": "2019/12",
-            "work": ["做了又做"]
+            "title": "健康数据ETL及分析报告系统", "from": "2015/04", "thru": "2016/10",
+            "work": ["第一阶段，利用Access搭建ETL系统，其核心是一个能自动转换SQL的规则模块，能便捷地配置数值清理和风险计算。再利用 R 和 Shiny 脚本构建仪表盘和自动分析报告系统，分析结果可输出至PowerPoint文档并生成兼容图表，支撑大数据量的分析需求。(2019年以postgresql + Django REST Framework + Vue.js重构)", "第二阶段，基于上述系统，带领团队用 PowerBI 实现可交付的交互式数据仪表盘。封装知识资产，开发出内部专用的 R 工具包群。用 Python 和 xpdf 构建 PDF 报告解析器，实现文本数据结构化。"]
           }
         ]
       }
@@ -383,16 +390,27 @@
       }
     ],
     "self": {
-      "statement": "呵呵<br>呵呵",
+      "statement": "思维严谨，程序感和逻辑感良好，执行力强，善于分析和优化。终身学习者，坚持问题导向的主动学习；乐于钻研，善于创新。知识广博，涉猎广泛，中英文功底扎实。正直、诚信。",
       "interest": ["文史哲杂学", "电影", "MOOC", "编程", "数码"]
+    },
+    "misc": {
+      "tip": {
+        "title": "关于本简历",
+        "msg": "<br/><p>试着和页面交互（点按标签、图标，展开折叠面板，访问链接），查看更多细节。</p><ol style='padding-left:20px'><li>响应式布局，自动适配不同分辨率的设备 (PC, 平板, 手机...)</li><li>封装了一个计算与呈现时差的方法</li><li>扩展整合了<code>el-collapse</code>和<code>el-timeline</code>组件</li><li>使用CDN加速，请确保能正常访问BootCDN</li><li>文内点<i class='fas fa-download'></i>可下载PDF版本</li></ol>"
+      },
+      "footnote": "<span style='float:right'><i class='fas fa-file-code'></i> 基于<code>Vue.js</code>, <code>ElementUI</code>, <code>ECharts</code> & <code>i18n</code>, <i class='fas fa-terminal'></i> 采用<code>Webpack</code>构建。</span>",
+      "copyright": {"from": "2019", "thru": "now", "content": "madlogos"},
+      "attachment": "https://gitee.com/madlogos/vueresume/blob/master/src/assets/wang-yiying-resume-zh.pdf"
     }
   },
   "en": {
-    "name": "V2FuZyUyMFlpeWluZw==",
-    "gender": {"fa": "fas fa-mars", "value": "Male"},
-    "dob": {"fa": "fas fa-birthday-cake", "value": "MTk4My0wNC0xNA=="},
-    "home": {"fa": "fas fa-home", "value": "Shanghai, CN"},
-    "motto": "C'est la vie",
+    "basic":{
+      "name": "V2FuZyUyMFlpeWluZw==",
+      "gender": {"fa": "fas fa-mars", "value": "Male"},
+      "dob": {"fa": "fas fa-birthday-cake", "value": "MTk4My0wNC0xNA=="},
+      "home": {"fa": "fas fa-home", "value": "Shanghai, CN"},
+      "motto": "Crossover of medicine, data science, software science & commerce"
+    },
     "contact": [
       {"name": "Phone", "fa": "fas fa-phone-alt", "value": "MTM4MTY1MTY1MTA=", "link": "dGVsJTNBMTM4MTY1MTY1MTA="},
       {"name": "Email", "fa": "fas fa-envelope", "value": "bWFkbG9nb3MlNDAxNjMuY29t", "link": "bWFpbHRvJTNBbWFkbG9nb3MlNDAxNjMuY29t"},
@@ -411,11 +429,11 @@
       {"name": "Twitter", "fa": "fab fa-twitter", "value": "@madlogos", "link": "https://twitter.com/madlogos"}
     ],
     "talent": [
-      {"name": "Data analytics & mining", "value": 100, "tip": "lala 1"}, 
-      {"name": "Corporate health management", "value": 90, "tip": "lala 2"},
-      {"name": "Epidemiology", "value": 80, "tip": "lala 3"},
-      {"name": "Software R&D", "value": 80, "tip": "lala 4"},
-      {"name": "Strategic planning", "value": 60, "tip": "lala 5"}
+      {"name": "Data analytics & mining", "value": 100, "tip": "Familiar with statistics principles and implmentation of analytics; deep understanding of applied data science on big data and machine leaerning; rich experience of full-stack analytics practice"}, 
+      {"name": "Corporate health management", "value": 90, "tip": "Familiar with the practice and dynamics of health promotion in both academic society and industry; rich experience of program design and implementation"},
+      {"name": "Epidemiology", "value": 80, "tip": "Solid medical background with complete medical education and specific public health training; thinking from wider population health perspectives with a data-driven epidemiological framework"},
+      {"name": "Software R&D", "value": 80, "tip": "Continuous self-paced learning of programming; practical experience of full-stack development and project management; frequently participated in product design and model selection"},
+      {"name": "Strategic planning", "value": 60, "tip": "Involved in business strategy planning such as digitalization, from which established a thinking model that look into business and technology from commence and market perspectives"}
     ],
     "skill": [
       [
@@ -703,10 +721,43 @@
         "title": "Project Management Manager", "icon": "check", "active": false,
         "keyword": ["Project management", "Product R&D", "Reporting"],
         "description": [
-          {"p": ["bla bla"], "ul": null}
+          {
+            "p": ["<b>Project management</b>: created project management system and disciplines, provided methodology and resource support, promote construction of a project-driven business team."],
+            "ul": ["Developed project management document templates, and a project management cooperation system based on SharePoint",
+              "Implemented several big corporate health management projects to accumulate knowledge assets for the team",
+              "Analyze the status of the business projects for process optimization suggestions"]
+          },
+          {
+            "p": ["<b>Medical support for products and services</b>: run the internal <i>Evidence-based Medicine Consultation Board</i> to guarantee the professional services are evidence-based and reliable."],
+            "ul": ["Provided medical comments for product development and services, maintain knowledge base for professional products",
+              "Directly involved in designing health intervention plans for corporate clients and development of medical contents",
+              "Evidence-based review of outgoing documents that contain medical information"]
+          },
+          {
+            "p": ["<b>Data analysis and decision-making support</b>: Analyze multi-source health data of the corporate clients to provide intervention suggestions; analyze internal operation data to support decision-making of the team"],
+            "ul": ["Analyze client data of health check-up, health assessment and claims, etc. to identify major healht risks and at-risk population, and make actionable intervention suggestions on modifiable health risks",
+              "Analyze process data of corporate health management programs to evaluate the effects, mine the patterns, to discover insights on the next-step actions",
+              "Delivered detailed, multi-dimensional, accurate, evidence-based and industry-leading health analytic reports for over 50 corporate clients",
+              "Analyze internal operation performance data to support process optimization of health services and insurance business, and strategic planning"]
+          },
+          {
+            "p": ["<b>Technology empowerment and business support</b>: promote development of IT system, develop small internal applications independently to meet business requirements agilely."],
+            "ul": ["Connected with IT team as requirement party to promote implementation of core business system development",
+              "Developed internal applications for the team, covering management of attendance, customer service records, corporate clinic operations, review of online health advisory, medical triage assistance, evidence-based review, etc.",
+              "R&D of project cost model and tool that increased the accuracy and efficiency of cost estimation, so as to support the pricing and underwriting process of the main business"]
+          }
         ],
         "project": [
-          {"title": "A project", "from": "2019/01", "thru": "2019/12", "work": ["Do, do"]}
+          {
+            "title": "A web-based corporate health promotion program", "from": "2011/04", "thru": "2013/05",
+            "work": ["This program is a successful instance of corporate <i>light</li> online health consultation services implemented in China. There were over 20 thousand  customers in total and the KPIs (timeliness, evidence-based rate, satisfaction) are all above the target.",
+              "As project manager, I coordinated with IT team to complete R&D of bilingual online health information and advisory system; involved in process design and actual operations (replied over 500 thousand characters); coordinate with medical consultants to finish over 70 bilinugal health articles; completed the project with limited resources and budgets."]
+          },
+          {
+            "title": "A comprehensive corporate health screening program", "from": "2013/10", "thru": "2014/03",
+            "work": ["Compared to peer ones, this program is big in size, new in form, short in preparation, high in evidence-based requirements. The project was finally successfully implemented by cautious cooperation with desirable engagement, satisfaction and cost-effectiveness. The team has gained valuable experience of operating big service program with tens of thousands of customers",
+              "As project manager, followed full-cycle of bidding, implmentation and evaluation. The extra output include (1) improved cost estimation model which helped the team price more accurately and won the bid, and (2) process framework to develop and evaluate service provider network which later served as the standard practice."]
+          }
         ]
       },
       {
@@ -719,10 +770,30 @@
         "title": "Informatics Manager", "icon": "loading", "active": true,
         "keyword": ["Data science", "Analytics & minning", "Business intelligence", "System R&D", "Professional product", "Business strategy", "Operation optimization", "Training"],
         "description": [
-          {"p": ["bla bla"], "ul": null}
+          {
+            "p": ["<b>Business strategies</b>: involved in company strategic planning, promote cross-department business synergy, digitalization and data-driven business transformation."],
+            "ul": ["Involved in planning and implementation of localization strategy. Involved in business negotiation and follow-up with local partners; involved in construction of local Centers of Excellence and promote business synergy of cross-border operation departments.", 
+              "Involved in planning of digitalization strategy. Import outsourcing partners to upgrade the technology platform to be adapt to the mobile internet era. Designed conceptual product prototype and requirement blueprint to promote the upgrade of system architecture"]
+          },
+          {
+            "p": ["<b>Data analysis and enpowerment</b>: independently developed an ETL and analytic reporting system, cross-border consulting support, internal trainer."],
+            "ul": ["Independently developed ETL system for health data; built an automated analytic reporting system with scripts that reduced turn-around time to 2 days",
+              "Lead the analytic team to generate high-quality health risk analytic reports for over 80 corporate clients annually",
+              "Assited Population Health Science to cooperate with government on cost containment and disease management. Involved in data mining and analytics and developed a disease management software", "Provided analytic suggestions for insurance network and care management departments",
+              "Deliverd series training sessions as the internal Excel and R trainer"]
+          },
+          {
+            "p": ["<b>Medical support for products and services</b>: run the internal <i>Evidence-based Medicine Consultation Board</i> to guarantee the professional services are evidence-based and reliable."],
+            "ul": ["Provided medical comments for product development and services, maintain knowledge base for professional products",
+              "Directly involved in designing health intervention plans for corporate clients and development of medical contents",
+              "Evidence-based review of outgoing documents that contain medical information"]
+          }
         ],
         "project": [
-          {"title": "A project", "from": "2019/01", "thru": "2019/12", "work": ["Do, do"]}
+          {
+            "title": "ETL and analytic reporting system for health data", "from": "2015/04", "thru": "2016/10",
+            "work": ["Phase 1, built an ETL system using Access whose core is a rule module that can convert SQL automatically and enable convenient configuration of value cleaning and risk calculation. Then built a dashboard and auto analytic reporting system using R and Shiny scripts, which can output to PowerPoint documents and generate compatible charts, thus supported requirement for big data analysis. (In 2019, it was re-structured using postgresql + Django REST Framework + Vue.js.)", "Phase 2, lead the team to implement a deliverable interative dashboard using PowerBI based on the above system. Meanwhile, developed an internal R package cluster by wrapping the knowldge assets. Then built an PDF report parser using Python and xpdf which successfully structualized text data."]
+          }
         ]
       }
     ],
@@ -760,8 +831,17 @@
       }
     ],
     "self": {
-      "statement": "haha<br>haha",
+      "statement": "Thinking reasonably with good sense of program and logic; strong execution and adept at analysis and optimization. Life-long learner, adhere to problem-orient active learning. Glad to delve into new knowledge and good at innovation. Knowldgeable and read widely; solid writing skills in both Chinese and Enlighs. Live wit integrity and honesty.",
       "interest": ["Literature-history-philosophy-misc", "Movie", "MOOC", "Programming", "Digital instrucment"]
+    },
+    "misc": {
+      "tip": {
+        "title": "About this CV",
+        "msg": "<br/><p>Feel free to interact with the page (tap the tags, unfold the collapse panels, visit the links, etc.) for more details.</p><ol style='padding-left:20px'><li>It's responsive to various equipments (PC, tablet, mobile phone, ...) with different resolution</li><li>A method to calculate and present time difference has been wrapped</li><li>Functionalities of <code>el-collapse</code> and <code>el-timeline</code> components have been extended and integrated</li><li>CDN has been applied to boost the web performance, please make sure BootCDN is accessible</li><li>You can download the PDF version at <i class='fas fa-download'></i></li></ol>"
+      },
+      "footnote": "<span style='float:right'><i class='fas fa-file-code'></i> Powered by <code>Vue.js</code>, <code>ElementUI</code>, <code>ECharts</code> & <code>i18n</code>, <i class='fas fa-terminal'></i> built with <code>Webpack</code>.</span>",
+      "copyright": {"from": "2019", "thru": "now", "content": "madlogos"},
+      "attachment": "https://gitee.com/madlogos/vueresume/blob/master/src/assets/wang-yiying-resume-en.pdf"
     }
   }
 }

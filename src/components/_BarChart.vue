@@ -114,7 +114,9 @@ export default {
         },
         tooltip: {
           show: true,
-          trigger: 'item'
+          trigger: 'item',
+          extraCssText: 'width:300px; white-space:pre-wrap',
+          position: ['0%', 125]
         },
         series: [
           {

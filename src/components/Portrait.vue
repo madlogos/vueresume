@@ -3,14 +3,14 @@
     <el-avatar :size='120' @error='errorHandler'>
       <img src='@/assets/logo.png' />
     </el-avatar>
-    <h1>{{ dec(this.$store.getters.name) }}</h1>
+    <h1>{{ dec(this.$store.getters.basic.name) }}</h1>
     <p id='baseInfo'>
-      <span class="gender-info"><i :class='this.$store.getters.gender.fa' /><span class='info-left'>{{ this.$store.getters.gender.value }}</span></span>
-      <span class="dob-info"><i :class='this.$store.getters.dob.fa' /><span class='info-left'>{{ calcAge(dec(this.$store.getters.dob.value)) }}</span></span>
-      <span class="home-info"><i :class='this.$store.getters.home.fa' /><span class='info-right'>{{ this.$store.getters.home.value }}</span></span>
+      <span class="gender-info"><i :class='this.$store.getters.basic.gender.fa' /><span class='info-left'>{{ this.$store.getters.basic.gender.value }}</span></span>
+      <span class="dob-info"><i :class='this.$store.getters.basic.dob.fa' /><span class='info-left'>{{ calcAge(dec(this.$store.getters.basic.dob.value)) }}</span></span>
+      <span class="home-info"><i :class='this.$store.getters.basic.home.fa' /><span class='info-right'>{{ this.$store.getters.basic.home.value }}</span></span>
     </p>
     <p>
-      <pre id='motto'><i class='fas fa-quote-left'/>{{ this.$store.getters.motto }}<i class='fas fa-quote-right'/></pre>
+      <pre id='motto'><i class='fas fa-quote-left'/>{{ this.$store.getters.basic.motto }}<i class='fas fa-quote-right'/></pre>
     </p>
   </div>
 </template>
@@ -66,7 +66,8 @@ pre {
   color: $col-ok
 }
 #motto {
-  color: $col-text-alt
+  color: $col-text-alt;
+  white-space: pre-wrap
 }
 #motto .fa-quote-left {
   margin-top: -3px;

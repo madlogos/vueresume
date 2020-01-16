@@ -222,7 +222,7 @@ a:hover {
   margin: $mar-sm $mar-md $mar-sm $mar-md
 }
 .edudes ul {
-  padding-left: 24px;
+  padding-left: 20px;
   list-style: none
 }
 .edudes li::before {

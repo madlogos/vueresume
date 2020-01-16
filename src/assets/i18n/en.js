@@ -1,10 +1,4 @@
 export default {
-  tip: {
-    init: {
-      title: 'About this CV',
-      msg: '<div><ol style="padding-left:20px"><li>It\'s responsive to various equipments (PC, tablet, mobile phone, ...) with different resolution</li><li>Wrapped a method to calculate and present time difference</li><li>Extended and integreated <code>el-collapse</code> and <code>el-timeline</code> components</li><li>You can download the PDF version at <i class="fas fa-download"></i></li></ol><p>Feel free to tap around for more details interactively.</p></div>'
-    }
-  },
   title: {
     tip: 'Tips',
     contact: 'Contact',
@@ -34,9 +28,5 @@ export default {
   cert: {
     institute: 'Insistute',
     description: 'Description'
-  },
-  footer: {
-    footnote: '<span style="float:right"><i class="fas fa-file-code"></i> Powered by <code>Vue.js</code>, <code>ElementUI</code>, <code>ECharts</code> & <code>i18n</code>, <i class="fas fa-terminal"></i> built with <code>Webpack</code>.</span>',
-    copyright: '<span><i class="fas fa-copyright"></i> 2019-2020 madlogos</span>'
   }
 }

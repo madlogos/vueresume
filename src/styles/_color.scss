@@ -2,7 +2,7 @@ $col-thm: #00A78E;
 $col-thm-opaque: #00A78E88;
 $col-thm-opaquer: #00A78E11;
 $col-code: #8932AF;
-$col-code-bg: #EEEEEE99;
+$col-code-bg: #EEEEEE88;
 $col-ele: #409EFF;
 $col-main: #303133;
 $col-text: #606266;
@@ -27,5 +27,6 @@ $col-container: #EFEFEF;
   themeColor: $col-thm;
   hoverColor: $col-ok;
   codeColor: $col-code;
+  codeBgColor: $col-code-bg;
   mainColorAlt: $col-main-alt;
 }

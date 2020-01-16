@@ -31,7 +31,7 @@
       <cert/>
       <template>
         <h3>
-          <a :href='this.attachment'>
+          <a :href='this.$store.getters.misc.attachment'>
             <i class='fas fa-download'/><span class='title-h3'>{{ $t('title.download') }}</span>
           </a>
         </h3>
@@ -49,8 +49,11 @@
     <el-col :xs="24" :sm="16" :md="16" :lg="16" :xl="16" id="el-foot-main">
       <template>
         <div class="footer">
-          <span v-html='this.$t("footer.copyright")'></span>
-          <span v-html='this.$t("footer.footnote")'></span>
+          <span>
+            <i class='fas fa-copyright'/>{{ this.parseYear(this.$store.getters.misc.copyright.from) }}-{{ this.parseYear(this.$store.getters.misc.copyright.thru) }}
+          </span>
+          <span v-html='this.$store.getters.misc.copyright.content'></span>
+          <span v-html='this.$store.getters.misc.footnote'></span>
         </div>
       </template>
     </el-col>
@@ -88,11 +91,7 @@ export default {
     }
   },
   computed: {
-    attachment: function () {
-      let attachDir = 'https://gitee.com/madlogos/vueresume/blob/master/src/assets/'
-      let attachFile = this.$i18n.locale === 'zh' ? 'wang-yiying-resume-cn.pdf' : 'wang-yiying-resume-en.pdf'
-      return attachDir + attachFile
-    }
+
   },
   created: function () {
     this.loading = true
@@ -111,11 +110,15 @@ export default {
     },
     openTip () {
       this.$notify({
-        title: this.$t('tip.init.title'),
-        message: this.$t('tip.init.msg'),
+        title: this.$store.getters.misc.tip.title,
+        message: this.$store.getters.misc.tip.msg,
         dangerouslyUseHTMLString: true,
         duration: 4500
       })
+    },
+    parseYear (yr) {
+      let rslt = isNaN(new Date(parseInt(yr))) ? new Date() : new Date(yr)
+      return rslt.getUTCFullYear()
     }
   }
 }
@@ -143,7 +146,7 @@ export default {
   color: $col-ok
 }
 #el-col-sidebar {
-  min-height: 34px;
+  min-height: $mar-lg;
   background-color: $col-thm
 }
 #el-foot-sidebar {
@@ -180,7 +183,7 @@ export default {
   color: $col-ok;
 }
 .tipbtn {
-  margin: 2px 20px 2px 10px;
+  margin: 5px 20px 5px 10px;
   padding: 5px 10px;
   font-family: "Helvetica Neue", Helvetica, "PingFang SC", "Hiragino Sans GB", "Microsoft YaHei", "微软雅黑", Arial, sans-serif;
   font-size: small

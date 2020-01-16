@@ -90,7 +90,7 @@ a:hover {
 #socio {
   padding: 10px 5px 10px 5px;
   color: $col-main-alt;
-  font-size: $xlg
+  font-size: $xl
 }
 .socio-icon {
   margin-right: 15px
