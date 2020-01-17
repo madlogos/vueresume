@@ -1,4 +1,5 @@
 export default {
+  name: 'Wang Yiying\'s Résumé',
   title: {
     tip: 'Tips',
     contact: 'Contact',

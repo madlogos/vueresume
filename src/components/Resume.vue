@@ -31,7 +31,7 @@
       <cert/>
       <template>
         <h3>
-          <a :href='this.$store.getters.misc.attachment'>
+          <a :href='this.$store.getters.misc.attachment' target='_blank'>
             <i class='fas fa-download'/><span class='title-h3'>{{ $t('title.download') }}</span>
           </a>
         </h3>
@@ -50,7 +50,8 @@
       <template>
         <div class="footer">
           <span>
-            <i class='fas fa-copyright'/>{{ this.parseYear(this.$store.getters.misc.copyright.from) }}-{{ this.parseYear(this.$store.getters.misc.copyright.thru) }}
+            <i class='fas fa-copyright'/>
+            <span class='icon-txt'>{{ this.parseYear(this.$store.getters.misc.copyright.from) }}-{{ this.parseYear(this.$store.getters.misc.copyright.thru) }}</span>
           </span>
           <span v-html='this.$store.getters.misc.copyright.content'></span>
           <span v-html='this.$store.getters.misc.footnote'></span>
@@ -98,7 +99,7 @@ export default {
     this.$store.commit('fetchData')
   },
   mounted: function () {
-    document.title = this.$i18n.locale === 'zh' ? '汪轶颖的简历' : 'Wang Yiying\'s Résumé'
+    document.title = this.$t('name')
     this.loading = !localStorage.getItem('myCv')
   },
   methods: {
@@ -106,7 +107,7 @@ export default {
       // localStorage.setItem('lang', val)
       this.$i18n.locale = val
       this.$store.commit('changeLang', val)
-      document.title = val === 'zh' ? '汪轶颖的简历' : 'Wang Yiying\'s Résumé'
+      document.title = this.$t('name')
     },
     openTip () {
       this.$notify({

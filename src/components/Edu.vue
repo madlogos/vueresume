@@ -198,12 +198,12 @@ a:hover {
   background-color: $col-bg
 }
 .cred {
-  font-size: $rg;
+  font-size: $md;
   font-weight: bold;
   margin-right: $mar-md
 }
 .univ {
-  font-size: $sm;
+  font-size: $rg;
   color: $col-info;
   font-weight: normal;
   margin-right: $mar-md
@@ -211,7 +211,7 @@ a:hover {
 .major {
   color: $col-info;
   font-weight: normal;
-  margin-bottom: $mar-sm
+  margin: 0 $mar-md $mar-sm 0
 }
 .major-head {
   margin-right: $mar-md
@@ -219,7 +219,7 @@ a:hover {
 .edudes {
   color: $col-text;
   line-height: $lh-md;
-  margin: $mar-sm $mar-md $mar-sm $mar-md
+  margin: $mar-sm $mar-md $mar-sm $mar-sm
 }
 .edudes ul {
   padding-left: 20px;

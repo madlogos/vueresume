@@ -3,18 +3,18 @@
     <h2 id='title'>
       <i class='fas fa-user-tag' /><span class='title-h2'>{{ $t('title.self') }}</span>
     </h2>
-    <div id='statement' v-html='this.$store.getters.self.statement'></div>
+    <ul id='statement' v-if='this.$store.getters.self.statement'>
+      <li v-for='(i, _i) in this.$store.getters.self.statement' :key='_i' v-html='i'></li>
+    </ul>
     <div id='hobby'>
-      <span><span id='hobbyicon'><i class="fas fa-skiing"/></span> {{ $t('title.hobby') }}: </span>
+      <div><span id='hobbyicon'><i class="fas fa-skiing"/></span> {{ $t('title.hobby') }}: </div>
       <el-tag
-       v-for='(i, _i) in this.$store.getters.self.interest'
-       :key='_i'
+       v-for='(j, _j) in this.$store.getters.self.interest'
+       :key='_j'
        effect='plain'
        type='info'
        size='small'
-      >
-        {{ i }}
-      </el-tag>
+      >{{ j }}</el-tag>
     </div>
   </div>
 </template>
@@ -32,11 +32,22 @@ export default {
   margin: $mar-md $mar-md $mar-lg $mar-md
 }
 #statement {
+  color: $col-text;
   font-size: $bs;
-  line-height: $lh-lg;
-  margin-left: 33px
+  line-height: $lh-md;
+  padding-left: 35px;
+  list-style: none
+}
+#statement li::before {
+  content: "\25B8";
+  color: $col-info;
+  display: inline-block;
+  width: 1em;
+  margin-left: -1.2em;
+  margin-right: 0.2em
 }
 #hobby {
+  line-height: $lh-lg;
   margin: $mar-md $mar-md $mar-md 33px
 }
 #hobby .el-tag {

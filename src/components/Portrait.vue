@@ -1,13 +1,16 @@
 <template>
   <div class='block' id='portrait'>
-    <el-avatar :size='120' @error='errorHandler'>
+    <el-avatar :size='100' @error='errorHandler'>
       <img src='@/assets/logo.png' />
     </el-avatar>
     <h1>{{ dec(this.$store.getters.basic.name) }}</h1>
     <p id='baseInfo'>
       <span class="gender-info"><i :class='this.$store.getters.basic.gender.fa' /><span class='info-left'>{{ this.$store.getters.basic.gender.value }}</span></span>
       <span class="dob-info"><i :class='this.$store.getters.basic.dob.fa' /><span class='info-left'>{{ calcAge(dec(this.$store.getters.basic.dob.value)) }}</span></span>
-      <span class="home-info"><i :class='this.$store.getters.basic.home.fa' /><span class='info-right'>{{ this.$store.getters.basic.home.value }}</span></span>
+      <span class="home-info">
+        <i :class='this.$store.getters.basic.home.fa' />
+        <a :href='this.$store.getters.basic.home.link' target='_blank'><span class='info-right'>{{ this.$store.getters.basic.home.value }}</span></a>
+      </span>
     </p>
     <p>
       <pre id='motto'><i class='fas fa-quote-left'/>{{ this.$store.getters.basic.motto }}<i class='fas fa-quote-right'/></pre>
@@ -54,6 +57,15 @@ pre {
 #baseInfo i.fas {
   color: $col-main-alt;
   font-size: small
+}
+#baseInfo a:link {
+  color: $col-bg
+}
+#baseInfo a:visited {
+  color: $col-text
+}
+#baseInfo a:hover {
+  color: $col-ok
 }
 .info-left {
   margin-left: 4px;

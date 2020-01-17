@@ -1,4 +1,5 @@
 export default {
+  name: '汪轶颖的简历',
   title: {
     tip: '提示',
     contact: '联系方式',

@@ -72,7 +72,7 @@ a:hover {
   color: $col-ok
 }
 .el-popover__body i {
-  margin-right: 15px
+  margin-right: $mar-xs
 }
 #contact ul {
   margin-left: 0;

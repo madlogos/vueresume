@@ -224,17 +224,17 @@ a:hover {
   background-color: $col-bg
 }
 .jobtitle {
-  font-size: $rg;
+  font-size: $md;
   font-weight: bold;
   margin-right: $mar-md
 }
 .jobemp {
-  font-size: $sm;
+  font-size: $rg;
   color: $col-info;
   font-weight: normal
 }
 .jobtag {
-  margin-bottom: $mar-sm
+  margin: 0 $mar-md $mar-sm 0
 }
 .jobdes {
   color: $col-text;
@@ -242,11 +242,11 @@ a:hover {
   margin: $mar-sm $mar-md $mar-sm $mar-sm
 }
 .jobdes p {
-  font-size: $sm;
-  margin: $mar-md 0 $mar-xs 0
+  font-size: $rg;
+  margin: $mar-md 0 $mar-sm 0
 }
 .jobdes ul {
-  padding-left: 20px;
+  padding-left: 32px;
   list-style: none;
   line-height: $lh-md
 }
@@ -255,7 +255,7 @@ a:hover {
   color: $col-info;
   display: inline-block;
   width: 1em;
-  margin-left: -1.2em;
+  margin-left: -1em;
   margin-right: 0.2em
 }
 .jobproj {
@@ -275,7 +275,7 @@ a:hover {
   line-height: $lh-md
 }
 .el-card__body p {
-  margin: 8px 0 6px 0
+  margin: $mar-sm 0 $mar-sm 0
 }
 .el-collapse {
   border-top: none
