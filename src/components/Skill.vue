@@ -114,7 +114,7 @@ h2 {
   color: $col-main
 }
 .el-card ul {
-  font-size: $sm;
+  font-size: small;
   line-height: $lh-md;
   padding: 0px 18px;
   list-style: none
@@ -133,7 +133,7 @@ h2 {
 #skills .el-tag {
   margin: 2px 3px;
   padding: 0 9px;
-  font-size: $bs;
+  font-size: small;
   border-style: none
 }
 #skills .el-tag:hover {
@@ -148,7 +148,7 @@ h2 {
   padding: 0
 }
 .appyear {
-  font-size: $bs;
+  font-size: small;
   font-weight: normal;
   float: right;
   color: $col-text

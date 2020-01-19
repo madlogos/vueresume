@@ -198,12 +198,12 @@ a:hover {
   background-color: $col-bg
 }
 .cred {
-  font-size: $md;
+  font-size: larger;
   font-weight: bold;
   margin-right: $mar-md
 }
 .univ {
-  font-size: $rg;
+  font-size: medium;
   color: $col-info;
   font-weight: normal;
   margin-right: $mar-md

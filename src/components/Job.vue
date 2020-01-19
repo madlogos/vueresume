@@ -81,7 +81,7 @@
               <el-card v-for='(m, _m) in i.project' :key='"proj" + _m' shadow='hover' :body-style='{padding:"8px 10px"}'>
                 <p class='jobproj'>
                   <i class='fas fa-project-diagram'/>
-                  <span class='icon-header'><strong>{{ m.title }}</strong></span>
+                  <span class='icon-header'><span class='projtitle'>{{ m.title }}</span></span>
                   <span class='icon-note'>{{ m.from }} - {{ m.thru }}</span>
                 </p>
                 <div v-if='m.work'>
@@ -224,12 +224,12 @@ a:hover {
   background-color: $col-bg
 }
 .jobtitle {
-  font-size: $md;
+  font-size: larger;
   font-weight: bold;
   margin-right: $mar-md
 }
 .jobemp {
-  font-size: $rg;
+  font-size: medium;
   color: $col-info;
   font-weight: normal
 }
@@ -242,7 +242,7 @@ a:hover {
   margin: $mar-sm $mar-md $mar-sm $mar-sm
 }
 .jobdes p {
-  font-size: $rg;
+  font-size: medium;
   margin: $mar-md 0 $mar-sm 0
 }
 .jobdes ul {
@@ -264,6 +264,9 @@ a:hover {
 .projnote {
   padding-left: 24px;
   color: $col-text
+}
+.projtitle {
+  font-size: larger
 }
 .icon-note {
   padding-left: 20px;

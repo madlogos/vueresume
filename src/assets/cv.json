@@ -9,7 +9,7 @@
     "contact": [
       {"name": "电话", "fa": "fas fa-phone-alt", "value": "MTM4MTY1MTY1MTA=", "link": "dGVsJTNBMTM4MTY1MTY1MTA="},
       {"name": "邮箱", "fa": "fas fa-envelope", "value": "bWFkbG9nb3MlNDAxNjMuY29t", "link": "bWFpbHRvJTNBbWFkbG9nb3MlNDAxNjMuY29t"},
-      {"name": "站点", "fa": "fas fa-globe", "value": "bWFkbG9nb3MuZ2l0aHViLmlv", "link": "aHR0cHMlM0ElMkYlMkZtYWRsb2dvcy5naXRodWIuaW8="},
+      {"name": "站点", "fa": "fas fa-link", "value": "bWFkbG9nb3MuZ2l0aHViLmlv", "link": "aHR0cHMlM0ElMkYlMkZtYWRsb2dvcy5naXRodWIuaW8="},
       {"name": "领英", "fa": "fab fa-linkedin", "value": "eWl5aW5nLXdhbmc=", "link": "aHR0cHMlM0ElMkYlMkZ3d3cubGlua2VkaW4uY29tJTJGaW4lMkZ5aXlpbmctd2FuZyUyRg=="}
     ],
     "socio": [
@@ -87,13 +87,13 @@
           "ul": null
         },
         {
-          "name": "Excel", "size": null, "alpha": 0.15, "from": "2006", "thru": "now", "fa": "fas fa-file-excel", "prof": 3, 
+          "name": "Excel", "size": null, "alpha": 0.15, "from": "2006", "thru": "now", "fa": "fas fa-file-excel", "prof": 4.5, 
           "p": null,
           "ul": ["精通 Excel 的基本和进阶功能，善于用公式、 VBA 、条件样式等搭建敏捷的一站式业务数据解决方案。", 
             "甲流防治战中，独立完成全区疫情/接种报表报送体系搭建和运作。", "公司内部 Excel 培训讲师。"]
         },
         {
-          "name": "PowerBI", "size": "small", "alpha": 0.15, "from": "2018", "thru": "now", "fa": "fas fa-chart-area", "prof": 4.5, 
+          "name": "PowerBI", "size": "small", "alpha": 0.15, "from": "2018", "thru": "now", "fa": "fas fa-chart-area", "prof": 3, 
           "p": ["熟练使用 Power Query 和内置控件搭建内部报表 和业务仪表盘。"],
           "ul": null
         }
@@ -345,7 +345,7 @@
           },
           {
             "p": ["<b>数据分析与赋能</b>: 独立开发ETL和分析报告系统，跨业务提供顾问支持，担任内部培训讲师。"],
-            "ul": ["独立搭建健康数据ETL系统；结合脚本构建自动分析报告系统，将分析报告周期缩短到2天以内。", "领导分析团队，每年为80家企业客户提供高品质的健康风险分析报告。",
+            "ul": ["独立搭建健康数据ETL系统；结合脚本构建自动分析报告系统，将分析报告周期缩短到2天以内。", "领导分析团队，每年为80多家企业客户提供高品质的健康风险分析报告。",
             "协助人群健康科学部门与政府合作控费分析及管理，参与数据挖掘分析，开发疾病管理软件。", "为保险网络、医疗管理等部门提供数据分析建议", "担任公司Excel和R培训讲师，提供系列培训。"]
           },
           {
@@ -356,11 +356,11 @@
         "project": [
           {
             "title": "健康数据ETL及分析报告系统", "from": "2015/04", "thru": "2016/10",
-            "work": ["第一阶段，利用Access搭建ETL系统，其核心是一个能自动转换SQL的规则模块，能便捷地配置数值清理和风险计算。再利用 R 和 Shiny 脚本构建仪表盘和自动分析报告系统，分析结果可输出为PowerPoint兼容图表，支撑大数据量的分析需求。(2019年以postgresql + Django REST Framework + Vue.js重构)", "第二阶段，基于上述系统，带领团队用 PowerBI 实现可交付的交互式数据仪表盘。"]
+            "work": ["第一阶段，利用Access搭建ETL系统，其核心是一个能自动转换SQL的规则模块，能便捷地配置数值清理和风险计算。再利用 R 和 Shiny 脚本构建仪表盘和自动分析报告系统，分析结果可输出为PowerPoint兼容图表，支撑大数据量的分析需求。(2019年以postgresql + Django REST Framework + Vue.js重构)", "第二阶段，基于上述系统，带领团队用 PowerBI 实现可交付的交互式数据仪表盘。逐步以 PowerBI 为业务展示前端，Jupyter Notebook 为技术桥梁，依托自建的R和Python工具链，实现从治理、应用到展示的数据管线框架。"]
           },
           {
-            "title": "数据分析环境搭建", "from": "2017/10", "thru": "2018/09",
-            "work": ["配置内部CRAN，开发部署R工具包集群，通过单个伞包调用数据连接提取、转换分析、作图等专职工具包。", "基于Python开发pdf解析结构化工具。", "逐步以 PowerBI 为业务展示前端，Jupyter Notebook 为技术桥梁，依托自建工具链，实现贯通一致的数据治理、应用和展示框架。"]
+            "title": "某区社保数据分析及慢病专病管理", "from": "2017/10", "thru": "2019/09",
+            "work": ["参与数据挖掘方案的设计，并实地完成数据质控分析和探索性分析，后期跟进报告撰写和翻译。", "参与疾病管理方案的设计和部分物料筹备，并开发基于循证规则的疾病管理系统。"]
           }
         ]
       }
@@ -421,7 +421,7 @@
     "contact": [
       {"name": "Phone", "fa": "fas fa-phone-alt", "value": "MTM4MTY1MTY1MTA=", "link": "dGVsJTNBMTM4MTY1MTY1MTA="},
       {"name": "Email", "fa": "fas fa-envelope", "value": "bWFkbG9nb3MlNDAxNjMuY29t", "link": "bWFpbHRvJTNBbWFkbG9nb3MlNDAxNjMuY29t"},
-      {"name": "Site", "fa": "fas fa-globe", "value": "bWFkbG9nb3MuZ2l0aHViLmlv", "link": "aHR0cHMlM0ElMkYlMkZtYWRsb2dvcy5naXRodWIuaW8="},
+      {"name": "Site", "fa": "fas fa-link", "value": "bWFkbG9nb3MuZ2l0aHViLmlv", "link": "aHR0cHMlM0ElMkYlMkZtYWRsb2dvcy5naXRodWIuaW8="},
       {"name": "LinkedIn", "fa": "fab fa-linkedin", "value": "eWl5aW5nLXdhbmc=", "link": "aHR0cHMlM0ElMkYlMkZ3d3cubGlua2VkaW4uY29tJTJGaW4lMkZ5aXlpbmctd2FuZyUyRg=="}
     ],
     "socio": [
@@ -438,7 +438,7 @@
     "talent": [
       {"name": "Data analytics & mining", "value": 100, "tip": "Familiarity with statistics principles and implmentation of analytics; deep understanding of applied data science on big data and machine leaerning; rich practical experience of full-stack analytics."}, 
       {"name": "Corporate health management", "value": 90, "tip": "Familiarity with the practice and dynamics of health promotion in both academic society and industry; rich experience of program design and implementation."},
-      {"name": "Epidemiology", "value": 80, "tip": "Solid medical background with complete medical education and specific public health training; thinking from wider population health perspectives with a data-driven epidemiological framework."},
+      {"name": "Public health", "value": 80, "tip": "Solid medical background with complete medical education and specific public health training; thinking from wider population health perspectives with a data-driven epidemiological framework."},
       {"name": "Software R&D", "value": 80, "tip": "Continuous self-paced learning of programming; practical experience of full-stack development and project management; frequent participation in product design and model selection."},
       {"name": "Strategic planning", "value": 60, "tip": "Participation in business strategy planning such as localization and digitalization, from which established a strategic thinking model that look into business and technology from commence and market perspectives."}
     ],
@@ -500,13 +500,13 @@
           "ul": null
         },
         {
-          "name": "Excel", "size": null, "alpha": 0.15, "from": "2006", "thru": "now", "fa": "fas fa-file-excel", "prof": 3, 
+          "name": "Excel", "size": null, "alpha": 0.15, "from": "2006", "thru": "now", "fa": "fas fa-file-excel", "prof": 4.5, 
           "p": null,
           "ul": ["Proficient at basic and advanced functionalities of Excel. Good at building one-stop agile business data solution based on formula, VBA, conditional formatting, etc.", 
             "During the battle against Flu A, built the hoslistic district level report delivery system for epidemic / vaccination on my own.", "Internal Excel trainer."]
         },
         {
-          "name": "PowerBI", "size": "small", "alpha": 0.15, "from": "2018", "thru": "now", "fa": "fas fa-chart-area", "prof": 4.5, 
+          "name": "PowerBI", "size": "small", "alpha": 0.15, "from": "2018", "thru": "now", "fa": "fas fa-chart-area", "prof": 3, 
           "p": ["Familiar with building dynamic reports and busines dashboards using Power Query and builtin widgets."],
           "ul": null
         }
@@ -799,11 +799,11 @@
         "project": [
           {
             "title": "ETL and analytic reporting system for health data", "from": "2015/04", "thru": "2016/10",
-            "work": ["Phase 1, built an ETL system using Access whose core is a rule module that can convert SQL automatically and enable convenient configuration of value cleaning and risk calculation. Then built a dashboard and auto analytic reporting system using R and Shiny scripts, which can output to PowerPoint documents and generate compatible charts, thus supported requirement for big data analysis. (In 2019, it was re-structured using postgresql + Django REST Framework + Vue.js.)", "Phase 2, lead the team to implement a deliverable interative dashboard using PowerBI based on the above system."]
+            "work": ["Phase 1, built an ETL system using Access whose core is a rule module that can convert SQL automatically and enable convenient configuration of value cleaning and risk calculation. Then built a dashboard and auto analytic reporting system using R and Shiny scripts, which can output to PowerPoint documents and generate compatible charts, thus supported requirement for big data analysis. (In 2019, it was re-structured using postgresql + Django REST Framework + Vue.js.)", "Phase 2, lead the team to implement a deliverable interative dashboard using PowerBI based on the above system. Gradually implemented a consistent analytic pipeline framework from data governance, application to presentation with PowerBI as business frontend, Jupyter Notebook as technology hub, and self-built R/Python toolchains as bridges."]
           },
           {
-            "title": "Construction of data science environment", "from": "2017/10", "thru": "2018/09",
-            "work": ["Configured internal CRAN. Developed and delopyed R package cluster which enables calling for specific packages of data connection and extraction, transformation and analysis, plotting, etc. by a single umbrella package.", "Developed a Python-based PDF parser and text data structuralization library.", "Gradually implemented a consistent framework of data governance, application and presentation with PowerBI as business frontend, Jupyter Notebook as technology hub, and self-built toolchains."]
+            "title": "Social security data analysis and chronic disease management in District X", "from": "2017/10", "thru": "2019/09",
+            "work": ["Participated in designing data mining plan and completed field data quality analysis and exploratory analysis. Followed with reporting and translation in the later phase.", "Participated in designing disease management plan and preparation of some of the materials, and developed an evidence-basd disease management system."]
           }
         ]
       }

@@ -68,18 +68,18 @@ h2, p, li {
 }
 #certs .el-tag {
   margin: 2.5px 5px;
-  font-size: $bs;
+  font-size: small;
   border-style: none
 }
 #certs .el-tag:hover {
-  font-size: $bs;
+  font-size: small;
   font-weight: bold
 }
 .cert-ul {
   padding-left: 16px
 }
 .cert-li {
-  font-size: $bs;
+  font-size: medium;
   list-style-type: none;
   line-height: $lh-lg;
   padding-left: 74px;
@@ -94,7 +94,7 @@ h2, p, li {
   margin: 0
 }
 .cert-quote-icon {
-  font-size: $sm;
+  font-size: small;
   color: $col-text-alt;
   font-family: monospace;
   margin-right: 10px
@@ -109,7 +109,7 @@ h2, p, li {
   overflow-wrap: break-word
 }
 .pop-li {
-  font-size: $sm
+  font-size: small
 }
 .box-card {
   margin: -6px;

@@ -33,7 +33,7 @@ export default {
 }
 #statement {
   color: $col-text;
-  font-size: $bs;
+  font-size: medium;
   line-height: $lh-md;
   padding-left: 35px;
   list-style: none
