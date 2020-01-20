@@ -16,6 +16,18 @@
        size='small'
       >{{ j }}</el-tag>
     </div>
+    <div id='gallery'>
+      <el-carousel :intervel='4000' height='320px' arrow='always'>
+        <el-carousel-item v-for='(k, _k) in this.$store.getters.self.gallery' :key='_k' lazy>
+          <el-image
+           style='height:100%'
+           fit='scale-down'
+           :src='"static/img/" + k'
+           :preview-src-list='["static/img/" + k]'
+          ></el-image>
+        </el-carousel-item>
+      </el-carousel>
+    </div>
   </div>
 </template>
 
@@ -50,6 +62,9 @@ export default {
   line-height: $lh-lg;
   margin: $mar-md $mar-md $mar-md 33px
 }
+#gallery {
+  margin: $mar-sm $mar-md
+}
 #hobby .el-tag {
   margin: 2px
 }
@@ -59,6 +74,12 @@ export default {
 .el-tag:hover {
   color: $col-ok;
   border-color: $col-ok
+}
+.el-carousel__item:nth-child(2n) {
+  background-color: #99a9bf;
+}
+.el-carousel__item:nth-child(2n+1) {
+  background-color: #d3dce6;
 }
 h2 {
   color: $col-thm

@@ -105,7 +105,11 @@ export default {
       foldAll: null,
       foldIcon: 'el-icon-arrow-down',
       foldValue: [],
-      themeColor: sty.themeColor
+      themeColor: sty.themeColor,
+      jobTreeProps: {
+        children: 'children',
+        label: 'label'
+      }
     }
   },
   computed: {
@@ -181,6 +185,18 @@ export default {
     },
     colorTimelineNode (active) {
       return active ? this.themeColor : null
+    },
+    buildJobTree (data) {
+      // data: job description
+      // ret: el-tree structure
+      let ret = []
+      for (let i = 0; i < data.length; i++) {
+        ret.push({'id': i, 'label': data[i].p.join(''), 'children': []})
+        for (let j = 0; j < data[i].ul.length; j++) {
+          ret[i].children.push({'id': data.length + j, 'label': data[i].ul[j]})
+        }
+      }
+      return ret
     }
   }
 }
@@ -255,18 +271,18 @@ a:hover {
   color: $col-info;
   display: inline-block;
   width: 1em;
-  margin-left: -1em;
+  margin-left: -1.2em;
   margin-right: 0.2em
 }
 .jobproj {
   color: $col-text
 }
+.projtitle {
+  font-size: larger
+}
 .projnote {
   padding-left: 24px;
   color: $col-text
-}
-.projtitle {
-  font-size: larger
 }
 .icon-note {
   padding-left: 20px;

@@ -10,7 +10,7 @@ export default {
     self: '自我评价',
     hobby: '爱好',
     backtop: '返回顶部',
-    download: '下载简历'
+    download: '下载中文版PDF'
   },
   timespan: {
     sep: '',
