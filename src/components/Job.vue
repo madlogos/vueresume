@@ -240,12 +240,12 @@ a:hover {
   background-color: $col-bg
 }
 .jobtitle {
-  font-size: larger;
+  font-size: medium;
   font-weight: bold;
   margin-right: $mar-md
 }
 .jobemp {
-  font-size: medium;
+  font-size: larger;
   color: $col-info;
   font-weight: normal
 }
