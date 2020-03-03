@@ -2,7 +2,7 @@ const mutations = {
   changeLang (state, lang) {
     state.lang = lang
   },
-  fetchData (state) {
+  getCv (state, payload) {
     const now = new Date()
     let dataExpired = true
     const validMinutes = process.env.NODE_ENV === 'development' ? 0 : 3600
@@ -17,7 +17,8 @@ const mutations = {
       }
     }
     if (dataExpired) {
-      state.data = require('@/assets/cv.json')
+      // payload = require('@/assets/cv.json')
+      state.data = payload
       state.data.created = new Date()
       localStorage.setItem('myCv', JSON.stringify(state.data))
     } else {

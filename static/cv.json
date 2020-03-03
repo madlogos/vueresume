@@ -1,0 +1,866 @@
+{
+  "zh": {
+    "basic": {"name": "JUU2JUIxJUFBJUU4JUJEJUI2JUU5JUEyJTk2",
+      "gender": {"fa": "fas fa-mars", "value": "男"},
+      "dob": {"fa": "fas fa-birthday-cake", "value": "MTk4My0wNC0xNA=="},
+      "home": {"fa": "fas fa-home", "value": "中国上海", "link": "https://map.baidu.com/search/上海市/@13523299,3641066,12z"},
+      "motto": "医学·技术·管理，复合跨界"
+    },
+    "contact": [
+      {"name": "电话", "fa": "fas fa-phone-alt", "value": "MTM4MTY1MTY1MTA=", "link": "dGVsJTNBMTM4MTY1MTY1MTA="},
+      {"name": "邮箱", "fa": "fas fa-envelope", "value": "bWFkbG9nb3MlNDAxNjMuY29t", "link": "bWFpbHRvJTNBbWFkbG9nb3MlNDAxNjMuY29t"},
+      {"name": "站点", "fa": "fas fa-globe", "value": "bWFkbG9nb3MuZ2l0aHViLmlv", "link": "aHR0cHMlM0ElMkYlMkZtYWRsb2dvcy5naXRodWIuaW8="},
+      {"name": "领英", "fa": "fab fa-linkedin", "value": "eWl5aW5nLXdhbmc=", "link": "aHR0cHMlM0ElMkYlMkZ3d3cubGlua2VkaW4uY29tJTJGaW4lMkZ5aXlpbmctd2FuZyUyRg=="}
+    ],
+    "socio": [
+      {"name": "GitHub", "fa": "fab fa-github", "value": "madlogos", "link": "https://github.com/madlogos"},
+      {"name": "Stack Overflow", "fa": "fab fa-stack-overflow", "value": "madlogos", "link": "https://stackoverflow.com/users/5455754/madlogos"},
+      {"name": "博客", "fa": "fas fa-blog", "value": "新浪博客", "link": "http://blog.sina.com.cn/madlogos"},
+      {"name": "豆瓣", "fa": "fas fa-photo-video", "value": "Jandeaux", "link": "https://www.douban.com/people/Jandeaux"},
+      {"name": "微信", "fa": "fab fa-weixin", "value": "madlogos", "link": null},
+      {"name": "QQ", "fa": "fab fa-qq", "value": "25875989", "link": null},
+      {"name": "Skype", "fa": "fab fa-skype", "value": "madlogos", "link": null},
+      {"name": "Facebook", "fa": "fab fa-facebook", "value": "madlogos", "link": "https://www.facebook.com/madlogos"},
+      {"name": "微博", "fa": "fab fa-weibo", "value": "madlogos", "link": "https://weibo.com/madlogos"},
+      {"name": "Twitter", "fa": "fab fa-twitter", "value": "@madlogos", "link": "https://twitter.com/madlogos"}
+    ],
+    "talent": [
+      {"name": "数据分析和挖掘", "value": 100, "tip": "熟悉统计学原理及分析方法的实现，对大数据、机器学习等数据科学应用领域有深入理解，具备丰富的全栈实践经验。"},
+      {"name": "企业健康管理", "value": 90, "tip": "熟悉企业健康促进在学术界和产业界的实践和动向，有丰富的项目设计实施经验。"},
+      {"name": "公共卫生学", "value": 80, "tip": "接受完整的高等医学教育和专门的公共卫生学术训练，有宽广的人群健康视野和数据驱动的流行病学思维框架。"},
+      {"name": "软件研发和管理", "value": 80, "tip": "持续自学编程，有实地全栈开发和项目管理经验，多次参与产品设计和技术选型。"},
+      {"name": "战略规划", "value": 60, "tip": "参与本地化、数字化等业务战略规划，具备从商业和市场高度评估业务和技术发展的战略思维。"}
+    ],
+    "skill": [
+      [
+        {
+          "name": "分析建模", "size": null, "alpha": 0.3, "from": "2009", "thru": "now", "fa": "fas fa-chart-bar", "prof": 4.5, 
+          "p": null,
+          "ul": ["有大型健康数据分析项目经验。对数据治理、探索分析、建模挖掘、验证检验及结合业务 提出洞见的完整应用分析框架有深刻理解。",
+            "熟悉生物统计、机器学习的理论和应用，了解深度学习。", "独立搭建过业务数据管理系统和分析工具链。", "精通常用分析工具如 R, Python, SQL 等。"]
+        },
+        {
+          "name": "数据可视化", "size": null, "alpha": 0.3, "from": "2011", "thru": "now", "fa": "fas fa-chart-area", "prof": 4.5, 
+          "p": ["熟悉 Grammar of Graphics，擅于结合业务用数据讲故事。"],
+          "ul": ["熟悉 R 体系的 <code>ggplot2</code>, <code>plotly</code> 等工具。",
+            "熟悉 Python 体系的 <code>matplotlib</code>, <code>seaborn</code>, <code>pyecharts</code> 等工具。",
+            "熟悉 ECharts, 封装过它的 R 语言接口包。"]
+        },
+        {
+          "name": "机器学习", "size": "medium", "alpha": 0.3, "from": "2017", "thru": "now", "fa": "fas fa-atom", "prof": 4, 
+          "p": ["了解回归、分类、判别、聚类、SVM、随机森林、AdaBoost、Apriori、ANN 等经典机器学习原理，熟悉算法在 R 和 Python 中的具体实现和模型评估。"],
+          "ul": ["熟悉 R 体系的 <code>caret</code>, <code>e1071</code> 等工具。",
+            "熟悉 Python 体系的 <code>numpy</code>, <code>scikit-learn</code> 等工具。"]
+        },
+        {
+          "name": "深度学习", "size": "small", "alpha": 0.15, "from": "2018", "thru": "now", "fa": "fas fa-layer-group", "prof": 3.5, 
+          "p": ["了解 CNN, RNN, LSTM, 词嵌入模型等深度学习的 基础原理及其 Python 实现。"],
+          "ul": ["了解 Python 体系的 <code>tensorflow</code>, <code>keras</code> 等工具。"
+            ]
+        },
+        {
+          "name": "R", "size": null, "alpha": 0.15, "from": "2015", "thru": "now", "fa": "fab fa-r-project", "prof": 5, 
+          "p": ["精通并擅长 R 的统计分析、可视化、工程开发，熟悉语言原理和生态。有完整开发 R 工具包集群，和大型统计、机器学习分析项目的丰富经验。"],
+          "ul": ["领导开发健康管理业务所需的 R 集群包工具链", "实现基于 R 的自动分析报告引擎", "实施并维护团队内部 CRAN。", 
+            "公司内部 <a href='https://madlogos.github.io/R_Tutorial'>R 技术培训讲师</a>。", 
+            "开发出 <code>recharts</code> 等有一定社区影响力的开源包。", "熟悉面对对象编程、函数式编程、高性能编程、工程开发及测试等 R 高阶技术。"]
+        },
+        {
+          "name": "Python", "size": "medium", "alpha": 0.15, "from": "2016", "thru": "now", "fa": "fab fa-python", "prof": 4, 
+          "p": ["擅长用 Python 统计分析、可视化、机器学习、深度学习及Web编程。有完整开发 Python 工具库和小型分析项目的经验。"], 
+          "ul": ["独立开发健康管理业务所需的文本数据结构化等 Python 工具库。", "基于 <code>Django</code> 框架和 RESTful-API 开发健康数据后台管理系统。",
+            "熟悉 <code>Django</code> 、 <code>Flask</code> Web框架，及 <code>pandas</code>、 <code>scikit-learn</code>、 <code>matplotlib</code>、 <code>tensorflow</code> 等数据科学相关库。"]
+        },
+        {
+          "name": "Anaconda", "size": "medium", "alpha": 0.08, "from": "2016", "thru": "now", "fa": "fab fa-python", "prof": 4, 
+          "p": ["作为数据科学的主要工作环境使用。"], 
+          "ul": ["熟悉 <code>conda</code> 包管理工具。", "熟悉 Jupyter Notebook和 Jupyter Lab 的配置、使用，及在 Jupyter 环境下探索、挖掘、展示。"]
+        },
+        {
+          "name": "SQL", "size": "medium", "alpha": 0.15, "from": "2013", "thru": "now", "fa": "fas fa-database", "prof": 4, 
+          "p": null,
+          "ul": ["熟悉关系型数据库的表设计范式与实践。", "数据库 CRUD 操作娴熟。", 
+            "熟悉常用的中小型SQL数据库 (Access, SQLite, PostgreSQL, ...)。", "了解最主流的noSQL数据库 (MongoDB ...) 和代表性数据科学SQL方言 (SparkQL ...)。"]
+        },
+        {
+          "name": "SAS", "size": "small", "alpha": 0.15, "from": "2006", "thru": "2011", "fa": "fas fa-chart-bar", "prof": 3, 
+          "p": ["毕业论文的主要分析工具。熟悉 Base、 Graph、 Stat、 ODS 等模块，熟悉宏。"],
+          "ul": null
+        },
+        {
+          "name": "Excel", "size": null, "alpha": 0.15, "from": "2006", "thru": "now", "fa": "fas fa-file-excel", "prof": 3, 
+          "p": null,
+          "ul": ["精通 Excel 的基本和进阶功能，善于用公式、 VBA 、条件样式等搭建敏捷的一站式业务数据解决方案。", 
+            "甲流防治战中，独立完成全区疫情/接种报表报送体系搭建和运作。", "公司内部 Excel 培训讲师。"]
+        },
+        {
+          "name": "PowerBI", "size": "small", "alpha": 0.15, "from": "2018", "thru": "now", "fa": "fas fa-chart-area", "prof": 4.5, 
+          "p": ["熟练使用 Power Query 和内置控件搭建内部报表 和业务仪表盘。"],
+          "ul": null
+        }
+      ],
+      [
+        {
+          "name": "健康促进", "size": null, "alpha": 0.3, "from": "2006", "thru": "now", "fa": "fas fa-briefcase-medical", "prof": 4, 
+          "p": null,
+          "ul": ["健康教育与健康促进专业科班出身，熟悉学科理论和研究工具。", "熟悉社区及企业健康促进经典理论和最佳实践。"]
+        },
+        {
+          "name": "健康管理", "size": null, "alpha": 0.15, "from": "2011", "thru": "now", "fa": "fas fa-briefcase-medical", "prof": 4.5, 
+          "p": null,
+          "ul": ["长期深耕健康管理行业，熟悉业界动态和行业实践。", "亲身参与大量企业健康管理项目的设计、实施 和评估，有丰富的实操经验。",
+            "亲身参与部门业务能力从无到有的构建，有完整的实施经验。", "充分利用自身数据、医学、软件开发的 跨界能力，持续为业务赋能。"]
+        },
+        {
+          "name": "疾病管理", "size": "small", "alpha": 0.08, "from": "2016", "thru": "now", "fa": "fas fa-briefcase-medical", "prof": 3, 
+          "p": null,
+          "ul": ["了解疾病管理的理论、方法体系和业界实践。", "参与糖尿病等企业慢性病管理方案的设计。"]
+        },
+        {
+          "name": "公共卫生", "size": "medium", "alpha": 0.3, "from": "2001", "thru": "now", "fa": "fas fa-clinic-medical", "prof": 4, 
+          "p": null,
+          "ul": ["基础医学、临床医学等医科基础知识扎实。", "科班出身，流行病学、职业卫生、环境卫生、社会医学等学科基础扎实。", "以“大卫生”视角思考健康议题和策略，关注支持性环境建设等宏观策略的作用。"]
+        },
+        {
+          "name": "流行病学", "size": "medium", "alpha": 0.15, "from": "2001", "thru": "now", "fa": "fas fa-clinic-medical", "prof": 4, 
+          "p": null,
+          "ul": ["熟悉现代流行病学理论框架及研究设计。", "擅长现场流行病学和职业流行病学。"]
+        },
+        {
+          "name": "生物统计", "size": null, "alpha": 0.15, "from": "2001", "thru": "now", "fa": "fas fa-chart-bar", "prof": 4.5, 
+          "p": null,
+          "ul": ["熟悉常用统计方法原理及其 R, Python, SAS, Stata 实现。", "了解医学试验、药物临床试验设计。"]
+        }
+      ],
+      [
+        {
+          "name": "项目管理", "size": null, "alpha": 0.3, "from": "2012", "thru": "now", "fa": "fas fa-project-diagram", "prof": 4.5, 
+          "p": ["有丰富的商务及开发项目管理经验。"],
+          "ul": ["熟悉经典的项目管理体系，为团队提供项目管理工具和模板。", "熟悉 <code>Project</code> 等工具。", "熟悉敏捷项目管理体系。", 
+            "了解 <code>Jira</code> 等工具。"]
+        },
+        {
+          "name": "需求分析", "size": "medium", "alpha": 0.15, "from": "2017", "thru": "now", "fa": "fas fa-laptop-code", "prof": 3.5, 
+          "p": null,
+          "ul": ["善于提炼业务逻辑，定义产品需求。", "利用各种开源工具 (<code>Draw.io</code> 等) 实现产品快速原型。", "使用原型、文档、UML 图构建产品需求。"]
+        },
+        {
+          "name": "全栈开发", "size": "small", "alpha": 0.3, "from": "2015", "thru": "now", "fa": "fas fa-laptop-code", "prof": 4, 
+          "p": ["善于在快速理解业务需求后，独立快速 搭建功能原型。"],
+          "ul": ["精通以 Access 为前端、SharePoint 为后端构建 CS 架构小应用。", "熟悉用 <code>Flask</code> 或 <code>Django</code> 和 <code>Vue.js</code> 构建线上原型。"]
+        },
+        {
+          "name": "战略分析", "size": "medium", "alpha": 0.3, "from": "2017", "thru": "now", "fa": "fas fa-chess-board", "prof": 3.5, 
+          "p": null,
+          "ul": ["善于信息检索和梳理，进行市场格局描述和分析。", "了解常用的战略分析方法和工具。"]
+        },
+        {
+          "name": "PowerPoint", "size": null, "alpha": 0.15, "from": "2011", "thru": "now", "fa": "fas fa-file-powerpoint", "prof": 4.5, 
+          "p": null,
+          "ul": ["善于提取关键信息并有效强化。", "善于信息可视化。", "善于PPT排版、配色。"]
+        }
+      ]
+    ],
+    "cert": [
+      {
+        "caption": "项目管理专业人士资格认证(PMP)®", "name": "项目管理专业人士资格认证(PMP)®", "provider": null,
+        "fa": "fas fa-award", "time": "2012/09", "institute": {
+          "name": "美国项目管理协会(PMI)", "link": "https://www.pmi.org"}, "sn": "1546494",
+        "p": ["美国项目管理协会主持的项目管理知识技能体系认证，基于 PMBOK 5。该认证体系还包括 PfMP, PgMP, CAPM等。"],
+        "ol": null
+      },
+      {
+        "caption": "数据科学(R专项课程)", "name": "数据科学(R专项课程)", "provider": {
+          "name": "约翰霍普金斯大学", "link": "https://www.jhu.edu"},
+        "fa": "fas fa-user-ninja", "time": "2015/11", "institute": {
+          "name": "Couresra", "link": "https://www.coursera.org"}, "sn": null,
+        "p": ["Johns Hopkins 大学在 Coursera 开设的数据科学在线课程。", "技术栈： <code>R</code> (<code>tidyverse, ggplot2, caret, knitr</code>), <code>git</code>。", "课程："],
+        "ol": [
+          "数据科学家的工具箱", "R 语言程序设计", "获取和整理数据", "探索性数据分析", "可重复性研究", "统计推断",
+          "回归模型", "实用机器学习", "数据产品开发", "毕业项目"
+        ]
+      },
+      {
+        "caption": "数据科学(Python专项课程)", "name": "数据科学(Python专项课程)", "provider": {
+          "name": "Dataquest", "link": "https://www.dataquest.io"},
+        "fa": "fas fa-user-ninja", "time": "2016/07", "institute": {
+          "name": "Dataquest", "link": "https://www.dataquest.io"}, "sn": null,
+        "p": ["Dataquest 开设的数据科学课程。", "技术栈： <code>Python</code> (<code>pandas, matplotlib, scikit-learn, statsmodels, NLTK</code>), <code>git</code>。", "课程："], 
+        "ol": [
+          "Python编程", "用Pandas进行数据分析", "数据可视化", "命令行工具", "Git和版本管理", "数据清理项目贯通", 
+          "数据分析", "API和网络爬虫", "SQL和数据库", "Python中的概率和统计学", "假设检验", "大数据工具", 
+          "Python中的线性代数", "Python中的机器学习", "R语言编程", "数据结构和算法", "数据清理",
+          "Spark和Map-Reduce", "决策树", "自然语言处理"
+        ]
+      },
+      {
+        "caption": "数据可视化", "name": "数据可视化", "provider": {
+          "name": "伊利诺伊大学厄巴纳-香槟分校", "link": "https://illinois.edu/"}, 
+        "fa": "fas fa-user-ninja", "time": "2017/05", "institute": {
+          "name": "Couresra", "link": "https://www.coursera.org"}, "sn": null,
+        "p": ["Illinois 大学 Urbana-Champaign 分校在 Coursera 开设的数据可视化在线课程。", "技术栈: <code>Tableau</code>", "课程："], 
+        "ol": ["计算机与人", "定量数据的可视化", "定性数据的可视化", "可视化仪表盘"]
+      },
+      {
+        "caption": "认证Scrum产品负责人®", "name": "认证Scrum产品负责人®", "provider": null,
+        "fa": "fas fa-award", "time": "2018/06", "institute": {
+          "name": "Scrum 联盟", "link": "https://www.scrumalliance.org"}, "sn": "000795041",
+        "p": ["Scrum Alliance 主持的敏捷项目管理产品负责人认证。该认证体系还包括认证 Scrum 开发者、认证 Scrum Master 、高级认证 Scrum 产品负责人和高级认证 Scrum Master。"], 
+        "ol": null
+      },
+      {
+        "caption": "软件工程", "name": "软件工程", "provider": {
+          "name": "北京大学", "link": "https://www.pku.edu.cn"}, 
+        "fa": "fas fa-user-ninja", "time": "2018/07", "institute": {
+          "name": "Couresra", "link": "https://www.coursera.org"}, "sn": null,
+        "p": ["北京大学在 Coursera 开设的软件工程在线课程。", "课程："], 
+        "ol": [
+          "软件工程和软件过程", "软件需求", "结构化方法", "面向对象方法", "敏捷开发方法", "软件测试", "软件项目管理", "软件开发工具与环境"
+        ]
+      },
+      {
+        "caption": "机器学习", "name": "机器学习", "provider": {
+          "name": "斯坦福大学", "link": "https://www.stanford.edu"}, 
+        "fa": "fas fa-user-ninja", "time": "2018/08", "institute": {
+          "name": "Couresra", "link": "https://www.coursera.org"}, "sn": null,
+        "p": ["Stanford 大学 Andrew Ng 在 Coursera 开设的著名机器学习在线课程。", "技术栈： <code>MatLab / Octave</code>。", "课程："], 
+        "ol": [
+          "单变量线性回归", "回顾线性代数", "多变量线性回归", "Octave/MatLab教程", "Logistic回归",
+          "正则化", "神经网络: 表征", "神经网络: 学习", "运用机器学习的建议", "机器学习系统设计",
+          "支持向量机", "无监督学习", "降维", "异常检测", "推荐系统", "大规模机器学习", "应用实例: 图片OCR"
+        ]
+      },
+      {
+        "caption": "深度学习", "name": "深度学习", "provider": {
+          "name": "deeplearning.ai", "link": "https://www.deeplearning.ai"},
+        "fa": "fas fa-user-ninja", "time": "2018/10", "institute": {
+          "name": "Couresra", "link": "https://www.coursera.org"}, "sn": "XGCR4CTFRHME",
+        "p": ["deeplearning.ai 在 Coursera 开设的深度学习在线课程。", "技术栈： <code>Python</code> (<code>numpy, tensorflow, Keras</code>)。", "课程："], 
+        "ol": [
+          "神经网络和深度学习", "改善深层神经网络：超参数调试、 正则化以及优化", "结构化机器学习项目",
+          "卷积神经网络", "序列模型"
+        ]
+      },
+      {
+        "caption": "用Python和JavaScript进行Web编程", "name": "用Python和JavaScript进行Web编程", 
+        "provider": {"name": "哈佛大学", "link": "https://www.harvard.edu"}, 
+        "fa": "fas fa-user-ninja", "time": "2019/11", "institute": {
+          "name": "edX", "link": "https://www.edx.org"}, "sn": null,
+        "p": ["Harvard 大学在 edX 开设的在线 Web 编程课程。", "技术栈： <code>Python</code> (<code>Flask, Django</code>), <code>git</code>, <code>HTML / Bootstrap</code>, <code>CSS / Sass</code>, <code>JavaScript</code>。", "课程："],
+        "ol": [
+          "Git", "HTML, CSS", "Flask", "SQL", "ORMs, APIs", "JavaScript", "前端", "Django", "测试, CI/CD",
+          "GitHub, Travis CI", "可扩展性", "安全性"
+        ]
+      }
+    ],
+    "job": [
+      {
+        "from": "2009/07", "till": "2011/04", "emp": "徐汇区疾病预防控制中心", "link": null,
+        "wiki": {
+          "fa": "fab fa-wikipedia-w", "title": "关于该雇主", "value": "百度百科",
+          "tag": ["公共卫生", "事业单位"],
+          "link": "https://baike.baidu.com/item/徐汇区疾病预防控制中心"
+        },
+        "title": "科员", "icon": "check", "active": false, 
+        "keyword": ["传染病防控", "计划免疫管理", "流行病学研究"],
+        "description": [
+          {"p": ["<b>免疫规划条线</b>: 规范化门诊和强化免疫督导、数据报表质控与更新等。"],
+           "ul": [
+            "徐汇卫生局“2009年度徐汇区计划免疫工作先进个人”称号。", "独立实施全区疫情/ 接种报表报送体系的搭建和运作，以2人团队及时、准确完成近千份报表和10万行个案表的制作与传输。"
+          ]},
+          {
+            "p": ["<b>传染病防制条线</b>: 包括爆发性/ 聚集性/ 新发传染病疫情现场调查及处置、传染病前哨防控单位工作督导、疫情监测报表、疫情数据挖掘分析、健康教育及随访干预等。"],
+            "ul": [
+              "《徐汇区卫生报告》编委会成员，参编2010及2011两期报告中的传染病防制部分。", "对辖区人群聚集性单位进行传染病暴发风险的分层识别和前置布控。"
+            ]
+          }
+        ],
+        "project": [
+          {
+            "title": "甲型H1N1流感感染状况血清学调查", "from": "2010/03", "thru": "2010/10",
+            "work": ["中国CDC全国项目的区级子项目。经多阶段随机抽样选取受试者，开展多轮问卷调查，采集、分离及转运血清标本。"]
+          },
+          {
+            "title": "世博期间传染病的公共卫生风险评估", "from": "2010/07", "thru": "2010/11",
+            "work": ["结合既往传染病疫情数据挖掘分析，利用Delphi专家咨询法开展传染病公共卫生风险评估。通过开放式和封闭式咨询，获得科学性佳、涵盖面广、前瞻性强的评估结果。"]
+          }
+        ]
+      },
+      {
+        "from": "2011/04", "till": "2014/09", "emp": "安泰保险", "link": "https://www.aetna.com",
+        "wiki": {
+          "fa": "fab fa-wikipedia-w", "title": "关于该雇主", "value": "维基百科",
+          "tag": ["财富200", "美国第3", "健康险", "CVS并购"],
+          "link": "https://en.wikipedia.org/wiki/Aetna"
+        }, 
+        "title": "项目管理经理", "icon": "check", "active": false,
+        "keyword": ["项目管理", "产品开发", "分析报告"], 
+        "description": [
+          {
+            "p": ["<b>项目管理</b>: 创建项目管理体系规范，提供方法和资源支持，推动项目驱动型业务团队的建设。"],
+            "ul": ["开发项目管理文件模板，及基于SharePoint的项目管理协作系统。", "实地运作多个大型企业健康管理项目，为团队积累知识资产。", "分析业务项目的运行情况，提供流程改进建议。"]
+          },
+          {
+            "p": ["<b>产品及服务的医学保障</b>: 负责内部循证顾问委员会的运作，确保专业健康服务循证可靠。"],
+            "ul": ["为产品开发、服务过程提供医学意见，维护专业产品知识库。", "直接参与设计企业客户的健康干预计划，及医学内容的实地开发。", "对含医学内容的外发文件进行循证核查。"]
+          },
+          {
+            "p": ["<b>数据分析与决策支持</b>: 分析企业客户多源健康数据，提供干预建议；分析内部运营数据，为团队提供决策支持。"],
+            "ul": ["分析企业体检、健康风险评估、理赔等数据，识别主要健康风险和高风险人群，对可预防控制的风险做出具体建议。",
+              "分析企业健康管理项目的过程数据，评估效果，挖掘模式，为下一步行动提供洞见。", "为50多家企业客户提供详尽、多维、准确、循证、业内领先的健康分析报告。",
+              "分析内部运营绩效数据，为健康服务及保险业务流程改进和战略规划提供决策支持。"]
+          },
+          {
+            "p": ["<b>技术赋能与业务支持</b>: 推进IT信息系统开发上线；独立开发小型内部应用，敏捷实现业务需求。"],
+            "ul": ["作为需求方对接IT团队，推进实施核心业务系统开发项目。", "为团队开发内部应用，涵盖团队出勤、客服记录、企业医务室诊疗、在线咨询答复评估、就医协助、循证审查等业务的管理。",
+              "设计开发项目成本估算模型并工具化，提高了预估精度和估算效率，支撑主营业务的报价、核价流程。"]
+          }
+        ],
+        "project": [
+          {
+            "title": "基于网络应用的某企业健康促进项目", "from": "2011/04", "thru": "2013/05",
+            "work": ["该项目是国内较早开展的企业在线轻问诊服务实例。客群超过2万人，时效性、循证性、满意度等 KPI 均超过目标值。",
+              "作为项目负责人，协调IT团队完成双语在线健康信息及交互咨询系统，参与在线咨询流程设计及实地运营，亲身答复超过50万字；协调医学顾问委完成70余篇中英双语健康短文；在有限资源和预算约束下及时高质完成项目。"]
+          },
+          {
+            "title": "某企业年度综合性健康筛查项目", "from": "2013/10", "thru": "2014/03",
+            "work": ["与同类企业健康筛查项目相比，该项目规模大、形式新、准备期短、循证要求高。通过严谨协作，项目成功落地实施，参与率、满意度、成本效益均达到目标。团队获得了运作万人级别服务项目的宝贵经验。",
+              "作为项目经理，全程跟进竞标、实施和评估。跟进过程中，额外产出 (1) 改进的成本预估模型和 (2) 服务供应商网络拓展及评估的流程框架。前者帮助团队精准定价，最终赢得标的。后者成为此后拓展、维护服务网络的标准实践。"]
+          }
+        ]
+      },
+      {
+        "from": "2014/09", "till": "2020/04", "emp": "安泰保险", "link": "https://www.aetna.com",
+        "wiki": {
+          "fa": "fab fa-wikipedia-w", "title": "关于该雇主", "value": "维基百科",
+          "tag": ["财富200", "美国第3", "健康险", "CVS并购"],
+          "link": "https://en.wikipedia.org/wiki/Aetna"
+        }, 
+        "title": "数据分析经理", "icon": "loading", "active": true,
+        "keyword": ["数据科学", "分析挖掘", "商业智能", "系统研发", "专业产品", "商务战略", "运营优化", "内部培训"], 
+        "description": [
+          {
+            "p": ["<b>业务战略</b>: 参与公司战略规划，推进跨部门业务融合、数字化建设和数据驱动的业务转型。"],
+            "ul": ["参与本土化战略的规划和实施。参与本地合作伙伴的商务谈判，跟进项目落地；参与本地卓越运营中心建设，推动运营部门跨职能融合。", 
+              "参与数字化升级战略的制定。引入外包商升级技术平台，以适应移动互联时代的需要；设计产品概念原型和需求路线图，推进系统架构升级。"]
+          },
+          {
+            "p": ["<b>数据分析与赋能</b>: 独立开发ETL和分析报告系统，跨业务提供顾问支持，担任内部培训讲师。"],
+            "ul": ["独立搭建健康数据ETL系统；结合脚本构建自动分析报告系统，将分析报告周期缩短到2天以内。", "领导分析团队，每年为80家企业客户提供高品质的健康风险分析报告。",
+            "协助人群健康科学部门与政府合作控费分析及管理，参与数据挖掘分析，开发疾病管理软件。", "为保险网络、医疗管理等部门提供数据分析建议", "担任公司Excel和R培训讲师，提供系列培训。"]
+          },
+          {
+            "p": ["<b>产品及服务的医学保障</b>: 负责内部循证顾问委员会的运作，确保专业健康服务循证可靠。"],
+            "ul": ["为产品开发、服务过程提供医学意见，维护专业产品知识库。", "直接参与设计企业客户的健康干预计划，及医学内容的实地开发。", "对含医学内容的外发文件进行循证核查。"]
+          }
+        ],
+        "project": [
+          {
+            "title": "健康数据ETL及分析报告系统", "from": "2015/04", "thru": "2016/10",
+            "work": ["第一阶段，利用Access搭建ETL系统，其核心是一个能自动转换SQL的规则模块，能便捷地配置数值清理和风险计算。再利用 R 和 Shiny 脚本构建仪表盘和自动分析报告系统，分析结果可输出为PowerPoint兼容图表，支撑大数据量的分析需求。(2019年以postgresql + Django REST Framework + Vue.js重构)", "第二阶段，基于上述系统，带领团队用 PowerBI 实现可交付的交互式数据仪表盘。逐步以 PowerBI 为业务展示前端，Jupyter Notebook 为技术桥梁，依托自建的R和Python工具链，实现从治理、应用到展示的数据管线框架。"]
+          },
+          {
+            "title": "某区社保数据分析及慢病专病管理", "from": "2017/10", "thru": "2019/09",
+            "work": ["参与数据挖掘方案的设计，并实地完成数据质控分析和探索性分析，后期跟进报告撰写和翻译。", "参与疾病管理方案的设计和部分物料筹备，并开发基于循证规则的疾病管理系统。"]
+          }
+        ]
+      }
+    ],
+    "edu": [
+      {
+        "from": "2001/09", "till": "2006/07", "icon": "check", "active": false, "school": "复旦大学公共卫生学院", 
+        "link": "http://sph.fudan.edu.cn", "wiki": {
+          "fa": "fab fa-wikipedia-w", "title": "关于该学校", "value": "维基百科",
+          "tag": ["985/211", "C9"],
+          "link": "https://zh.wikipedia.org/wiki/复旦大学公共卫生学院"
+        },
+        "major": "预防医学", "cred": "医学士", "rank": "GPA 3.4/4.0 (前5)",
+        "lesson": [
+          "<b>公共课程</b>: 高等数学、大学物理、无机/有机化学、生物学导论等", "<b>医学基础</b>: 解剖学、组织胚胎学、生物化学、细胞生物学、生理学、病理学、病理生理学、药理学等",
+          "<b>临床基础</b>: 内科学、外科学、妇产科学、儿科学、神经病学、精神医学、皮肤病学等", "<b>专科基础</b>: 生物统计学、流行病学、社会医学、卫生管理学、劳动卫生学、毒理学、环境卫生学、儿少卫生学、营养学、卫生微生物学、卫生化学等"
+        ]
+      },
+      {
+        "from": "2006/09", "till": "2009/07", "icon": "check", "active": false, "school": "复旦大学公共卫生学院", 
+        "link": "http://sph.fudan.edu.cn/", "wiki": {
+          "fa": "fab fa-wikipedia-w", "title": "关于该学校", "value": "维基百科",
+          "tag": ["985/211", "C9"],
+          "link": "https://zh.wikipedia.org/wiki/复旦大学公共卫生学院"
+        },
+        "major": "职业与环境卫生", "cred": "医学硕士", "rank": "GPA 3.6/4.0 (前10)", 
+        "lesson": [
+          "<b>课程</b>：高级流行病学、生物统计学、SAS编程、SPSS、环境健康危害评估、行为科学与健康促进等", "<b>毕业课题</b>：生活方式危险因素暴露与急性髓性白血病风险的流行病学关联",
+          "<b>研究生会</b>：<ul style='padding-left:30px'><li>为第七届上海研究生学术论坛环境卫生分论坛提供完整的宣传解决方案</li><li>主编首期《医学院新生生活指南》</li></ul>"
+        ]
+      }
+    ],
+    "self": {
+      "statement": [
+        "思维严谨，程序感和逻辑感良好，执行力强，善于分析和优化。", "终身学习者，坚持问题导向的主动学习；乐于钻研，善于创新。", 
+        "知识广博，涉猎广泛，中英文功底扎实。", "正直、诚信、自律、开明、包容。"
+      ],
+      "interest": ["文史哲杂学", "电影", "MOOC", "编程", "数码"],
+      "gallery": ["dashboard.png", "risk-1.png", "risk-2.png", "risk-3.png", "alg-1.png", "alg-2.png", "risk-geo.png", "guide-1.png", "guide-2.png", "pkg-manual-1.png", "pkg-manual-2.png"]
+    },
+    "misc": {
+      "tip": {
+        "title": "关于本简历",
+        "msg": "<br/><p>试着和页面交互（点按标签、图标、按钮，展开折叠面板，访问链接），查看更多细节。</p><ol style='padding-left:20px'><li>响应式布局，自动适配不同分辨率的设备 (PC, 平板, 手机...)</li><li>封装了一个计算与呈现时差的方法</li><li>扩展整合了<code>el-collapse</code>和<code>el-timeline</code>组件</li><li>使用CDN加速，请确保能正常访问<a href='https://www.bootcdn.cn'>BootCDN</a></li><li>文内点<i class='fas fa-download'></i>可下载PDF版本</li></ol>"
+      },
+      "footnote": "<span style='float:right'><i class='fas fa-file-code'></i> 基于<code>Vue.js</code>, <code>ElementUI</code>, <code>ECharts</code> & <code>i18n</code>, <i class='fas fa-terminal'></i> 采用<code>Webpack</code>构建。</span>",
+      "copyright": {"from": "2019", "thru": "now", "content": "madlogos"},
+      "attachment": "https://gh-1251443721.cos.ap-chengdu.myqcloud.com/assets/wang-yiying-resume-zh.pdf"
+    }
+  },
+  "en": {
+    "basic":{
+      "name": "V2FuZyUyMFlpeWluZw==",
+      "gender": {"fa": "fas fa-mars", "value": "Male"},
+      "dob": {"fa": "fas fa-birthday-cake", "value": "MTk4My0wNC0xNA=="},
+      "home": {"fa": "fas fa-home", "value": "Shanghai, CN", "link": "https://www.google.com/maps/place/中国上海市/@31.2165851,121.2817674,10z"},
+      "motto": "Versatile crossover in medicine, technology & management"
+    },
+    "contact": [
+      {"name": "Phone", "fa": "fas fa-phone-alt", "value": "MTM4MTY1MTY1MTA=", "link": "dGVsJTNBMTM4MTY1MTY1MTA="},
+      {"name": "Email", "fa": "fas fa-envelope", "value": "bWFkbG9nb3MlNDAxNjMuY29t", "link": "bWFpbHRvJTNBbWFkbG9nb3MlNDAxNjMuY29t"},
+      {"name": "Site", "fa": "fas fa-globe", "value": "bWFkbG9nb3MuZ2l0aHViLmlv", "link": "aHR0cHMlM0ElMkYlMkZtYWRsb2dvcy5naXRodWIuaW8="},
+      {"name": "LinkedIn", "fa": "fab fa-linkedin", "value": "eWl5aW5nLXdhbmc=", "link": "aHR0cHMlM0ElMkYlMkZ3d3cubGlua2VkaW4uY29tJTJGaW4lMkZ5aXlpbmctd2FuZyUyRg=="}
+    ],
+    "socio": [
+      {"name": "GitHub", "fa": "fab fa-github", "value": "madlogos", "link": "https://github.com/madlogos"},
+      {"name": "Stack Overflow", "fa": "fab fa-stack-overflow", "value": "madlogos", "link": "https://stackoverflow.com/users/5455754/madlogos"},
+      {"name": "Blog", "fa": "fas fa-blog", "value": "Sina blog", "link": "http://blog.sina.com.cn/madlogos"},
+      {"name": "Douban", "fa": "fas fa-photo-video", "value": "Jandeaux", "link": "https://www.douban.com/people/Jandeaux"},
+      {"name": "WeChat", "fa": "fab fa-weixin", "value": "madlogos", "link": null},
+      {"name": "QQ", "fa": "fab fa-qq", "value": "25875989", "link": null},
+      {"name": "Skype", "fa": "fab fa-skype", "value": "madlogos", "link": null},
+      {"name": "Facebook", "fa": "fab fa-facebook", "value": "madlogos", "link": "https://www.facebook.com/madlogos"},
+      {"name": "Sina Weibo", "fa": "fab fa-weibo", "value": "madlogos", "link": "https://weibo.com/madlogos"},
+      {"name": "Twitter", "fa": "fab fa-twitter", "value": "@madlogos", "link": "https://twitter.com/madlogos"}
+    ],
+    "talent": [
+      {"name": "Data analytics & mining", "value": 100, "tip": "Familiarity with statistics principles and implementation of analytics; deep understanding of applied data science on big data and machine leaerning; rich practical experience of full-stack analytics."}, 
+      {"name": "Corporate health management", "value": 90, "tip": "Familiarity with the practice and dynamics of health promotion in both academic society and industry; rich experience of program design and implementation."},
+      {"name": "Epidemiology", "value": 80, "tip": "Solid medical background with complete medical education and specific public health training; thinking from wider population health perspectives with a data-driven epidemiological framework."},
+      {"name": "Software R&D", "value": 80, "tip": "Continuous self-paced learning of programming; practical experience of full-stack development and project management; frequent participation in product design and model selection."},
+      {"name": "Strategic planning", "value": 60, "tip": "Participation in business strategy planning such as localization and digitalization, from which established a strategic thinking model that look into business and technology from commence and market perspectives."}
+    ],
+    "skill": [
+      [
+        {
+          "name": "Analytics & modelling", "size": null, "alpha": 0.3, "from": "2009", "thru": "now", "fa": "fas fa-chart-bar", "prof": 4.5, 
+          "p": null,
+          "ul": ["With rich experience of big health data analytic projects, I have profound understanding of a holistic analytic framework including data governance, exploratory analysis, modelling and data mining, test validation and business-useful insights.",
+            "Familiar with fundamentals and application of bio-statistics and machine learning, and know deep learning", "Built a business data management system and analytic toolchain independently", "Proficient at common analytic tools, such as R, Python, SQL, etc."]
+        },
+        {
+          "name": "Data visualization", "size": null, "alpha": 0.3, "from": "2011", "thru": "now", "fa": "fas fa-chart-area", "prof": 4.5, 
+          "p": ["Familiar with Grammar of Graphics, I am good at story-telling with data."],
+          "ul": ["Familiar with <code>ggplot2</code>, <code>plotly</code> etc. in R ecosystem.",
+            "Familiar with <code>matplotlib</code>, <code>seaborn</code>, <code>pyecharts</code> etc. in Python ecosystem.",
+            "Familiar with ECharts, and composed a wrapper package of R interface for it."]
+        },
+        {
+          "name": "Machine learning", "size": "medium", "alpha": 0.3, "from": "2017", "thru": "now", "fa": "fas fa-atom", "prof": 4, 
+          "p": ["Understand principles of classic machine learning algorithms, such as regression, classification, discrimination, clustering, SVM, random forest, AdaBoost, Apriori, ANN, etc. Famliar with algorithm implementation in R and Python."],
+          "ul": ["Familiar with <code>caret</code>, <code>e1071</code>, etc. in R.",
+            "Familiar with <code>numpy</code>, <code>scikit-learn</code>, etc. in Python."]
+        },
+        {
+          "name": "Deep learning", "size": "small", "alpha": 0.15, "from": "2018", "thru": "now", "fa": "fas fa-layer-group", "prof": 3.5, 
+          "p": ["Understand principle fundamentals implementation in Python of common deep learning algorithms, such as CNN, RNN, LSTM, work embeddings, etc."],
+          "ul": ["Understand <code>tensorflow</code>, <code>keras</code>, etc. in Python."
+            ]
+        },
+        {
+          "name": "R", "size": null, "alpha": 0.15, "from": "2015", "thru": "now", "fa": "fab fa-r-project", "prof": 5, 
+          "p": ["Proficient at statistic analysis, data visualization and development engineering using R. Familiar with fundamentals and ecosystem of R, with rich experience of complete development of R package clusters, big statistic and machine learning projects."],
+          "ul": ["Lead the development of R package clusters toolchain required by health management business.", "Implmented automated analytic reporting engine with R.", "Implemented and maintained internal CRAN.", 
+            "Internal <a href='https://madlogos.github.io/R_Tutorial'>R technology trainer</a>.", 
+            "Developed open source packages such as <code>recharts</code> with community impacts", "Familiar with advanced R skills such as object-oriented programming, functional programming, high-performance programming, development engineering and testing, etc."]
+        },
+        {
+          "name": "Python", "size": "medium", "alpha": 0.15, "from": "2016", "thru": "now", "fa": "fab fa-python", "prof": 4, 
+          "p": ["Proficient at statistic analysis, data visualization, machine learning, deep learning and web programming using Python, with experience of complete development of Python libraries and small analytic projects."], 
+          "ul": ["Independently developed Python libraries required by health management business, such as text data structurization.", 
+            "Developed health data backend management system on top of <code>Django</code> framework and RESTful-API.",
+            "Familiar with <code>Django</code> and <code>Flask</code> Web frameworks and data science related libraries such as <code>pandas</code>, <code>scikit-learn</code>, <code>matplotlib</code>, <code>tensorflow</code>."]
+        },
+        {
+          "name": "Anaconda", "size": "medium", "alpha": 0.08, "from": "2016", "thru": "now", "fa": "fab fa-python", "prof": 4, 
+          "p": ["Major working environment when doing data science jobs."], 
+          "ul": ["Familiar with package management system of <code>conda</code>.", "Familiar with configuration and application of Jupyter Notebook and Jupyter Lab, as well as exploration, mining and presentation in Jupyter environment."]
+        },
+        {
+          "name": "SQL", "size": "medium", "alpha": 0.15, "from": "2013", "thru": "now", "fa": "fas fa-database", "prof": 4, 
+          "p": null,
+          "ul": ["Familiar with paradigm and practice of table design in RDBMS.", "Familiar with CRUD operations in RDBMS.", 
+            "Familiar with medium-and-small RDBMS such as Access, SQLite, PostgreSQL, etc.", "Know mainstream NoSQL databases such as MongoDB and typical data science SQL dialects such as SparkQL."]
+        },
+        {
+          "name": "SAS", "size": "small", "alpha": 0.15, "from": "2006", "thru": "2011", "fa": "fas fa-chart-bar", "prof": 3, 
+          "p": ["Analytic tool for graduate thesis. Familiar with modules of Base, Graph, Stat, ODS etc.; good at macros."],
+          "ul": null
+        },
+        {
+          "name": "Excel", "size": null, "alpha": 0.15, "from": "2006", "thru": "now", "fa": "fas fa-file-excel", "prof": 3, 
+          "p": null,
+          "ul": ["Proficient at basic and advanced functionalities of Excel. Good at building one-stop agile business data solution based on formula, VBA, conditional formatting, etc.", 
+            "During the battle against Flu A, built the holistic district level report delivery system for epidemic / vaccination on my own.", "Internal Excel trainer."]
+        },
+        {
+          "name": "PowerBI", "size": "small", "alpha": 0.15, "from": "2018", "thru": "now", "fa": "fas fa-chart-area", "prof": 4.5, 
+          "p": ["Familiar with building dynamic reports and business dashboards using Power Query and built-in widgets."],
+          "ul": null
+        }
+      ],
+      [
+        {
+          "name": "Health promotion", "size": null, "alpha": 0.3, "from": "2006", "thru": "now", "fa": "fas fa-briefcase-medical", "prof": 4, 
+          "p": null,
+          "ul": ["Professionally trained in health education and health promotion, hence familiar with the theories and research tools.",
+            "Familiar with classic theories and best practices of community and enterprise health promotion."]
+        },
+        {
+          "name": "Health management", "size": null, "alpha": 0.15, "from": "2011", "thru": "now", "fa": "fas fa-briefcase-medical", "prof": 4.5, 
+          "p": null,
+          "ul": ["Long service in health management, hence familiar with dynamics and practices in the industry.",
+            "Involved in design, implementation and evaluation of numerous corporate health management projects; rich in practical experience.",
+            "Complete implementation experience of building business capabilities of health services from scratch.",
+            "Empower the business with cross-border knowledge in data analytics, medicine and software development."]
+        },
+        {
+          "name": "Disease management", "size": "small", "alpha": 0.08, "from": "2016", "thru": "now", "fa": "fas fa-briefcase-medical", "prof": 3, 
+          "p": null,
+          "ul": ["Understand theory, methodology and industrial practice of disease management.", "Involved in design of corporate chronic disease management plan such as diabetes."]
+        },
+        {
+          "name": "Public health", "size": "medium", "alpha": 0.3, "from": "2001", "thru": "now", "fa": "fas fa-clinic-medical", "prof": 4, 
+          "p": null,
+          "ul": ["Solid knowledge on medical fundamentals: Basic Medicine, Clinical Medicine.", "Professionally trained in epidemiology, occupational health, environmental health and social medicine.",
+            "Good at thinking health topics and strategies from 'holistic health' perspective, and focus on macro health strategies with supportive environment etc."]
+        },
+        {
+          "name": "Epidemiology", "size": "medium", "alpha": 0.15, "from": "2001", "thru": "now", "fa": "fas fa-clinic-medical", "prof": 4, 
+          "p": null,
+          "ul": ["Familiar with theory framework and study design of modern epidemiology.", 
+            "Good at field epidemiology and occupational epidemiology."]
+        },
+        {
+          "name": "Bio-statistics", "size": null, "alpha": 0.15, "from": "2001", "thru": "now", "fa": "fas fa-chart-bar", "prof": 4.5, 
+          "p": null,
+          "ul": ["Familiar with principles and implementation of classic statistics using R, Python, SAS, Stata.",
+            "Understand design of medical experiment and clinical trial."]
+        }
+      ],
+      [
+        {
+          "name": "Project management", "size": null, "alpha": 0.3, "from": "2012", "thru": "now", "fa": "fas fa-project-diagram", "prof": 4.5, 
+          "p": ["Rich experience of business and development project management."],
+          "ul": ["Familiar with classic project management knowledge system; provided management tools and templates for the team.",
+            "Familiar with tools such as <code>Project</code>.", "Familiar with agile project management knowledge system.",
+            "Familiar with tools such as <code>Jira</code>."]
+        },
+        {
+          "name": "Requirement analysis", "size": "medium", "alpha": 0.15, "from": "2017", "thru": "now", "fa": "fas fa-laptop-code", "prof": 3.5, 
+          "p": null,
+          "ul": ["Good at distilling business logic and defining product requirements.",
+            "Good at rapidly implementing product prototypes using various open source tools (<code>Draw.io</code> etc.).",
+            "Build product requirements using prototypes, documentation and UML graphs."]
+        },
+        {
+          "name": "Full-stack", "size": "small", "alpha": 0.3, "from": "2015", "thru": "now", "fa": "fas fa-laptop-code", "prof": 4, 
+          "p": ["Good at building functionality prototypes independently once business requirements are identified quickly."],
+          "ul": ["Proficient at building C/S small applications with Access as frontend, SharePoint as backend.",
+            "Familiar with building online prototypes using <code>Flask</code>, <code>Django</code> and <code>Vue.js</code>."]
+        },
+        {
+          "name": "Strategy", "size": "medium", "alpha": 0.3, "from": "2017", "thru": "now", "fa": "fas fa-chess-board", "prof": 3.5, 
+          "p": null,
+          "ul": ["Good at information searching and organization to describe and analyze the market.", "Understand common tools for strategic analysis."]
+        },
+        {
+          "name": "PowerPoint", "size": null, "alpha": 0.15, "from": "2011", "thru": "now", "fa": "fas fa-file-powerpoint", "prof": 4.5, 
+          "p": null,
+          "ul": ["Good at distilling and highlighting key information.", "Good at information visualization.", "Good at layout and palette design of PPT."]
+        }
+      ]
+    ],
+    "cert": [
+      {
+        "caption": "PMP®", "name": "Project Management Professional ®", "provider": null,
+        "fa": "fas fa-award", "time": "2012/09", "institute": {
+          "name": "Project Management Institute", "link": "https://www.pmi.org"}, "sn": "1546494",
+        "p": ["Certification of project management skill and knowledge system held by Project Management Institute. The verification is based on PMBOK 9. This system also includes PfMP, PgMP, CAPM etc."], 
+        "ol": null
+      },
+      {
+        "caption": "Data Science in R", "name": "Data Science in R", "provider": {
+          "name": "Johns Hopkins University", "link": "https://www.jhu.edu"},
+        "fa": "fas fa-user-ninja", "time": "2015/11", "institute": {
+          "name": "Couresra", "link": "https://www.coursera.org"}, "sn": null,
+          "p": ["Online data science courses delivered by Johns Hopkins University on Coursera.", "Technology stack: <code>R</code> (<code>tidyverse, ggplot2, caret, knitr</code>) and <code>git</code>.", "Courses:"],
+          "ol": [
+            "Data Scientist's Toolbox", "R Programming", "Getting and Cleaning Data", "Exploratory Data Analysis",
+            "Reproducible Research", "Statistical Inference", "Regression Models", "Practical Machine Learning",
+            "Developing Data Products", "Capstone Project"
+          ]
+      },
+      {
+        "caption": "Data Science in Python", "name": "Data Science in Python", "provider": {
+          "name": "Dataquest", "link": "https://www.dataquest.io"},
+        "fa": "fas fa-user-ninja", "time": "2016/07", "institute": {
+          "name": "Dataquest", "link": "https://www.dataquest.io"}, "sn": null,
+          "p": ["Data science courses delivered by Dataquest.", "Technology stack: <code>Python</code> (<code>pandas, matplotlib, scikit-learn, statsmodels, NLTK</code>), <code>git</code>.", "Courses:"], 
+          "ol": [
+            "Python Programming", "Data Analysis with Pandas", "Data Visualization Course", 
+            "Command Line", "Git and Version Control Course", "Data Cleaning Project Walkthrough", 
+            "Data Analysis Subject", "APIs and Web Scraping Course", "SQL and Databases Course", 
+            "Probability and Statistics In Python", "Hypothesis Testing Fundamentals", "R Programming",
+            "Big Data Tools Subject", "Linear Algebra in Python Course", "Machine Learning in Python", 
+            "Data Structures and Algorithms Course", "Data Cleaning Subject","Spark and Map-Reduce Course",
+            "Decision Trees Course", "Natural Language Processing Course"
+          ]
+      },
+      {
+        "caption": "Data Visualization", "name": "Data Visualization", "provider": {
+          "name": "University of Illinois at Urbana-Champaign", "link": "https://illinois.edu/"}, 
+        "fa": "fas fa-user-ninja", "time": "2017/05", "institute": {
+          "name": "Couresra", "link": "https://www.coursera.org"}, "sn": null,
+        "p": ["A series of online data visualization courses delivered by University of Illinois at Urbana-Champaign on Coursera.", "Technology stack: <code>Tableau</code>", "Courses:"], 
+        "ol": ["Computer and Human", "Visualization of Numeric Data", "Visualization of Non-numeric Data", "Visualization Dashboard"]
+      },
+      {
+        "caption": "CSPO®", "name": "Certified Scrum Product Owner ®", "provider": null,
+        "fa": "fas fa-award", "time": "2018/06", "institute": {
+          "name": "Scrum Alliance", "link": "https://www.scrumalliance.org"}, "sn": "000795041",
+        "p": ["Certified Scrum product owner verified by Scrum Alliance. This certification system also includes Certified Scrum Developer, Certified Scrum Master, Advanced Certified Scrum Product Owner and Advanced Certified Scrum Master."], 
+        "ol": null
+      },
+      {
+        "caption": "Software Engineering", "name": "Software Engineering", "provider": {
+          "name": "Peking University", "link": "https://www.pku.edu.cn"}, 
+        "fa": "fas fa-user-ninja", "time": "2018/07", "institute": {
+          "name": "Couresra", "link": "https://www.coursera.org"}, "sn": null,
+        "p": ["A series of online software engineering courses delivered by Peking University on Coursera", "Courses:"], 
+        "ol": [
+          "Software engineering and software process", "Software requirements", "Structured methods", "Object-oriented methods", "Agile development",
+          "Software testing", "Software project management", "Software development tool and environment"
+        ]
+      },
+      {
+        "caption": "Machine Learning", "name": "Machine Learning", "provider": {
+          "name": "Standford University", "link": "https://www.stanford.edu"},
+        "fa": "fas fa-user-ninja", "time": "2018/08", "institute": {
+          "name": "Couresra", "link": "https://www.coursera.org"}, "sn": null,
+        "p": ["A series of famous online machine learning courses delivered by Andrew Ng, Stanford University on Coursera.", "Technology stack: <code>MatLab / Octave</code>.", "Courses:"], 
+        "ol": [
+          "Linear Regression with One Variable", "Linear Algebra Review", 
+          "Linear Regression with Multiple Variables", "Octave/MatLab Tutorial", "Logistic Regression",
+          "Regularization", "Neural Networks: Representation", "Neural Networks: Learning",
+          "Advice for Applying Machine Learning", "Machine Learning System Design",
+          "Support Vector Machines", "Unsupervised Learning", "Dimensionality Reduction",
+          "Anomaly Detection", "Recommender Systems", "Large Scale Machine Learning",
+          "Application Example: Photo OCR"
+        ]
+      },
+      {
+        "caption": "Deep Learning", "name": "Deep Learning", "provider": {
+          "name": "deeplearning.ai", "link": "https://www.deeplearning.ai"},
+        "fa": "fas fa-user-ninja", "time": "2018/10", "institute": {
+          "name": "Couresra", "link": "https://www.coursera.org"}, "sn": "XGCR4CTFRHME",
+          "p": ["A series of online deep learning courses delivered by deeplearning.ai on Coursera.", "Technology stack: <code>Python</code> (<code>numpy, tensorflow, Keras</code>)。.", "Courses:"], 
+          "ol": [
+            "Neural Networks and Deep Learning", "Improving Neural Networks：Hyperparameter Tuning, Regularization and Optimization", 
+            "Structuring Machine Learning Projects", "Convolutional Neural Networks", "Sequence Models"
+          ]
+      },
+      {
+        "caption": "Web Programming with Python and JavaScript", 
+        "name": "Web Programming with Python and JavaScript", "provider": {
+          "name": "Harvard University", "link": "https://www.harvard.edu"},
+        "fa": "fas fa-user-ninja", "time": "2019/11", "institute": {
+          "name": "edX", "link": "https://www.edx.org"}, "sn": null,
+        "p": ["A series of online Web programming courses delivered by Harvard on edX.", "Technology stack: <code>Python</code> (<code>Flask, Django</code>), <code>git</code>, <code>HTML / Bootstrap</code>, <code>CSS / Sass</code>, <code>JavaScript</code>.", "Courses:"],
+        "ol": [
+          "Git", "HTML, CSS", "Flask", "SQL", "ORMs, APIs", "JavaScript", "Front Ends", "Django", "Testing, CI/CD",
+          "GitHub, Travis CI", "Scalability", "Security"
+        ]
+      }
+    ],
+    "job": [
+      {
+        "from": "2009/07", "till": "2011/04", "emp": "Xuhui CDC",
+        "wiki": {
+          "fa": "fab fa-wikipedia-w", "title": "About this employer", "value": "Baidu Baike",
+          "tag": ["Public health", "Non-profit"],
+          "link": "https://baike.baidu.com/item/徐汇区疾病预防控制中心"
+        }, 
+        "link": null, "title": "Staff member", "icon": "check", "active": false,
+        "keyword": ["Infectious disease control", "Planned immunization", "Epidemiological study"],
+        "description": [
+          {"p": ["<b>Planned immunization</b>: monitoring standardized immunization clinics and enhanced immunization, quality control and update of data reports, etc."],
+           "ul": [
+            "<i>2009 Outstanding Award in Planned Immunization</i> of Xuhui District.", "Independently implemented build-up and operations of the epidemic / immunization report delivery system. Created and transmitted up to 1,000 reports and 100 thousand records at nearly 100% correctness given limited human resources."
+          ]},
+          {
+            "p": ["<b>Infectious disease control</b>: field investigation and handling of outbreak, clustering and emerging contagious diseases, prevention guidance in susceptible institutions, epidemic surveillance reports, epidemic analysis and health education / intervention, etc."],
+            "ul": [
+              "Editorial board member of <i>Xuhui Health Report</i> 2010 and 2011 on infectious diseases.", "Stratified identification and in-advance control of outbreak risk of infectious diseases within the district."
+            ]
+          }
+        ],
+        "project": [
+          {
+            "title": "Serological investigation on epidemic of Influenza A H1N1", "from": "2010/03", "thru": "2010/10",
+            "work": ["A district-level sub-project of China CDC's nationwide initiative, which comprised of multiple rounds of investigation using questionnaires, and collection + transportation of serum samples on objects recruited by multi-stage random sampling."]
+          },
+          {
+            "title": "Risk assessment of infectious diseases during 2010 Expo", "from": "2010/07", "thru": "2010/11",
+            "work": ["Conducted public health risk assessment using Delphi method combining with previous epidemic data of infectious diseases. Instructive insights were drawn after a closed and an open consultation."]
+          }
+        ]
+      },
+      {
+        "from": "2011/04", "till": "2014/09", "emp": "Aetna International", "link": "https://www.aetna.com",
+        "wiki": {
+          "fa": "fab fa-wikipedia-w", "title": "About this employer", "value": "Wikipedia",
+          "tag": ["Fortune 200", "US 3rd biggest", "Health insurance", "CVS merger"],
+          "link": "https://en.wikipedia.org/wiki/Aetna"
+        }, 
+        "title": "Project Management Manager", "icon": "check", "active": false,
+        "keyword": ["Project management", "Product R&D", "Reporting"],
+        "description": [
+          {
+            "p": ["<b>Project management</b>: created project management system and disciplines, provided methodology and resource support, promote construction of a project-driven business team."],
+            "ul": ["Developed project management document templates, and a project management cooperation system based on SharePoint.",
+              "Implemented several big corporate health management projects to accumulate knowledge assets for the team.",
+              "Analyze the status of the business projects for process optimization suggestions."]
+          },
+          {
+            "p": ["<b>Medical support for products and services</b>: run the internal <i>Evidence-based Medicine Consultation Board</i> to guarantee the professional services are evidence-based and reliable."],
+            "ul": ["Provided medical comments for product development and services, maintain knowledge base for professional products.",
+              "Directly involved in designing health intervention plans for corporate clients and development of medical contents.",
+              "Evidence-based review of outgoing documents that contain medical information."]
+          },
+          {
+            "p": ["<b>Data analysis and decision-making support</b>: Analyze multi-source health data of the corporate clients to provide intervention suggestions; analyze internal operation data to support decision-making of the team."],
+            "ul": ["Analyze client data of health check-up, health assessment and claims, etc. to identify major health risks and at-risk population, and make actionable intervention suggestions on modifiable health risks.",
+              "Analyze process data of corporate health management programs to evaluate the effects, mine the patterns, to discover insights on the next-step actions.",
+              "Delivered detailed, multi-dimensional, accurate, evidence-based and industry-leading health analytic reports for over 50 corporate clients.",
+              "Analyze internal operation performance data to support process optimization of health services and insurance business, and strategic planning."]
+          },
+          {
+            "p": ["<b>Technology empowerment and business support</b>: promote development of IT system, develop small internal applications independently to meet business requirements agilely."],
+            "ul": ["Connected with IT team as requirement party to promote implementation of core business system development.",
+              "Developed internal applications for the team, covering management of attendance, customer service records, corporate clinic operations, review of online health advisory, medical triage assistance, evidence-based review, etc.",
+              "R&D of project cost model and tool that increased the accuracy and efficiency of cost estimation, to support the pricing and underwriting process of the main business."]
+          }
+        ],
+        "project": [
+          {
+            "title": "A web-based corporate health promotion program", "from": "2011/04", "thru": "2013/05",
+            "work": ["This program is a successful instance of corporate <i>light</i> online health consultation services implemented in China. There were over 20 thousand  customers in total and the KPIs (timeliness, evidence-based rate, satisfaction) are all above the target.",
+              "As project manager, I coordinated with IT team to complete R&D of bilingual online health information and advisory system; involved in process design and actual operations (replied over 500 thousand characters); coordinate with medical consultants to finish over 70 bilingual health articles; completed the project with limited resources and budgets."]
+          },
+          {
+            "title": "A comprehensive corporate health screening program", "from": "2013/10", "thru": "2014/03",
+            "work": ["Compared to peer ones, this program is big in size, new in form, short in preparation, high in evidence-based requirements. The project was finally successfully implemented by cautious cooperation with desirable engagement, satisfaction and cost-effectiveness. The team has gained valuable experience of operating big service program with tens of thousands of customers",
+              "As project manager, followed full cycle of bidding, implementation and evaluation. The extra output includes (1) improved cost estimation model which helped the team price more accurately and won the bid, and (2) process framework to develop and evaluate service provider network which later served as the standard practice."]
+          }
+        ]
+      },
+      {
+        "from": "2014/09", "till": "2020/04", "emp": "Aetna International", "link": "https://www.aetna.com",
+        "wiki": {
+          "fa": "fab fa-wikipedia-w", "title": "About this employer", "value": "Wikipedia",
+          "tag": ["Fortune 200", "US 3rd biggest", "Health insurance", "CVS merger"],
+          "link": "https://en.wikipedia.org/wiki/Aetna"
+        }, 
+        "title": "Informatics Manager", "icon": "loading", "active": true,
+        "keyword": ["Data science", "Analytics & minning", "Business intelligence", "System R&D", "Professional product", "Business strategy", "Operation optimization", "Training"],
+        "description": [
+          {
+            "p": ["<b>Business strategies</b>: involved in company strategic planning, promote cross-department business synergy, digitalization and data-driven business transformation."],
+            "ul": ["Involved in planning and implementation of localization strategy. Involved in business negotiation and follow-up with local partners; involved in construction of local Centers of Excellence and promote business synergy of cross-border operation departments.", 
+              "Involved in planning of digitalization strategy. Import outsourcing partners to upgrade the technology platform to be adapt to the mobile internet era. Designed conceptual product prototype and requirement blueprint to promote the upgrade of system architecture."]
+          },
+          {
+            "p": ["<b>Data analysis and empowerment</b>: independently developed an ETL and analytic reporting system, cross-border consulting support, internal trainer."],
+            "ul": ["Independently developed ETL system for health data; built an automated analytic reporting system with scripts that reduced turn-around time to 2 days",
+              "Lead the analytic team to generate high-quality health risk analytic reports for over 80 corporate clients annually.",
+              "Assisted Population Health Science to cooperate with government on cost containment and disease management. Involved in data mining and analytics and developed a disease management software.", "Provided analytic suggestions for insurance network and care management departments.",
+              "Delivered series training sessions as the internal Excel and R trainer."]
+          },
+          {
+            "p": ["<b>Medical support for products and services</b>: run the internal <i>Evidence-based Medicine Consultation Board</i> to guarantee the professional services are evidence-based and reliable."],
+            "ul": ["Provided medical comments for product development and services, maintain knowledge base for professional products.",
+              "Directly involved in designing health intervention plans for corporate clients and development of medical contents.",
+              "Evidence-based review of outgoing documents that contain medical information."]
+          }
+        ],
+        "project": [
+          {
+            "title": "ETL and analytic reporting system for health data", "from": "2015/04", "thru": "2016/10",
+            "work": ["Phase 1, built an ETL system using Access whose core is a rule module that can convert SQL automatically and enable convenient configuration of value cleaning and risk calculation. Then built a dashboard and auto analytic reporting system using R and Shiny scripts, which can output to PowerPoint documents and generate compatible charts, thus supported requirement for big data analysis. (In 2019, it was re-structured using postgresql + Django REST Framework + Vue.js.)", "Phase 2, lead the team to implement a deliverable interactive dashboard using PowerBI based on the above system. Gradually implemented a consistent analytic pipeline framework from data governance, application to presentation with PowerBI as business frontend, Jupyter Notebook as technology hub on top of self-built R/Python toolchains."]
+          },
+          {
+            "title": "Social security data analysis and chronic disease management in District X", "from": "2017/10", "thru": "2019/09",
+            "work": ["Participated in designing data mining plan and completed field data quality analysis and exploratory analysis. Followed with reporting and translation in the later phase.", "Participated in designing disease management plan and preparation of some of the materials and developed an evidence-based disease management system."]
+          }
+        ]
+      }
+    ],
+    "edu": [
+      {
+        "from": "2001/09", "till": "2006/07", "icon": "check", "active": false,
+        "school": "Fudan University School of Public Health", 
+        "link": "http://sph.fudan.edu.cn", "wiki": {
+          "fa": "fab fa-wikipedia-w", "title": "About this school", "value": "Wikipedia",
+          "tag": ["985/211", "C9"],
+          "link": "https://zh.wikipedia.org/wiki/复旦大学公共卫生学院"
+        },
+        "major": "Preventive medicine",
+        "cred": "Bachelor of Medicine", "rank": "GPA 3.4/4.0 (Top 5)",
+        "lesson": [
+          "<b>Public courses</b>: mathematics, physics, organic chemistry, introduction of biology, etc.", "<b>Medical fundamentals</b>: anatomy, biochemistry, histology, cell biology, pathology, physiology and pharmacology etc.",
+          "<b>Clinical fundamentals</b>: internal medicine, surgery, gynecology, pediatrics, neurology, psychiatry and dermatology, etc.", "<b>Specialty fundamentals</b>: bio-statistics, epidemiology, social medicine, public health administration, occupational health, toxicology, environmental health, nutrition, microbiology, sanitary chemistry, etc.)"
+        ]
+      },
+      {
+        "from": "2006/09", "till": "2009/07", "icon": "check", "active": false,
+        "school": "Fudan University School of Public Health", 
+        "link": "http://sph.fudan.edu.cn", "wiki": {
+          "fa": "fab fa-wikipedia-w", "title": "About this school", "value": "Wikipedia",
+          "tag": ["985/211", "C9"],
+          "link": "https://zh.wikipedia.org/wiki/复旦大学公共卫生学院"
+        },
+        "major": "Occupational and environmental health", 
+        "cred": "Master of Medicine", "rank": "GPA 3.6/4.0 (Top 10)", 
+        "lesson": [
+          "<b>Courses</b>: senior epidemiology, bio-statistics, SAS programming, SPSS, assessment of environmental health hazards, behavioral science and health promotion, etc.",
+          "<b>Study for graduation</b>: Lifestyle exposure and risk of acute myeloid leukemia (AML)",
+          "<b>Postgraduates' union</b>: <ul style='padding-left:30px'><li>Packed promotion solutions provider for The 7th Shanghai Postgraduates Academic Forum on Environmental Health Risks</li><li>Chief editor of 1st Edition of <i>A Guide for Freshmen in Medical Campus</i></li></ul>"
+        ]
+      }
+    ],
+    "self": {
+      "statement": [
+        "Critical thinking with a good sense of programmability and logic; strong execution and adept at analysis and optimization.", 
+        "A life-long learner adhering to problem-orient active learning. Glad to delve into new knowledge and innovative in practice.", 
+        "Knowledgeable with diverse reading; solid writing skills in both Chinese and English.", "Righteous, upright, self-disciplined, open-minded and inclusive."
+      ],
+      "interest": ["Literature-history-philosophy-misc", "Movie", "MOOC", "Programming", "Digital instrucment"],
+      "gallery": ["dashboard.png", "risk-1.png", "risk-2.png", "risk-3.png", "alg-1.png", "alg-2.png", "risk-geo.png", "guide-1.png", "guide-2.png", "pkg-manual-1.png", "pkg-manual-2.png"]
+    },
+    "misc": {
+      "tip": {
+        "title": "About this CV",
+        "msg": "<br/><p>Feel free to interact with the page (tap the tags, icons and buttons, unfold the collapse panels, visit the links, etc.) for more details.</p><ol style='padding-left:20px'><li>It's responsive to various equipments (PC, tablet, mobile phone, ...) with different resolution</li><li>A method to calculate and present time difference has been wrapped</li><li>Functionalities of <code>el-collapse</code> and <code>el-timeline</code> components have been extended and integrated</li><li>CDN has been applied to boost the web performance, please make sure <a href='https://www.bootcdn.cn'>BootCDN</a> is accessible</li><li>You can download the PDF version at <i class='fas fa-download'></i></li></ol>"
+      },
+      "footnote": "<span style='float:right'><i class='fas fa-file-code'></i> Powered by <code>Vue.js</code>, <code>ElementUI</code>, <code>ECharts</code> & <code>i18n</code>, <i class='fas fa-terminal'></i> built with <code>Webpack</code>.</span>",
+      "copyright": {"from": "2019", "thru": "now", "content": "madlogos"},
+      "attachment": "https://gh-1251443721.cos.ap-chengdu.myqcloud.com/assets/wang-yiying-resume-en.pdf"
+    }
+  }
+}
