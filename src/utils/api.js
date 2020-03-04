@@ -15,7 +15,7 @@ axios.interceptors.response.use(function (response) {
   return Promise.reject(error)
 })
 
-export function getCvData (url = 'static/cv.json') {
+export function getCvData (url = 'cv.json') {
   return axios.get(url)
     .then(res => {
       return res.data

@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="renderer" content="webkit|ie-comp|ie-stand">
+    <meta name="viewport" content="width=device-width,initial-scale=1.0">
+    <link rel="icon" href="<%= BASE_URL %>favicon.ico">
+    <title><%= htmlWebpackPlugin.options.title %></title>
+    <% for (var i in htmlWebpackPlugin.options.cdn && htmlWebpackPlugin.options.cdn.css) { %>
+      <link href="<%= htmlWebpackPlugin.options.cdn.css[i] %>" rel="preload" as="style">
+      <link href="<%= htmlWebpackPlugin.options.cdn.css[i] %>" rel="stylesheet">
+    <% } %>
+    <!--[if IE]>
+    <script src="./utils/base64-polyfill.js"></script>
+    <![endif]-->
+  </head>
+  <body>
+    <noscript>
+      <strong>We're sorry but <%= htmlWebpackPlugin.options.title %> doesn't work properly without JavaScript enabled. Please enable it to continue.</strong><br />
+      <strong>抱歉，<%= htmlWebpackPlugin.options.title %>无法在禁用JavaScript的条件下运行。请先启用它。</strong>
+    </noscript>
+    <div id="app"></div>
+    <!-- built files will be auto injected -->
+    <% for (var i in htmlWebpackPlugin.options.cdn && htmlWebpackPlugin.options.cdn.js) { %>
+      <script src="<%= htmlWebpackPlugin.options.cdn.js[i] %>"></script>
+    <% } %>
+  </body>
+</html>

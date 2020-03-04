@@ -44,8 +44,10 @@
                     </div>
                     <span class="jobemp" slot='reference'>
                       <i class='fas fa-building' />
-                      <a v-if='i.link' :href='i.link' target='_blank'>{{ i.emp }}</a>
-                      <span v-else>{{ i.emp }}</span>
+                      <span class='icon-txt'>
+                        <a v-if='i.link' :href='i.link' target='_blank'>{{ i.emp }}</a>
+                        <span v-else>{{ i.emp }}</span>
+                      </span>
                     </span>
                   </el-popover>
                 </template>
@@ -81,7 +83,7 @@
               <el-card v-for='(m, _m) in i.project' :key='"proj" + _m' shadow='hover' :body-style='{padding:"8px 10px"}'>
                 <p class='jobproj'>
                   <i class='fas fa-project-diagram'/>
-                  <span class='icon-header'><span class='projtitle'>{{ m.title }}</span></span>
+                  <span class='icon-header'><strong>{{ m.title }}</strong></span>
                   <span class='icon-note'>{{ m.from }} - {{ m.thru }}</span>
                 </p>
                 <div v-if='m.work'>
@@ -171,7 +173,7 @@ export default {
         this.foldIcon = 'el-icon-arrow-right'
       }
     },
-    handleChange (val) {
+    handleChange () {
       // val is an array binding to this el-collapse-item
       if (countEmptyArrInArr(this.foldValue) === this.foldValue.length) {
         // all null
@@ -240,12 +242,12 @@ a:hover {
   background-color: $col-bg
 }
 .jobtitle {
-  font-size: medium;
+  font-size: $md;
   font-weight: bold;
   margin-right: $mar-md
 }
 .jobemp {
-  font-size: larger;
+  font-size: $rg;
   color: $col-info;
   font-weight: normal
 }
@@ -258,7 +260,7 @@ a:hover {
   margin: $mar-sm $mar-md $mar-sm $mar-sm
 }
 .jobdes p {
-  font-size: medium;
+  font-size: $rg;
   margin: $mar-md 0 $mar-sm 0
 }
 .jobdes ul {
@@ -276,9 +278,6 @@ a:hover {
 }
 .jobproj {
   color: $col-text
-}
-.projtitle {
-  font-size: larger
 }
 .projnote {
   padding-left: 24px;

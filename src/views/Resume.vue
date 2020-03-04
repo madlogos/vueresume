@@ -29,13 +29,7 @@
       <contact/>
       <skill/>
       <cert/>
-      <template>
-        <h3>
-          <a :href='this.$store.getters.misc.attachment' target='_blank'>
-            <i class='fas fa-download'/><span class='title-h3'>{{ $t('title.download') }}</span>
-          </a>
-        </h3>
-      </template>
+      <Attachment/>
     </el-col>
     <el-col :xs="24" :sm="16" :md="16" :lg="16" :xl="16" id="main">
       <job/>
@@ -47,16 +41,7 @@
     <el-col :span="8" id="el-foot-sidebar" class="hidden-xs-only">
     </el-col>
     <el-col :xs="24" :sm="16" :md="16" :lg="16" :xl="16" id="el-foot-main">
-      <template>
-        <div class="footer">
-          <span>
-            <i class='fas fa-copyright'/>
-            <span class='icon-txt'>{{ this.parseYear(this.$store.getters.misc.copyright.from) }}-{{ this.parseYear(this.$store.getters.misc.copyright.thru) }}</span>
-          </span>
-          <span v-html='this.$store.getters.misc.copyright.content'></span>
-          <span v-html='this.$store.getters.misc.footnote'></span>
-        </div>
-      </template>
+      <Footer/>
     </el-col>
   </el-row>
 </div>
@@ -73,6 +58,8 @@ const Skill = () => import('@/components/Skill')
 const Cert = () => import('@/components/Cert')
 const Edu = () => import('@/components/Edu')
 const SelfState = () => import('@/components/SelfState')
+const Attachment = () => import('@/components/Attachment')
+const Footer = () => import('@/components/Footer')
 
 export default {
   components: {
@@ -82,7 +69,9 @@ export default {
     Cert,
     Job,
     Edu,
-    SelfState
+    SelfState,
+    Attachment,
+    Footer
   },
   data: function () {
     return {
@@ -118,10 +107,6 @@ export default {
         dangerouslyUseHTMLString: true,
         duration: 4500
       })
-    },
-    parseYear (yr) {
-      let rslt = isNaN(new Date(parseInt(yr))) ? new Date() : new Date(yr)
-      return rslt.getUTCFullYear()
     }
   }
 }
@@ -193,12 +178,5 @@ export default {
 }
 .el-notification {
   font-family: "Helvetica Neue", Helvetica, "PingFang SC", "Hiragino Sans GB", "Microsoft YaHei", "微软雅黑", Arial, sans-serif
-}
-.footer {
-  margin: 0;
-  padding: $mar-sm $mar-md;
-  color: $col-info;
-  font-size: small;
-  line-height: $lh-lg
 }
 </style>

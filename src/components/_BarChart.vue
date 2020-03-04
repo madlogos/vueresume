@@ -35,7 +35,7 @@ export default {
     }
   },
   watch: {
-    data: function (newVal, oldVal) {
+    data: function () {
       this.chartObj.setOption(this.chartOptsBar)
     }
   },

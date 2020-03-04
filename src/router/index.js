@@ -1,15 +1,27 @@
 import Vue from 'vue'
-import Router from 'vue-router'
-import Resume from '@/components/Resume'
+import VueRouter from 'vue-router'
+import Resume from '../views/Resume.vue'
 
-Vue.use(Router)
+Vue.use(VueRouter)
 
-export default new Router({
-  routes: [
-    {
-      path: '/',
-      name: 'Resume',
-      component: Resume
-    }
-  ]
+const routes = [
+  {
+    path: '/',
+    name: 'Resume',
+    component: Resume
+  },
+  {
+    path: '/about',
+    name: 'About',
+    // route level code-splitting
+    // this generates a separate chunk (about.[hash].js) for this route
+    // which is lazy-loaded when the route is visited.
+    component: () => import(/* webpackChunkName: "about" */ '../views/About.vue')
+  }
+]
+
+const router = new VueRouter({
+  routes
 })
+
+export default router

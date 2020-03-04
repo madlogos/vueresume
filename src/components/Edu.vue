@@ -44,8 +44,10 @@
                     </div>
                     <span class='univ' slot='reference'>
                       <i class='fas fa-university' />
-                      <a v-if='i.link' :href='i.link' target='_blank'>{{ i.school }}</a>
-                      <span v-else>{{ i.school }}</span>
+                      <span class='icon-txt'>
+                        <a v-if='i.link' :href='i.link' target='_blank'>{{ i.school }}</a>
+                        <span v-else>{{ i.school }}</span>
+                      </span>
                     </span>
                   </el-popover>
                 </template>
@@ -141,7 +143,7 @@ export default {
         }
       }
     },
-    handleChange (val) {
+    handleChange () {
       // val is an array binding to this el-collapse-item
       if (countEmptyArrInArr(this.foldValue) === this.foldValue.length) {
         // all null
@@ -198,12 +200,12 @@ a:hover {
   background-color: $col-bg
 }
 .cred {
-  font-size: larger;
+  font-size: $md;
   font-weight: bold;
   margin-right: $mar-md
 }
 .univ {
-  font-size: medium;
+  font-size: $rg;
   color: $col-info;
   font-weight: normal;
   margin-right: $mar-md

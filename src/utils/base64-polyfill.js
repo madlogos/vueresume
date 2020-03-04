@@ -1,4 +1,4 @@
-;(function () {
+(function () {
 
   var object =
     typeof exports != 'undefined' ? exports :
