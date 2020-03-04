@@ -22,8 +22,8 @@
           <el-image
            style='height:100%'
            fit='scale-down'
-           :src='"/img/" + k'
-           :preview-src-list='["/img/" + k]'
+           :src='this.publicPath + "/img/" + k'
+           :preview-src-list='[this.publicPath + "/img/" + k]'
           ></el-image>
         </el-carousel-item>
       </el-carousel>
