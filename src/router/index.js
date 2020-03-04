@@ -1,6 +1,6 @@
 import Vue from 'vue'
 import Router from 'vue-router'
-import Resume from '@/components/Resume'
+import Resume from '@/views/Resume'
 
 Vue.use(Router)
 

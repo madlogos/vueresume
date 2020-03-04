@@ -32,7 +32,7 @@ code {
   font-family: "Helvetica Neue", Helvetica, "PingFang SC", "Hiragino Sans GB", "Microsoft YaHei", "微软雅黑", Arial, sans-serif
 }
 .el-popover__title p {
-  font-size: small
+  font-size: $bs
 }
 .el-popover {
   font-family: "Helvetica Neue", Helvetica, "PingFang SC", "Hiragino Sans GB", "Microsoft YaHei", "微软雅黑", Arial, sans-serif
@@ -44,7 +44,7 @@ code {
   border: 1px solid $col-info
 }
 .el-popover p {
-  font-size: small
+  font-size: $sm
 }
 .el-popover a:link {
   color: $col-ph

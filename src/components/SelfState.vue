@@ -17,13 +17,13 @@
       >{{ j }}</el-tag>
     </div>
     <div id='gallery'>
-      <el-carousel :intervel='4000' height='320px' arrow='always'>
+      <el-carousel :intervel='4000' height='400px' arrow='always' type='card'>
         <el-carousel-item v-for='(k, _k) in this.$store.getters.self.gallery' :key='_k' lazy>
           <el-image
            style='height:100%'
            fit='scale-down'
-           :src='"static/img/" + k'
-           :preview-src-list='["static/img/" + k]'
+           :src='"/static/img/" + k'
+           :preview-src-list='["/static/img/" + k]'
           ></el-image>
         </el-carousel-item>
       </el-carousel>
@@ -45,7 +45,7 @@ export default {
 }
 #statement {
   color: $col-text;
-  font-size: medium;
+  font-size: $bs;
   line-height: $lh-md;
   padding-left: 35px;
   list-style: none
