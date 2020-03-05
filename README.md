@@ -1,4 +1,5 @@
 # vue-resume
+[![Build Status](https://www.travis-ci.org/madlogos/vueresume.svg?branch=master)](https://www.travis-ci.org/madlogos/vueresume)
 
 A vuejs project built on top of @vue/cli@4. The vue-cli@2 version was archived in `vuecli2` branch.
 
