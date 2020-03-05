@@ -19,11 +19,12 @@
     <div id='gallery'>
       <el-carousel :intervel='4000' height='400px' arrow='always' type='card'>
         <el-carousel-item v-for='(k, _k) in this.$store.getters.self.gallery' :key='_k' lazy>
+          <p></p>
           <el-image
            style='height:100%'
            fit='scale-down'
-           :src='this.publicPath + "/img/" + k'
-           :preview-src-list='[this.publicPath + "/img/" + k]'
+           :src='publicPath + "img/" + k'
+           :preview-src-list='[publicPath + "img/" + k]'
           ></el-image>
         </el-carousel-item>
       </el-carousel>
@@ -33,6 +34,11 @@
 
 <script>
 export default {
+  data () {
+    return {
+      publicPath: process.env.BASE_URL
+    }
+  },
   computed: {
 
   }
