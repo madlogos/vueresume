@@ -7,6 +7,7 @@ const cdn = {
       'https://cdn.bootcss.com/font-awesome/5.12.1/css/brands.min.css',
       'https://cdn.bootcss.com/font-awesome/5.12.1/css/svg-with-js.min.css',
       'https://cdn.bootcss.com/element-ui/2.13.0/theme-chalk/index.css',
+      'https://unpkg.com/element-ui@2.13.0/lib/theme-chalk/display.css',
     ],
     js: []
   },
@@ -17,6 +18,7 @@ const cdn = {
       'https://cdn.bootcss.com/font-awesome/5.12.1/css/brands.min.css',
       'https://cdn.bootcss.com/font-awesome/5.12.1/css/svg-with-js.min.css',
       'https://cdn.bootcss.com/element-ui/2.13.0/theme-chalk/index.css',
+      'https://unpkg.com/element-ui@2.13.0/lib/theme-chalk/display.css',
     ],
     js: [
       'https://cdn.bootcss.com/vue/2.6.11/vue.runtime.min.js',
