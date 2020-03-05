@@ -34,6 +34,9 @@ export default {
       })()
     }
   },
+  destroyed () {
+    window.onresize = null
+  },
   watch: {
     data: function () {
       this.chartObj.setOption(this.chartOptsBar)

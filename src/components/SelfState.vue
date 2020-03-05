@@ -17,7 +17,7 @@
       >{{ j }}</el-tag>
     </div>
     <div id='gallery'>
-      <el-carousel :intervel='4000' height='400px' arrow='always' type='card'>
+      <el-carousel :intervel='4000' :height='carouselHeight' arrow='always' :type='carouselType'>
         <el-carousel-item v-for='(k, _k) in this.$store.getters.self.gallery' :key='_k' lazy>
           <p></p>
           <el-image
@@ -36,11 +36,20 @@
 export default {
   data () {
     return {
-      publicPath: process.env.BASE_URL
+      publicPath: process.env.BASE_URL,
+      carouselHeight: '400px',
+      carouselType: 'card'
     }
   },
   computed: {
 
+  },
+  mounted () {
+    const that = this
+    window.addEventListener('resize', function () {
+      that.carouselHeight = window.innerWidth > 900 ? '400px' : window.innerWidth * 4/9 + 'px'
+      that.carouselType = window.innerWidth > 900 ? 'card' : null
+    })
   }
 }
 </script>

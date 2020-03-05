@@ -3,7 +3,7 @@
     <h2 id='title'>
       <i class='fas fa-address-card' /><span class='title-h2'>{{ this.$t('title.contact') }}</span>
     </h2>
-    <table id='items'>
+    <table id='item-table'>
       <tr v-for="i in data.contact" :key="i.name">
         <el-tooltip effect='light' placement="top-start" :content="i.name">
           <td class="socio-icon"><i :class='i.fa' /><span class='icon-txt'>{{ i.name }}</span></td>
@@ -78,13 +78,13 @@ a:hover {
   margin-left: 0;
   padding-left: 10px
 }
-#items {
+#item-table {
   font-size: $bs;
   color: $col-main-alt;
   border-spacing: 10px 4px;
   margin-left: -2px
 }
-#items tr {
+#item-table tr {
   vertical-align: middle
 }
 #socio {

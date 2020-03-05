@@ -4,42 +4,46 @@
       <i class='fas fa-certificate' /><span class='title-h2'>{{ $t('title.cert') }}</span>
     </h2>
     <div id='certs'>
-      <ul class='cert-ul'>
-        <li class='cert-li' v-for='(i, _i) in this.$store.getters.cert' :key='_i'>
-          <span class='cert-quote'>{{ i.time }}</span>
-          <span class='cert-quote-icon'><i :class='i.fa' /></span>
-          <el-popover trigger='hover' placement='top-start'>
-            <el-card class='box-card' shadow='hover'>
-              <div slot='header'>
-                <h3>{{ i.name }}</h3>
-                <p v-if='i.provider' class='pop-quote'>
-                  <i class='fas fa-chalkboard-teacher' />
-                  <a :href='i.provider.link' target='_blank'><span class='icon-txt'>{{ i.provider.name }}</span></a>
-                </p>
-                <template v-if='i.institute'>
-                  <p class='pop-quote'>
-                    <i class='fas fa-university' />
-                    <a :href='i.institute.link' target='_blank'><span class='icon-txt'>{{ i.institute.name }}</span></a>
+      <table id='item-table'>
+        <tr v-for='(i, _i) in this.$store.getters.cert' :key='_i'>
+          <td class='col-summ'>
+            <span class='cert-quote-icon'><i :class='i.fa' /></span>
+            <span class='cert-quote'>{{ i.time }}</span>
+          </td>
+          <td class='col-detl'>
+            <el-popover trigger='hover' placement='top-start'>
+              <el-card class='box-card' shadow='hover'>
+                <div slot='header'>
+                  <h3>{{ i.name }}</h3>
+                  <p v-if='i.provider' class='pop-quote'>
+                    <i class='fas fa-chalkboard-teacher' />
+                    <a :href='i.provider.link' target='_blank'><span class='icon-txt'>{{ i.provider.name }}</span></a>
                   </p>
-                </template>
-                <p v-if='i.sn' class='pop-quote'><i class='fas fa-hashtag'/><span class='icon-txt'>{{ i.sn }}</span></p>
-              </div>
-              <div>
-                <p v-if='i.time'>
-                  <span class='pop-quote'><i class='fas fa-calendar-alt'/><span class='icon-txt'>{{ i.time }}</span></span>
-                </p>
-                <template v-if='i.p'>
-                  <p class='pop-p' v-for='(j, _j) in i.p' :key='_j' v-html='j'></p>
-                </template>
-                <ol v-if='i.ol'>
-                  <li class='pop-li' v-for='(k, _k) in i.ol' :key='_k' v-html='k'></li>
-                </ol>
-              </div>
-            </el-card>
-            <span slot='reference' class='cert-main'>{{ i.caption }}</span>
-          </el-popover>
-        </li>
-      </ul>
+                  <template v-if='i.institute'>
+                    <p class='pop-quote'>
+                      <i class='fas fa-university' />
+                      <a :href='i.institute.link' target='_blank'><span class='icon-txt'>{{ i.institute.name }}</span></a>
+                    </p>
+                  </template>
+                  <p v-if='i.sn' class='pop-quote'><i class='fas fa-hashtag'/><span class='icon-txt'>{{ i.sn }}</span></p>
+                </div>
+                <div>
+                  <p v-if='i.time'>
+                    <span class='pop-quote'><i class='fas fa-calendar-alt'/><span class='icon-txt'>{{ i.time }}</span></span>
+                  </p>
+                  <template v-if='i.p'>
+                    <p class='pop-p' v-for='(j, _j) in i.p' :key='_j' v-html='j'></p>
+                  </template>
+                  <ol v-if='i.ol'>
+                    <li class='pop-li' v-for='(k, _k) in i.ol' :key='_k' v-html='k'></li>
+                  </ol>
+                </div>
+              </el-card>
+              <span slot='reference' class='cert-main'>{{ i.caption }}</span>
+            </el-popover>
+          </td>
+        </tr>
+      </table>
     </div>
   </div>
 </template>
@@ -75,15 +79,18 @@ h2, p, li {
   font-size: $bs;
   font-weight: bold
 }
-.cert-ul {
-  padding-left: 16px
-}
-.cert-li {
+#item-table {
   font-size: $bs;
-  list-style-type: none;
-  line-height: $lh-lg;
-  padding-left: 74px;
-  text-indent: -66px
+  color: $col-main-alt;
+  border-spacing: 10px 4px;
+  line-height: 1.4em;
+  margin-left: -2px
+}
+#item-table tr {
+  vertical-align: top
+}
+.col-summ {
+  width: 66px
 }
 .cert-main:hover {
   color: $col-ok
@@ -97,7 +104,7 @@ h2, p, li {
   font-size: $sm;
   color: $col-text-alt;
   font-family: monospace;
-  margin-right: 10px
+  margin-right: 5px
 }
 .pop-quote {
   color: $col-info
