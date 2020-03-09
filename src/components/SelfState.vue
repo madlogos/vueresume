@@ -1,5 +1,5 @@
 <template>
-  <div class='block' id='self' ref='self'>
+  <div v-if='this.$store.getters.self' class='block' id='self' ref='self'>
     <h2 id='title'>
       <i class='fas fa-user-tag' /><span class='title-h2'>{{ $t('title.self') }}</span>
     </h2>
@@ -47,8 +47,16 @@ export default {
   mounted () {
     const that = this
     window.addEventListener('resize', function () {
-      that.carouselHeight = window.innerWidth > 900 ? '400px' : window.innerWidth * 4/9 + 'px'
-      that.carouselType = window.innerWidth > 900 ? 'card' : null
+      let wdt = document.body.clientWidth
+      if (wdt > 992) {
+        that.carouselHeight = '440px'
+        that.carouselType = 'card'
+      } else {
+        that.carouselType = null
+        that.carouselHeight = wdt > 768
+          ? wdt * 4/9 + 'px'
+          : wdt * 2/3 + 'px'
+      }
     })
   }
 }

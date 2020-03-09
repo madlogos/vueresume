@@ -51,8 +51,7 @@ export default new Vuex.Store({
   },
   actions: {
     async fetchCv ({commit}) {
-      let res = await getCvData()
-      commit('getCv', res)
+      commit('getCv', await getCvData())
     }
   },
   modules: {

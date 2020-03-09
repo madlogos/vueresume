@@ -1,5 +1,5 @@
 <template>
-  <div class='block' id='job' ref='job'>
+  <div v-if='this.$store.getters.job' class='block' id='job' ref='job'>
     <h2 id='title'>
       <i class='fas fa-user-tie' /><span class='title-h2'>{{ this.$t('title.job') }}</span>
       <el-button
@@ -27,6 +27,7 @@
                 <span class="jobtitle">
                   <i class='fas fa-id-badge' /><span class='icon-txt'>{{ i.title }}</span>
                 </span>
+                <span v-if='isSmallScreen'><br /></span>
                 <template v-if='i.wiki.link'>
                   <el-popover placement='top-start' :title='i.wiki.title' trigger='hover' width=240>
                     <div>
@@ -84,6 +85,7 @@
                 <p class='jobproj'>
                   <i class='fas fa-project-diagram'/>
                   <span class='icon-header'><strong>{{ m.title }}</strong></span>
+                  <br />
                   <span class='icon-note'>{{ m.from }} - {{ m.thru }}</span>
                 </p>
                 <div v-if='m.work'>
@@ -104,6 +106,7 @@ import { parseTimeDif, formatTimeDif2, countEmptyArrInArr } from '@/utils/util'
 export default {
   data () {
     return {
+      isSmallScreen: false,
       foldAll: null,
       foldIcon: 'el-icon-arrow-down',
       foldValue: [],
@@ -130,6 +133,11 @@ export default {
       this.foldAll = false
     }
     this.initFolding()
+    // monitor window resize
+    let that = this
+    window.addEventListener('resize', function () {
+      that.isSmallScreen = document.body.clientWidth < 540
+    })
   },
   methods: {
     calcTimeDif (t0, t1) {
@@ -277,15 +285,16 @@ a:hover {
   margin-right: 0.2em
 }
 .jobproj {
-  color: $col-text
+  color: $col-text;
+  text-indent: -10px;
+  padding-left: 24px
 }
 .projnote {
   padding-left: 24px;
   color: $col-text
 }
 .icon-note {
-  padding-left: 20px;
-  text-indent: -20px
+  margin-left: 0
 }
 .el-card {
   margin: $mar-md $mar-md $mar-md $mar-sm;

@@ -1,3 +1,5 @@
+// import 'core-js/stable'
+// import 'regenerator-runtime/runtime'
 import Vue from 'vue'
 import ElementUI from 'element-ui'
 // import 'element-ui/lib/theme-chalk/display.css'

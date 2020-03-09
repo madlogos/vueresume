@@ -3,8 +3,8 @@
     <h2 id='title'>
       <i class='fas fa-address-card' /><span class='title-h2'>{{ this.$t('title.contact') }}</span>
     </h2>
-    <table id='item-table'>
-      <tr v-for="i in data.contact" :key="i.name">
+    <table v-if='this.$store.getters.contact' id='item-table'>
+      <tr v-for="i in this.$store.getters.contact" :key="i.name">
         <el-tooltip effect='light' placement="top-start" :content="i.name">
           <td class="socio-icon"><i :class='i.fa' /><span class='icon-txt'>{{ i.name }}</span></td>
         </el-tooltip>
@@ -12,8 +12,8 @@
           <span v-else>{{ dec(i.value) }}</span></td>
       </tr>
     </table>
-    <div id="socio">
-      <template v-for="i in data.socio">
+    <div v-if='this.$store.getters.socio' id="socio">
+      <template v-for="i in this.$store.getters.socio">
         <el-popover :key="i.name" placement="top-start" :title="i.name" trigger="hover" width="100">
           <div class="el-popover__body">
             <span v-if='i.link'>
@@ -33,10 +33,7 @@
 import { dec } from '@/utils/util'
 export default {
   computed: {
-    data: function () {
-      let ret = JSON.parse(localStorage.getItem('myCv'))
-      return ret[this.$i18n.locale]
-    }
+
   },
   methods: {
     dec (s) {

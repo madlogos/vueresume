@@ -1,5 +1,5 @@
 <template>
-  <div class='block' id='portrait'>
+  <div v-if='this.$store.getters.basic' class='block' id='portrait'>
     <el-avatar :size='100' @error='errorHandler'>
       <img src='@/assets/logo.png' />
     </el-avatar>

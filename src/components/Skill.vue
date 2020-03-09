@@ -1,5 +1,5 @@
 <template>
-  <div class='block' id='skill' ref='skill'>
+  <div v-if='this.$store.getters.skill' class='block' id='skill' ref='skill'>
     <h2 id='title'>
       <i class='fas fa-briefcase' /><span class='title-h2'>{{ $t('title.talent') }}</span>
     </h2>

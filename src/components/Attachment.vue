@@ -1,5 +1,5 @@
 <template>
-  <h3 id='attach'>
+  <h3 v-if='this.$store.getters.misc' id='attach'>
     <a :href='this.$store.getters.misc.attachment' target='_blank'>
       <i class='fas fa-download'/><span class='title-h3'>{{ $t('title.download') }}</span>
     </a>

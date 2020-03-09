@@ -1,5 +1,5 @@
 <template>
-  <div class='block' id='cert' ref='cert'>
+  <div v-if='this.$store.getters.cert' class='block' id='cert' ref='cert'>
     <h2 id='title'>
       <i class='fas fa-certificate' /><span class='title-h2'>{{ $t('title.cert') }}</span>
     </h2>

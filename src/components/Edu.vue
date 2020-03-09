@@ -1,5 +1,5 @@
 <template>
-  <div class='block' id='edu' ref='edu'>
+  <div v-if='this.$store.getters.edu' class='block' id='edu' ref='edu'>
     <h2 id='title'>
       <i class='fas fa-user-graduate' /><span class='title-h2'>{{ this.$t('title.edu') }}</span>
       <el-button
@@ -27,6 +27,7 @@
                 <span class='cred'>
                   <i class='fas fa-graduation-cap' /><span class='icon-txt'>{{ i.cred }}</span>
                 </span>
+                <span v-if='isSmallScreen'><br /></span>
                 <template v-if='i.wiki.link'>
                   <el-popover placement='top-start' :title='i.wiki.title' trigger='hover' width=240>
                     <div>
@@ -62,6 +63,7 @@
             </template>
             <div class='major'>
               <span class='major-head'><i class='fas fa-school' /><span class='icon-txt'>{{ i.major }}</span></span>
+              <span v-if='isSmallScreen'><br /></span>
               <span class='major-head'><i class='fas fa-trophy' /><span class='icon-txt'>{{ i.rank }}</span></span>
             </div>
             <template v-for='(j, _j) of i.lesson'>
@@ -79,6 +81,7 @@ import { parseTimeDif, formatTimeDif2, countEmptyArrInArr } from '@/utils/util'
 export default {
   data () {
     return {
+      isSmallScreen: false,
       foldAll: null,
       foldIcon: 'el-icon-arrow-down',
       foldValue: []
@@ -100,6 +103,11 @@ export default {
       this.foldAll = false
     }
     this.initFolding()
+    // monitor window resize
+    let that = this
+    window.addEventListener('resize', function () {
+      that.isSmallScreen = document.body.clientWidth < 640
+    })
   },
   methods: {
     calcTimeDif (t0, t1) {

@@ -1,5 +1,5 @@
 <template>
-<div v-loading='this.loading' class='wrapper'>
+<div v-loading='loading' class='wrapper'>
   <el-backtop slot='reference' target=".wrapper" id='backtop' :right='20' />
   <el-row :gutter="16" id='el-row-lang'>
     <el-col :span="8" id="el-col-sidebar" class="hidden-xs-only">
@@ -86,14 +86,22 @@ export default {
   created: function () {
     this.loading = true
     // this.$store.dispatch('getCv')
-    this.$store.dispatch('fetchCv')
+    this.fetchData()
+  },
+  watch: {
+    '$route': 'fetchData'
   },
   mounted: function () {
     document.title = this.$t('name')
     // this.loading = !localStorage.getItem('myCv')
-    this.loading = !this.$store.state.data
+    console.info(this.$store.state.data)
   },
   methods: {
+    fetchData () {
+      this.loading = true
+      this.$store.dispatch('fetchCv')
+      this.loading = false
+    },
     changeLang (val) {
       // localStorage.setItem('lang', val)
       this.$i18n.locale = val

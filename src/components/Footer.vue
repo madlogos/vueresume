@@ -1,5 +1,5 @@
 <template>
-	<div class="footer">
+	<div v-if='this.$store.getters.misc' class="footer">
 		<span>
 			<i class='fas fa-copyright'/>
 			<span class='icon-txt'>
