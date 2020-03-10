@@ -33,6 +33,7 @@
 </template>
 
 <script>
+import { detectDevice } from '@/utils/util'
 export default {
   data () {
     return {
@@ -42,23 +43,32 @@ export default {
     }
   },
   computed: {
-
+    devAttr () {
+      return detectDevice()
+    }
   },
   mounted () {
-    const that = this
-    window.addEventListener('resize', function () {
+    this.resizeCarousel()
+    window.addEventListener('resize', this.resizeCarousel)
+  },
+  methods: {
+    resizeCarousel () {
       let wdt = document.body.clientWidth
-      if (wdt > 992) {
-        that.carouselHeight = '440px'
-        that.carouselType = 'card'
+      let isMP = this.devAttr['isMobile'] && !this.devAttr['isTablet']
+      if (isMP || wdt < 768) {
+        this.carouselType = null
+        this.carouselHeight = wdt * 2/3 + 'px'
       } else {
-        that.carouselType = null
-        that.carouselHeight = wdt > 768
-          ? wdt * 4/9 + 'px'
-          : wdt * 2/3 + 'px'
+        if (wdt < 992) {
+          this.carouselType = null
+          this.carouselHeight = wdt * 4/9 + 'px'
+        } else {
+          this.carouselType = 'card'
+          this.carouselHeight = '444px'
+        }
       }
-    })
-  }
+    }
+  }  
 }
 </script>
 
