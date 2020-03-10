@@ -138,11 +138,8 @@ export default {
       this.foldValue = this.initFoldVal(this.job)
     }
     // monitor window resize
-    let devAttr = detectDevice()
-    window.addEventListener('resize', function () {
-      that.isSmallScreen = (devAttr['isMobile'] && !devAttr['isTablet'])
-        || ((devAttr['isTablet'] || !devAttr['isMobile']) && document.body.clientWidth < 640)
-    })
+    this.checkScreenSize()
+    window.addEventListener('resize', this.checkScreenSize)
   },
   methods: {
     calcTimeDif (t0, t1) {
@@ -223,6 +220,11 @@ export default {
         }
       }
       return ret
+    },
+    checkScreenSize (thres = 640) {
+      let devAttr = detectDevice()
+      this.isSmallScreen = (devAttr['isMobile'] && !devAttr['isTablet'])
+        || ((devAttr['isTablet'] || !devAttr['isMobile']) && document.body.clientWidth < thres)
     }
   }
 }
