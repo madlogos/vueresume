@@ -39,8 +39,7 @@ export default {
     return {
       publicPath: process.env.BASE_URL,
       carouselHeight: '400px',
-      carouselType: 'card',
-      isSmallScreen: false
+      carouselType: 'card'
     }
   },
   computed: {
@@ -51,13 +50,13 @@ export default {
     let devAttr = detectDevice()
     window.addEventListener('resize', function () {
       let wdt = document.body.clientWidth
-      that.isSmallScreen = (devAttr['isMobile'] && !devAttr['isTablet'])
-        || ((devAttr['isTablet'] || !devAttr['isMobile']) && wdt < 992)
-      if (that.isSmallScreen) {
+      let isMP = devAttr['isMobile'] && !devAttr['isTablet']
+      if (isMP) {
         that.carouselType = null
-        that.carouselHeight = wdt > 768
-          ? wdt * 4/9 + 'px'
-          : wdt * 2/3 + 'px'
+        that.carouselHeight = wdt * 2/3 + 'px'
+      } else if (wdt > 768) {
+        that.carouselType = null
+        that.carouselHeight = wdt * 4/9 + 'px'
       } else {
         that.carouselHeight = '440px'
         that.carouselType = 'card'
