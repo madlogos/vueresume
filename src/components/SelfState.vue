@@ -33,12 +33,14 @@
 </template>
 
 <script>
+import { detectDevice } from '@/utils/util'
 export default {
   data () {
     return {
       publicPath: process.env.BASE_URL,
       carouselHeight: '400px',
-      carouselType: 'card'
+      carouselType: 'card',
+      isSmallScreen: false
     }
   },
   computed: {
@@ -46,16 +48,19 @@ export default {
   },
   mounted () {
     const that = this
+    let devAttr = detectDevice()
     window.addEventListener('resize', function () {
       let wdt = document.body.clientWidth
-      if (wdt > 992) {
-        that.carouselHeight = '440px'
-        that.carouselType = 'card'
-      } else {
+      that.isSmallScreen = (devAttr['isMobile'] && !devAttr['isTablet'])
+        || ((devAttr['isTablet'] || !devAttr['isMobile']) && wdt < 992)
+      if (that.isSmallScreen) {
         that.carouselType = null
         that.carouselHeight = wdt > 768
           ? wdt * 4/9 + 'px'
           : wdt * 2/3 + 'px'
+      } else {
+        that.carouselHeight = '440px'
+        that.carouselType = 'card'
       }
     })
   }
