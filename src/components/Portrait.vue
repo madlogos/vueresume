@@ -5,9 +5,10 @@
     </el-avatar>
     <h1>{{ dec(this.$store.getters.basic.name) }}</h1>
     <p id='baseInfo'>
-      <span class="gender-info"><i :class='this.$store.getters.basic.gender.fa' /><span class='info-left'>{{ this.$store.getters.basic.gender.value }}</span></span>
-      <span class="dob-info"><i :class='this.$store.getters.basic.dob.fa' /><span class='info-left'>{{ calcAge(dec(this.$store.getters.basic.dob.value)) }}</span></span>
-      <span class="home-info">
+      <span class="dmg-info"><i :class='this.$store.getters.basic.gender.fa' /><span class='info-left'>{{ this.$store.getters.basic.gender.value }}</span></span>
+      <span class="dmg-info"><i :class='this.$store.getters.basic.dob.fa' /><span class='info-left'>{{ calcAge(dec(this.$store.getters.basic.dob.value)) }}</span></span>
+      <span class="dmg-info"><i :class='this.$store.getters.basic.marriage.fa' /><span class='info-left'>{{ this.$store.getters.basic.marriage.value }}</span></span>
+      <span class="dmg-info">
         <i :class='this.$store.getters.basic.home.fa' />
         <a :href='this.$store.getters.basic.home.link' target='_blank'><span class='info-right'>{{ this.$store.getters.basic.home.value }}</span></a>
       </span>
@@ -74,7 +75,7 @@ pre {
 .info-right {
   margin-left: 4px
 }
-.gender-info:hover, .dob-info:hover, .home-info:hover {
+.dmg-info:hover {
   color: $col-ok
 }
 #motto {

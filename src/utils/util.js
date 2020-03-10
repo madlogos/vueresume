@@ -96,10 +96,35 @@ export function countEmptyArrInArr (arr) {
   return n
 }
 export function enc (s) {
+  // encode char
   var ret = window.encodeURIComponent(s)
   return window.btoa(ret)
 }
 export function dec (s) {
+  // decode char
   var ret = window.atob(s)
   return window.decodeURIComponent(ret)
+}
+export function detectDevice () {
+  // detect device using userAgent
+  const ua = window['navigator']['userAgent'] || window['navigator']['vendor'] || window['opera']
+  const osPtn = {
+    'iOS': 'iPhone|iPod|iPad', 'Android': 'Android', 'Windows': 'Windows', 'Linux': 'Linux', 'X11': 'Nix',
+    'Mac': 'Mac'
+  }
+  // mobile?
+  let isMobile = (/iPhone|iP[ao]d|Silk|Android|BlackBerry|BB10|PlayBook|Opera Mini|IEMobile|WebOS|Lumia/).test(ua)
+  let isTablet = (/iPad|PlayBook|Tablet/).test(ua) || ((/Android/).test(ua) && !(/Mobile/).test(ua))
+  // WeChat?
+  let isWechat = (/MicroMessenger/).test(ua)
+  // OS
+  let osFlag = ''
+  for (let k in osPtn) {
+    let re = new RegExp(osPtn[k])
+    if (re.test(ua)) {
+      osFlag = k
+      break
+    }
+  }
+  return {'isMobile': isMobile, 'isTablet': isTablet, 'isWechat': isWechat, 'OS': osFlag}
 }

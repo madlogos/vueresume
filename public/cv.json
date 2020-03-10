@@ -3,7 +3,8 @@
     "basic": {"name": "JUU2JUIxJUFBJUU4JUJEJUI2JUU5JUEyJTk2",
       "gender": {"fa": "fas fa-mars", "value": "男"},
       "dob": {"fa": "fas fa-birthday-cake", "value": "MTk4My0wNC0xNA=="},
-      "home": {"fa": "fas fa-home", "value": "中国上海", "link": "https://map.baidu.com/search/上海市/@13523299,3641066,12z"},
+      "marriage": {"fa": "fas fa-ring", "value": "已婚"},
+      "home": {"fa": "fas fa-home", "value": "上海", "link": "https://map.baidu.com/search/上海市/@13523299,3641066,12z"},
       "motto": "医学·技术·管理，复合跨界"
     },
     "contact": [
@@ -417,7 +418,8 @@
       "name": "V2FuZyUyMFlpeWluZw==",
       "gender": {"fa": "fas fa-mars", "value": "Male"},
       "dob": {"fa": "fas fa-birthday-cake", "value": "MTk4My0wNC0xNA=="},
-      "home": {"fa": "fas fa-home", "value": "Shanghai, CN", "link": "https://www.google.com/maps/place/中国上海市/@31.2165851,121.2817674,10z"},
+      "marriage": {"fa": "fas fa-ring", "value": "Married"},
+      "home": {"fa": "fas fa-home", "value": "Shanghai", "link": "https://www.google.com/maps/place/中国上海市/@31.2165851,121.2817674,10z"},
       "motto": "Versatile crossover in medicine, technology & management"
     },
     "contact": [

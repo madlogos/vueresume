@@ -29,7 +29,7 @@
       <contact/>
       <skill/>
       <cert/>
-      <Attachment/>
+      <attachment/>
     </el-col>
     <el-col :xs="24" :sm="16" :md="16" :lg="16" :xl="16" id="main">
       <job/>
@@ -73,7 +73,7 @@ export default {
     Attachment,
     Footer
   },
-  data: function () {
+  data () {
     return {
       lang: this.$i18n.locale,
       loading: true,
@@ -83,9 +83,11 @@ export default {
   computed: {
 
   },
-  created: function () {
-    this.loading = true
+  created () {
     // this.$store.dispatch('getCv')
+    this.loading = true
+  },
+  beforeMount () {
     this.fetchData()
   },
   watch: {
@@ -93,14 +95,14 @@ export default {
   },
   mounted: function () {
     document.title = this.$t('name')
+    this.$nextTick(function () {
+      this.loading = false
+    })
     // this.loading = !localStorage.getItem('myCv')
-    console.info(this.$store.state.data)
   },
   methods: {
     fetchData () {
-      this.loading = true
       this.$store.dispatch('fetchCv')
-      this.loading = false
     },
     changeLang (val) {
       // localStorage.setItem('lang', val)

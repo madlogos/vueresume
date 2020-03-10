@@ -1,5 +1,5 @@
 <template>
-  <div v-if='this.$store.getters.edu' class='block' id='edu' ref='edu'>
+  <div v-if='edu' class='block' id='edu' ref='edu'>
     <h2 id='title'>
       <i class='fas fa-user-graduate' /><span class='title-h2'>{{ this.$t('title.edu') }}</span>
       <el-button
@@ -12,7 +12,7 @@
     </h2>
     <el-timeline id='tl' ref='tl' :reverse=true>
       <el-timeline-item
-       v-for='(i, _i) in this.$store.getters.edu'
+       v-for='(i, _i) in edu'
        :key='_i'
        :timestamp='i.from + " - " + i.till + " · " + calcTimeDif(i.from, i.till)'
        :icon='"el-icon-" + i.icon'
@@ -77,7 +77,7 @@
 </template>
 
 <script>
-import { parseTimeDif, formatTimeDif2, countEmptyArrInArr } from '@/utils/util'
+import { parseTimeDif, formatTimeDif2, countEmptyArrInArr, detectDevice } from '@/utils/util'
 export default {
   data () {
     return {
@@ -88,25 +88,30 @@ export default {
     }
   },
   computed: {
-
+    edu: function () {
+      return this.$store.getters.edu
+    }
+  },
+  watch: {
+    edu (val) {
+      this.foldValue = this.initFoldVal(val)
+    },
+    foldValue (val) {
+      this.foldAll = !countEmptyArrInArr(this.foldValue) === this.foldValue.length
+    }
   },
   mounted: function () {
-    // return array of array
-    const eduCnt = this.$store.getters.edu.length
-    for (var i = 0; i < eduCnt; i++) {
-      this.foldValue.push([])
-    }
-    if (this.$store.getters.edu[eduCnt - 1].active) {
-      this.foldValue[eduCnt - 1] = [(eduCnt - 1).toString()]
-    }
-    if (countEmptyArrInArr(this.foldValue) === this.foldValue.length) {
-      this.foldAll = false
-    }
-    this.initFolding()
-    // monitor window resize
     let that = this
+    // revise foldValue & foldAll
+    this.initFolding()
+    if (this.edu) {
+      this.foldValue = this.initFoldVal(this.edu)
+    }
+    // monitor window resize
+    let devAttr = detectDevice()
     window.addEventListener('resize', function () {
-      that.isSmallScreen = document.body.clientWidth < 640
+      that.isSmallScreen = (devAttr['isMobile'] && !devAttr['isTablet'])
+        || ((devAttr['isTablet'] || !devAttr['isMobile']) && document.body.clientWidth < 640)
     })
   },
   methods: {
@@ -165,6 +170,16 @@ export default {
     },
     colorTimelineNode (active) {
       return active ? this.themeColor : null
+    },
+    initFoldVal (val = this.$store.getters.edu) {
+      let ret = []
+      for (let i = 0; i < val.length; i++) {
+        ret.push([])
+        if (val[i].active) {
+          ret[i] = [(i).toString()]
+        }
+      }
+      return ret
     }
   }
 }

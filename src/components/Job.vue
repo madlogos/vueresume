@@ -1,5 +1,5 @@
 <template>
-  <div v-if='this.$store.getters.job' class='block' id='job' ref='job'>
+  <div v-if='job' class='block' id='job' ref='job'>
     <h2 id='title'>
       <i class='fas fa-user-tie' /><span class='title-h2'>{{ this.$t('title.job') }}</span>
       <el-button
@@ -12,7 +12,7 @@
     </h2>
     <el-timeline id='tl' ref='tl' :reverse=true>
       <el-timeline-item
-       v-for='(i, _i) in this.$store.getters.job'
+       v-for='(i, _i) in job'
        :key='_i'
        :timestamp='i.from + " - " + i.till + " · " + calcTimeDif(i.from, i.till)'
        :icon='"el-icon-" + i.icon'
@@ -102,7 +102,7 @@
 
 <script>
 import sty from '@/styles/_color.scss'
-import { parseTimeDif, formatTimeDif2, countEmptyArrInArr } from '@/utils/util'
+import { parseTimeDif, formatTimeDif2, countEmptyArrInArr, detectDevice } from '@/utils/util'
 export default {
   data () {
     return {
@@ -118,25 +118,30 @@ export default {
     }
   },
   computed: {
-
+    job () {
+      return this.$store.getters.job
+    }
+  },
+  watch: {
+    job (val) {
+      this.foldValue = this.initFoldVal(val)
+    },
+    foldValue (val) {
+      this.foldAll = !countEmptyArrInArr(this.foldValue) === this.foldValue.length
+    }
   },
   mounted: function () {
-    // return array of array
-    const jobCnt = this.$store.getters.job.length
-    for (var i = 0; i < jobCnt; i++) {
-      this.foldValue.push([])
-    }
-    if (this.$store.getters.job[jobCnt - 1].active) {
-      this.foldValue[jobCnt - 1] = [(jobCnt - 1).toString()]
-    }
-    if (countEmptyArrInArr(this.foldValue) === this.foldValue.length) {
-      this.foldAll = false
-    }
-    this.initFolding()
-    // monitor window resize
     let that = this
+    // revise foldValue & foldAll
+    this.initFolding()
+    if (this.job) {
+      this.foldValue = this.initFoldVal(this.job)
+    }
+    // monitor window resize
+    let devAttr = detectDevice()
     window.addEventListener('resize', function () {
-      that.isSmallScreen = document.body.clientWidth < 540
+      that.isSmallScreen = (devAttr['isMobile'] && !devAttr['isTablet'])
+        || ((devAttr['isTablet'] || !devAttr['isMobile']) && document.body.clientWidth < 640)
     })
   },
   methods: {
@@ -154,6 +159,7 @@ export default {
       return formatTimeDif2(d, f, sep)
     },
     getCollName (i) {
+      // get current collapse item name
       return this.foldValue[parseInt(i)]
     },
     toggleFolding () {
@@ -195,6 +201,16 @@ export default {
     },
     colorTimelineNode (active) {
       return active ? this.themeColor : null
+    },
+    initFoldVal (val = this.$store.getters.job) {
+      let ret = []
+      for (let i = 0; i < val.length; i++) {
+        ret.push([])
+        if (val[i].active) {
+          ret[i] = [(i).toString()]
+        }
+      }
+      return ret
     },
     buildJobTree (data) {
       // data: job description
