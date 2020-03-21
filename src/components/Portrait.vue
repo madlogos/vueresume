@@ -1,7 +1,7 @@
 <template>
   <div v-if='this.$store.getters.basic' class='block' id='portrait'>
     <el-avatar :size='100' @error='errorHandler'>
-      <img src='@/assets/logo.png' />
+      <img src='logo.png' />
     </el-avatar>
     <h1>{{ dec(this.$store.getters.basic.name) }}</h1>
     <p id='baseInfo'>
