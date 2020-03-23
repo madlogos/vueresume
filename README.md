@@ -21,11 +21,11 @@
 
 最终简历会显示在`https://<你的github用户名>.github.io/vueresume`，效果如下。
 
-### PC 显示效果
+- PC 显示效果
 
 ![PC显示效果](static/img/screenshot.png)
 
-### 手机显示效果
+- 手机显示效果
 
 <img src="static/img/screenshot_mp.jpeg" alt="手机显示效果" height="1278px" />
 
@@ -44,10 +44,20 @@ cv.json是本应用所调用的数据，通过`axios`进行API读取，加载到
 ```plain
 -- basic: (dict) 基本信息
   |-- name: 姓名，数据经加密
-  |-- gender: (dict) 性别，包括图标fa和值value
-  |-- dob: (dict) 出生日期，包括图标fa和值value(yyyy/m/d格式)，数据经加密
-  |-- marriage: (dict) 婚姻，包括图标fa和值value
-  `-- home: (dict) 现居住地，包括图标fa和值value
+  |-- gender: (dict) 性别
+  |  |-- fa: fontawesome图标
+  |  `-- value: 显示文字
+  |-- dob: (dict) 出生日期
+  |  |-- fa: fontawesome图标
+  |  `-- value: 日期(yyyy/m/d格式)，数据经加密
+  |-- marriage: (dict) 婚姻
+  |  |-- fa: fontawesome图标
+  |  `-- value: 显示文字
+  |-- home: (dict) 现居住地
+  |  |-- fa: fontawesome图标
+  |  |-- value: 显示文字
+  |  `-- link: 链接，指向地图
+  `-- motto: 格言
 -- contact: [list] 联系方式
   |-- (dict) 具体联系方式，
   |  |-- name: 联系方式名称
