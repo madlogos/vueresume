@@ -87,4 +87,13 @@ code {
   margin-left: 4px;
   color: $col-info
 }
+.link:link {
+  color: $col-text
+}
+.link:visited {
+  color: $col-text-alt
+}
+.link:hover {
+  color: $col-ok
+}
 </style>

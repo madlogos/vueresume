@@ -285,8 +285,9 @@ a:hover {
   line-height: $lh-md;
   margin: $mar-sm $mar-md $mar-sm $mar-sm
 }
+
 .jobdes p {
-  font-size: $rg;
+  // font-size: $rg;
   margin: $mar-md 0 $mar-sm 0
 }
 .jobdes ul {
