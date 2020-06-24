@@ -2,32 +2,32 @@ const path = require('path')
 const cdn = {
   dev: {
     css: [
-      'https://cdn.bootcss.com/font-awesome/5.12.1/css/fontawesome.min.css',
-      'https://cdn.bootcss.com/font-awesome/5.12.1/css/solid.min.css',
-      'https://cdn.bootcss.com/font-awesome/5.12.1/css/brands.min.css',
-      'https://cdn.bootcss.com/font-awesome/5.12.1/css/svg-with-js.min.css',
-      'https://cdn.bootcss.com/element-ui/2.13.0/theme-chalk/index.css',
+      'https://cdn.bootcdn.net/ajax/libs/font-awesome/5.13.0/css/fontawesome.min.css',
+      'https://cdn.bootcdn.net/ajax/libs/font-awesome/5.13.0/css/solid.min.css',
+      'https://cdn.bootcdn.net/ajax/libs/font-awesome/5.13.0/css/brands.min.css',
+      'https://cdn.bootcdn.net/ajax/libs/font-awesome/5.13.0/css/svg-with-js.min.css',
+      'https://cdn.bootcdn.net/ajax/libs/element-ui/2.13.0/theme-chalk/index.css',
       'https://unpkg.com/element-ui@2.13.0/lib/theme-chalk/display.css',
     ],
     js: []
   },
   prod: {
     css: [
-      'https://cdn.bootcss.com/font-awesome/5.12.1/css/fontawesome.min.css',
-      'https://cdn.bootcss.com/font-awesome/5.12.1/css/solid.min.css',
-      'https://cdn.bootcss.com/font-awesome/5.12.1/css/brands.min.css',
-      'https://cdn.bootcss.com/font-awesome/5.12.1/css/svg-with-js.min.css',
-      'https://cdn.bootcss.com/element-ui/2.13.0/theme-chalk/index.css',
-      'https://unpkg.com/element-ui@2.13.0/lib/theme-chalk/display.css',
+      'https://cdn.bootcdn.net/ajax/libs/font-awesome/5.13.0/css/fontawesome.min.css',
+      'https://cdn.bootcdn.net/ajax/libs/font-awesome/5.13.0/css/solid.min.css',
+      'https://cdn.bootcdn.net/ajax/libs/font-awesome/5.13.0/css/brands.min.css',
+      'https://cdn.bootcdn.net/ajax/libs/font-awesome/5.13.0/css/svg-with-js.min.css',
+      'https://cdn.bootcdn.net/ajax/libs/element-ui/2.13.2/theme-chalk/index.css',
+      'https://unpkg.com/element-ui@2.13.2/lib/theme-chalk/display.css',
     ],
     js: [
-      'https://cdn.bootcss.com/vue/2.6.11/vue.runtime.min.js',
-      'https://cdn.bootcss.com/vue-router/3.1.3/vue-router.min.js',
-      'https://cdn.bootcss.com/vuex/3.1.2/vuex.min.js',
-      'https://cdn.bootcss.com/echarts/4.6.0/echarts.min.js',
-      'https://cdn.bootcss.com/axios/0.19.2/axios.min.js',
-      'https://cdn.bootcss.com/vue-i18n/8.15.4/vue-i18n.min.js',
-      'https://cdn.bootcss.com/element-ui/2.13.0/index.js',
+      'https://cdn.bootcdn.net/ajax/libs/vue/2.6.11/vue.runtime.min.js',
+      'https://cdn.bootcdn.net/ajax/libs/vue-router/3.2.0/vue-router.min.js',
+      'https://cdn.bootcdn.net/ajax/libs/vuex/3.2.0/vuex.min.js',
+      'https://cdn.bootcdn.net/ajax/libs/echarts/4.8.0/echarts.min.js',
+      'https://cdn.bootcdn.net/ajax/libs/axios/0.19.2/axios.min.js',
+      'https://cdn.bootcdn.net/ajax/libs/vue-i18n/8.18.1/vue-i18n.min.js',
+      'https://cdn.bootcdn.net/ajax/libs/element-ui/2.13.2/index.js',
     ]
   }
 }

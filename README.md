@@ -193,15 +193,15 @@ cv.json是本应用所调用的数据，通过`axios`进行API读取，加载到
 
 src/styles目录下的_colors.scss保存了一些主要颜色定义，如：
 
-- 主题色 $col-thm: #00A78E;
-- 半透明主题色 $col-thm-opaque: #00A78E88;
-- 更透明主题色 $col-thm-opaquer: #00A78E11;
+- 主题色 $col-thm: `#00A78E`;
+- 半透明主题色 $col-thm-opaque: `#00A78E88`;
+- 更透明主题色 $col-thm-opaquer: `#00A78E11`;
 
 你可以将这些值替换为自己喜欢的颜色，__但不要修改色彩值的名称__。
 
 #### 更进一步
 
-你可以学习更多VueJS的知识，自己进一步修改src中的其他组件。本应用中，入口文件src/App.vue绑定了src/router中定义的路由；src/router/index.js定义了主路由Resume/，绑定src/views/Resume.vue；而Resume.vue异步加载了src/components中定义的所有组件。你可以通过修改Resume.vue和src/components中的组件，改变最后的呈现效果。
+你可以学习更多`Vue.js`的知识，自己进一步修改src中的其他组件。本应用中，入口文件src/App.vue绑定了src/router中定义的路由；src/router/index.js定义了主路由Resume/，绑定src/views/Resume.vue；而Resume.vue异步加载了src/components中定义的所有组件。你可以通过修改Resume.vue和src/components中的组件，改变最后的呈现效果。
 
 ### 发布
 

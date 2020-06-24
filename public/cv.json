@@ -28,7 +28,7 @@
     "talent": [
       {"name": "数据分析和挖掘", "value": 100, "tip": "熟悉统计学原理及分析方法的实现，对大数据、机器学习等数据科学应用领域有深入理解，具备丰富的全栈实践经验。"},
       {"name": "企业健康管理", "value": 90, "tip": "熟悉企业健康促进在学术界和产业界的实践和动向，有丰富的项目设计实施经验。"},
-      {"name": "公共卫生与流行病学", "value": 80, "tip": "接受完整的高等医学教育和专门的公共卫生学术训练，有宽广的人群健康视野和数据驱动的思维框架。"},
+      {"name": "流行病学与统计", "value": 80, "tip": "接受完整的高等医学教育和专门的公共卫生学术训练，有宽广的人群健康视野和数据驱动的思维框架。"},
       {"name": "软件研发和管理", "value": 80, "tip": "持续自学编程，有实地全栈开发和项目管理经验，多次参与产品设计和技术选型。"},
       {"name": "战略规划", "value": 60, "tip": "参与本地化、数字化等业务战略规划，具备从商业和市场高度评估业务和技术发展的战略思维。"}
     ],
@@ -73,9 +73,14 @@
             "熟悉 <code>Django</code> 、 <code>Flask</code> Web框架，及 <code>pandas</code>、 <code>scikit-learn</code>、 <code>matplotlib</code>、 <code>tensorflow</code> 等数据科学相关库。"]
         },
         {
-          "name": "Anaconda", "size": "medium", "alpha": 0.08, "from": "2016", "thru": "now", "fa": "fab fa-python", "prof": 4, 
-          "p": ["作为数据科学的主要工作环境使用。"], 
-          "ul": ["熟悉 <code>conda</code> 包管理工具。", "熟悉 Jupyter Notebook和 Jupyter Lab 的配置、使用，及在 Jupyter 环境下探索、挖掘、展示。"]
+          "name": "Hive", "size": "small", "alpha": 0.15, "from": "2018", "thru": "now", "fa": "fas fa-database", "prof": 3.5, 
+          "p": null, 
+          "ul": ["熟悉 <code>HiveQL</code> 的语法和 Jupyter Notebook 实现。", "熟悉 Hive 表的搭建和数据的对导。"]
+        },
+        {
+          "name": "Spark", "size": "small", "alpha": 0.15, "from": "2018", "thru": "now", "fa": "fas fa-star", "prof": 3.5, 
+          "p": null, 
+          "ul": ["熟悉 <code>SparkQL</code>、<code>scala</code>、<code>pyspark</code> 的语法和 Jupyter Notebook 实现。", "了解用 <code>SparkML</code> 搭建机器学习模型。"]
         },
         {
           "name": "SQL", "size": "medium", "alpha": 0.15, "from": "2013", "thru": "now", "fa": "fas fa-database", "prof": 4, 
@@ -262,7 +267,7 @@
           "tag": ["公共卫生", "事业单位"],
           "link": "https://baike.baidu.com/item/徐汇区疾病预防控制中心"
         },
-        "title": "科员", "icon": "check", "active": false, 
+        "title": "公共卫生医师", "icon": "check", "active": false, 
         "keyword": ["传染病防控", "计划免疫管理", "流行病学研究"],
         "description": [
           {"p": ["<b>免疫规划</b>: 规范化门诊和现场督导，数据/报表的设计与管理。"],
@@ -290,17 +295,52 @@
         ]
       },
       {
-        "from": "2011/04", "till": "2020/04", "emp": "安泰保险", "link": "https://www.aetna.com",
+        "from": "2011/04", "till": "2014/09", "emp": "安泰保险", "link": "https://www.aetna.com",
         "wiki": {
           "fa": "fab fa-wikipedia-w", "title": "关于该雇主", "value": "维基百科",
           "tag": ["财富200", "美国前3", "健康险巨头", "CVS并购"],
           "link": "https://en.wikipedia.org/wiki/Aetna"
         }, 
-        "title": "数据分析/项目管理经理", "icon": "loading", "active": true,
+        "title": "项目经理/高级项目经理", "icon": "check", "active": false,
+        "keyword": ["项目管理", "系统研发", "专业产品", "分析挖掘", "内部培训"], 
+        "description": [
+          {
+            "p": ["部门初期核心成员，较早将欧美企业健康管理服务体系引入国内，在技术/服务领域都有初创贡献。"],
+            "ul": null
+          },
+          {
+            "p": ["<b>项目实施</b>: 创建项目管理流程。主管实施大型综合项目，交付平台产品、资讯及服务。"],
+            "ul": ["作为项目经理推进健康咨询系统设计开发，资讯内容按需开发及服务流程设计落地。",
+              "创建完整的项目管理流程和模板。"]
+          },
+          {
+            "p": ["<b>医学赋能</b>: 组建循证顾问委员会，负责向其他团队提供专业输出，确保健康服务和资讯循证可靠。"],
+            "ul": ["组织定期评审和更新产品资料、医学知识库，撰写备忘录和专业指南，为销售和运营团队赋能。",
+              "按需出具医学意见，研讨客户方案、评审外发材料，确保专业交付成果循证可靠。", 
+              "各顾问分工为客户提供健康服务，如协作开发医学内容、在线健康咨询、专项健康干预等。"]
+          }
+        ],
+        "project": [
+          {
+            "title": "某大型IT企业综合健康促进项目", "from": "2011/04", "thru": "2014/05",
+            "work": ["里程碑项目之一，为超过2.5万人提供健康筛查安排、主题健康促进服务，时效性、循证性、满意度等KPI均超过目标值。", 
+              "主题健康促进：作为项目经理推进开发双语在线健康信息及交互咨询系统，主持设计服务流程并实地运营(亲身答复超过50万字)；组织医学顾问完成70余篇中英双语健康简讯；在资源和预算约束下及时高质完成项目。这也是国内较早开展的企业在线轻问诊服务实例。",
+              "健康筛查：作为项目经理全程推进竞标、实施、评估，帮助客户提高效率、降低成本。项目实施过程额外产出 (1) 改进的成本预估模型工具和 (2) 服务供应商网络拓展及评估的流程框架。与同类项目相比，该项目规模大、形式新、工期短、循证要求高，具有标杆意义。"]
+          }
+        ]
+      },
+      {
+        "from": "2014/09", "till": "2020/04", "emp": "安泰保险", "link": "https://www.aetna.com",
+        "wiki": {
+          "fa": "fab fa-wikipedia-w", "title": "关于该雇主", "value": "维基百科",
+          "tag": ["财富200", "美国前3", "健康险巨头", "CVS并购"],
+          "link": "https://en.wikipedia.org/wiki/Aetna"
+        }, 
+        "title": "数据分析主管", "icon": "loading", "active": true,
         "keyword": ["分析挖掘", "商业智能", "数据科学", "项目管理", "系统研发", "专业产品", "商务战略", "运营优化", "内部培训"], 
         "description": [
           {
-            "p": ["部门初期核心成员，较早将欧美企业健康管理服务体系引入国内，在技术/服务领域都有初创贡献。此后作为数据/领域专家持续助力业务发展 (6年增长10倍)。"],
+            "p": ["作为数据/领域专家持续助力业务发展 (6年增长10倍)。"],
             "ul": null
           },
           {
@@ -320,12 +360,6 @@
               "开设<a class='link' href='https://madlogos.github.io/R_Tutorial' target='_blank'>R语言训练营</a>，为骨干员工 (运营、核保、采购等) 培训进阶数据处理及分析技能。"]
           },
           {
-            "p": ["<b>医学赋能</b>: 组建循证顾问委员会，负责向其他团队提供专业输出，确保健康服务和资讯循证可靠。"],
-            "ul": ["组织定期评审和更新产品资料、医学知识库，撰写备忘录和专业指南，为销售和运营团队赋能。",
-              "按需出具医学意见，研讨客户方案、评审外发材料，确保专业交付成果循证可靠。", 
-              "各顾问分工为客户提供健康服务，如协作开发医学内容、在线健康咨询、专项健康干预等。"]
-          },
-          {
             "p": ["<b>战略规划</b>: 收集商业情报，起草规划和商业论证；推进战略项目，向中国区高层汇报进展，促进本地化、敏捷化、数字化升级。"],
             "ul": ["本地化转型：与合作伙伴沟通需求，推动内部各条线设定计划、转变业务模式；推进组建健康服务卓越运营中心，促成运营部门跨职能融合和本地化转型。",
               "数字化升级：起草商业论证，获取顶层预算支持。设计平台概念原型和业务需求路线图，推进系统架构升级，对旧平台实施移动互联化改造。",
@@ -338,7 +372,7 @@
               "设计开发项目成本估算模型并工具化，大幅提高预估精度和估算效率，支撑主营业务的报价/核价流程。"]
           },
           {
-            "p": ["<b>基础设施</b>: 作为业务代表推进IT敏捷开发；自主研发内部应用，克服条件限制，低成本灵活实现需求。"],
+            "p": ["<b>基础设施产品</b>: 作为产品负责人推进IT敏捷开发；研发交付内部业务应用，克服条件限制，低成本灵活实现业务流转管理需求。"],
             "ul": ["自主开发、搭建健康数据管理系统，结合R/Python脚本构建自动分析报告流程，将报告周期缩短到2天以内。",
               "作为业务代表(PO)推动敏捷团队实施核心业务系统开发，实现约束性迭代升级，适配快速变化的业务需求。",
               "为团队开发多个内部应用，涵盖团队出勤、客服记录、企业医务室诊疗、在线咨询答复评估、就医协助、循证审查、代报销及合规审查等业务的管理。"]
@@ -356,12 +390,6 @@
               "数据管理系统：通过自动转换SQL的规则模块，在工作台配置数值清理和标签赋值算法；基于字段映射词典和清理规则，实现外源数据半自动汇导、清洗、存储。", 
               "分析报告系统：通过RShiny或Jupyter Notebook配置常规参数，运行R/Python分析脚本，结构化输出结果。可进一步输出为Office兼容图表或PowerBI交互式仪表盘。",
               "工具链维护：将常用整理、分析、可视化等功能梳理分解，开发出R/Python扩展库(均含多个扩展包)，部署内部CRAN，实现复用。"]
-          },
-          {
-            "title": "某大型IT企业综合健康促进项目", "from": "2011/04", "thru": "2014/05",
-            "work": ["里程碑项目之一，为超过2.5万人提供健康筛查安排、主题健康促进服务，时效性、循证性、满意度等KPI均超过目标值。", 
-              "主题健康促进：作为项目经理推进开发双语在线健康信息及交互咨询系统，主持设计服务流程并实地运营(亲身答复超过50万字)；组织医学顾问完成70余篇中英双语健康简讯；在资源和预算约束下及时高质完成项目。这也是国内较早开展的企业在线轻问诊服务实例。",
-              "健康筛查：作为项目经理全程推进竞标、实施、评估，帮助客户提高效率、降低成本。项目实施过程额外产出 (1) 改进的成本预估模型工具和 (2) 服务供应商网络拓展及评估的流程框架。与同类项目相比，该项目规模大、形式新、工期短、循证要求高，具有标杆意义。"]
           }
         ]
       }
@@ -443,7 +471,7 @@
     "talent": [
       {"name": "Data analytics & mining", "value": 100, "tip": "Familiarity with statistics principles and implementation of analytics; deep understanding of applied data science on big data and machine leaerning; rich practical experience of full-stack analytics."}, 
       {"name": "Corporate health management", "value": 90, "tip": "Familiarity with the practice and dynamics of health promotion in both academic society and industry; rich experience of program design and implementation."},
-      {"name": "Public health & epidemiology", "value": 80, "tip": "Solid medical background with complete medical education and specific public health training; thinking from wider population health perspectives with a data-driven epidemiological framework."},
+      {"name": "Epidemiology & statistics", "value": 80, "tip": "Solid medical background with complete medical education and specific public health training; thinking from wider population health perspectives with a data-driven epidemiological framework."},
       {"name": "Software R&D", "value": 80, "tip": "Continuous self-paced learning of programming; practical experience of full-stack development and project management; frequent participation in product design and model selection."},
       {"name": "Strategic planning", "value": 60, "tip": "Participation in business strategy planning such as localization and digitalization, from which established a strategic thinking model that look into business and technology from commence and market perspectives."}
     ],
@@ -489,9 +517,14 @@
             "Familiar with <code>Django</code> and <code>Flask</code> Web frameworks and data science related libraries such as <code>pandas</code>, <code>scikit-learn</code>, <code>matplotlib</code>, <code>tensorflow</code>."]
         },
         {
-          "name": "Anaconda", "size": "medium", "alpha": 0.08, "from": "2016", "thru": "now", "fa": "fab fa-python", "prof": 4, 
-          "p": ["Major working environment when doing data science jobs."], 
-          "ul": ["Familiar with package management system of <code>conda</code>.", "Familiar with configuration and application of Jupyter Notebook and Jupyter Lab, as well as exploration, mining and presentation in Jupyter environment."]
+          "name": "Hive", "size": "small", "alpha": 0.15, "from": "2018", "thru": "now", "fa": "fas fa-database", "prof": 3.5, 
+          "p": null, 
+          "ul": ["Familiar with <code>HiveQL</code> and implementation in Jupyter Notebook.", "Familiar with Hive table operation and import/export interaction with other DBS."]
+        },
+        {
+          "name": "Spark", "size": "small", "alpha": 0.15, "from": "2018", "thru": "now", "fa": "fas fa-star", "prof": 3.5, 
+          "p": null, 
+          "ul": ["Familiar with <code>SparkQL</code>, <code>scala</code>, <code>pyspark</code> and the implementation in Jupyter Notebook.", "Know how to build machine learning models with <code>SparkML</code>."]
         },
         {
           "name": "SQL", "size": "medium", "alpha": 0.15, "from": "2013", "thru": "now", "fa": "fas fa-database", "prof": 4, 
@@ -726,17 +759,55 @@
         ]
       },
       {
-        "from": "2011/04", "till": "2020/04", "emp": "Aetna International", "link": "https://www.aetna.com",
+        "from": "2011/04", "till": "2014/09", "emp": "Aetna International", "link": "https://www.aetna.com",
         "wiki": {
           "fa": "fab fa-wikipedia-w", "title": "About this employer", "value": "Wikipedia",
           "tag": ["Fortune 200", "US top 3", "Health insurance giant", "CVS merger"],
           "link": "https://en.wikipedia.org/wiki/Aetna"
         }, 
-        "title": "Informatics/Project Management Manager", "icon": "loading", "active": true,
+        "title": "Project Manager / Sr Project Management Manager", "icon": "check", "active": false,
+        "keyword": ["Project management", "System R&D", "Professional product", "Analytics & minning", "Training"],
+        "description": [
+          {
+            "p": ["Contribute to the business unit, the forthgoer that introduced western enterprise health management service system to China, from technology and service perspectives as a start-up core member."],
+            "ul": null
+          },
+          {
+            "p": ["<b>Project implementation</b>: create project management process. Lead the implementation of comprehensive projects to deliver products of platform, info and services."],
+            "ul": ["Service 80+ prestigious Asia-pacific enterprises (Alibaba, IBM, Intel, HSBC, Novartis, etc) with wide acclaim.",
+              "Design and push R&D of the health advisory platform, and the R&D and delivery of health info and services.",
+              "Create complete project management process and templates as the org assets."
+              ]
+          },
+          {
+            "p": ["<b>Medical empowerment</b>: build up <i>Evidence-based Medicine Consultation Board</i> to provide professional output for other teams and guarantee the professional services and contents are evidence-based and reliable."],
+            "ul": ["Organize regular review meetings to update product documentation and medical knowledge base, write memorandum and guidelines to empower sales, account and operations team.",
+              "Provide on-demand medical comments, review customer protocols and external contents to ensure the deliverables are evidence-based and reliable.", 
+              "All consultants are responsible to provide health services for customers, e.g., medical content development, online health advisory service, specific health intervention, etc."]
+          }
+        ],
+        "project": [
+          {
+            "title": "A comprehensive corporate health promotion program", "from": "2011/04", "thru": "2014/05",
+            "work": ["One of the milestone projects, which provided health screening arrangement and thematic health promotion activities for 25 thousand employees. The KPIs of timeliness, evidence-based index and satisfaction are all above the target.",
+              "Thematic health promotion: work as project manager pushing forward R&D of bilingual online health information and interactive advisory system, lead designing service workflow and real-world operations (replied over 500 thousand characters). Dispatch medical consultants to finish 70+ bilingual health articles and newsletters. The project, completed timely with high quality given resource and budget restraints, is a successful early instance of corporate light web-based health consultation services implemented in China.",
+              "Health screening: work as project manager pushing through the entire lifecycle on bidding, implementation and evaluation, to help the client save cost and increase efficiency. The implementation also yielded (1) an improved cost estimation model which helped the team price more accurately and won the bid, and (2) process framework to develop and evaluate service provider network which later served as the standard practice. Compared to peers, this project has special benchmarking value for it is big in scale, innovative in design, short in time and  high in evidence-based requirements."
+              ]
+          }
+        ]
+      },
+      {
+        "from": "2014/09", "till": "2020/04", "emp": "Aetna International", "link": "https://www.aetna.com",
+        "wiki": {
+          "fa": "fab fa-wikipedia-w", "title": "About this employer", "value": "Wikipedia",
+          "tag": ["Fortune 200", "US top 3", "Health insurance giant", "CVS merger"],
+          "link": "https://en.wikipedia.org/wiki/Aetna"
+        }, 
+        "title": "Informatics Manager (Lead)", "icon": "loading", "active": true,
         "keyword": ["Analytics & minning", "Business intelligence", "Data science", "Project management", "System R&D", "Professional product", "Business strategy", "Operation optimization", "Training"],
         "description": [
           {
-            "p": ["Contribute to the business unit, the forthgoer that introduced western enterprise health management service system to China, from technology and service perspectives as a start-up core member. Continuously empower the business expansion (10 times increase in 6 years) as a data / domain expert."],
+            "p": ["Continuously empower the business expansion (10 times increase in 6 years) as a data / domain expert."],
             "ul": null
           },
           {
@@ -757,12 +828,6 @@
               "Open an <a class='link' href='https://madlogos.github.io/R_Tutorial' target='_blank'>R Boot Camp</a> for core team members (operations, underwriting, procurement, etc.) to teach advanced data wrangling and analysis skills ."]
           },
           {
-            "p": ["<b>Medical empowerment</b>: build up <i>Evidence-based Medicine Consultation Board</i> to provide professional output for other teams and guarantee the professional services and contents are evidence-based and reliable."],
-            "ul": ["Organize regular review meetings to update product documentation and medical knowledge base, write memorandum and guidelines to empower sales, account and operations team.",
-              "Provide on-demand medical comments, review customer protocols and external contents to ensure the deliverables are evidence-based and reliable.", 
-              "All consultants are responsible to provide health services for customers, e.g., medical content development, online health advisory service, specific health intervention, etc."]
-          },
-          {
             "p": ["<b>Business strategies</b>: strategy plans and business cases; push forward strategic projects, report to executives to render transformation of localization, agility and digitalization."],
             "ul": ["Localization: collect requirements with partners, push internal streamlines to set plans for business model transformation; work on build up of healthcare service CoE to render synergy of cross-border operation departments and localization.",
               "Digitalization: draft business case to get budget from global management. Design prototype of the platform and business requirement roadmap, push forward the architecture upgrade of the system to adapt to the mobile internet era.",
@@ -775,7 +840,7 @@
               "R&D of project cost model and tool that increase the accuracy and efficiency of cost estimation, to support the pricing and underwriting process of the main business."]
           },
           {
-            "p": ["<b>Infrastructure</b>: push agile IT R&D as business product owner, self-paced R&D of internal applications to meet requirements flexibly at low cost, given architecture restraints."],
+            "p": ["<b>Infrastructure product</b>: push agile IT R&D as business product owner, self-paced R&D of internal applications to meet business workflow requirements flexibly at low cost, given architecture restraints."],
             "ul": ["Self-paced R&D of health data management system, reporting automation build up with R/Python scripts which shortens the reporting turn-around time to 2 days.",
             "Push agile IT R&D of the core business system as business product owner, to achieve iterative upgrading to adapt to fast changing business requirements given numerous restraints.",
             "Build and deploy numerous internal applications for the team: management of attendance, customer service records, corporate clinic operations, review of online health advisory, medical triage assistance, evidence-based review, pay and claim, due diligence review, etc."]
@@ -793,13 +858,6 @@
               "Data management system: the core rule module automatically converts SQL commands to facilitate configuration of data clean and label computation via GUI. The data clean rules based on field-mapping dictionaries facilitate semi-automated merging, cleaning and storage of external data sets.",
               "Analytic reporting system: parameter configuration via RShiny or Jupyter Notebook to run R / Python scripts. The structured output can be further processed to yield MS-Offce-compatible charts or PowerBI interactive dashboards.",
               "Toolchain maintenance: commonly used data wrangling, analysis and visualization functionalities were refactored into R / Python libraries (with multiple packages), and an internal CRAN was built up for reuse."]
-          },
-          {
-            "title": "A comprehensive corporate health promotion program", "from": "2011/04", "thru": "2014/05",
-            "work": ["One of the milestone projects, which provided health screening arrangement and thematic health promotion activities for 25 thousand employees. The KPIs of timeliness, evidence-based index and satisfaction are all above the target.",
-              "Thematic health promotion: work as project manager pushing forward R&D of bilingual online health information and interactive advisory system, lead designing service workflow and real-world operations (replied over 500 thousand characters). Dispatch medical consultants to finish 70+ bilingual health articles and newsletters. The project, completed timely with high quality given resource and budget restraints, is a successful early instance of corporate light web-based health consultation services implemented in China.",
-              "Health screening: work as project manager pushing through the entire lifecycle on bidding, implementation and evaluation, to help the client save cost and increase efficiency. The implementation also yielded (1) an improved cost estimation model which helped the team price more accurately and won the bid, and (2) process framework to develop and evaluate service provider network which later served as the standard practice. Compared to peers, this project has special benchmarking value for it is big in scale, innovative in design, short in time and  high in evidence-based requirements."
-              ]
           }
         ]
       }
