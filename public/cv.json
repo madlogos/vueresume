@@ -11,7 +11,7 @@
       {"name": "电话", "fa": "fas fa-phone-alt", "value": "MTM4MTY1MTY1MTA=", "link": "dGVsJTNBMTM4MTY1MTY1MTA="},
       {"name": "邮箱", "fa": "fas fa-envelope", "value": "bWFkbG9nb3MlNDAxNjMuY29t", "link": "bWFpbHRvJTNBbWFkbG9nb3MlNDAxNjMuY29t"},
       {"name": "站点", "fa": "fas fa-globe", "value": "bWFkbG9nb3MuZ2l0aHViLmlv", "link": "aHR0cHMlM0ElMkYlMkZtYWRsb2dvcy5naXRodWIuaW8="},
-      {"name": "领英", "fa": "fab fa-linkedin", "value": "eWl5aW5nLXdhbmc=", "link": "aHR0cHMlM0ElMkYlMkZ3d3cubGlua2VkaW4uY29tJTJGaW4lMkZ5aXlpbmctd2FuZyUyRg=="}
+      {"name": "领英", "fa": "fab fa-linkedin", "value": "eWl5aW5nLXdhbmc=", "link": "aHR0cHMlM0ElMkYlMkZ3d3cubGlua2VkaW4uY24lMkZpbmpvYnMlMkZpbiUyRnlpeWluZy13YW5nJTJG"}
     ],
     "socio": [
       {"name": "GitHub", "fa": "fab fa-github", "value": "madlogos", "link": "https://github.com/madlogos"},
@@ -30,6 +30,7 @@
       {"name": "企业健康管理", "value": 90, "tip": "熟悉企业健康促进在学术界和产业界的实践和动向，有丰富的项目设计实施经验。"},
       {"name": "流行病学与统计", "value": 80, "tip": "接受完整的高等医学教育和专门的公共卫生学术训练，有宽广的人群健康视野和数据驱动的思维框架。"},
       {"name": "软件研发和管理", "value": 80, "tip": "持续自学编程，有实地全栈开发和项目管理经验，多次参与产品设计和技术选型。"},
+      {"name": "产品定价设计", "value": 70, "tip": "深度参与普惠健康险等保险产品的沟通、设计、精算定价。"},
       {"name": "战略规划", "value": 60, "tip": "参与本地化、数字化等业务战略规划，具备从商业和市场高度评估业务和技术发展的战略思维。"}
     ],
     "skill": [
@@ -87,6 +88,12 @@
           "p": null,
           "ul": ["熟悉关系型数据库的表设计范式与实践。", "数据库 CRUD 操作娴熟。", 
             "熟悉常用的中小型SQL数据库 (Access, SQLite, PostgreSQL, ...)。", "了解最主流的noSQL数据库 (MongoDB ...) 和代表性数据科学SQL方言 (SparkQL ...)。"]
+        },
+        {
+          "name": "阿里云", "size": "medium", "alpha": 0.15, "from": "2020", "thru": "now", "fa": "fas fa-database", "prof": 4, 
+          "p": "熟悉MaxCompute平台及DataStudio、DataHub等组件。",
+          "ul": ["熟悉MaxCompute的SQL语法。", "熟悉MaxCompute数仓搭建和数据生产方法。", 
+            "熟悉基于<code>pyodps</code>、<code>pymars</code>的模型开发。"]
         },
         {
           "name": "SAS", "size": "small", "alpha": 0.15, "from": "2006", "thru": "2011", "fa": "fas fa-chart-bar", "prof": 3, 
@@ -336,7 +343,7 @@
           "tag": ["财富200", "美国前3", "健康险巨头", "CVS并购"],
           "link": "https://en.wikipedia.org/wiki/Aetna"
         }, 
-        "title": "数据分析主管", "icon": "loading", "active": true,
+        "title": "数据分析主管", "icon": "loading", "active": false,
         "keyword": ["分析挖掘", "商业智能", "数据科学", "项目管理", "系统研发", "专业产品", "商务战略", "运营优化", "内部培训"], 
         "description": [
           {
@@ -390,6 +397,61 @@
               "数据管理系统：通过自动转换SQL的规则模块，在工作台配置数值清理和标签赋值算法；基于字段映射词典和清理规则，实现外源数据半自动汇导、清洗、存储。", 
               "分析报告系统：通过RShiny或Jupyter Notebook配置常规参数，运行R/Python分析脚本，结构化输出结果。可进一步输出为Office兼容图表或PowerBI交互式仪表盘。",
               "工具链维护：将常用整理、分析、可视化等功能梳理分解，开发出R/Python扩展库(均含多个扩展包)，部署内部CRAN，实现复用。"]
+          }
+        ]
+      },
+      {
+        "from": "2020/08", "till": "2021/09", "emp": "太平洋医疗健康", "link": "http://www.cpic.com.cn/",
+        "wiki": {
+          "fa": "fab fa-wikipedia-w", "title": "关于该雇主", "value": "百度百科",
+          "tag": ["保险科技", "太保子公司"],
+          "link": "https://baike.baidu.com/item/太平洋医疗健康管理有限公司"
+        }, 
+        "title": "高级大数据分析经理", "icon": "check", "active": false,
+        "keyword": ["大数据", "工具研发", "定价测算", "风控"], 
+        "description": [
+          {
+            "p": ["技术方向主管，负责保险数据创新、云分析平台技术栈管理和数据治理。为太平洋人寿多地承办的惠民保、大病医保、意外补充险等医保合作项目提供坚实的数据能力支撑，并作为领域专家介入沟通、谈判等业务过程。"],
+            "ul": null
+          },
+          {
+            "p": ["<b>产品设计与定价</b>"],
+            "ul": ["为10+个惠民保项目设计产品，并基于真实医保大数据搭建定价模型。",
+              "为补充大病医疗保险等政府医保项目开发支出评价和预测模型，助力科学的费用控制。"]
+          },
+          {
+            "p": ["<b>风险控制</b>"],
+            "ul": ["为政府医保经办业务提供数据赋能服务，包括全面的基金支出报告、反欺诈-浪费-滥用侦测模型等。",
+              "利用真实理赔大数据，为核保部门搭建分层风险控制模型。"]
+          },
+          {
+            "p": ["<b>技术管理和数据治理</b>"],
+            "ul": ["设计维护数据科学开发流程和代码规范，及阿里云数据仓库的使用规范。",
+              "领导基金稽核软件和一系列云分析工具的开发，并产出专利和著作权。"]
+          }
+        ]
+      },
+      {
+        "from": "2021/09", "till": "now", "emp": "中国太平洋人寿保险", "link": "http://www.cpic.com.cn/",
+        "wiki": {
+          "fa": "fab fa-wikipedia-w", "title": "关于该雇主", "value": "百度百科",
+          "tag": ["财富500", "国内前三", "寿险巨头"],
+          "link": "https://baike.baidu.com/item/中国太平洋人寿保险股份有限公司/1340739"
+        }, 
+        "title": "高级分析经理", "icon": "loading", "active": true,
+        "keyword": ["大数据", "定价测算", "产品开发"], 
+        "description": [
+          {
+            "p": ["为太平洋人寿多地承办的惠民保、大病医保、意外补充险等医保合作项目提供产品设计、定价测算支持。为部门数据能力建设提供技术支撑。"],
+            "ul": null
+          },
+          {
+            "p": null,
+            "ul": ["在多个定制型城市普惠商业健康险项目中，负责需求沟通、产品设计、定价测算及出具精算意见书，基于真实医保大数据搭建、迭代优化精算定价模型。",
+              "为补充大病医疗保险等政府医保项目开发支出评价和预测模型，助力科学的费用控制。",
+              "利用真实医保数据，挖掘费用模式，积累精算和定价依据，开发模型封装工具，助力新产品开发和模型交付。",
+              "推进部门作为中台实验室早鸟用户，提升数据能力建设，将工具和数据迁移到云平台。搭建堡垒机环境，建立并维护开发治理规范。",
+              "基于 Teambition 建立敏捷项目管理体系，提高部门项目管理效能。"]
           }
         ]
       }
@@ -454,7 +516,7 @@
       {"name": "Phone", "fa": "fas fa-phone-alt", "value": "MTM4MTY1MTY1MTA=", "link": "dGVsJTNBMTM4MTY1MTY1MTA="},
       {"name": "Email", "fa": "fas fa-envelope", "value": "bWFkbG9nb3MlNDAxNjMuY29t", "link": "bWFpbHRvJTNBbWFkbG9nb3MlNDAxNjMuY29t"},
       {"name": "Site", "fa": "fas fa-globe", "value": "bWFkbG9nb3MuZ2l0aHViLmlv", "link": "aHR0cHMlM0ElMkYlMkZtYWRsb2dvcy5naXRodWIuaW8="},
-      {"name": "LinkedIn", "fa": "fab fa-linkedin", "value": "eWl5aW5nLXdhbmc=", "link": "aHR0cHMlM0ElMkYlMkZ3d3cubGlua2VkaW4uY29tJTJGaW4lMkZ5aXlpbmctd2FuZyUyRg=="}
+      {"name": "LinkedIn", "fa": "fab fa-linkedin", "value": "eWl5aW5nLXdhbmc=", "link": "aHR0cHMlM0ElMkYlMkZ3d3cubGlua2VkaW4uY24lMkZpbmpvYnMlMkZpbiUyRnlpeWluZy13YW5nJTJG"}
     ],
     "socio": [
       {"name": "GitHub", "fa": "fab fa-github", "value": "madlogos", "link": "https://github.com/madlogos"},
@@ -473,6 +535,7 @@
       {"name": "Corporate health management", "value": 90, "tip": "Familiarity with the practice and dynamics of health promotion in both academic society and industry; rich experience of program design and implementation."},
       {"name": "Epidemiology & statistics", "value": 80, "tip": "Solid medical background with complete medical education and specific public health training; thinking from wider population health perspectives with a data-driven epidemiological framework."},
       {"name": "Software R&D", "value": 80, "tip": "Continuous self-paced learning of programming; practical experience of full-stack development and project management; frequent participation in product design and model selection."},
+      {"name": "Product design & pricing", "value": 70, "tip": "Deep involvement in communication, design and acturial pricing of health insurance product (e.g. inclusive health insurance)."},
       {"name": "Strategic planning", "value": 60, "tip": "Participation in business strategy planning such as localization and digitalization, from which established a strategic thinking model that look into business and technology from commence and market perspectives."}
     ],
     "skill": [
@@ -531,6 +594,12 @@
           "p": null,
           "ul": ["Familiar with paradigm and practice of table design in RDBMS.", "Familiar with CRUD operations in RDBMS.", 
             "Familiar with medium-and-small RDBMS such as Access, SQLite, PostgreSQL, etc.", "Know mainstream NoSQL databases such as MongoDB and typical data science SQL dialects such as SparkQL."]
+        },
+        {
+          "name": "AliCloud", "size": "medium", "alpha": 0.15, "from": "2020", "thru": "now", "fa": "fas fa-database", "prof": 4, 
+          "p": "Familiar with MaxCompute platform and components such as DataStudio, DataHub.",
+          "ul": ["Familiar with MaxCompute SQL syntax.", "Familiar with warehouse build-up and data production on MaxCompute.", 
+            "Familiar with model development with <code>pyodps</code> and <code>pymars</code>."]
         },
         {
           "name": "SAS", "size": "small", "alpha": 0.15, "from": "2006", "thru": "2011", "fa": "fas fa-chart-bar", "prof": 3, 
@@ -858,6 +927,61 @@
               "Data management system: the core rule module automatically converts SQL commands to facilitate configuration of data clean and label computation via GUI. The data clean rules based on field-mapping dictionaries facilitate semi-automated merging, cleaning and storage of external data sets.",
               "Analytic reporting system: parameter configuration via RShiny or Jupyter Notebook to run R / Python scripts. The structured output can be further processed to yield MS-Offce-compatible charts or PowerBI interactive dashboards.",
               "Toolchain maintenance: commonly used data wrangling, analysis and visualization functionalities were refactored into R / Python libraries (with multiple packages), and an internal CRAN was built up for reuse."]
+          }
+        ]
+      },
+      {
+        "from": "2020/08", "till": "2021/09", "emp": "Pacific Medical & Healthcare Mgmt", "link": "http://www.cpic.com.cn/",
+        "wiki": {
+          "fa": "fab fa-wikipedia-w", "title": "About this employer", "value": "Baidu Baike",
+          "tag": ["InsurTech", "CPIC affiliated"],
+          "link": "https://baike.baidu.com/item/太平洋医疗健康管理有限公司"
+        }, 
+        "title": "Sr Big Data Analytics Mgr", "icon": "check", "active": false,
+        "keyword": ["Big data", "Tool R&D", "Pricing", "Risk control"], 
+        "description": [
+          {
+            "p": ["Responsible for insur-data innovation, cloud-based analytic technology management and data governance, with strong support to various PPP projects on social medical insurance as subject matter expert."],
+            "ul": null
+          },
+          {
+            "p": ["<b>Product design and pricing</b>"],
+            "ul": ["Design benefit plans and build pricing models based on healthcare big data for 10+ customized city-wide inclusive medical insurance (a.k.a. Hui Min Bao) projects.",
+              "Develop cost evaluation and forecast models for various PPP projects (e.g. supplementary casualty insurance)."]
+          },
+          {
+            "p": ["<b>Risk control</b>"],
+            "ul": ["Empower risk control activities of medical insurance by applying fund analytic reporting, fraud-waste-abuse detection models, etc.",
+              "Build risk control models for underwriting and operations based on real-world claims data."]
+          },
+          {
+            "p": ["<b>Technology management and data governance</b>"],
+            "ul": ["Design and maintain guidelines for data science development and cloud data warehouse.",
+              "Lead R&D of FWA detection software, cloud-based analytic tool sets and generate patents and other intellectual properties."]
+          }
+        ]
+      },
+      {
+        "from": "2021/09", "till": "now", "emp": "China Pacific Life Insurance", "link": "http://www.cpic.com.cn/",
+        "wiki": {
+          "fa": "fab fa-wikipedia-w", "title": "Abount this employer", "value": "Baidu Baike",
+          "tag": ["Fortune 500", "China top 3", "Life insurance giant"],
+          "link": "https://baike.baidu.com/item/中国太平洋人寿保险股份有限公司/1340739"
+        }, 
+        "title": "Sr Analytics Mgr", "icon": "loading", "active": true,
+        "keyword": ["Big data", "Acturial pricing", "Product dev"], 
+        "description": [
+          {
+            "p": ["Responsible for product design and pricing for various social insurance PPP projects all around the country. Support the data capability construction from the technology perspective."],
+            "ul": null
+          },
+          {
+            "p": null,
+            "ul": ["Communicate on requirements, deign the price the product, draft actuarial reports in various customized city-wide inclusive medical insurance projects. Build and optimize the actuarial pricing model based on real-world social medical insurance data.",
+              "Develop cost evaluation and forecast models for various PPP projects (e.g. supplementary casualty insurance).",
+              "Utilize the real-world social medical insurance data to identify cost patterns, generate actuarial pricing knowledge and develop wrapping tools for pricing models, to empower development and delivery of new products.",
+              "As early-bird user of the data middle-platform lab, push forward the data capability construction of the department. Migrate data and tools to the cloud platform, establish the fortress machine environment, and create the guide for data dev and governance.",
+              "Accelerate the department’s project management capability by building agile PM system on top of Teambition."]
           }
         ]
       }
