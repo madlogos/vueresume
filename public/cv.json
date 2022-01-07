@@ -91,7 +91,7 @@
         },
         {
           "name": "阿里云", "size": "medium", "alpha": 0.15, "from": "2020", "thru": "now", "fa": "fas fa-database", "prof": 4, 
-          "p": "熟悉MaxCompute平台及DataStudio、DataHub等组件。",
+          "p": ["熟悉 MaxCompute 平台及 DataStudio 、 DataHub 等组件。"],
           "ul": ["熟悉MaxCompute的SQL语法。", "熟悉MaxCompute数仓搭建和数据生产方法。", 
             "熟悉基于<code>pyodps</code>、<code>pymars</code>的模型开发。"]
         },
@@ -489,7 +489,7 @@
         "有10年以上卫生保健及健康保险从业经验的资深数据科学家/项目管理专家，具备丰富的跨国/跨部门协作经验。",
         "在事业部的创建与增长过程中，跨条线(产品/系统/服务)贡献大量关键输出，对健康管理及大健康领域的行业动向、战略重点、实践细节均有深入理解。",
         "坚持问题导向的终身主动学习，具备稀缺的“商业/医学/数据/信息技术”复合技能和扎实广博的跨领域知识，善于创新思维和技术变通克服限制，实现业务需求。",
-        "推崇数据驱动、循证务实、敏捷协作的工作理念，有良好的量化/分析能力和系统思考框架，善于识别、分析和解决具体问题，适应在快速变化的业务环境中调整优先级、协同推进。"],
+        "推崇数据驱动、循证务实、敏捷协作的工作理念，有良好的量化/分析能力和系统思考框架，善于识别、分析和搭建框架解决具体问题，适应在快速变化的业务环境中调整优先级、协同推进。"],
       "interest": ["文史哲杂学", "电影", "MOOC", "编程", "数码"],
       "gallery": ["dashboard.png", "risk-1.png", "risk-2.png", "risk-3.png", "alg-1.png", "alg-2.png", "risk-geo.png", "guide-1.png", "guide-2.png", "pkg-manual-1.png", "pkg-manual-2.png"]
     },
@@ -596,8 +596,8 @@
             "Familiar with medium-and-small RDBMS such as Access, SQLite, PostgreSQL, etc.", "Know mainstream NoSQL databases such as MongoDB and typical data science SQL dialects such as SparkQL."]
         },
         {
-          "name": "AliCloud", "size": "medium", "alpha": 0.15, "from": "2020", "thru": "now", "fa": "fas fa-database", "prof": 4, 
-          "p": "Familiar with MaxCompute platform and components such as DataStudio, DataHub.",
+          "name": "Ali Cloud", "size": "medium", "alpha": 0.15, "from": "2020", "thru": "now", "fa": "fas fa-database", "prof": 4, 
+          "p": ["Familiar with MaxCompute platform and components such as DataStudio, DataHub."],
           "ul": ["Familiar with MaxCompute SQL syntax.", "Familiar with warehouse build-up and data production on MaxCompute.", 
             "Familiar with model development with <code>pyodps</code> and <code>pymars</code>."]
         },
@@ -872,7 +872,7 @@
           "tag": ["Fortune 200", "US top 3", "Health insurance giant", "CVS merger"],
           "link": "https://en.wikipedia.org/wiki/Aetna"
         }, 
-        "title": "Informatics Manager (Lead)", "icon": "loading", "active": true,
+        "title": "Informatics Manager (Lead)", "icon": "check", "active": false,
         "keyword": ["Analytics & minning", "Business intelligence", "Data science", "Project management", "System R&D", "Professional product", "Business strategy", "Operation optimization", "Training"],
         "description": [
           {
@@ -1024,7 +1024,7 @@
         "Senior data scientist / project management professional working 10+ years in healthcare and health insurance industry with rich experience of transnational / cross-functional cooperation.",
         "Cross-border key contribution on product, system & service to the business unit throughout its creation and continuous growth; profound understanding on industry dynamics, strategic focus and implementation details in health management and the big health industry.",
         "Stick to life-long problem-oriented active learning; volatile skills in 'business / medicine / data / IT tech' and solid transdisciplinary knowledge that is scarce; good at meeting business requirements by overcoming restraints with innovative technical turnarounds.",
-        "Advocate a data-driven, evidence-and-fact-based, agile and cooperative work philosophy; good numeracy & analytic skills and systematic thinking framework; good at identifying, analysing and solving problems; adapt to a fast changing work environment that requires flexible re-prioritization and cooperative push-forward."
+        "Advocate a data-driven, evidence-and-fact-based, agile and cooperative work philosophy; good numeracy & analytic skills and systematic thinking framework; good at identifying, analysing and building framework to solve problems; adapt to a fast changing work environment that requires flexible re-prioritization and cooperative push-forward."
       ],
       "interest": ["Literature-history-philosophy-misc", "Movie", "MOOC", "Programming", "Digital instrucment"],
       "gallery": ["dashboard.png", "risk-1.png", "risk-2.png", "risk-3.png", "alg-1.png", "alg-2.png", "risk-geo.png", "guide-1.png", "guide-2.png", "pkg-manual-1.png", "pkg-manual-2.png"]

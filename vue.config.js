@@ -24,7 +24,7 @@ const cdn = {
       'https://cdn.bootcdn.net/ajax/libs/vue/2.6.14/vue.runtime.min.js',
       'https://cdn.bootcdn.net/ajax/libs/vue-router/3.5.3/vue-router.min.js',
       'https://cdn.bootcdn.net/ajax/libs/vuex/3.6.2/vuex.min.js',
-      'https://cdn.bootcdn.net/ajax/libs/echarts/5.2.2/echarts.min.js',
+      'https://cdn.bootcdn.net/ajax/libs/echarts/4.8.0/echarts.min.js',
       'https://cdn.bootcdn.net/ajax/libs/axios/0.24.0/axios.min.js',
       'https://cdn.bootcdn.net/ajax/libs/vue-i18n/8.26.8/vue-i18n.min.js',
       'https://cdn.bootcdn.net/ajax/libs/element-ui/2.15.7/index.js',
