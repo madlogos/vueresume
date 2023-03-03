@@ -20,6 +20,6 @@ git commit -m 'deploy'
 # git push -f git@github.com:madlogos/madlogos.github.io.git master
 
 # deploy to https://<USERNAME>.github.io/<REPO>
-git push -f git@github.com:madlogos/vueresume.git master:gh-pages
+git push git@github.com:madlogos/vueresume.git master:gh-pages
 
 cd -
