@@ -1,6 +1,6 @@
 # vue-resume: 基于VueJS+ElementUI的双语在线简历实现
 
-![workflow status](https://github.com/madlogos/vueresume/actions/workflows/main/badge.svg)
+[![Deploy Github Pages](https://github.com/madlogos/vueresume/actions/workflows/main.yml/badge.svg)](https://github.com/madlogos/vueresume/actions/workflows/main.yml)
 
 本应用基于[`@vue/cli@4`](https://cli.vuejs.org/zh/)构建。此外，还用到了：
 
