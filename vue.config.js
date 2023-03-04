@@ -2,22 +2,22 @@ const path = require('path')
 const cdn = {
   dev: {
     css: [
-      'https://cdn.bootcdn.net/ajax/libs/font-awesome/5.15.4/css/fontawesome.min.css',
-      'https://cdn.bootcdn.net/ajax/libs/font-awesome/5.15.4/css/solid.min.css',
-      'https://cdn.bootcdn.net/ajax/libs/font-awesome/5.15.4/css/brands.min.css',
-      'https://cdn.bootcdn.net/ajax/libs/font-awesome/5.15.4/css/svg-with-js.min.css',
-      'https://cdn.bootcdn.net/ajax/libs/element-ui/2.15.7/theme-chalk/index.css',
+      'https://cdn.bootcdn.net/ajax/libs/font-awesome/6.3.0/css/fontawesome.min.css',
+      'https://cdn.bootcdn.net/ajax/libs/font-awesome/6.3.0/css/solid.min.css',
+      'https://cdn.bootcdn.net/ajax/libs/font-awesome/6.3.0/css/brands.min.css',
+      'https://cdn.bootcdn.net/ajax/libs/font-awesome/6.3.0/css/svg-with-js.min.css',
+      'https://cdn.bootcdn.net/ajax/libs/element-ui/2.15.13/theme-chalk/index.min.css',
       'https://unpkg.com/element-ui@2.15.7/lib/theme-chalk/display.css',
     ],
     js: []
   },
   prod: {
     css: [
-      'https://cdn.bootcdn.net/ajax/libs/font-awesome/5.15.4/css/fontawesome.min.css',
-      'https://cdn.bootcdn.net/ajax/libs/font-awesome/5.15.4/css/solid.min.css',
-      'https://cdn.bootcdn.net/ajax/libs/font-awesome/5.15.4/css/brands.min.css',
-      'https://cdn.bootcdn.net/ajax/libs/font-awesome/5.15.4/css/svg-with-js.min.css',
-      'https://cdn.bootcdn.net/ajax/libs/element-ui/2.15.7/theme-chalk/index.css',
+      'https://cdn.bootcdn.net/ajax/libs/font-awesome/6.3.0/css/fontawesome.min.css',
+      'https://cdn.bootcdn.net/ajax/libs/font-awesome/6.3.0/css/solid.min.css',
+      'https://cdn.bootcdn.net/ajax/libs/font-awesome/6.3.0/css/brands.min.css',
+      'https://cdn.bootcdn.net/ajax/libs/font-awesome/6.3.0/css/svg-with-js.min.css',
+      'https://cdn.bootcdn.net/ajax/libs/element-ui/2.15.13/theme-chalk/index.min.css',
       'https://unpkg.com/element-ui@2.15.7/lib/theme-chalk/display.css',
     ],
     js: [
@@ -27,7 +27,7 @@ const cdn = {
       'https://cdn.bootcdn.net/ajax/libs/echarts/4.8.0/echarts.min.js',
       'https://cdn.bootcdn.net/ajax/libs/axios/0.24.0/axios.min.js',
       'https://cdn.bootcdn.net/ajax/libs/vue-i18n/8.26.8/vue-i18n.min.js',
-      'https://cdn.bootcdn.net/ajax/libs/element-ui/2.15.7/index.js',
+      'https://cdn.bootcdn.net/ajax/libs/element-ui/2.15.13/index.js',
     ]
   }
 }
@@ -91,7 +91,7 @@ module.exports = {
     }
     if (process.env.NODE_ENV === 'development') {
       config.devServer = {
-        disableHostCheck: true
+        allowedHosts: ['all']
       }
     }
   }

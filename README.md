@@ -1,6 +1,6 @@
 # vue-resume: 基于VueJS+ElementUI的双语在线简历实现
 
-[![Build Status](https://www.travis-ci.org/madlogos/vueresume.svg?branch=master)](https://www.travis-ci.org/madlogos/vueresume)
+![workflow status](https://github.com/madlogos/vueresume/actions/workflows/main/badge.svg)
 
 本应用基于[`@vue/cli@4`](https://cli.vuejs.org/zh/)构建。此外，还用到了：
 
@@ -42,118 +42,118 @@ cv.json是本应用所调用的数据，通过`axios`进行API读取，加载到
 ### 数据结构
 
 ```plain
--- basic: (dict) 基本信息
-  |-- name: 姓名，数据经加密
-  |-- gender: (dict) 性别
-  |  |-- fa: fontawesome图标
-  |  `-- value: 显示文字
-  |-- dob: (dict) 出生日期
-  |  |-- fa: fontawesome图标
-  |  `-- value: 日期(yyyy/m/d格式)，数据经加密
-  |-- marriage: (dict) 婚姻
-  |  |-- fa: fontawesome图标
-  |  `-- value: 显示文字
-  |-- home: (dict) 现居住地
-  |  |-- fa: fontawesome图标
-  |  |-- value: 显示文字
-  |  `-- link: 链接，指向地图
-  `-- motto: 格言
--- contact: [list] 联系方式
-  |-- (dict) 具体联系方式，
-  |  |-- name: 联系方式名称
-  |  |-- fa: 图标
-  |  |-- value: 取值，经过加密
-  |  `-- link: 链接，经加密
-  `-- ... (dict) 结构同上，可不断扩展
--- socio: [list] 社交网络
-  |-- (dict) 具体社交网络信息
-  |  |-- name: 社交网络名称
-  |  |-- fa: 图标
-  |  |-- value: 取值，显示在浮窗
-  |  `-- link: 链接，显示在浮窗
-  `-- ... (dict) 结构同上，可不断扩展
--- talent: [list] 才能，显示在「专业技能」的条图中
-  |-- (dict) 具体才能
-  |  |-- name: 才能名称
-  |  |-- value(0-100): 才能取值，决定条图中横条的长度
-  |  `-- tip: 浮窗提示文字
-  `-- ... (dict) 结构同上，可不断扩展
--- skill: [list] 技能
-  |-- (list) 技能组，在「专业技能」的交互el-tag中以段落形式分开
-  |  |-- (dict) 具体技能
-  |  |  |-- name: 技能名称，显示为el-tag
+-- basic (dict)       : 基本信息
+  |-- name            : 姓名，数据经加密
+  |-- gender (dict)   : 性别
+  |  |-- fa           : fontawesome图标
+  |  `-- value        : 显示文字
+  |-- dob (dict)      : 出生日期
+  |  |-- fa           : fontawesome图标
+  |  `-- value        : 日期(yyyy/m/d)，数据经加密
+  |-- marriage (dict) : 婚姻
+  |  |-- fa           : fontawesome图标
+  |  `-- value        : 显示文字
+  |-- home (dict)     : 现居住地
+  |  |-- fa           : fontawesome图标
+  |  |-- value        : 显示文字
+  |  `-- link         : 链接，指向地图
+  `-- motto           : 格言
+-- contact [list]     : 联系方式
+  |-- (dict)          : 具体联系方式，
+  |  |-- name         : 联系方式名称
+  |  |-- fa           : fontawesome图标
+  |  |-- value        : 取值，经过加密
+  |  `-- link         : 链接，经加密
+  `-- ... (dict)      : 结构同上，可不断扩展
+-- socio [list]       : 社交网络
+  |-- (dict)          : 具体社交网络信息
+  |  |-- name         : 社交网络名称
+  |  |-- fa           : fontawesome图标
+  |  |-- value        : 取值，显示在浮窗
+  |  `-- link         : 链接，显示在浮窗
+  `-- ... (dict)      : 结构同上，可不断扩展
+-- talent [list]      : 才能，显示在「专业技能」的条图中
+  |-- (dict)          : 具体才能
+  |  |-- name         : 才能名称
+  |  |-- value(0-100) : 才能取值，决定条图中横条的长度
+  |  `-- tip          : 浮窗提示文字
+  `-- ... (dict)      : 结构同上，可不断扩展
+-- skill [list]       : 技能
+  |-- (list)          : 技能组，在「专业技能」的交互el-tag中以段落形式分开
+  |  |-- (dict)       : 具体技能
+  |  |  |-- name      : 技能名称，显示为el-tag
   |  |  |-- from, thru: 起止时间，一般写为年份或"now"。应用会调用函数计算年数
-  |  |  |-- prof(0-5): 娴熟程度，显示为星的个数
-  |  |  |-- p: (list) 浮窗中的介绍文字，list有几个元素，就显示为几段
-  |  |  |-- ul: (list) 浮窗中的bullet point文字，list中有几个元素，就显示几个小点。支持html
-  |  |  |-- size: 控制el-tag的大小，可选值有null, "medium"和"small"
+  |  |  |-- prof(0-5) : 娴熟程度，显示为星的个数
+  |  |  |-- p (list)  : 浮窗中的介绍文字，list有几个元素，就显示为几段
+  |  |  |-- ul (list) : 浮窗中的bullet point文字，list中有几个元素，就显示几个小点。支持html
+  |  |  |-- size      : 控制el-tag的大小，可选值有null, "medium"和"small"
   |  |  `-- alpha(0-1): 控制el-tag的透明度
-  |  `-- ... (dict) 结构同上，可不断扩展
-  `-- ... (list) 结构同上，可不断扩展
--- cert: (list) 证书
-  |-- (dict) 具体证书
-  |  |-- caption: 证书显示名，显示在页面上
-  |  |-- fa: 图标
-  |  |-- time: 获得证书时间（yyyy/m/d格式）
-  |  |-- name: 证书标准名，显示在浮窗
-  |  |-- provider: 授课机构，null或dict
-  |  |  |-- name: 授课机构名称
-  |  |  `-- link: 授课机构链接
-  |  |-- institute: 证书颁发机构，null或dict
-  |  |  |-- name: 颁发机构名称
-  |  |  `-- link: 颁发机构链接
-  |  |-- sn: 证书号
-  |  |-- p: (list) 浮窗中的介绍文字，支持html
-  |  `-- ol: (list) 浮窗中的bullet point文字
-  `-- ... (dict) 结构同上，可不断扩展
--- job: (list) 工作经历
-  |-- from, till: 工作起讫时间（yyyy/m/d格式）
-  |-- emp: 雇主名称
-  |-- link: 雇主链接
-  |-- wiki: (dict) 雇主介绍，显示在浮窗
-  |  |-- fa: 图标
-  |  |-- title: 浮窗标题
-  |  |-- value: 浮窗文字
-  |  |-- tag: (list) 浮窗中的el-tag
-  |  `-- link: 雇主介绍的链接
-  |-- title: 工作头衔
-  |-- icon: el-timeline显示的图标样式，已结束的工作为"check"，当前的工作为"loading"
-  |-- active: 是否当前仍在职，true或false
-  |-- keyword: (list) 工作关键词，显示为el-tag
-  |-- description: (list) 工作描述，list中每个dict元素显示为一段
-  |  |-- p: (list) 某一条描述，list中每个元素显示为一句。支持html
-  |  `-- ul: (list) 具体描述，list中每个元素显示为一个bullet point。支持html
-  `-- project: (list) 项目
-     |-- title: 项目名称
-     |-- from, thru: 项目起讫时间（yyyy/m/d格式）
-     `-- work: (list) 具体工作内容，list中每个元素显示为一段
--- edu: (list) 教育经历
-  |-- from, till: 教育起讫时间（yyyy/m/d格式）
-  |-- school: 学校名称
-  |-- link: 学校链接
-  |-- wiki: (dict) 学校介绍，显示在浮窗
-  |  |-- fa: 图标
-  |  |-- title: 浮窗标题
-  |  |-- value: 浮窗文字
-  |  |-- tag: (list) 浮窗中的el-tag
-  |  `-- link: 学校介绍的链接
-  |-- major: 专业
-  |-- cred: 学位
-  |-- icon: el-timeline显示的图标样式，已结束的教育经历为"check"，当前的教育经历为"loading"
-  |-- active: 是否当前仍在读，true或false
-  |-- rank: 排名
-  `-- lessons: (list) 课程，list中每个元素显示为一段。支持html
--- self: (dict) 关于自己
-  |-- statement: (list) 自我评价，list中每个元素显示为一句
-  |-- interest: (list) 兴趣爱好，list中每个元素显示为一个el-tag
-  `-- gallery: (list) 轮播图片，即dist/img中的图片名称
--- misc: (dict) 其他
-  |-- tip: (dict) 页面右上角tip按钮显示的浮窗内容
-  |  |-- title: 浮窗标题
-  |  `-- msg: 浮窗正文，支持html
-  |-- footnote: 页脚，支持html
-  |-- copyright: 版权声明，支持html
-  `-- attachment: 附件地址（本应用对应的pdf所在地址）
+  |  `-- ... (dict)   : 结构同上，可不断扩展
+  `-- ... (list)      : 结构同上，可不断扩展
+-- cert (list)        : 证书
+  |-- (dict)          : 具体证书
+  |  |-- caption      : 证书显示名，显示在页面上
+  |  |-- fa           : fonawesome图标
+  |  |-- time         : 获得证书时间（yyyy/m/d格式）
+  |  |-- name         : 证书标准名，显示在浮窗
+  |  |-- provider     : 授课机构，null或dict
+  |  |  |-- name      : 授课机构名称
+  |  |  `-- link      : 授课机构链接
+  |  |-- institute    : 证书颁发机构，null或dict
+  |  |  |-- name      : 颁发机构名称
+  |  |  `-- link      : 颁发机构链接
+  |  |-- sn           : 证书号
+  |  |-- p (list)     : 浮窗中的介绍文字，支持html
+  |  `-- ol (list)    : 浮窗中的bullet point文字
+  `-- ... (dict)      : 结构同上，可不断扩展
+-- job (list)         : 工作经历
+  |-- from, till      : 工作起讫时间（yyyy/m/d格式）
+  |-- emp             : 雇主名称
+  |-- link            : 雇主链接
+  |-- wiki (dict)     : 雇主介绍，显示在浮窗
+  |  |-- fa           : fontawesome图标
+  |  |-- title        : 浮窗标题
+  |  |-- value        : 浮窗文字
+  |  |-- tag (list)   : 浮窗中的el-tag
+  |  `-- link         : 雇主介绍的链接
+  |-- title           : 工作头衔
+  |-- icon            : el-timeline显示的图标样式，已结束的工作为"check"，当前的工作为"loading"
+  |-- active          : 是否当前仍在职，true或false
+  |-- keyword (list)  : 工作关键词，显示为el-tag
+  |-- description (list) : 工作描述，list中每个dict元素显示为一段
+  |  |-- p (list)     : 某一条描述，list中每个元素显示为一句。支持html
+  |  `-- ul (list)    : 具体描述，list中每个元素显示为一个bullet point。支持html
+  `-- project (list)  : 项目
+     |-- title        : 项目名称
+     |-- from, thru   : 项目起讫时间（yyyy/m/d格式）
+     `-- work (list)  : 具体工作内容，list中每个元素显示为一段
+-- edu (list)         : 教育经历
+  |-- from, till      : 教育起讫时间（yyyy/m/d格式）
+  |-- school          : 学校名称
+  |-- link            : 学校链接
+  |-- wiki (dict)     : 学校介绍，显示在浮窗
+  |  |-- fa           : fontawesome图标
+  |  |-- title        : 浮窗标题
+  |  |-- value        : 浮窗文字
+  |  |-- tag (list)   : 浮窗中的el-tag
+  |  `-- link         : 学校介绍的链接
+  |-- major           : 专业
+  |-- cred            : 学位
+  |-- icon            : el-timeline显示的图标样式，已结束的教育经历为"check"，当前的教育经历为"loading"
+  |-- active          : 是否当前仍在读，true或false
+  |-- rank            : 排名
+  `-- lessons (list)  : 课程，list中每个元素显示为一段。支持html
+-- self (dict)        : 关于自己
+  |-- statement (list) : 自我评价，list中每个元素显示为一句
+  |-- interest (list) : 兴趣爱好，list中每个元素显示为一个el-tag
+  `-- gallery (list)  : 轮播图片，即dist/img中的图片名称
+-- misc (dict)        : 其他
+  |-- tip (dict)      : 页面右上角tip按钮显示的浮窗内容
+  |  |-- title        : 浮窗标题
+  |  `-- msg          : 浮窗正文，支持html
+  |-- footnote        : 页脚，支持html
+  |-- copyright       : 版权声明，支持html
+  `-- attachment      : 附件地址（本应用对应的pdf所在地址）
 ```
 
 上述数据和页面组件的对应关系如图：
@@ -207,4 +207,4 @@ src/styles目录下的_colors.scss保存了一些主要颜色定义，如：
 
 完成修改完毕后，运行`npm run serve`观察效果，运行`npm run test:unit`进行测试（前提是在tests目录中定义了测试用例），运行`npm run build`编译到生产环境。完成生产编译后，将dist目录中的内容提交到`gh-pages`分支即可。
 
-你也可以参考deploy.sh，自己写一个自动提交脚本，或通过Travis CI持续集成服务进行自动编译。
+你也可以参考deploy.sh，写一个自动提交脚本，或通过Travis CI / Github Actions等持续集成服务进行自动编译。
