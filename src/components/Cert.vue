@@ -82,7 +82,7 @@ h2, p, li {
 #item-table {
   font-size: $bs;
   color: $col-main-alt;
-  border-spacing: 10px 4px;
+  border-spacing: 8px 2px;
   line-height: 1.4em;
   margin-left: -2px
 }
@@ -90,7 +90,7 @@ h2, p, li {
   vertical-align: top
 }
 .col-summ {
-  width: 66px
+  width: 68px
 }
 .cert-main:hover {
   color: $col-ok

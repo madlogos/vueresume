@@ -115,7 +115,7 @@ export default {
         title: this.$store.getters.misc.tip.title,
         message: this.$store.getters.misc.tip.msg,
         dangerouslyUseHTMLString: true,
-        duration: 4500
+        duration: 6000
       })
     }
   }

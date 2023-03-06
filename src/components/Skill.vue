@@ -102,7 +102,7 @@ h2 {
   margin-right: $mar-md
 }
 #canvas1 {
-  height: 140px
+  height: 160px
 }
 .el-card {
   text-align: left;

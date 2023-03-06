@@ -2,9 +2,9 @@ const path = require('path')
 const cdn = {
   dev: {
     css: [
-      'https://cdn.bootcdn.net/ajax/libs/font-awesome/6.3.0/css/fontawesome.min.css',
-      'https://cdn.bootcdn.net/ajax/libs/font-awesome/6.3.0/css/solid.min.css',
-      'https://cdn.bootcdn.net/ajax/libs/font-awesome/6.3.0/css/brands.min.css',
+      'https://cdn.bootcdn.net/ajax/libs/font-awesome/6.3.0/css/all.min.css',
+      'https://cdn.bootcdn.net/ajax/libs/font-awesome/6.3.0/css/v4-font-face.min.css',
+      'https://cdn.bootcdn.net/ajax/libs/font-awesome/6.3.0/css/v5-font-face.min.css',
       'https://cdn.bootcdn.net/ajax/libs/font-awesome/6.3.0/css/svg-with-js.min.css',
       'https://cdn.bootcdn.net/ajax/libs/element-ui/2.15.13/theme-chalk/index.min.css',
       'https://unpkg.com/element-ui@2.15.7/lib/theme-chalk/display.css',
@@ -13,10 +13,10 @@ const cdn = {
   },
   prod: {
     css: [
-      'https://cdn.bootcdn.net/ajax/libs/font-awesome/6.3.0/css/fontawesome.min.css',
-      'https://cdn.bootcdn.net/ajax/libs/font-awesome/6.3.0/css/solid.min.css',
-      'https://cdn.bootcdn.net/ajax/libs/font-awesome/6.3.0/css/brands.min.css',
+      'https://cdn.bootcdn.net/ajax/libs/font-awesome/6.3.0/css/all.min.css',
       'https://cdn.bootcdn.net/ajax/libs/font-awesome/6.3.0/css/svg-with-js.min.css',
+      'https://cdn.bootcdn.net/ajax/libs/font-awesome/6.3.0/css/v4-font-face.min.css',
+      'https://cdn.bootcdn.net/ajax/libs/font-awesome/6.3.0/css/v5-font-face.min.css',
       'https://cdn.bootcdn.net/ajax/libs/element-ui/2.15.13/theme-chalk/index.min.css',
       'https://unpkg.com/element-ui@2.15.7/lib/theme-chalk/display.css',
     ],
@@ -24,7 +24,7 @@ const cdn = {
       'https://cdn.bootcdn.net/ajax/libs/vue/2.6.14/vue.runtime.min.js',
       'https://cdn.bootcdn.net/ajax/libs/vue-router/3.5.3/vue-router.min.js',
       'https://cdn.bootcdn.net/ajax/libs/vuex/3.6.2/vuex.min.js',
-      'https://cdn.bootcdn.net/ajax/libs/echarts/4.8.0/echarts.min.js',
+      'https://cdn.bootcdn.net/ajax/libs/echarts/4.9.0/echarts.min.js',
       'https://cdn.bootcdn.net/ajax/libs/axios/0.24.0/axios.min.js',
       'https://cdn.bootcdn.net/ajax/libs/vue-i18n/8.26.8/vue-i18n.min.js',
       'https://cdn.bootcdn.net/ajax/libs/element-ui/2.15.13/index.js',

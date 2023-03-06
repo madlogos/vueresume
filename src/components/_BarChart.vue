@@ -128,7 +128,7 @@ export default {
             itemStyle: {
               normal: {
                 color: 'rgba(0,0,0,0.1)',
-                barBorderRadius: [0, 25, 25, 0]
+                barBorderRadius: [0, 20, 20, 0]
               }
             },
             tooltip: {
