@@ -1169,7 +1169,8 @@
           "value": "百度百科",
           "tag": [
             "财富500",
-            "医疗科技巨头"
+            "医疗设备巨头",
+            "创新科技"
           ],
           "link": "https://en.wikipedia.org/wiki/Philips"
         },
@@ -1184,18 +1185,40 @@
         "description": [
           {
             "p": [
-              ""
+              "智慧医工项目：通过读取解析设备日志，赋能用户监控和预测设备状况，降低重大故障风险。"
             ],
             "ul": [
-              ""
+              "数据科学家：负责大型医疗设备智慧监控应用的试验研发，包括调研需求、分析用例、设计应用架构、搭建功能引擎原型，并分别在 MR、CT 实机上完成验证。按时交付工程团队，完成集成和发布。",
+              "发布列车工程师：负责组织计划会、站会和演示评审。"
             ]
           },
           {
             "p": [
-              ""
+              "心血管 CT 应用研发项目：探索心脏CT应用的研发/改进策略，进行临床价值验证，开发概念原型。"
             ],
             "ul": [
-              
+              "数据科学家：负责产品模块需求调研和试验设计。通过医生/厂商访谈、文献复习、设备日志分析探寻高价值创新点。构建概念原型，设计临床试验、收集光谱 CT 图像数据，以验证流程优化假设，用于开发辅助 AI 算法。"
+            ]
+          },
+          {
+            "p": [
+              "研究院其他项目"
+            ],
+            "ul": [
+              "医疗信息互联互通项目：通过用户/厂商访谈收集医疗 AI 互联互通的技术需求，并协同标准化委员会、工程开发团队设计基于 FHIR 的互通框架，实施标准用例。改进 AI 应用集成平台功能，设计通用型应用调度和图像/报告展示中心。",
+              "CT 智能诊断维保项目 (作为数据科学家)，基于 Vertica 云数仓进行大数据挖掘，协助技术团队研发预测性诊断模型。",
+              "脂肪肝超声 AI 项目 (作为统计学家)，优化临床试验设计方案，对结果数据进行质控评估，指导完善统计挖掘与分析策略。"
+            ]
+          },
+          {
+            "p": [
+              "知识共享和技术赋能"
+            ],
+            "ul": [
+              "和临床事务部门合作，梳理总结医疗器械 AI 软件临床验证的监管要求与建议流程。",
+              "在部门内开展统计学培训。",
+              "撰写3项专利草案和1份技术简报。",
+              "配置和维护共享机器学习计算服务器。"
             ]
           }
         ]
@@ -2424,7 +2447,7 @@
       },
       {
         "from": "2021/09",
-        "till": "now",
+        "till": "2022/02",
         "emp": "China Pacific Life Insurance",
         "link": "http://www.cpic.com.cn/",
         "wiki": {
@@ -2438,9 +2461,9 @@
           ],
           "link": "https://baike.baidu.com/item/中国太平洋人寿保险股份有限公司/1340739"
         },
-        "title": "Sr Analytics Mgr",
-        "icon": "loading",
-        "active": true,
+        "title": "Sr. Analytics Mgr",
+        "icon": "check",
+        "active": false,
         "keyword": [
           "Big data",
           "Acturial pricing",
@@ -2461,6 +2484,71 @@
               "Utilize the real-world social medical insurance data to identify cost patterns, generate actuarial pricing knowledge and develop wrapping tools for pricing models, to empower development and delivery of new products.",
               "As early-bird user of the data middle-platform lab, push forward the data capability construction of the department. Migrate data and tools to the cloud platform, establish the fortress machine environment, and create the guide for data dev and governance.",
               "Accelerate the department’s project management capability by building agile PM system on top of Teambition."
+            ]
+          }
+        ]
+      },
+      {
+        "from": "2022/03",
+        "till": "now",
+        "emp": "Philips Health Technology",
+        "link": "https://www.philips.com.cn/healthcare",
+        "wiki": {
+          "fa": "fab fa-wikipedia-w",
+          "title": "About this employer",
+          "value": "Wikipedia",
+          "tag": [
+            "Fortune 500",
+            "Medical device giant",
+            "Innovation"
+          ],
+          "link": "https://en.wikipedia.org/wiki/Philips"
+        },
+        "title": "Sr. Scientist - Data Analytics",
+        "icon": "loading",
+        "active": true,
+        "keyword": [
+          "CT software",
+          "Clinical trial",
+          "Predicative maintenance"
+        ],
+        "description": [
+          {
+            "p": [
+              "Smart Medical Engineering project: enable users to monitor and predict device health by parsing modality logs, to lower risks of critical accidents."
+            ],
+            "ul": [
+              "Data scientist: Responsible for experimental R&D of radiological medical device monitoring app, including requirements investigation, use case analysis, infrastructure design, functional prototyping, and validation on MR & CT modalities. The deliverables were timely delivered to the engineering team for integration and release.",
+              "Release train engineer: organizing planning, stand-up, demo meetings."
+            ]
+          },
+          {
+            "p": [
+              "Cardiology CT app project: explore R&D / improvement strategy for cardiology CT apps, conduct clinical value validation and development of conceptual prototypes."
+            ],
+            "ul": [
+              "Scrum team member: Responsible for requirement investigation and clinical trial design of product modules. Interview on physicians/manufacturers, literature review, and device log bigdata analysis were applied to seek for high-value innovation opportunities. Conceptual prototyping and clinical trial design were conducted to collect Spectral CT imaging data for validating workflow optimization assumptions and assistant AI algorithm development. "
+            ]
+          },
+          {
+            "p": [
+              "Other projects of Research Center"
+            ],
+            "ul": [
+              "Medical informatics standardization project on interoperability (as scrum team member): technical requirements were collected via user/manufacturer interview, and FHIR-based interoperability framework as well as implementation use cases were developed with standardization committee and engineering team. A universal app orchestration and image/report presentation center was designed to improve AI integrated platform. ",
+              "CT smart diagnosis project (as data scientist): big data mining based on Vertica cloud data warehouse was conducted to help technical team develop predicative diagnosis models.",
+              "Fatty Liver Ultrasound AI project (as statistician): optimize clinical trial design, evaluate result data set quality, and guide on statistic mining and analysis strategies."
+            ]
+          },
+          {
+            "p": [
+              "Knowledge sharing and technical enablement"
+            ],
+            "ul": [
+              "Summarize regulatory requirements and workflow recommendations for clinical validation of medical device AI software, with clinical affairs team. ",
+              "Deliver statistics training in the department. ",
+              "Draft 3 patents and 1 technical note. ",
+              "Set up and maintain the shared machine learning computational server."
             ]
           }
         ]
