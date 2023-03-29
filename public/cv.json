@@ -121,14 +121,14 @@
         "tip": "熟悉企业健康促进的学术进展、业界实践和动向，有丰富的项目设计实施经验。"
       },
       {
+        "name": "软件研发和管理",
+        "value": 85,
+        "tip": "具备用户需求分析、原型构建、实地全栈开发和项目管理经验，并驱动产品设计和技术选型。"
+      },
+      {
         "name": "流行病学与统计",
         "value": 80,
         "tip": "接受完整、严格的高等医学教育，和公共卫生学术训练，有宽广的人群健康视野和数据驱动的思维框架。熟悉医疗设备产品的临床试验设计、分析，了解监管要求及流程。"
-      },
-      {
-        "name": "软件研发和管理",
-        "value": 80,
-        "tip": "具备用户需求分析、原型构建、实地全栈开发和项目管理经验，并驱动产品设计和技术选型。"
       },
       {
         "name": "保险产品设计定价",
@@ -1117,6 +1117,18 @@
               "领导基金稽核软件和一系列云分析工具的开发，并产出专利和著作权。"
             ]
           }
+        ],
+        "project": [
+          {
+            "title": "数据资产治理及迁移上云",
+            "from": "2021/07",
+            "thru": "2021/09",
+            "work": [
+              "与IT团队协作，将存储于Greenplum等多源数据库的TB级历史数据迁移到MaxCompute。",
+              "规划ODS、DWD、ADS等层的出入、隐私处理规则，划分事实表和维度表的生产规范。",
+              "梳理并生成公共维度表，使用官方sdk，逐步完成数据迁移、校验。"
+            ]
+          }
         ]
       },
       {
@@ -1166,7 +1178,7 @@
         "wiki": {
           "fa": "fab fa-wikipedia-w",
           "title": "关于该雇主",
-          "value": "百度百科",
+          "value": "Wikipedia",
           "tag": [
             "财富500",
             "医疗设备巨头",
@@ -1194,7 +1206,7 @@
           },
           {
             "p": [
-              "心血管 CT 应用研发项目：探索心脏CT应用的研发/改进策略，进行临床价值验证，开发概念原型。"
+              "心血管 CT 应用创新研究项目：探索心脏CT应用的研发/改进策略，进行临床价值验证，开发概念原型。"
             ],
             "ul": [
               "数据科学家：负责产品模块需求调研和试验设计。通过医生/厂商访谈、文献复习、设备日志分析探寻高价值创新点。构建概念原型，设计临床试验、收集光谱 CT 图像数据，以验证流程优化假设，用于开发辅助 AI 算法。"
@@ -1202,12 +1214,13 @@
           },
           {
             "p": [
-              "研究院其他项目"
+              "医学影像AI项目"
             ],
             "ul": [
               "医疗信息互联互通项目：通过用户/厂商访谈收集医疗 AI 互联互通的技术需求，并协同标准化委员会、工程开发团队设计基于 FHIR 的互通框架，实施标准用例。改进 AI 应用集成平台功能，设计通用型应用调度和图像/报告展示中心。",
               "CT 智能诊断维保项目 (作为数据科学家)，基于 Vertica 云数仓进行大数据挖掘，协助技术团队研发预测性诊断模型。",
-              "脂肪肝超声 AI 项目 (作为统计学家)，优化临床试验设计方案，对结果数据进行质控评估，指导完善统计挖掘与分析策略。"
+              "脂肪肝超声 AI 项目 (作为统计学家)，优化临床试验设计方案，对结果数据进行质控评估，指导完善统计挖掘与分析策略。",
+              "参与CAD-RADS临床验证项目，和临床事务部合作，梳理医疗器械AI软件临床验证的NMPA监管要求与建议流程，帮助海外研发团队完善研究和准入策略。"
             ]
           },
           {
@@ -1215,7 +1228,6 @@
               "知识共享和技术赋能"
             ],
             "ul": [
-              "和临床事务部门合作，梳理总结医疗器械 AI 软件临床验证的监管要求与建议流程。",
               "在部门内开展统计学培训。",
               "撰写3项专利草案和1份技术简报。",
               "配置和维护共享机器学习计算服务器。"
@@ -1281,10 +1293,9 @@
     ],
     "self": {
       "statement": [
-        "有10年以上卫生保健及健康保险从业经验的资深数据科学家/项目管理专家，具备丰富的跨国/跨部门协作经验。",
-        "在事业部的创建与增长过程中，跨条线(产品/系统/服务)贡献大量关键输出，对健康管理及大健康领域的行业动向、战略重点、实践细节均有深入理解。",
-        "坚持问题导向的终身主动学习，具备稀缺的“商业/医学/数据/信息技术”复合技能和扎实广博的跨领域知识，善于创新思维和技术变通克服限制，实现业务需求。",
-        "推崇数据驱动、循证务实、敏捷协作的工作理念，有良好的量化/分析能力和系统思考框架，善于识别、分析和搭建框架解决具体问题，适应在快速变化的业务环境中调整优先级、协同推进。"
+        "具备医学背景，资深统计/数据/项目管理/软件/产品专家，丰富的跨国/跨部门协作经验。",
+        "对保险、大健康行业生态的战略动向与实践有深入理解。熟悉大型医疗设备系统研发、验证和临床研究。",
+        "善于系统思维，搭建框架。有广博的跨域知识、复合的技能，问题导向、数据驱动、善于沟通、快速学习、循证务实、创新敏捷。"
       ],
       "interest": [
         "文史哲杂学",
@@ -1446,14 +1457,14 @@
         "tip": "Familiar with the practice and dynamics of health promotion in both academic society and industry; experienced in program design and implementation."
       },
       {
+        "name": "Software R&D & mgmt.",
+        "value": 85,
+        "tip": "Experienced in user requirement analysis, prototyping, full-stack development, and project management; drving design and technical model selection."
+      },
+      {
         "name": "Epidemiology & statistics",
         "value": 80,
         "tip": "Solid medical knowledge given complete, strict medical education and specific public health academic training; thinking from wider population health perspectives with a data-driven epidemiological framework. Familiar with clinical trial design and analysis of medical device products, as well as regulatory requirements and process."
-      },
-      {
-        "name": "Software R&D & mgmt.",
-        "value": 80,
-        "tip": "Experienced in user requirement analysis, prototyping, full-stack development, and project management; drving design and technical model selection."
       },
       {
         "name": "Insurance product design & pricing",
@@ -2443,6 +2454,18 @@
               "Lead R&D of FWA detection software, cloud-based analytic tool sets and generate patents and other intellectual properties."
             ]
           }
+        ],
+        "project": [
+          {
+            "title": "Data asset governance and migration to cloud",
+            "from": "2021/07",
+            "thru": "2021/09",
+            "work": [
+              "Work with IT team to migrate TB-level historical data from multi-sources (e.g., Greenplum) to MaxCompute.",
+              "Map I/O and privacy handling rules for ODS, DWD, ADS etc. Create production rules for fact tables and dimenstion tables.",
+              "Organize and create public dimension tables and complete migration and verification step by step using official SDK."
+            ]
+          }
         ]
       },
       {
@@ -2524,7 +2547,7 @@
           },
           {
             "p": [
-              "Cardiology CT app project: explore R&D / improvement strategy for cardiology CT apps, conduct clinical value validation and development of conceptual prototypes."
+              "Cardiology CT innovation & research: explore R&D / improvement strategy for cardiology CT apps, conduct clinical value validation and development of conceptual prototypes."
             ],
             "ul": [
               "Scrum team member: Responsible for requirement investigation and clinical trial design of product modules. Interview on physicians/manufacturers, literature review, and device log bigdata analysis were applied to seek for high-value innovation opportunities. Conceptual prototyping and clinical trial design were conducted to collect Spectral CT imaging data for validating workflow optimization assumptions and assistant AI algorithm development. "
@@ -2532,12 +2555,13 @@
           },
           {
             "p": [
-              "Other projects of Research Center"
+              "Other imageing AI projects"
             ],
             "ul": [
               "Medical informatics standardization project on interoperability (as scrum team member): technical requirements were collected via user/manufacturer interview, and FHIR-based interoperability framework as well as implementation use cases were developed with standardization committee and engineering team. A universal app orchestration and image/report presentation center was designed to improve AI integrated platform. ",
               "CT smart diagnosis project (as data scientist): big data mining based on Vertica cloud data warehouse was conducted to help technical team develop predicative diagnosis models.",
-              "Fatty Liver Ultrasound AI project (as statistician): optimize clinical trial design, evaluate result data set quality, and guide on statistic mining and analysis strategies."
+              "Fatty Liver Ultrasound AI project (as statistician): optimize clinical trial design, evaluate result data set quality, and guide on statistic mining and analysis strategies.",
+              "AI-assisted Cardiac Analysis Software: Summarize NMPA regulatory requirements and workflow suggestions for clinical validation of an AI module developed by global team, with clinical & regulatory affairs team."
             ]
           },
           {
@@ -2545,7 +2569,6 @@
               "Knowledge sharing and technical enablement"
             ],
             "ul": [
-              "Summarize regulatory requirements and workflow recommendations for clinical validation of medical device AI software, with clinical affairs team. ",
               "Deliver statistics training in the department. ",
               "Draft 3 patents and 1 technical note. ",
               "Set up and maintain the shared machine learning computational server."
@@ -2611,10 +2634,9 @@
     ],
     "self": {
       "statement": [
-        "Senior data scientist / project management professional working 10+ years in healthcare and health insurance industry with rich experience of transnational / cross-functional cooperation.",
-        "Cross-border key contribution on product, system & service to the business unit throughout its creation and continuous growth; profound understanding on industry dynamics, strategic focus and implementation details in health management and the big health industry.",
-        "Stick to life-long problem-oriented active learning; volatile skills in 'business / medicine / data / IT tech' and solid transdisciplinary knowledge that is scarce; good at meeting business requirements by overcoming restraints with innovative technical turnarounds.",
-        "Advocate a data-driven, evidence-and-fact-based, agile and cooperative work philosophy; good numeracy & analytic skills and systematic thinking framework; good at identifying, analysing and building framework to solve problems; adapt to a fast changing work environment that requires flexible re-prioritization and cooperative push-forward."
+        "A trained healthcare practitioner with in-depth data / ML / software expertise and rich experience of cross-border collaboration in insurance / healthcare / medical device industries.",
+        "Deep understanding on ecosystem dynamics and implementation details in the insurance / big health industry with project experience of service / software.",
+        "Good at system thinking and framework build-up. Data-driven, evidence-based, innovative and agile, passionate to problem-solving with efficient communication, fast learning, versatile skill sets, and solid interdisciplinary knowledge."
       ],
       "interest": [
         "Literature-history-philosophy-misc",
