@@ -1200,7 +1200,7 @@
               "智慧医工项目：通过读取解析设备日志，赋能用户监控和预测设备状况，降低重大故障风险。"
             ],
             "ul": [
-              "数据科学家：负责大型医疗设备智慧监控应用的试验研发，包括调研需求、分析用例、设计应用架构、搭建功能引擎原型，并分别在 MR、CT 实机上完成验证。按时交付工程团队，完成集成和发布。",
+              "数据科学家：负责大型医疗设备智慧监控应用的试验研发，包括调研需求、分析用例、设计应用架构、搭建基于RESTful-API 的日志ETL功能引擎原型，并分别在 MR、CT 实机上完成验证。按时交付工程团队集成发布，配合销售交付部署。",
               "发布列车工程师：负责组织计划会、站会和演示评审。"
             ]
           },
@@ -2541,7 +2541,7 @@
               "Smart Medical Engineering project: enable users to monitor and predict device health by parsing modality logs, to lower risks of critical accidents."
             ],
             "ul": [
-              "Data scientist: Responsible for experimental R&D of radiological medical device monitoring app, including requirements investigation, use case analysis, infrastructure design, functional prototyping, and validation on MR & CT modalities. The deliverables were timely delivered to the engineering team for integration and release.",
+              "Data scientist: Responsible for experimental R&D of radiological medical device monitoring app, including requirements investigation, use case analysis, infrastructure design, functional prototyping, and validation on MR & CT modalities. Support integration, release and deployment.",
               "Release train engineer: organizing planning, stand-up, demo meetings."
             ]
           },
@@ -2550,15 +2550,15 @@
               "Cardiology CT innovation & research: explore R&D / improvement strategy for cardiology CT apps, conduct clinical value validation and development of conceptual prototypes."
             ],
             "ul": [
-              "Scrum team member: Responsible for requirement investigation and clinical trial design of product modules. Interview on physicians/manufacturers, literature review, and device log bigdata analysis were applied to seek for high-value innovation opportunities. Conceptual prototyping and clinical trial design were conducted to collect Spectral CT imaging data for validating workflow optimization assumptions and assistant AI algorithm development. "
+              "Scrum team member: Responsible for requirement investigation and clinical trial design of software product modules. User interview and big data analysis on device logs were applied to seek for innovation opportunities. Conceptual prototyping and clinical trial design were conducted to collect Spectral CT imaging data for assumption validation and AI algorithm development."
             ]
           },
           {
             "p": [
-              "Other imageing AI projects"
+              "Extended imageing AI projects"
             ],
             "ul": [
-              "Medical informatics standardization project on interoperability (as scrum team member): technical requirements were collected via user/manufacturer interview, and FHIR-based interoperability framework as well as implementation use cases were developed with standardization committee and engineering team. A universal app orchestration and image/report presentation center was designed to improve AI integrated platform. ",
+              "Medical informatics interoperability project (as scrum team member): FHIR-based interoperability framework & implementation use cases were developed with standardization committee & engineering team. UI of a universal app orchestration and image/report presentation center was designed to improve AI integrated platform.",
               "CT smart diagnosis project (as data scientist): big data mining based on Vertica cloud data warehouse was conducted to help technical team develop predicative diagnosis models.",
               "Fatty Liver Ultrasound AI project (as statistician): optimize clinical trial design, evaluate result data set quality, and guide on statistic mining and analysis strategies.",
               "AI-assisted Cardiac Analysis Software: Summarize NMPA regulatory requirements and workflow suggestions for clinical validation of an AI module developed by global team, with clinical & regulatory affairs team."
