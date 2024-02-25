@@ -11,7 +11,7 @@ import echarts from 'echarts'
 // import 'echarts/lib/component/tooltip' // other components
 export default {
   name: 'BarChart',
-  data () {
+  data() {
     return {
       barColor: styCol.mainColorAlt,
       themeColor: styCol.themeColor,
@@ -25,7 +25,7 @@ export default {
   created: function () {
     this.chartId += '-' + Number(new Date())
   },
-  mounted () {
+  mounted() {
     this.chartObj = echarts.init(document.getElementById(this.chartId))
     this.chartObj.setOption(this.chartOptsBar)
     window.onresize = () => {
@@ -34,7 +34,7 @@ export default {
       })()
     }
   },
-  destroyed () {
+  destroyed() {
     window.onresize = null
   },
   watch: {
@@ -82,11 +82,11 @@ export default {
             fontSize: parseInt(this.regularSize),
             fontWeight: 'bold'
           },
-          itemStyle: {color: this.hoverColor}
+          itemStyle: { color: this.hoverColor }
         },
         tooltip: {
           formatter: '{a}',
-          textStyle: {fontSize: parseInt(this.baseSize)}
+          textStyle: { fontSize: parseInt(this.baseSize) }
         },
         barWidth: '80%',
         barGap: '-100%',
@@ -102,18 +102,18 @@ export default {
         },
         xAxis: {
           type: 'value',
-          axisLine: {show: false},
-          axisTick: {show: false},
-          axisLabel: {show: false},
-          splitLine: {show: false}
+          axisLine: { show: false },
+          axisTick: { show: false },
+          axisLabel: { show: false },
+          splitLine: { show: false }
         },
         yAxis: {
           type: 'category',
           inverse: true,
           data: x,
-          axisLine: {show: false},
-          axisTick: {show: false},
-          axisLabel: {show: false}
+          axisLine: { show: false },
+          axisTick: { show: false },
+          axisLabel: { show: false }
         },
         tooltip: {
           show: true,

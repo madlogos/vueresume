@@ -3,13 +3,14 @@
   "version": "2.0.0",
   "private": true,
   "scripts": {
-    "serve": "vue-cli-service serve",
-    "build": "vue-cli-service build",
-    "test:unit": "vue-cli-service test:unit",
-    "lint": "vue-cli-service lint"
+    "serve": "export NODE_OPTIONS=--openssl-legacy-provider && vue-cli-service serve",
+    "build": "export NODE_OPTIONS=--openssl-legacy-provider && vue-cli-service build",
+    "test:unit": "export NODE_OPTIONS=--openssl-legacy-provider && vue-cli-service test:unit",
+    "lint": "expoert NODE_OPTIONS=--openssl-legacy-provider && vue-cli-service lint"
   },
   "dependencies": {
     "@babel/preset-env": "^7.10.3",
+    "@vue/runtime-dom": "^3.4.19",
     "autoprefixer": "^9.7.5",
     "axios": "^0.19.2",
     "core-js": "^3.6.4",
@@ -20,8 +21,8 @@
     "vuex": "^3.1.3"
   },
   "devDependencies": {
-    "@babel/preset-env": "7.10.3",
     "@babel/polyfill": "^7.8.7",
+    "@babel/preset-env": "7.10.3",
     "@vue/cli-plugin-babel": "~4.2.3",
     "@vue/cli-plugin-eslint": "~4.2.3",
     "@vue/cli-plugin-router": "~4.2.3",
@@ -29,6 +30,7 @@
     "@vue/cli-plugin-vuex": "~4.2.3",
     "@vue/cli-service": "~4.2.3",
     "@vue/test-utils": "1.0.0-beta.32",
+    "@vue/runtime-dom": "^3.4.19",
     "babel-eslint": "^10.1.0",
     "chai": "^4.2.0",
     "element-ui": "^2.13.0",

@@ -10,7 +10,8 @@ export default {
     self: 'Self Statement',
     hobby: 'Hobbies',
     backtop: 'Back to top',
-    download: 'Download PDF in English'
+    download: 'Download PDF in English',
+    website: 'Website'
   },
   timespan: {
     sep: ' ',

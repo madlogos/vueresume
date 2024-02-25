@@ -1,4 +1,4 @@
-export function parseTimeDif (t0, t1 = 'now') {
+export function parseTimeDif(t0, t1 = 'now') {
   const tFrom = new Date(t0.replace(/[/.]/g, '-'))
   var tTo = new Date(t1.replace(/[/.]/g, '-'))
   tTo = isNaN(tTo) ? new Date() : tTo
@@ -52,12 +52,12 @@ export function parseTimeDif (t0, t1 = 'now') {
   // how many seconds
   var second = remainder - hour * 60 * 60 - minute * 60
   // return
-  return {'y': year, 'm': month, 'd': day, 'h': hour, 'n': minute, 's': second, 'dd': allDay, 'ms': millisecond}
+  return { 'y': year, 'm': month, 'd': day, 'h': hour, 'n': minute, 's': second, 'dd': allDay, 'ms': millisecond }
 }
-function isLeapYear (year) {
+function isLeapYear(year) {
   return (year % 4 === 0 && year % 100 !== 0) || (year % 100 === 0 && year % 400 === 0)
 }
-export function formatTimeDif2 (d, f, sep) {
+export function formatTimeDif2(d, f, sep) {
   // d: i18n string dict with keys 'y', 'm', 'd', 'h', 'n', 's'
   // f: numeric dict with keys 'y', 'm', 'd', 'h', 'n', 's'
   // sep: i18n string to concat time diff parts
@@ -85,7 +85,7 @@ export function formatTimeDif2 (d, f, sep) {
   }
   return ret
 }
-export function countEmptyArrInArr (arr) {
+export function countEmptyArrInArr(arr) {
   // used in array within array
   var n = 0
   for (var i = 0; i < arr.length; i++) {
@@ -95,17 +95,17 @@ export function countEmptyArrInArr (arr) {
   }
   return n
 }
-export function enc (s) {
+export function enc(s) {
   // encode char
   var ret = window.encodeURIComponent(s)
   return window.btoa(ret)
 }
-export function dec (s) {
+export function dec(s) {
   // decode char
   var ret = window.atob(s)
   return window.decodeURIComponent(ret)
 }
-export function detectDevice () {
+export function detectDevice() {
   // detect device using userAgent
   const ua = window['navigator']['userAgent'] || window['navigator']['vendor'] || window['opera']
   const osPtn = {
@@ -126,5 +126,5 @@ export function detectDevice () {
       break
     }
   }
-  return {'isMobile': isMobile, 'isTablet': isTablet, 'isWechat': isWechat, 'OS': osFlag}
+  return { 'isMobile': isMobile, 'isTablet': isTablet, 'isWechat': isWechat, 'OS': osFlag }
 }

@@ -10,7 +10,8 @@ export default {
     self: '自我评价',
     hobby: '爱好',
     backtop: '返回顶部',
-    download: '下载中文版PDF'
+    download: '下载中文版PDF',
+    website: '官网'
   },
   timespan: {
     sep: '',
