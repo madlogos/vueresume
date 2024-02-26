@@ -815,7 +815,7 @@
       {
         "from": "2009/07",
         "till": "2011/04",
-        "emp": "徐汇区疾病预防控制中心",
+        "emp": "徐汇区疾病控制中心",
         "dept": "传染病防制科",
         "link": null,
         "wiki": {
@@ -1230,7 +1230,7 @@
             "ul": [
               "市场调研齿科等健康服务保险化产品，并推进开发同类产品。",
               "调研产品开发现有痛点，推动方法论沉淀与流程优化。",
-              "基于amis+fastapi快速搭建内部web应用。"
+              "快速搭建内部低代码web应用（基于amis+FastAPI）。"
             ]
           }
         ]
@@ -2568,7 +2568,7 @@
             "ul": [
               "Market research on insurance-like health service products (e.g. dental insurance) and push forward R&D of similar products.",
               "Investigate and optimize current product R&D workdflow.",
-              "Develop web tool apps using amis+fastapi."
+              "Develop interal low-code web tool apps (using amis+FastAPI)."
             ]
           }
         ]

@@ -348,5 +348,5 @@ a:hover {
 }
 
 .collhead {
-  line-height: $lh-md
+  line-height: $lh-lg
 }</style>

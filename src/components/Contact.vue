@@ -104,7 +104,7 @@ a:hover {
 }
 
 .socio-icon {
-  margin-right: 15px
+  margin-right: 5px
 }
 
 .socio-icon:hover {

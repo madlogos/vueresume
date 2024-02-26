@@ -12,6 +12,11 @@
           <el-button round @click='openTip' class='tipbtn' size='mini' icon='el-icon-s-opportunity'>
             {{ this.$t('title.tip') }}
           </el-button>
+          <el-button round class='tipbtn' size='mini' icon='fas fa-download'>
+            <a :href='this.$store.getters.misc.attachment' target='_blank' style="text-decoration: none">
+              {{ this.$t('title.download') }}
+            </a>
+          </el-button>
         </div>
       </el-col>
     </el-row>
@@ -21,7 +26,7 @@
         <contact />
         <skill />
         <cert />
-        <attachment />
+        <!-- <attachment /> -->
       </el-col>
       <el-col :xs="24" :sm="16" :md="16" :lg="16" :xl="16" id="main">
         <job />
@@ -50,7 +55,7 @@ const Skill = () => import('@/components/Skill')
 const Cert = () => import('@/components/Cert')
 const Edu = () => import('@/components/Edu')
 const SelfState = () => import('@/components/SelfState')
-const Attachment = () => import('@/components/Attachment')
+// const Attachment = () => import('@/components/Attachment')
 const Footer = () => import('@/components/Footer')
 
 export default {
@@ -62,7 +67,7 @@ export default {
     Job,
     Edu,
     SelfState,
-    Attachment,
+    // Attachment,
     Footer
   },
   data() {
@@ -191,7 +196,7 @@ export default {
 }
 
 .tipbtn {
-  margin: 5px 20px 5px 10px;
+  margin: 5px 10px 5px 10px;
   padding: 5px 10px;
   font-family: "Helvetica Neue", Helvetica, "PingFang SC", "Hiragino Sans GB", "Microsoft YaHei", "微软雅黑", Arial, sans-serif;
   font-size: small
