@@ -41,11 +41,6 @@
                       <i class='fas fa-building' />
                       <span class='icon-txt'>{{ i.emp }}</span>
                     </span>
-                    <span v-if='isSmallScreen'><br /></span>
-                    <span class="jobdept" slot='reference'>
-                      <i class='fas fa-door-open' />
-                      <span class='icon-txt'>{{ i.dept }}</span>
-                    </span>
                   </el-popover>
                 </template>
               </div>
@@ -55,6 +50,10 @@
               }}</el-tag>
             </div>
             <template v-if='i.description'>
+              <div class="jobdept">
+                <i class='fas fa-door-open' />
+                <span class='icon-txt'>{{ i.dept }}</span>
+              </div>
               <div class='jobdes' v-for='(k, _k) in i.description' :key='"des" + _k'>
                 <div v-if='k.p'>
                   <p v-for='(k1, _k1) in k.p' :key='"p" + _k1' v-html='k1'></p>
@@ -343,10 +342,10 @@ a:hover {
 }
 
 .el-collapse-item__header {
-  line-height: $lh-md;
+  line-height: $lh-xl;
   border-bottom: none
 }
 
 .collhead {
-  line-height: $lh-lg
+  line-height: $lh-xl;
 }</style>

@@ -2161,7 +2161,7 @@
           "link": "https://baike.baidu.com/item/徐汇区疾病预防控制中心"
         },
         "link": null,
-        "title": "Staff member",
+        "title": "Public Health Practitioner",
         "icon": "check",
         "active": false,
         "keyword": [
@@ -2226,7 +2226,7 @@
           ],
           "link": "https://en.wikipedia.org/wiki/Aetna"
         },
-        "title": "Sr. Informatics Manager (Lead)",
+        "title": "Sr. Informatics Mgr",
         "icon": "check",
         "active": false,
         "keyword": [
@@ -2338,7 +2338,7 @@
       {
         "from": "2020/08",
         "till": "2021/09",
-        "emp": "Pacific Medical & Healthcare Mgmt",
+        "emp": "Pacific Medical & Healthcare",
         "dept": "Big Data Lab",
         "link": "http://www.cpic.com.cn/",
         "wiki": {
@@ -2466,7 +2466,7 @@
           ],
           "link": "https://en.wikipedia.org/wiki/Philips"
         },
-        "title": "Sr. Scientist - Data Analytics",
+        "title": "Sr. Data Scientist",
         "icon": "loading",
         "active": true,
         "keyword": [
@@ -2534,7 +2534,7 @@
           ],
           "link": "https://baike.baidu.com/item/平安健康"
         },
-        "title": "Product analysis team lead",
+        "title": "Product Analysis Lead",
         "icon": "loading",
         "active": true,
         "keyword": [

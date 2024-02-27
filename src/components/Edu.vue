@@ -269,10 +269,10 @@ a:hover {
 }
 
 .el-collapse-item__header {
-  line-height: $lh-md;
+  line-height: $lh-xl;
   border-bottom: none
 }
 
 .collhead {
-  line-height: $lh-lg
+  line-height: $lh-xl
 }</style>
